@@ -1,0 +1,1786 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix dct: <http://purl.org/dc/terms/>.
+@prefix dsv: <https://w3id.org/dsv#>.
+@prefix owl: <http://www.w3.org/2002/07/owl#>.
+@prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+
+
+<https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel> a dsv:ConceptualModel.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "A curated collection of metadata about resources."@en, "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."@es, "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati)."@it, "Une collection élaborée de métadonnées sur les jeux de données"@fr, "Řízená kolekce metadat o datových sadách a datových službách"@cs, "Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων"@el, "مجموعة من توصيفات قوائم البيانات"@ar, "データ・カタログは、データセットに関するキュレートされたメタデータの集合です。"@ja, "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). "@da;
+    <http://purl.org/vocab/vann/usageNote> "A Web-based data catalog is typically represented as a single instance of this class.\nDatasets and data services are examples of resources in the context of a data catalog."@en;
+    dsv:reusesPropertyValue _:n3-1278.
+_:n3-1278 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Catalog>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#Catalog>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "A homepage of the catalog (a public Web document usually available in HTML)."@en;
+    <http://purl.org/vocab/vann/usageNote> "foaf:homepage is an inverse functional property (IFP) which means that it MUST be unique and precisely identify the Web-page for the resource. This property indicates the canonical Web-page, which might be helpful in cases where there is more than one Web-page about the resource."@en;
+    dsv:reusesPropertyValue _:n3-1279.
+_:n3-1279 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/homepage>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://xmlns.com/foaf/0.1/homepage>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "El sistema de organización del conocimiento utilizado para clasificar conjuntos de datos de catálogos."@es, "Il sistema di organizzazione della conoscenza (KOS) usato per classificare i dataset del catalogo."@it, "Le systhème d'ogranisation de connaissances utilisé pour classifier les jeux de données du catalogue."@fr, "Systém organizace znalostí (KOS) použitý pro klasifikaci datových sad v katalogu."@cs, "A knowledge organization system (KOS) used to classify the resources documented in the catalog (e.g., datasets and services)."@en, "Το σύστημα οργάνωσης γνώσης που χρησιμοποιείται για την κατηγοριοποίηση των συνόλων δεδομένων του καταλόγου."@el, "لائحة التصنيفات المستخدمه لتصنيف قوائم البيانات ضمن الفهرس"@ar, "カタログのデータセットを分類するために用いられる知識組織化体系（KOS；knowledge organization system）。"@ja, "Vidensorganiseringssystem (KOS) som anvendes til at klassificere datasæt i kataloget."@da;
+    <http://purl.org/vocab/vann/usageNote> "It is recommended that the taxonomy is organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, which allows each member to be denoted by an IRI and published as Linked Data."@en;
+    dsv:reusesPropertyValue _:n3-1280.
+_:n3-1280 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#themeTaxonomy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#themeTaxonomy>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.resource> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This is the most general predicate for membership of a catalog. Use of a more specific sub-property is recommended when available."@en;
+    dsv:reusesPropertyValue _:n3-1281.
+_:n3-1281 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.resource> dsv:reusesPropertyValue _:n3-1282.
+_:n3-1282 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.resource> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#resource>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1283.
+_:n3-1283 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset> dsv:reusesPropertyValue _:n3-1284.
+_:n3-1284 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#dataset>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1285.
+_:n3-1285 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#service>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service> dsv:reusesPropertyValue _:n3-1286.
+_:n3-1286 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#service>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#service>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#DataService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1287.
+_:n3-1287 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#catalog>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog> dsv:reusesPropertyValue _:n3-1288.
+_:n3-1288 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#catalog>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#catalog>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "A record describing the registration of a single resource (e.g., a dataset, a data service) that is part of the catalog."@en, "Describe la registración de un conjunto de datos o un servicio de datos en el catálogo."@es, "Záznam popisující registraci jedné datové sady či datové služby jakožto součásti katalogu."@cs, "Relie un catalogue à ses registres."@fr, "Un record che descrive la registrazione di un singolo set di dati o di un servizio dati che fa parte del catalogo."@it, "Συνδέει έναν κατάλογο με τις καταγραφές του."@el, "تربط الفهرس بسجل ضمنه"@ar, "カタログの一部であるカタログ・レコード。"@ja, "En post der beskriver registreringen af et enkelt datasæt eller en datatjeneste som er opført i kataloget."@da;
+    dsv:reusesPropertyValue _:n3-1289.
+_:n3-1289 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#record>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#record>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset or service and metadata about the entry in the catalog about the dataset or service. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date SHOULD only be specified for the catalog record. Notice that the W3C PROV Ontology [PROV-O] allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset or its registration."@en;
+    dsv:reusesPropertyValue _:n3-1290.
+_:n3-1290 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord> dsv:reusesPropertyValue _:n3-1291.
+_:n3-1291 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "title"@en;
+    skos:definition "A name given to the record."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:title;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "description"@en;
+    skos:definition "A free-text account of the record."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:description;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "listing date"@en;
+    skos:definition "The date of listing (i.e., formal recording) of the corresponding dataset or service in the catalog."@en;
+    <http://purl.org/vocab/vann/usageNote> "This indicates the date of listing the dataset in the catalog and not the publication date of the dataset itself."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:issued;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "update/modification date"@en;
+    skos:definition "Most recent date on which the catalog entry was changed, updated or modified."@en;
+    <http://purl.org/vocab/vann/usageNote> "This indicates the date of last change of a catalog entry, i.e., the catalog metadata description of the dataset, and not the date of the dataset itself."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:modified;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "The dcat:Resource (dataset or service) described in the record."@en;
+    <http://purl.org/vocab/vann/usageNote> "foaf:primaryTopic property is functional: each catalog record can have at most one primary topic, i.e., describes one cataloged resource."@en;
+    dsv:reusesPropertyValue _:n3-1292.
+_:n3-1292 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/primaryTopic>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic> dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:property <http://xmlns.com/foaf/0.1/primaryTopic>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "conforms to"@en;
+    <http://purl.org/vocab/vann/usageNote> "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalog record metadata conforms to."@en;
+    dsv:reusesPropertyValue _:n3-1293.
+_:n3-1293 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:conformsTo.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:conformsTo;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1294.
+_:n3-1294 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset> dsv:reusesPropertyValue _:n3-1295.
+_:n3-1295 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1296.
+_:n3-1296 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution> dsv:reusesPropertyValue _:n3-1297.
+_:n3-1297 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#distribution>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "frequency"@en;
+    skos:definition "The frequency at which a dataset is published."@en;
+    <http://purl.org/vocab/vann/usageNote> "The value of dcterms:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:accrualPeriodicity;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Frequency>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1298.
+_:n3-1298 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#inSeries>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries> dsv:reusesPropertyValue _:n3-1299.
+_:n3-1299 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#inSeries>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#inSeries>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "spatial/geographical coverage"@en;
+    skos:definition "The geographical area covered by the dataset."@en;
+    <http://purl.org/vocab/vann/usageNote> "The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:spatial;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Location>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
+    skos:definition "minimum spatial separation resolvable in a dataset, measured in meters."@en-us, "minimum spatial separation resolvable in a dataset, measured in metres."@en-gb, "minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech."@cs, "mínima separacíon espacial disponible en un conjunto de datos, medida en metros."@es, "separazione spaziale minima risolvibile in un set di dati, misurata in metri."@it, "mindste geografiske afstand som kan erkendes i et datasæt, målt i meter."@da, "Minimum spatial separation resolvable in a dataset, measured in meters."@en;
+    <http://purl.org/vocab/vann/usageNote> "If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#spatialResolutionInMeters>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "temporal coverage"@en;
+    skos:definition "The temporal period that the dataset covers."@en;
+    <http://purl.org/vocab/vann/usageNote> "The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:temporal;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "Minimum time period resolvable in the dataset."@en, "minimální doba trvání rozlišitelná v datové sadě."@cs, "periodo di tempo minimo risolvibile in un set di dati."@it, "período de tiempo mínimo en el conjunto de datos."@es, "mindste tidsperiode der kan resolveres i datasættet."@da;
+    <http://purl.org/vocab/vann/usageNote> "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset."@en;
+    dsv:reusesPropertyValue _:n3-1300.
+_:n3-1300 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#temporalResolution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#temporalResolution>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "was generated by"@en;
+    skos:definition "An activity that generated, or provides the business context for, the creation of the dataset.\n"@en;
+    <http://purl.org/vocab/vann/usageNote> "The activity associated with generation of a dataset will typically be an initiative, project, mission, survey, on-going activity (\"business as usual\") etc. Multiple prov:wasGeneratedBy properties can be used to indicate the dataset production context at various levels of granularity.\n\nUse prov:qualifiedGeneration to attach additional details about the relationship between the dataset and the activity, e.g., the exact time that the dataset was produced during the lifetime of a project"@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/prov#wasGeneratedBy>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Entity>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Resource> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "The class of all cataloged resources, the super-class of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog.\n\nThis class carries properties common to all cataloged resources, including datasets and data services.\n\nThe instances of this class SHOULD be included in a catalog.\n\nWhen describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dcterms:type property to indicate the specific type.\n\ndcat:Resource is an extension point that enables the definition of any kind of catalog. Additional sub-classes may be defined in a DCAT profile or other DCAT application for catalogs of other kinds of resources."@en;
+    dsv:reusesPropertyValue _:n3-1301.
+_:n3-1301 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Resource> dsv:reusesPropertyValue _:n3-1302.
+_:n3-1302 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Resource> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "access rights"@en;
+    <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights MAY be provided for the Resource."@en;
+    dsv:reusesPropertyValue _:n3-1303.
+_:n3-1303 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:accessRights.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:accessRights;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "conforms to"@en;
+    <http://purl.org/vocab/vann/usageNote> "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the cataloged resource content conforms to."@en;
+    dsv:reusesPropertyValue _:n3-1304.
+_:n3-1304 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:conformsTo.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:conformsTo;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1305.
+_:n3-1305 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#contactPoint>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint> dsv:reusesPropertyValue _:n3-1306.
+_:n3-1306 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#contactPoint>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#contactPoint>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Kind>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "creator"@en;
+    <http://purl.org/vocab/vann/usageNote> "Resources of type foaf:Agent are recommended as values for this property."@en;
+    dsv:reusesPropertyValue _:n3-1307.
+_:n3-1307 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:creator.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:creator;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "description"@en;
+    skos:definition "A free-text account of the resource."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:description;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "title"@en;
+    dsv:reusesPropertyValue _:n3-1308.
+_:n3-1308 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:title.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:title;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "release date"@en;
+    skos:definition "Date of formal issuance (e.g., publication) of the resource."@en;
+    <http://purl.org/vocab/vann/usageNote> "This property SHOULD be set using the first known date of issuance."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:issued;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "update/modification date"@en;
+    skos:definition "Most recent date on which the resource was changed, updated or modified."@en;
+    <http://purl.org/vocab/vann/usageNote> "The value of this property indicates a change to the actual resource, not a change to the catalog record. An absent value MAY indicate that the resource has never changed after its initial publication, or that the date of last modification is not known, or that the resource is continuously updated."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:modified;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "language"@en;
+    skos:definition "A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution"@en;
+    <http://purl.org/vocab/vann/usageNote> "Repeat this property if the resource is available in multiple languages.\nThe value(s) provided for members of a catalog (i.e., dataset or service) override the value(s) provided for the catalog if they conflict.\nIf representations of a dataset are available for each language separately, define an instance of dcat:Distribution for each language and describe the specific language of each distribution using dcterms:language (i.e., the dataset will have multiple dcterms:language values and each distribution will have just one as the value of its dcterms:language property). In case of multilingual distributions, the distributions will have multiple dcterms:language values."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:language;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "publisher"@en;
+    <http://purl.org/vocab/vann/usageNote> "Resources of type foaf:Agent are recommended as values for this property."@en;
+    dsv:reusesPropertyValue _:n3-1309.
+_:n3-1309 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:publisher.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:publisher;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "identifier"@en;
+    skos:definition "A unique identifier of the resource being described or cataloged."@en;
+    <http://purl.org/vocab/vann/usageNote> "The identifier might be used as part of the IRI of the resource, but still having it represented explicitly is useful.\nThe identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:identifier;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "tema"@es, "tema"@it, "theme/category"@en, "thème"@fr, "téma"@cs, "Θέμα"@el, "التصنيف"@ar, "テーマ/カテゴリー"@ja, "emne"@da;
+    <http://purl.org/vocab/vann/usageNote> "The set of themes used to categorize the resources are organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, describing all the categories and their relations in the catalog."@en;
+    dsv:reusesPropertyValue _:n3-1310.
+_:n3-1310 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#theme>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#theme>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "type/genre"@en;
+    <http://purl.org/vocab/vann/usageNote> "The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:\nDCMI Type vocabulary [DCTERMS]\n[ISO-19115-1] scope codes\nDatacite resource types [DataCite]\nPARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (see item 15 contentType)\nMARC intellectual resource types\nSome members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [ISO-19115-1] CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.\n\nTo describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element."@en;
+    dsv:reusesPropertyValue _:n3-1311.
+_:n3-1311 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:type.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:type;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Class>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "relation"@en;
+    <http://purl.org/vocab/vann/usageNote> "dcterms:relation SHOULD be used where the nature of the relationship between a cataloged resource and related resources is not known. A more specific sub-property SHOULD be used if the nature of the relationship of the link is known. The property dcat:distribution SHOULD be used to link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution"@en;
+    dsv:reusesPropertyValue _:n3-1312.
+_:n3-1312 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:relation.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:relation;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "Used to link to another resource where the nature of the relationship is known but does not match one of the standard [DCTERMS] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [PROV-O] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf).\n"@en;
+    dsv:reusesPropertyValue _:n3-1313.
+_:n3-1313 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#qualifiedRelation>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation> dsv:reusesPropertyValue _:n3-1314.
+_:n3-1314 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#qualifiedRelation>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#qualifiedRelation>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1315.
+_:n3-1315 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#keyword>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword> dsv:reusesPropertyValue _:n3-1316.
+_:n3-1316 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#keyword>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#keyword>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1317.
+_:n3-1317 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#landingPage>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage> dsv:reusesPropertyValue _:n3-1318.
+_:n3-1318 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#landingPage>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#landingPage>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "qualified attribution"@en;
+    skos:definition "Link to an Agent having some form of responsibility for the resource"@en;
+    <http://purl.org/vocab/vann/usageNote> "Used to link to an Agent where the nature of the relationship is known but does not match one of the standard [DCTERMS] properties (dcterms:creator, dcterms:publisher). Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. See 15.1 Relationships between datasets and agents for usage examples."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/prov#qualifiedAttribution>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Attribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "license"@en;
+    skos:definition "A legal document under which the resource is made available."@en;
+    <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights MAY be provided for the Resource."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:license;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "rights"@en;
+    skos:definition "A statement that concerns all rights not addressed with dcterms:license or dcterms:accessRights, such as copyright statements."@en;
+    <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights MAY be provided for the Resource."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:rights;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "has part"@en;
+    dsv:reusesPropertyValue _:n3-1319.
+_:n3-1319 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:hasPart.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:hasPart;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPolicy> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "has policy"@en;
+    skos:definition "An ODRL conformant policy expressing the rights associated with the resource."@en;
+    <http://purl.org/vocab/vann/usageNote> "Information about rights expressed as an ODRL policy [ODRL-MODEL] using the ODRL vocabulary [ODRL-VOCAB] MAY be provided for the resource. See also guidance at 9. License and rights statements."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/odrl/2/hasPolicy>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "is referenced by"@en;
+    skos:definition "A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource."@en;
+    <http://purl.org/vocab/vann/usageNote> "In relation to the use case of data citation, when the cataloged resource is a dataset, the dcterms:isReferencedBy property allows to relate the dataset to the resources (such as scholarly publications) that cite or point to the dataset. Multiple dcterms:isReferencedBy properties can be used to indicate the dataset has been referenced by multiple publications, or other resources.\nThis property is used to associate a resource with the resource (of type dcat:Resource) in question. For other relations to resources not covered with this property, the more generic property dcat:qualifiedRelation can be used. See also 15. Qualified relations."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:isReferencedBy;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previousVersion> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This property is meant to be used to specify a version chain, consisting of snapshots of a resource.\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. One of the typical cases here is representing the history of the versions of a dataset that have been released over time."@en;
+    dsv:reusesPropertyValue _:n3-1320.
+_:n3-1320 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#previousVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previousVersion> dsv:reusesPropertyValue _:n3-1321.
+_:n3-1321 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#previousVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previousVersion> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#previousVersion>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g., snapshots [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations."@en;
+    dsv:reusesPropertyValue _:n3-1322.
+_:n3-1322 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#hasVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion> dsv:reusesPropertyValue _:n3-1323.
+_:n3-1323 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#hasVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#hasVersion>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasCurrentVersion> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This property is intended for relating a non-versioned or abstract resource to a single snapshot that can be used as a permalink to indicate the current version of the content [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle."@en;
+    dsv:reusesPropertyValue _:n3-1324.
+_:n3-1324 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#hasCurrentVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasCurrentVersion> dsv:reusesPropertyValue _:n3-1325.
+_:n3-1325 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#hasCurrentVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasCurrentVersion> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#hasCurrentVersion>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.replaces> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "replaces"@en;
+    dsv:reusesPropertyValue _:n3-1326.
+_:n3-1326 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:replaces.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.replaces> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:replaces;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]'s Best Practice 7: Provide a version indicator."@en;
+    dsv:reusesPropertyValue _:n3-1327.
+_:n3-1327 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#version>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version> dsv:reusesPropertyValue _:n3-1328.
+_:n3-1328 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#version>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#version>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "version notes"@en;
+    skos:definition "A description of changes between this version and the previous version of the resource [VOCAB-ADMS]."@en;
+    <http://purl.org/vocab/vann/usageNote> "In case of backward compatibility issues with the previous version of the resource, a textual description of them SHOULD be specified by using this property."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/adms#versionNotes>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.first> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
+    dsv:reusesPropertyValue _:n3-1329.
+_:n3-1329 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#first>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.first> dsv:reusesPropertyValue _:n3-1330.
+_:n3-1330 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#first>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.first> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#first>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.last> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
+    dsv:reusesPropertyValue _:n3-1331.
+_:n3-1331 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#last>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.last> dsv:reusesPropertyValue _:n3-1332.
+_:n3-1332 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#last>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.last> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#last>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previous> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "In DCAT this property is used for resources belonging to a dcat:DatasetSeries.\n\nIt is important to note that this property is different from dcat:previousVersion, as it does not denote a previous version of the same resource, but a distinct resource immediately preceding the current one in an ordered collection of resources."@en;
+    dsv:reusesPropertyValue _:n3-1333.
+_:n3-1333 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#prev>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previous> dsv:reusesPropertyValue _:n3-1334.
+_:n3-1334 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#prev>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previous> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#prev>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.status> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "The status of the resource in the context of a particular workflow process [VOCAB-ADMS]."@en;
+    <http://purl.org/vocab/vann/usageNote> "DCAT does not prescribe the use of any specific set of life-cycle statuses, but refers to existing standards and community practices fit for the relevant application scenario."@en;
+    dsv:reusesPropertyValue _:n3-1335.
+_:n3-1335 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/adms#status>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.status> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/adms#status>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Concept>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Document> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1336.
+_:n3-1336 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Document> dsv:reusesPropertyValue _:n3-1337.
+_:n3-1337 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Document> a dsv:ClassProfile;
+    dsv:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1338.
+_:n3-1338 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource rdfs:Resource.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource> dsv:reusesPropertyValue _:n3-1339.
+_:n3-1339 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource rdfs:Resource.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource> a dsv:ClassProfile;
+    dsv:class rdfs:Resource.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "A collection of operations that provides access to one or more datasets or data processing functions."@en, "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs, "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es, "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate."@it, "Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da;
+    <http://purl.org/vocab/vann/usageNote> "If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property.\nThe kind of service can be indicated using the dcterms:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type code list [INSPIRE-SDST]."@en;
+    dsv:reusesPropertyValue _:n3-1340.
+_:n3-1340 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#DataService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#DataService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#DataService>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "end-point del servicio"@es, "end-point del servizio"@it, "přístupový bod služby"@cs, "endpoint URL"@en, "tjenesteendpoint"@da;
+    dsv:reusesPropertyValue _:n3-1341.
+_:n3-1341 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#endpointURL>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#endpointURL>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#DataService>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "descripción del end-point del servicio"@es, "endpoint description"@en, "descrizione dell'endpoint del servizio"@it, "popis přístupového bodu služby"@cs, "endpointbeskrivelse"@da;
+    <http://purl.org/vocab/vann/usageNote> "The endpoint description gives specific details of the actual endpoint instances, while dcterms:conformsTo is used to indicate the general standard or specification that the endpoints implement.\nAn endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description [OpenAPI], an OGC GetCapabilities response [WFS], [ISO-19142], [WMS], [ISO-19128], a SPARQL Service Description [SPARQL11-SERVICE-DESCRIPTION], an [OpenSearch] or [WSDL20] document, a Hydra API description [HYDRA], else in text or some other informal mode if a formal representation is not possible."@en;
+    dsv:reusesPropertyValue _:n3-1342.
+_:n3-1342 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#endpointDescription>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#endpointDescription>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#DataService>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1343.
+_:n3-1343 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#servesDataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset> dsv:reusesPropertyValue _:n3-1344.
+_:n3-1344 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#servesDataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#servesDataset>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1345.
+_:n3-1345 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:RightsStatement.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement> dsv:reusesPropertyValue _:n3-1346.
+_:n3-1346 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:RightsStatement.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement> a dsv:ClassProfile;
+    dsv:class dct:RightsStatement.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Standard> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1347.
+_:n3-1347 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:Standard.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Standard> dsv:reusesPropertyValue _:n3-1348.
+_:n3-1348 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:Standard.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Standard> a dsv:ClassProfile;
+    dsv:class dct:Standard.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Kind> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1349.
+_:n3-1349 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Kind> dsv:reusesPropertyValue _:n3-1350.
+_:n3-1350 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Kind> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Agent> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1351.
+_:n3-1351 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Agent> dsv:reusesPropertyValue _:n3-1352.
+_:n3-1352 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Agent> a dsv:ClassProfile;
+    dsv:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1353.
+_:n3-1353 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:LinguisticSystem.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem> dsv:reusesPropertyValue _:n3-1354.
+_:n3-1354 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:LinguisticSystem.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem> a dsv:ClassProfile;
+    dsv:class dct:LinguisticSystem.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Class> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1355.
+_:n3-1355 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource rdfs:Class.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Class> dsv:reusesPropertyValue _:n3-1356.
+_:n3-1356 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource rdfs:Class.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Class> a dsv:ClassProfile;
+    dsv:class rdfs:Class.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Relationship> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard [DCTERMS] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [PROV-O] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)"@en;
+    dsv:reusesPropertyValue _:n3-1357.
+_:n3-1357 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Relationship>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Relationship> dsv:reusesPropertyValue _:n3-1358.
+_:n3-1358 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Relationship>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Relationship> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#Relationship>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "relation"@en;
+    skos:definition "The resource related to the source resource."@en;
+    <http://purl.org/vocab/vann/usageNote> "In the context of a dcat:Relationship this is expected to point to another dcat:Dataset or other cataloged resource."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:relation;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
+    <http://purl.org/vocab/vann/usageNote> "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [ISO-19115] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
+    dsv:reusesPropertyValue _:n3-1359.
+_:n3-1359 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#hadRole>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#hadRole>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Attribution> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1360.
+_:n3-1360 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/prov#Attribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Attribution> dsv:reusesPropertyValue _:n3-1361.
+_:n3-1361 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/prov#Attribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Attribution> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/prov#Attribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Attribution.hadRole> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Attribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
+    <http://purl.org/vocab/vann/usageNote> "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [ISO-19115] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
+    dsv:reusesPropertyValue _:n3-1362.
+_:n3-1362 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#hadRole>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Attribution.hadRole> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#hadRole>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1363.
+_:n3-1363 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:LicenseDocument.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument> dsv:reusesPropertyValue _:n3-1364.
+_:n3-1364 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:LicenseDocument.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument> a dsv:ClassProfile;
+    dsv:class dct:LicenseDocument.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Policy> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1365.
+_:n3-1365 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Policy> dsv:reusesPropertyValue _:n3-1366.
+_:n3-1366 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Policy> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en;
+    dsv:reusesPropertyValue _:n3-1367.
+_:n3-1367 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution> dsv:reusesPropertyValue _:n3-1368.
+_:n3-1368 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "title"@en;
+    skos:definition "A name given to the distribution."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:title;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "description"@en;
+    skos:definition "A free-text account of the distribution."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:description;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "release date"@en;
+    <http://purl.org/vocab/vann/usageNote> "This property SHOULD be set using the first known date of issuance."@en;
+    dsv:reusesPropertyValue _:n3-1369.
+_:n3-1369 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:issued.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:issued;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "update/modification date"@en;
+    dsv:reusesPropertyValue _:n3-1370.
+_:n3-1370 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:modified.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:modified;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "license"@en;
+    skos:definition "A legal document under which the distribution is made available."@en;
+    <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:license;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessRights> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "access rights"@en;
+    skos:definition "A rights statement that concerns how the distribution is accessed."@en;
+    <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights MAY be provided for the Distribution. See also guidance at 9. License and rights statements."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:accessRights;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "rights"@en;
+    skos:definition "Information about rights held in and over the distribution."@en;
+    <http://purl.org/vocab/vann/usageNote> "dcterms:license, which is a sub-property of dcterms:rights, can be used to link a distribution to a license document. However, dcterms:rights allows linking to a rights statement that can include licensing information as well as other information that supplements the license such as attribution.\n\nInformation about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:rights;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "has policy"@en;
+    skos:definition "An ODRL conformant policy expressing the rights associated with the distribution."@en;
+    <http://purl.org/vocab/vann/usageNote> "Information about rights expressed as an ODRL policy [ODRL-MODEL] using the ODRL vocabulary [ODRL-VOCAB] MAY be provided for the distribution. See also guidance at 9. License and rights statements."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/odrl/2/hasPolicy>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "URL d'accès"@fr, "URL de acceso"@es, "URL πρόσβασης"@el, "access URL"@en, "indirizzo di accesso"@it, "přístupová adresa"@cs, "رابط وصول"@ar, "アクセスURL"@ja, "adgangsadresse"@da;
+    skos:definition "A URL of the resource that gives access to a distribution of the dataset. E.g., landing page, feed, SPARQL endpoint."@en, "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, un Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable."@fr, "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de destino, descarga, URL feed, punto de acceso SPARQL. Esta propriedad se debe usar cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar."@es, "URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL."@cs, "Un URL di una risorsa che consente di accedere a una distribuzione del set di dati. Per esempio, pagina di destinazione, feed, endpoint SPARQL. Da utilizzare per tutti i casi, tranne  quando  si tratta di un semplice link per il download nel qual caso è preferito downloadURL."@it, "Μπορεί να είναι οποιουδήποτε είδους URL που δίνει πρόσβαση στη διανομή ενός συνόλου δεδομένων. Π.χ. ιστοσελίδα αρχικής πρόσβασης, μεταφόρτωση, feed URL, σημείο διάθεσης SPARQL. Να χρησιμοποιείται όταν ο κατάλογος δεν περιέχει πληροφορίες εαν πρόκειται ή όχι για μεταφορτώσιμο αρχείο."@el, "أي رابط يتيح الوصول إلى البيانات. إذا كان الرابط هو ربط مباشر لملف يمكن تحميله استخدم الخاصية downloadURL"@ar, "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"@ja, "En URL for en ressource som giver adgang til en repræsentation af datsættet. Fx destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben downloadURL foretrækkes."@da;
+    <http://purl.org/vocab/vann/usageNote> "dcat:accessURL SHOULD be used for the URL of a service or location that can provide access to this distribution, typically through a Web form, query or API call.\n\ndcat:downloadURL is preferred for direct links to downloadable resources.\n\nIf the distribution(s) are accessible only through a landing page (i.e., direct download URLs are not known), then the landing page URL associated with the dcat:Dataset SHOULD be duplicated as access URL on a distribution (see 5.7 Dataset available only behind some Web page)."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#accessURL>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "access service"@en, "servicio de acceso de datos"@es, "servizio di accesso ai dati"@it, "služba pro přístup k datům"@cs, "dataadgangstjeneste"@da;
+    <http://purl.org/vocab/vann/usageNote> "dcat:accessService SHOULD be used to link to a description of a dcat:DataService that can provide access to this distribution."@en;
+    dsv:reusesPropertyValue _:n3-1371.
+_:n3-1371 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#accessService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#accessService>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#DataService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "dcat:downloadURL SHOULD be used for the URL at which this distribution is available directly, typically through a HTTP Get request."@en;
+    dsv:reusesPropertyValue _:n3-1372.
+_:n3-1372 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#downloadURL>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl> dsv:reusesPropertyValue _:n3-1373.
+_:n3-1373 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#downloadURL>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#downloadURL>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "The size in bytes can be approximated (as a non-negative integer) when the precise size is not known.\nWhile it is recommended that the size be given as an integer, alternative literals such as '1.5 MB' are sometimes used."@en;
+    dsv:reusesPropertyValue _:n3-1374.
+_:n3-1374 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#byteSize>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize> dsv:reusesPropertyValue _:n3-1375.
+_:n3-1375 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#byteSize>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#byteSize>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
+    skos:definition "The minimum spatial separation resolvable in a dataset distribution, measured in meters."@en-us, "minimum spatial separation resolvable in a dataset, measured in metres."@en-gb, "minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech."@cs, "mínima separacíon espacial disponible en un conjunto de datos, medida en metros."@es, "separazione spaziale minima risolvibile in un set di dati, misurata in metri."@it, "mindste geografiske afstand som kan erkendes i et datasæt, målt i meter."@da;
+    <http://purl.org/vocab/vann/usageNote> "If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset.\nAlternative spatial resolutions might be provided as different dataset distributions"@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#spatialResolutionInMeters>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "Minimum time period resolvable in the dataset distribution."@en, "minimální doba trvání rozlišitelná v datové sadě."@cs, "periodo di tempo minimo risolvibile in un set di dati."@it, "período de tiempo mínimo en el conjunto de datos."@es, "mindste tidsperiode der kan resolveres i datasættet."@da;
+    <http://purl.org/vocab/vann/usageNote> "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.\nAlternative temporal resolutions might be provided in different dataset distributions"@en;
+    dsv:reusesPropertyValue _:n3-1376.
+_:n3-1376 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#temporalResolution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#temporalResolution>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "conforms to"@en;
+    skos:definition "An established standard to which the distribution conforms."@en;
+    <http://purl.org/vocab/vann/usageNote> "This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:conformsTo;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This property SHOULD be used when the media type of the distribution is defined in IANA [IANA-MEDIA-TYPES], otherwise dcterms:format MAY be used with different values."@en;
+    dsv:reusesPropertyValue _:n3-1377.
+_:n3-1377 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#mediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType> dsv:reusesPropertyValue _:n3-1378.
+_:n3-1378 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#mediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#mediaType>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "format"@en;
+    skos:definition "The file format of the distribution."@en;
+    <http://purl.org/vocab/vann/usageNote> "dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [IANA-MEDIA-TYPES]."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property dct:format;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [IANA-MEDIA-TYPES], if available."@en;
+    dsv:reusesPropertyValue _:n3-1379.
+_:n3-1379 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#compressFormat>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat> dsv:reusesPropertyValue _:n3-1380.
+_:n3-1380 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#compressFormat>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#compressFormat>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [IANA-MEDIA-TYPES], if available."@en;
+    dsv:reusesPropertyValue _:n3-1381.
+_:n3-1381 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#packageFormat>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat> dsv:reusesPropertyValue _:n3-1382.
+_:n3-1382 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#packageFormat>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#packageFormat>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "checksum"@en;
+    <http://purl.org/vocab/vann/usageNote> "The checksum is related to the download URL."@en;
+    dsv:reusesPropertyValue _:n3-1383.
+_:n3-1383 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://spdx.org/rdf/terms#checksum>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://spdx.org/rdf/terms#checksum>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Checksum>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "Dataset series can be also soft-typed via property dcterms:type as in the approach used in [GeoDCAT-AP], and adopted in [DCAT-AP-IT] and [GeoDCAT-AP-IT]).\nCommon scenarios for dataset series include: time series composed of periodically released subsets; map-series composed of items of the same type or theme but with differing spatial footprints."@en;
+    dsv:reusesPropertyValue _:n3-1384.
+_:n3-1384 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#DatasetSeries>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries> dsv:reusesPropertyValue _:n3-1385.
+_:n3-1385 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#DatasetSeries>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#DatasetSeries>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Frequency> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1386.
+_:n3-1386 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:Frequency.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Frequency> dsv:reusesPropertyValue _:n3-1387.
+_:n3-1387 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:Frequency.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Frequency> a dsv:ClassProfile;
+    dsv:class dct:Frequency.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [LOCN] SHOULD be used.\nFor a geographic bounding box delimiting a spatial area the property dcat:bbox SHOULD be used.\nFor the geographic center of a spatial area, or another characteristic point, the property dcat:centroid SHOULD be used."@en;
+    dsv:reusesPropertyValue _:n3-1388.
+_:n3-1388 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:Location.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location> dsv:reusesPropertyValue _:n3-1389.
+_:n3-1389 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:Location.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location> a dsv:ClassProfile;
+    dsv:class dct:Location.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Location>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "Associates a spatial thing [SDW-BP] with a corresponding geometry."@en;
+    <http://purl.org/vocab/vann/usageNote> "The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [GeoSPARQL]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [GeoSPARQL]."@en;
+    dsv:reusesPropertyValue _:n3-1390.
+_:n3-1390 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/locn#geometry>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/locn#geometry>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Geometry>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Location>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [GeoSPARQL])."@en;
+    dsv:reusesPropertyValue _:n3-1391.
+_:n3-1391 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#bbox>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox> dsv:reusesPropertyValue _:n3-1392.
+_:n3-1392 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#bbox>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#bbox>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Location>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [GeoSPARQL])."@en;
+    dsv:reusesPropertyValue _:n3-1393.
+_:n3-1393 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#centroid>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid> dsv:reusesPropertyValue _:n3-1394.
+_:n3-1394 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#centroid>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#centroid>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "An interval of time that is named or defined by its start and end."@en;
+    <http://purl.org/vocab/vann/usageNote> "The start and end of the interval SHOULD be given by using properties dcat:startDate or time:hasBeginning, and dcat:endDate or time:hasEnd, respectively. The interval can also be open - i.e., it can have just a start or just an end."@en;
+    dsv:reusesPropertyValue _:n3-1395.
+_:n3-1395 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:PeriodOfTime.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime> a dsv:ClassProfile;
+    dsv:class dct:PeriodOfTime.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "The start of the period."@en;
+    <http://purl.org/vocab/vann/usageNote> "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] and typed using the appropriate XML Schema datatype [XMLSCHEMA11-2] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."@en;
+    dsv:reusesPropertyValue _:n3-1396.
+_:n3-1396 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#startDate>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#startDate>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1397.
+_:n3-1397 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#endDate>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate> dsv:reusesPropertyValue _:n3-1398.
+_:n3-1398 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#endDate>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/ns/dcat#endDate>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange rdfs:Literal.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "beginning"@en, "tiene principio"@es;
+    skos:definition "Beginning of a period or interval."@en, "Comienzo de una entidad temporal."@es;
+    <http://purl.org/vocab/vann/usageNote> "Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/2006/time#hasBeginning>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "end"@en, "tiene fin"@es;
+    skos:definition "End of a period or interval."@en, "Final de una entidad temporal."@es;
+    <http://purl.org/vocab/vann/usageNote> "Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://www.w3.org/2006/time#hasEnd>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Entity> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1399.
+_:n3-1399 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/prov#Entity>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Entity> dsv:reusesPropertyValue _:n3-1400.
+_:n3-1400 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/prov#Entity>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Entity> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/prov#Entity>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#MediaType> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1401.
+_:n3-1401 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:MediaType.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#MediaType> dsv:reusesPropertyValue _:n3-1402.
+_:n3-1402 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:MediaType.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#MediaType> a dsv:ClassProfile;
+    dsv:class dct:MediaType.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1403.
+_:n3-1403 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource dct:MediaTypeOrExtent.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent> dsv:reusesPropertyValue _:n3-1404.
+_:n3-1404 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource dct:MediaTypeOrExtent.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent> a dsv:ClassProfile;
+    dsv:class dct:MediaTypeOrExtent.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Concept> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "A category or a theme used to describe datasets in the catalog."@en;
+    <http://purl.org/vocab/vann/usageNote> "It is recommended to use either skos:inScheme or skos:topConceptOf on every skos:Concept used to classify datasets to link it to the concept scheme it belongs to. This concept scheme is typically associated with the catalog using dcat:themeTaxonomy."@en;
+    dsv:reusesPropertyValue _:n3-1405.
+_:n3-1405 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource skos:Concept.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Concept> a dsv:ClassProfile;
+    dsv:class skos:Concept.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#ConceptScheme> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:definition "A knowledge organization system (KOS) used to represent themes/categories of datasets in the catalog."@en;
+    dsv:reusesPropertyValue _:n3-1406.
+_:n3-1406 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource skos:ConceptScheme.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#ConceptScheme> a dsv:ClassProfile;
+    dsv:class skos:ConceptScheme.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Person> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "[FOAF] provides several properties to describe these entities."@en;
+    dsv:reusesPropertyValue _:n3-1407.
+_:n3-1407 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Person>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Person> dsv:reusesPropertyValue _:n3-1408.
+_:n3-1408 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Person>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Person> a dsv:ClassProfile;
+    dsv:class <http://xmlns.com/foaf/0.1/Person>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Organization> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "[FOAF] provides several properties to describe these entities."@en;
+    dsv:reusesPropertyValue _:n3-1409.
+_:n3-1409 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Organization>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Organization> dsv:reusesPropertyValue _:n3-1410.
+_:n3-1410 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Organization>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Organization> a dsv:ClassProfile;
+    dsv:class <http://xmlns.com/foaf/0.1/Organization>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Role> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    <http://purl.org/vocab/vann/usageNote> "Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [ISO-19115-1] CI_RoleCode.\nUsed in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as\n\n[ISO-19115-1] DS_AssociationTypeCode\nIANA Registry of Link Relations [IANA-RELATIONS]\nDataCite metadata schema [DataCite]\nMARC relators"@en;
+    dsv:reusesPropertyValue _:n3-1411.
+_:n3-1411 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Role> dsv:reusesPropertyValue _:n3-1412.
+_:n3-1412 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/dcat#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Role> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/dcat#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Instant> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1413.
+_:n3-1413 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/2006/time#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Instant> dsv:reusesPropertyValue _:n3-1414.
+_:n3-1414 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/2006/time#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Instant> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/2006/time#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Geometry> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    dsv:reusesPropertyValue _:n3-1415.
+_:n3-1415 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:prefLabel;
+    dsv:reusedFromResource <http://www.w3.org/ns/locn#Geometry>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Geometry> dsv:reusesPropertyValue _:n3-1416.
+_:n3-1416 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://www.w3.org/ns/locn#Geometry>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Geometry> a dsv:ClassProfile;
+    dsv:class <http://www.w3.org/ns/locn#Geometry>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Checksum> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "Checksum"@en;
+    <http://purl.org/vocab/vann/usageNote> "The Checksum includes the algorithm (spdx:algorithm) and value (spdx:checksumValue) that allows the integrity of a file to be verified to ensure no errors occurred in transmission or storage."@en;
+    dsv:reusesPropertyValue _:n3-1417.
+_:n3-1417 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://spdx.org/rdf/terms#Checksum>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Checksum> a dsv:ClassProfile;
+    dsv:class <http://spdx.org/rdf/terms#Checksum>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Checksum>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "algorithm"@en;
+    skos:definition "Identifies the algorithm used to produce the subject Checksum [SPDX]."@en;
+    <http://purl.org/vocab/vann/usageNote> "Version 2.2 of [SPDX] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512."@en;
+    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://spdx.org/rdf/terms#algorithm>;
+    a dsv:ObjectPropertyProfile;
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Checksum>;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "checksum value"@en;
+    dsv:reusesPropertyValue _:n3-1418.
+_:n3-1418 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://spdx.org/rdf/terms#checksumValue>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue> dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:property <http://spdx.org/rdf/terms#checksumValue>;
+    a dsv:DatatypePropertyProfile;
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#hexBinary>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
+    a dsv:Profile;
+    skos:prefLabel "Checksum Algorithm"@en;
+    dsv:reusesPropertyValue _:n3-1419.
+_:n3-1419 a dsv:PropertyValueReuse;
+    dsv:reusedProperty skos:definition;
+    dsv:reusedFromResource <http://spdx.org/rdf/terms#ChecksumAlgorithm>.
+
+<https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm> a dsv:ClassProfile;
+    dsv:class <http://spdx.org/rdf/terms#ChecksumAlgorithm>.
