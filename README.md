@@ -1,4 +1,4 @@
 # Sample Dataspecer specifications
 A repository for sample specifications from [Dataspecer](https://dataspecer.com), using the [Data Specification Vocabulary (DSV)](https://w3id.org/dsv#) for Application profile modeling.
 
-- [DCAT 3 Default Application Profile](dcat-dap), compare with the original [Data Catalog Vocabulary (DCAT) - Version 3](https://www.w3.org/TR/vocab-dcat-3/)
+- [DCAT 3 Default Application Profile](dcat-dap), compare with the original [Data Catalog Vocabulary (DCAT) - Version 3](https://www.w3.org/TR/vocab-dcat-3/). You can see e.g. differences between [DCAT3.ttl](https://www.w3.org/ns/dcat3.ttl) and actual definitions in the document, and description of the application profile (reuse of properties from different vocabularies) in the attached DSV file.
