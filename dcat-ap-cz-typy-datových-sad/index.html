@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+  
+  
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>DCAT-AP-CZ - typy datových sad dle zdroje</title>
+      <meta name="color-scheme" content="light dark">
+      <script type="application/ld+json">
+        {
+  "@id": "",
+  "@type": [
+    "http://purl.org/dc/terms/Standard",
+    "http://www.w3.org/2002/07/owl#Ontology"
+  ],
+  "http://purl.org/dc/terms/title": [
+    {
+      "@language": "cs",
+      "@value": "DCAT-AP-CZ - typy datových sad dle zdroje"
+    }
+  ],
+  "https://w3id.org/dsv#artefact": [
+    {
+      "@type": [
+        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+      ],
+      "http://www.w3.org/ns/dx/prof/hasArtifact": [
+        {
+          "@id": "./model.owl.ttl"
+        }
+      ],
+      "http://www.w3.org/ns/dx/prof/hasRole": [
+        {
+          "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+      ],
+      "http://www.w3.org/ns/dx/prof/hasArtifact": [
+        {
+          "@id": "./dsv.ttl"
+        }
+      ],
+      "http://www.w3.org/ns/dx/prof/hasRole": [
+        {
+          "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+      ],
+      "http://www.w3.org/ns/dx/prof/hasArtifact": [
+        {
+          "@id": ""
+        }
+      ],
+      "http://www.w3.org/ns/dx/prof/hasRole": [
+        {
+          "@id": "http://www.w3.org/ns/dx/prof/role/specification"
+        }
+      ]
+    }
+  ],
+  "http://purl.org/dc/terms/references": [
+    [
+      {
+        "@id": "https://www.w3.org/ns/dcat3.ttl"
+      }
+    ]
+  ]
+}
+      </script>
+      <script
+        src="https://www.w3.org/Tools/respec/respec-w3c"
+        class="remove"
+        defer
+      ></script>
+      <script class="remove">
+        // All config options at https://respec.org/docs/
+        var respecConfig = {
+          specStatus: "unofficial",
+          editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
+          //github: "some-org/mySpec",
+          shortName: "todo",
+          //xref: "web-platform",
+          //group: "my-working-group",
+        };
+      </script>
+          <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+      max-width: 100%;
+      margin: auto;
+      height: auto;
+      }
+    </style>
+    </head>
+    <body>
+      <section id="abstract">
+        <p>
+          Tento soubor dokumentuje
+          <strong>DCAT-AP-CZ - typy datových sad dle zdroje</strong>.</p>
+      </section>
+
+      <!--<section id="sotd">
+      </section>-->
+
+      <section>
+        <h1>Přehled</h1>
+
+          <figure>
+            <img src="./a2511155-90f5-4849-a32c-a265e8b6439a.svg" alt="alt text 2" />
+            <figcaption>Overview diagram</figcaption>
+          </figure>
+
+        <h2>Třídy</h2>
+        Tato sekce popisuje všechny třídy v tomto slovníku.
+        
+
+              <section id="Datová-sada-harvestovaná-z-lokálního-katalogu-otevřených-dat">
+              <h4>Datová sada harvestovaná z lokálního katalogu otevřených dat</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/LKOD">https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/LKOD</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datová sada harvestovaná z lokálního katalogu otevřených dat</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a></td>
+                </tr>
+                <tr>
+                  <td>Podtřídy z tohoto slovníku</td>
+                  <td><a href="#Datová-sada-harvestovaná-z-LKOD-přes-rozhraní-DCAT-AP-Dokumenty">Datová sada harvestovaná z LKOD přes rozhraní DCAT-AP Dokumenty</a>, <a href="#Datová-sada-harvestovaná-z-LKOD-přes-rozhraní-SPARQL-endpoint">Datová sada harvestovaná z LKOD přes rozhraní SPARQL endpoint</a>, <a href="#Datová-sada-harvestovaná-z-LKOD-přes-rozhraní-DCAT-AP-Dokumenty">Datová sada harvestovaná z LKOD přes rozhraní DCAT-AP Dokumenty</a></td>
+                </tr>
+              </table>
+            </section>
+              <section id="Datová-sada-registrovaná-formulářem">
+              <h4>Datová sada registrovaná formulářem</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/Formulář">https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/Formulář</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datová sada registrovaná formulářem</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="http://www.w3.org/ns/dcat#Dataset">Datová sada</a></td>
+                </tr>
+              </table>
+            </section>
+              <section id="Datová-sada-harvestovaná-z-LKOD-přes-rozhraní-SPARQL-endpoint">
+              <h4>Datová sada harvestovaná z LKOD přes rozhraní SPARQL endpoint</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/SPARQL">https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/SPARQL</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datová sada harvestovaná z LKOD přes rozhraní SPARQL endpoint</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="#Datová-sada-harvestovaná-z-lokálního-katalogu-otevřených-dat">Datová sada harvestovaná z lokálního katalogu otevřených dat</a></td>
+                </tr>
+              </table>
+            </section>
+              <section id="Datová-sada-harvestovaná-z-LKOD-přes-rozhraní-DCAT-AP-Dokumenty">
+              <h4>Datová sada harvestovaná z LKOD přes rozhraní DCAT-AP Dokumenty</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/DokumentyDCAT">https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/DokumentyDCAT</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datová sada harvestovaná z LKOD přes rozhraní DCAT-AP Dokumenty</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="#Datová-sada-harvestovaná-z-lokálního-katalogu-otevřených-dat">Datová sada harvestovaná z lokálního katalogu otevřených dat</a></td>
+                </tr>
+              </table>
+            </section>
+              <section id="Datová-sada-harvestovaná-z-LKOD-přes-rozhraní-DCAT-AP-Dokumenty">
+              <h4>Datová sada harvestovaná z LKOD přes rozhraní DCAT-AP Dokumenty</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/CKAN">https://data.gov.cz/slovník/nkod/typ-datové-sady-dle-zdroje/CKAN</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datová sada harvestovaná z LKOD přes rozhraní DCAT-AP Dokumenty</td>
+                </tr>
+                <tr>
+                  <td>Rodičovské třídy</td>
+                  <td><a href="#Datová-sada-harvestovaná-z-lokálního-katalogu-otevřených-dat">Datová sada harvestovaná z lokálního katalogu otevřených dat</a></td>
+                </tr>
+              </table>
+            </section>
+
+
+        <h2>Vlastnosti</h2>
+
+      </section>
+
+      <section>
+        <h1>Použité prefixy</h1>
+        <table id="table-namespaces" class="simple">
+          <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
+          <tbody>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h1>Přílohy</h1>
+        <table class="def">
+            <tr>
+              <td>Slovník</td>
+              <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Aplikační profil</td>
+              <td><a href="./dsv.ttl">./dsv.ttl</a></td>
+            </tr>
+        </table>
+      </section>
+
+    <style>
+      table.simple {
+        margin: auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      table.simple th {
+        padding: 3px 10px;
+        text-align: left;
+      }
+
+      table.simple td {
+        border-top: 1px solid #ddd;
+        padding: 3px 10px;
+      }
+    </style>
+    </body>
+  </html>

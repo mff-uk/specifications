@@ -5,6 +5,7 @@ A repository for sample specifications from [Dataspecer](https://dataspecer.com)
 - [DCAT-AP 3.0](dcat-ap/), compare with the original [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/). See the profiling hierarchy from DCAT-AP to DCAT-DAP (above).
 - [DCAT-AP-CZ](dcat-ap-cz/) (in Czech), reusing DCAT-AP.
 - [DCAT-AP-CZ terms of use vocabulary](dcat-ap-cz-podmínky-užití/) (in Czech)
+- [DCAT-AP-CZ dataset types](dcat-ap-cz-typy-datových-sad/) (in Czech)
 
 You can either:
 Import the spec to [Dataspecer](https://dataspecer.com) as is using import functionality and the spec URL, e.g. `https://mff-uk.github.io/specifications/dcat-ap/`, or create a new application profile of the spec.
