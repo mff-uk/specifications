@@ -1,0 +1,3498 @@
+<!DOCTYPE html>
+  
+  
+  <html>
+    <head>
+      <meta charset="utf-8" />
+      <title>DCAT-AP-CZ</title>
+      <meta name="color-scheme" content="light dark">
+      <script type="application/ld+json">
+        {
+  "@id": "",
+  "@type": [
+    "http://purl.org/dc/terms/Standard",
+    "http://www.w3.org/2002/07/owl#Ontology"
+  ],
+  "http://purl.org/dc/terms/title": [
+    {
+      "@language": "en",
+      "@value": "DCAT-AP-CZ"
+    },
+    {
+      "@language": "cs",
+      "@value": "DCAT-AP-CZ"
+    }
+  ],
+  "https://w3id.org/dsv#artefact": [
+    {
+      "@type": [
+        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+      ],
+      "http://www.w3.org/ns/dx/prof/hasArtifact": [
+        {
+          "@id": "./model.owl.ttl"
+        }
+      ],
+      "http://www.w3.org/ns/dx/prof/hasRole": [
+        {
+          "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+      ],
+      "http://www.w3.org/ns/dx/prof/hasArtifact": [
+        {
+          "@id": "./dsv.ttl"
+        }
+      ],
+      "http://www.w3.org/ns/dx/prof/hasRole": [
+        {
+          "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+        }
+      ]
+    },
+    {
+      "@type": [
+        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+      ],
+      "http://www.w3.org/ns/dx/prof/hasArtifact": [
+        {
+          "@id": ""
+        }
+      ],
+      "http://www.w3.org/ns/dx/prof/hasRole": [
+        {
+          "@id": "http://www.w3.org/ns/dx/prof/role/specification"
+        }
+      ]
+    }
+  ],
+  "http://purl.org/dc/terms/references": [
+    [
+      {
+        "@id": "https://mff-uk.github.io/specifications/dcat-ap/"
+      }
+    ]
+  ]
+}
+      </script>
+      <script
+        src="https://www.w3.org/Tools/respec/respec-w3c"
+        class="remove"
+        defer
+      ></script>
+      <script class="remove">
+        // All config options at https://respec.org/docs/
+        var respecConfig = {
+          specStatus: "unofficial",
+          editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
+          //github: "some-org/mySpec",
+          shortName: "todo",
+          //xref: "web-platform",
+          //group: "my-working-group",
+        };
+      </script>
+          <style>
+      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+      max-width: 100%;
+      margin: auto;
+      height: auto;
+      }
+    </style>
+    </head>
+    <body>
+      <section id="abstract">
+        <p>
+          Tento soubor dokumentuje
+          <strong>DCAT-AP-CZ</strong>.</p>
+      </section>
+
+      <!--<section id="sotd">
+      </section>-->
+
+      <section>
+        <h1>Přehled</h1>
+
+          <figure>
+            <img src="./a9aad48a-7018-43ea-975b-55bd8137e36d.svg" alt="alt text 2" />
+            <figcaption>Overview diagram</figcaption>
+          </figure>
+
+        <h2>Třídy</h2>
+        Tato sekce popisuje všechny třídy v tomto slovníku.
+        
+
+
+            <section id="Datová-sada">
+              <h4>Datová sada</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datová sada</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Datová-sada">Datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset">https://mff-uk.github.io/specifications/dcat-ap/#Dataset</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Datová-sada">Datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset">https://mff-uk.github.io/specifications/dcat-dap/#Dataset</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/ns/dcat3.ttl#Datová-sada">Datová sada</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Datová sada</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech.</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Katalog">
+              <h4>Katalog</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog">https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Katalog</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Řízená kolekce metadat o datových sadách a datových službách</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Katalog">Katalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Katalog">Katalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog">https://mff-uk.github.io/specifications/dcat-dap/#Catalog</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/ns/dcat3.ttl#Katalog">Katalog</a> (<a href="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Katalog</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Řízená kolekce metadat o datových sadách a datových službách</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Datová-služba">
+              <h4>Datová služba</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datová služba</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Data-service">Data service (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService">https://mff-uk.github.io/specifications/dcat-ap/#DataService</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Data-service">Data service (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService">https://mff-uk.github.io/specifications/dcat-dap/#DataService</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/ns/dcat3.ttl#Data-service">Data service (@en)</a> (<a href="http://www.w3.org/ns/dcat#DataService">dcat:DataService</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Data service (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích.</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Série-datových-sad">
+              <h4>Série datových sad</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#SérieDatovýchSad">https://ofn.gov.cz/dcat-ap-cz/draft/#SérieDatovýchSad</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Série datových sad</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Série datových sad zastřešuje související datové sady a série. Souvislost může být časová (rozpočet v letech), prostorová (seznamy ulic v obcích) či tématická (datové sady z jednoho systému). Datová série je podtřídou Datové sady, ale nemá vlastní distribuce. Související DCAT-AP issue o typech datových sérií.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset-series">Dataset series (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset-series">Dataset series (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries">https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/ns/dcat3.ttl#Dataset-series">Dataset series (@en)</a> (<a href="http://www.w3.org/ns/dcat#DatasetSeries">dcat:DatasetSeries</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Dataset series (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A collection of datasets that are published separately, but share some characteristics that group them. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Distribuce">
+              <h4>Distribuce</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Distribuce</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribuce">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribuce">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/ns/dcat3.ttl#Distribuce">Distribuce</a> (<a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Distribuce</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Kontaktní-bod">
+              <h4>Kontaktní bod</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod">https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Kontaktní bod</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Obsahuje kontaktní informace, které mohou být využity pro zasílání připomínek.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Kind">Kind (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Kind">https://mff-uk.github.io/specifications/dcat-ap/#Kind</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Kind">Kind (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Kind">https://mff-uk.github.io/specifications/dcat-dap/#Kind</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/2006/vcard/ns#Kind">Kind (@en)</a> (<a href="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Kind (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Časový-interval">
+              <h4>Časový interval</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#ČasovýInterval">https://ofn.gov.cz/dcat-ap-cz/draft/#ČasovýInterval</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Časový interval</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Časový interval definovaný svým začátkem a koncem.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Period-of-Time">Period of Time (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime">https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Period-of-Time">Period of Time (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Period-of-Time">Period of Time (@en)</a> (<a href="http://purl.org/dc/terms/PeriodOfTime">dcterms:PeriodOfTime</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Period of Time (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>An interval of time that is named or defined by its start and end. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Distribuce---Datová-služba">
+              <h4>Distribuce - Datová služba</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DistribuceDatováSlužba">https://ofn.gov.cz/dcat-ap-cz/draft/#DistribuceDatováSlužba</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Distribuce - Datová služba</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Konkrétní reprezentace datové sady datovou službou.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="#Distribuce">Distribuce</a> (<a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribuce">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribuce">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/ns/dcat3.ttl#Distribuce">Distribuce</a> (<a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a>)
+
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Distribuce</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Distribuce---Soubor-ke-stažení">
+              <h4>Distribuce - Soubor ke stažení</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DistribuceSoubor">https://ofn.gov.cz/dcat-ap-cz/draft/#DistribuceSoubor</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Distribuce - Soubor ke stažení</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Konkrétní reprezentace datové sady jako souboru ke stažení.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="#Distribuce">Distribuce</a> (<a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribuce">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribuce">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.w3.org/ns/dcat3.ttl#Distribuce">Distribuce</a> (<a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a>)
+
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Distribuce</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Konkrétní reprezentace datové sady. Datová sada může být dostupná v různých serializacích, které se mohou navzájem lišit různými způsoby, mimo jiné přirozeným jazykem, media-typem či formátem, schematickou organizací, časovým a prostorovým rozlišením, úrovní detailu či profily (které mohou specifikovat některé či všechny tyto rozdíly).</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Formát-souboru">
+              <h4>Formát souboru</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#FormátSouboru">https://ofn.gov.cz/dcat-ap-cz/draft/#FormátSouboru</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Formát souboru</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>A media type or extent. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Media-Type-or-Extent">Media Type or Extent (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent">https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Media-Type-or-Extent">Media Type or Extent (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent">https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Media-Type-or-Extent">Media Type or Extent (@en)</a> (<a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Media Type or Extent (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A media type or extent. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Typ-média">
+              <h4>Typ média</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#TypMédia">https://ofn.gov.cz/dcat-ap-cz/draft/#TypMédia</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Typ média</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>A file format or physical medium. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Media-Type">Media Type (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#MediaType">https://mff-uk.github.io/specifications/dcat-ap/#MediaType</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Media-Type">Media Type (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#MediaType">https://mff-uk.github.io/specifications/dcat-dap/#MediaType</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Media-Type">Media Type (@en)</a> (<a href="http://purl.org/dc/terms/MediaType">dcterms:MediaType</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Media Type (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A file format or physical medium. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Geografické-území">
+              <h4>Geografické území</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#GeografickéÚzemí">https://ofn.gov.cz/dcat-ap-cz/draft/#GeografickéÚzemí</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Geografické území</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>A spatial region or named place. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Location">Location (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Location">https://mff-uk.github.io/specifications/dcat-ap/#Location</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Location">Location (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location">https://mff-uk.github.io/specifications/dcat-dap/#Location</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Location">Location (@en)</a> (<a href="http://purl.org/dc/terms/Location">dcterms:Location</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Location (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A spatial region or named place. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Frekvence">
+              <h4>Frekvence</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Frekvence">https://ofn.gov.cz/dcat-ap-cz/draft/#Frekvence</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Frekvence</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>A rate at which something recurs, e.g. the publication of a Dataset. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Frequency">Frequency (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Frequency">https://mff-uk.github.io/specifications/dcat-ap/#Frequency</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Frequency">Frequency (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Frequency">https://mff-uk.github.io/specifications/dcat-dap/#Frequency</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Frequency">Frequency (@en)</a> (<a href="http://purl.org/dc/terms/Frequency">dcterms:Frequency</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Frequency (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A rate at which something recurs, e.g. the publication of a Dataset. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Koncept">
+              <h4>Koncept</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept">https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Koncept</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>An idea or notion; a unit of thought. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept">Concept (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept">https://mff-uk.github.io/specifications/dcat-ap/#Concept</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://datagov-cz.github.io/cache-slovniku/skos.rdf#Concept">Concept (@en)</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Concept (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>An idea or notion; a unit of thought. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Datové-téma">
+              <h4>Datové téma</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatovéTéma">https://ofn.gov.cz/dcat-ap-cz/draft/#DatovéTéma</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Datové téma</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>An idea or notion; a unit of thought. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="#Koncept">Koncept</a> (<a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept">https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept">Concept (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept">https://mff-uk.github.io/specifications/dcat-ap/#Concept</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://datagov-cz.github.io/cache-slovniku/skos.rdf#Concept">Concept (@en)</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Koncept</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>An idea or notion; a unit of thought. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Téma-EuroVoc">
+              <h4>Téma EuroVoc</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#TémaEuroVoc">https://ofn.gov.cz/dcat-ap-cz/draft/#TémaEuroVoc</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Téma EuroVoc</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>An idea or notion; a unit of thought. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="#Koncept">Koncept</a> (<a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept">https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept">Concept (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept">https://mff-uk.github.io/specifications/dcat-ap/#Concept</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://datagov-cz.github.io/cache-slovniku/skos.rdf#Concept">Concept (@en)</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Koncept</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>An idea or notion; a unit of thought. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Právní-předpis">
+              <h4>Právní předpis</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#PrávníPředpis">https://ofn.gov.cz/dcat-ap-cz/draft/#PrávníPředpis</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Právní předpis</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>This class represents the legislation,policy or policies that lie behind the Rules that govern the service. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Legal-Resource">Legal Resource (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#LegalResource">https://mff-uk.github.io/specifications/dcat-ap/#LegalResource</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://op.europa.eu/documents/3938058/11669184/eli.owl/#Legal-Resource">Legal Resource (@en)</a> (<a href="http://data.europa.eu/eli/ontology#LegalResource">http://data.europa.eu/eli/ontology#LegalResource</a>)
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Legal Resource (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>This class represents the legislation,policy or policies that lie behind the Rules that govern the service. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Poskytovatel">
+              <h4>Poskytovatel</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Poskytovatel">https://ofn.gov.cz/dcat-ap-cz/draft/#Poskytovatel</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Poskytovatel</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Poskytovatel dat</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Agent">Agent (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Agent">https://mff-uk.github.io/specifications/dcat-ap/#Agent</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Agent">Agent (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Agent">https://mff-uk.github.io/specifications/dcat-dap/#Agent</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://datagov-cz.github.io/cache-slovniku/foaf.ttl#Agent">Agent (@en)</a> (<a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Agent (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Zdroj">
+              <h4>Zdroj</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj">https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Zdroj</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Cokoliv, co má URL.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Resource">Resource (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource">https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Resource">Resource (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource">https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://datagov-cz.github.io/cache-slovniku/rdfs.ttl#Resource">Resource (@en)</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Resource (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>Anything described by RDF. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Prvek-z-RÚIAN">
+              <h4>Prvek z RÚIAN</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#PrvekRÚIAN">https://ofn.gov.cz/dcat-ap-cz/draft/#PrvekRÚIAN</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Prvek z RÚIAN</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>A spatial region or named place. (@en)</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Location">Location (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Location">https://mff-uk.github.io/specifications/dcat-ap/#Location</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Location">Location (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location">https://mff-uk.github.io/specifications/dcat-dap/#Location</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Location">Location (@en)</a> (<a href="http://purl.org/dc/terms/Location">dcterms:Location</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Location (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A spatial region or named place. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+            <section id="Standard">
+              <h4>Standard</h4>
+
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Standard">https://ofn.gov.cz/dcat-ap-cz/draft/#Standard</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Standard</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Standard, specifikace.</td>
+                </tr>
+                <tr>
+                  <td>Profiluje</td>
+                  <td>                  
+                  <a href="https://mff-uk.github.io/specifications/dcat-ap/#Standard">Standard (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Standard">https://mff-uk.github.io/specifications/dcat-ap/#Standard</a>)
+                      <br />
+                                        
+                  <a href="https://mff-uk.github.io/specifications/dcat-dap/#Standard">Standard (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Standard">https://mff-uk.github.io/specifications/dcat-dap/#Standard</a>)
+                      <br />tato profiluje
+                                        třída
+                  <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Standard">Standard (@en)</a> (<a href="http://purl.org/dc/terms/Standard">dcterms:Standard</a>)
+
+
+</td>
+                </tr>
+
+                <tr>
+                  <td>Název ze slovníku</td>
+                  <td>Standard (@en)</td>
+                </tr>
+
+                <tr>
+                  <td>Definice ze slovníku</td>
+                  <td>A standard or other specification to which a resource conforms. (@en)</td>
+                </tr>
+
+              </table>
+            </section>
+
+        <h2>Vlastnosti</h2>
+
+          <section id="je-součástí">
+            <h4>je součástí</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.jeSoučástí">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.jeSoučástí</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>je součástí</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>A dataset series of which the dataset is part. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Série-datových-sad">Série datových sad</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#in-series">in series (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#in-series">in series (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#in-series">in series (@en)</a> (<a href="http://www.w3.org/ns/dcat#inSeries">dcat:inSeries</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>in series (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A dataset series of which the dataset is part. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="popis">
+            <h4>popis</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.popis">https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.popis</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>popis</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Tato vlastnost obsahuje volný text s popisem datového katalogu.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Katalog">Katalog</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+
+                        [1..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#description">description (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.description">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.description</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#description">description (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Description">Description (@en)</a> (<a href="http://purl.org/dc/terms/description">dcterms:description</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>description (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A free-text account of the Catalogue. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="název">
+            <h4>název</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.název">https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.název</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>název</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Tato vlastnost obsahuje název datového katalogu.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Katalog">Katalog</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+
+                        [1..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.title">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.title</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Title">Title (@en)</a> (<a href="http://purl.org/dc/terms/title">dcterms:title</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>title (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A name given to the Catalogue. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="poskytovatel">
+            <h4>poskytovatel</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.poskytovatel">https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.poskytovatel</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>poskytovatel</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Poskytovatel datového katalogu.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Katalog">Katalog</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Poskytovatel">Poskytovatel</a>
+
+                        [1..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#publisher">publisher (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.publisher">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.publisher</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#publisher">publisher (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Publisher">Publisher (@en)</a> (<a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>publisher (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>An entity (organisation) responsible for making the Catalogue available. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="kontaktní-bod">
+            <h4>kontaktní bod</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.kontaktníBod">https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.kontaktníBod</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>kontaktní bod</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Tato vlastnost obsahuje kontaktní informace, které mohou být využity pro zasílání připomínek ke katalogu.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Katalog">Katalog</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Kontaktní-bod">Kontaktní bod</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#kontaktní-bod">kontaktní bod</a> (<a href="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a>)
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>kontaktní bod</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="domovská-stránka">
+            <h4>domovská stránka</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.domovskáStránka">https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.domovskáStránka</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>domovská stránka</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Tato vlastnost odkazuje na domovskou stránku lokálního katalogu, kam mohou chodit uživatelé.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Katalog">Katalog</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#homepage">homepage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.homepage">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.homepage</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#homepage">homepage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://datagov-cz.github.io/cache-slovniku/foaf.ttl#homepage">homepage (@en)</a> (<a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>homepage (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A web page that acts as the main page for the Catalogue. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="datová-sada">
+            <h4>datová sada</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.datováSada">https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.datováSada</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>datová sada</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Kolekce dat, která je katalogizována v katalogu.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Katalog">Katalog</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#datová-sada">datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.dataset">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.dataset</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#datová-sada">datová sada</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#datová-sada">datová sada</a> (<a href="http://www.w3.org/ns/dcat#dataset">dcat:dataset</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>datová sada</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Kolekce dat, která je katalogizována v katalogu.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="název">
+            <h4>název</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.název">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.název</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>název</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Název datové sady (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+
+                        [1..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.title">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.title</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Title">Title (@en)</a> (<a href="http://purl.org/dc/terms/title">dcterms:title</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>title (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A name given to the Dataset. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="popis">
+            <h4>popis</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.popis">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.popis</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>popis</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Volný text s popisem datové sady</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+
+                        [1..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#description">description (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.description">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.description</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#description">description (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Description">Description (@en)</a> (<a href="http://purl.org/dc/terms/description">dcterms:description</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>description (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A free-text account of the Dataset. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="poskytovatel">
+            <h4>poskytovatel</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.poskytovatel">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.poskytovatel</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>poskytovatel</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Poskytovatel datové sady</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Poskytovatel">Poskytovatel</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#publisher">publisher (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.publisher">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.publisher</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#publisher">publisher (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Publisher">Publisher (@en)</a> (<a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>publisher (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>An entity (organisation) responsible for making the Dataset available. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="téma">
+            <h4>téma</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.téma">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.téma</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>téma</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Téma datové sady. Datová sada může být popsána více tématy.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Datové-téma">Datové téma</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#téma">téma</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#téma">téma</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#téma">téma</a> (<a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>téma</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Hlavní téma zdroje. Zdroj může mít více témat.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="periodicita-aktualizace">
+            <h4>periodicita aktualizace</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.periodicitaAktualizace">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.periodicitaAktualizace</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>periodicita aktualizace</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Frekvence, se kterou je datová sada aktualizována. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Frekvence">Frekvence</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#frequency">frequency (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#frequency">frequency (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Accrual-Periodicity">Accrual Periodicity (@en)</a> (<a href="http://purl.org/dc/terms/accrualPeriodicity">dcterms:accrualPeriodicity</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>frequency (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The frequency at which the Dataset is updated. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="klíčové-slovo">
+            <h4>klíčové slovo</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.klíčovéSlovo">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.klíčovéSlovo</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>klíčové slovo</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Klíčové slovo nebo značka popisující zdroj.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#klíčové-slovo">klíčové slovo</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#klíčové-slovo">klíčové slovo</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#klíčové-slovo">klíčové slovo</a> (<a href="http://www.w3.org/ns/dcat#keyword">dcat:keyword</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>klíčové slovo</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Klíčové slovo nebo značka popisující zdroj.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="Související-geografické-území---prvek-z-RÚIAN">
+            <h4>Související geografické území - prvek z RÚIAN</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.souvisejícíGeografickéÚzemí-PrvekZRúian">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.souvisejícíGeografickéÚzemí-PrvekZRúian</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Související geografické území - prvek z RÚIAN</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>The geographical area covered by the dataset. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Prvek-z-RÚIAN">Prvek z RÚIAN</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#geographical-coverage">geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#spatial/geographical-coverage">spatial/geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Spatial-Coverage">Spatial Coverage (@en)</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>geographical coverage (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The geographical area covered by the dataset. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="Související-geografické-území">
+            <h4>Související geografické území</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.souvisejícíGeografickéÚzemí">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.souvisejícíGeografickéÚzemí</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Související geografické území</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>The geographical area covered by the dataset. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Geografické-území">Geografické území</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#geographical-coverage">geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#spatial/geographical-coverage">spatial/geographical coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Spatial-Coverage">Spatial Coverage (@en)</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>geographical coverage (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The geographical area covered by the dataset. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="časové-pokrytí">
+            <h4>časové pokrytí</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.časovéPokrytí">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.časovéPokrytí</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>časové pokrytí</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Časový úsek pokrytý datovou sadou</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Časový-interval">Časový interval</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#temporal-coverage">temporal coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#temporal-coverage">temporal coverage (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Temporal-Coverage">Temporal Coverage (@en)</a> (<a href="http://purl.org/dc/terms/temporal">dcterms:temporal</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>temporal coverage (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The temporal period that the dataset covers. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="kontaktní-bod">
+            <h4>kontaktní bod</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.kontaktníBod">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.kontaktníBod</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>kontaktní bod</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Kontaktní informace, které mohou být využity pro zasílání připomínek k datové sadě.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Kontaktní-bod">Kontaktní bod</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#kontaktní-bod">kontaktní bod</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#kontaktní-bod">kontaktní bod</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#kontaktní-bod">kontaktní bod</a> (<a href="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>kontaktní bod</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="dokumentace">
+            <h4>dokumentace</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.dokumentace">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.dokumentace</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>dokumentace</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>A page or document about this Dataset. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#documentation">documentation (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.documentation">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.documentation</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://datagov-cz.github.io/cache-slovniku/foaf.ttl#page">page (@en)</a> (<a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>)
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>documentation (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A page or document about this Dataset. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="specifikace">
+            <h4>specifikace</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.specifikace">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.specifikace</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>specifikace</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Specifikace, jíž se datová sada řídí.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Standard">Standard</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#conforms-to">conforms to (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.conformsTo">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.conformsTo</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#conforms-to">conforms to (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Conforms-To">Conforms To (@en)</a> (<a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>conforms to (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>An implementing rule or other specification. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="klasifikace-dle-EuroVoc">
+            <h4>klasifikace dle EuroVoc</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.klasifikaceDleEurovoc">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.klasifikaceDleEurovoc</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>klasifikace dle EuroVoc</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Kategorie či téma datové sady dle EuroVoc.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Téma-EuroVoc">Téma EuroVoc</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#téma">téma</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#téma">téma</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#téma">téma</a> (<a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>téma</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Hlavní téma zdroje. Zdroj může mít více témat.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="prostorové-rozlišení-v-metrech">
+            <h4>prostorové rozlišení v metrech</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.prostorovéRozlišeníVMetrech">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.prostorovéRozlišeníVMetrech</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>prostorové rozlišení v metrech</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Prostorové rozlišení dat v datové sadě v metrech. Jedná se o nejmenší prostorový rozdíl v datové sadě.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#prostorové-rozlišení-(metry)">prostorové rozlišení (metry)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#prostorové-rozlišení-(metry)">prostorové rozlišení (metry)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#prostorové-rozlišení-(metry)">prostorové rozlišení (metry)</a> (<a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:spatialResolutionInMeters</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>prostorové rozlišení (metry)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="časové-rozlišení">
+            <h4>časové rozlišení</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.časovéRozlišení">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.časovéRozlišení</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>časové rozlišení</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Časové rozlišení dat v datové sadě. Jedná se o nejmenší časový rozdíl v datové sadě.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/2001/XMLSchema#duration">xsd:duration</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#časové-rozlišení">časové rozlišení</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#časové-rozlišení">časové rozlišení</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#časové-rozlišení">časové rozlišení</a> (<a href="http://www.w3.org/ns/dcat#temporalResolution">dcat:temporalResolution</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>časové rozlišení</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>minimální doba trvání rozlišitelná v datové sadě.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="příslušný-právní-předpis">
+            <h4>příslušný právní předpis</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.příslušnýPrávníPředpis">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.příslušnýPrávníPředpis</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>příslušný právní předpis</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Indikace příslušného právního předpisu předepisujícího vznik datové sady.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Právní-předpis">Právní předpis</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#applicable-legislation">applicable legislation (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.applicableLegislation</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld#applicable-legislation">applicable legislation (@en)</a> (<a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>)
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>applicable legislation (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The legislation that mandates the creation or management of the Dataset. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="distribuce">
+            <h4>distribuce</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.distribuce">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.distribuce</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>distribuce</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Dostupná distribuce datové sady.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-sada">Datová sada</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Distribuce">Distribuce</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#distribuce">distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.datasetDistribution">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.datasetDistribution</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#distribuce">distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#distribuce">distribuce</a> (<a href="http://www.w3.org/ns/dcat#distribution">dcat:distribution</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>distribuce</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Dostupná distribuce datové sady.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="přístupové-URL">
+            <h4>přístupové URL</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce.přístupovéUrl">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce.přístupovéUrl</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>přístupové URL</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce">Distribuce</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [1..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#přístupová-adresa">přístupová adresa</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#přístupová-adresa">přístupová adresa</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#přístupová-adresa">přístupová adresa</a> (<a href="http://www.w3.org/ns/dcat#accessURL">dcat:accessURL</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>přístupová adresa</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="příslušný-právní-předpis">
+            <h4>příslušný právní předpis</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce.příslušnýPrávníPředpis">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce.příslušnýPrávníPředpis</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>příslušný právní předpis</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>The legislation that mandates the creation or management of the Distribution. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce">Distribuce</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Právní-předpis">Právní předpis</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#applicable-legislation">applicable legislation (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.applicableLegislation</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld#applicable-legislation">applicable legislation (@en)</a> (<a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>)
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>applicable legislation (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The legislation that mandates the creation or management of the Distribution. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="příslušný-právní-předpis">
+            <h4>příslušný právní předpis</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.příslušnýPrávníPředpis">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.příslušnýPrávníPředpis</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>příslušný právní předpis</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>The legislation that mandates the creation or management of the Data Service. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-služba">Datová služba</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Právní-předpis">Právní předpis</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#applicable-legislation">applicable legislation (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#DataService.applicableLegislation</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld#applicable-legislation">applicable legislation (@en)</a> (<a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>)
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>applicable legislation (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The legislation that mandates the creation or management of the Data Service. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="název">
+            <h4>název</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce.název">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce.název</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>název</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>A name given to the distribution. (@en)</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce">Distribuce</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Title">Title (@en)</a> (<a href="http://purl.org/dc/terms/title">dcterms:title</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>title (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A name given to the distribution. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="Odkaz-na-stažení-souboru">
+            <h4>Odkaz na stažení souboru</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.odkazNaStaženíSouboru">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.odkazNaStaženíSouboru</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Odkaz na stažení souboru</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>URL, které je přímým odkazem na stažitelný soubor v daném formátu.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce---Soubor-ke-stažení">Distribuce - Soubor ke stažení</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#URL-souboru-ke-stažení">URL souboru ke stažení</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#URL-souboru-ke-stažení">URL souboru ke stažení</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#URL-souboru-ke-stažení">URL souboru ke stažení</a> (<a href="http://www.w3.org/ns/dcat#downloadURL">dcat:downloadURL</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>URL souboru ke stažení</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>URL souboru ke stažení v daném formátu, například CSV nebo RDF soubor. Formát je popsán vlastností distribuce dcterms:format a/nebo dcat:mediaType.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="formát-souboru-ke-stažení">
+            <h4>formát souboru ke stažení</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.formátSouboruKeStažení">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.formátSouboruKeStažení</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>formát souboru ke stažení</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Tato vlastnost odkazuje na typ souboru s distribucí.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce---Soubor-ke-stažení">Distribuce - Soubor ke stažení</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Formát-souboru">Formát souboru</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#format">format (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#format">format (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Format">Format (@en)</a> (<a href="http://purl.org/dc/terms/format">dcterms:format</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>format (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>The file format of the distribution. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="typ-média">
+            <h4>typ média</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.typMédia">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.typMédia</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>typ média</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Typ média distribuce definovaný v IANA.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce---Soubor-ke-stažení">Distribuce - Soubor ke stažení</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Typ-média">Typ média</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#typ-média">typ média</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#typ-média">typ média</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#typ-média">typ média</a> (<a href="http://www.w3.org/ns/dcat#mediaType">dcat:mediaType</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>typ média</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Typ média distribuce definovaný v IANA.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="formát-balíčku">
+            <h4>formát balíčku</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.formátBalíčku">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.formátBalíčku</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>formát balíčku</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Balíčkový formát souboru, ve kterém je jeden či více souborů seskupeno dohromady, např. aby bylo možné stáhnout sadu souvisejících souborů naráz.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce---Soubor-ke-stažení">Distribuce - Soubor ke stažení</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Typ-média">Typ média</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#formát-balíčku">formát balíčku</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#formát-balíčku">formát balíčku</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#formát-balíčku">formát balíčku</a> (<a href="http://www.w3.org/ns/dcat#packageFormat">dcat:packageFormat</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>formát balíčku</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Balíčkový formát souboru, ve kterém je jeden či více souborů seskupeno dohromady, např. aby bylo možné stáhnout sadu souvisejících souborů naráz.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="formát-komprese">
+            <h4>formát komprese</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.formátKomprese">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.formátKomprese</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>formát komprese</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Formát komprese souboru, ve kterém jsou data poskytována v komprimované podobě, např. ke snížení velikosti souboru ke stažení.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce---Soubor-ke-stažení">Distribuce - Soubor ke stažení</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Typ-média">Typ média</a>
+
+                        [0..1]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#formát-komprese">formát komprese</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.compressionFormat">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.compressionFormat</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#formát-komprese">formát komprese</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#formát-komprese">formát komprese</a> (<a href="http://www.w3.org/ns/dcat#compressFormat">dcat:compressFormat</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>formát komprese</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Formát komprese souboru, ve kterém jsou data poskytována v komprimované podobě, např. ke snížení velikosti souboru ke stažení.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="Strojově-čitelné-schéma-souboru-ke-stažení">
+            <h4>Strojově čitelné schéma souboru ke stažení</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.strojověČitelnéSchémaSouboruKeStažení">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.strojověČitelnéSchémaSouboruKeStažení</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>Strojově čitelné schéma souboru ke stažení</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Ustanovené schéma, jímž se popisovaná distribuce řídí.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce---Soubor-ke-stažení">Distribuce - Soubor ke stažení</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#linked-schemas">linked schemas (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#conforms-to">conforms to (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Conforms-To">Conforms To (@en)</a> (<a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>linked schemas (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>An established standard to which the distribution conforms. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="přístupová-služba">
+            <h4>přístupová služba</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-DatováSlužba.přístupováSlužba">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-DatováSlužba.přístupováSlužba</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>přístupová služba</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Umístění či přístupový bod zpřístupňující distribuci datové sady.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Distribuce---Datová-služba">Distribuce - Datová služba</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Datová-služba">Datová služba</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#služba-pro-přístup-k-datům">služba pro přístup k datům</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#služba-pro-přístup-k-datům">služba pro přístup k datům</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#služba-pro-přístup-k-datům">služba pro přístup k datům</a> (<a href="http://www.w3.org/ns/dcat#accessService">dcat:accessService</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>služba pro přístup k datům</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Umístění či přístupový bod zpřístupňující distribuci datové sady.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="název">
+            <h4>název</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.název">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.název</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>název</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Název datové služby.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-služba">Datová služba</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+
+                        [1..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.title">https://mff-uk.github.io/specifications/dcat-ap/#DataService.title</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#title">title (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Title">Title (@en)</a> (<a href="http://purl.org/dc/terms/title">dcterms:title</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>title (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A name given to the Data Service. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="přístupový-bod-služby">
+            <h4>přístupový bod služby</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.přístupovýBodSlužby">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.přístupovýBodSlužby</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>přístupový bod služby</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web).</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-služba">Datová služba</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [1..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#přístupový-bod-služby">přístupový bod služby</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl">https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#přístupový-bod-služby">přístupový bod služby</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl">https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#přístupový-bod-služby">přístupový bod služby</a> (<a href="http://www.w3.org/ns/dcat#endpointURL">dcat:endpointURL</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>přístupový bod služby</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web).</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="popis-přístupového-bodu-služby">
+            <h4>popis přístupového bodu služby</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.popisPřístupovéhoBoduSlužby">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.popisPřístupovéhoBoduSlužby</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>popis přístupového bodu služby</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Popis přístupového bodu služby včetně operací, parametrů apod.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-služba">Datová služba</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#popis-přístupového-bodu-služby">popis přístupového bodu služby</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription">https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#popis-přístupového-bodu-služby">popis přístupového bodu služby</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription">https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.w3.org/ns/dcat3.ttl#popis-přístupového-bodu-služby">popis přístupového bodu služby</a> (<a href="http://www.w3.org/ns/dcat#endpointDescription">dcat:endpointDescription</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>popis přístupového bodu služby</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>Popis přístupového bodu služby včetně operací, parametrů apod.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="specifikace">
+            <h4>specifikace</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.specifikace">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.specifikace</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>specifikace</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Specifikaci, jíž se datová služba řídí.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-služba">Datová služba</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Standard">Standard</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#conforms-to">conforms to (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.conformsTo">https://mff-uk.github.io/specifications/dcat-ap/#DataService.conformsTo</a>)
+                    <br />
+                                    
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#conforms-to">conforms to (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Conforms-To">Conforms To (@en)</a> (<a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>)
+
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>conforms to (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>An established (technical) standard to which the Data Service conforms. (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="dokumentace">
+            <h4>dokumentace</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.dokumentace">https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.dokumentace</a></td>
+              </tr>
+              <tr>
+                <td>Název</td>
+                <td>dokumentace</td>
+              </tr>
+              <tr>
+                <td>Definice</td>
+                <td>Dokumentace dále popisující datovou službu.</td>
+              </tr>
+              <tr>
+                <td>Definiční obor</td>
+                <td>
+                  <a href="#Datová-služba">Datová služba</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Obor hodnot</td>
+                <td>
+                  <a href="#Zdroj">Zdroj</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiluje</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-ap/#documentation">documentation (@en)</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.documentation">https://mff-uk.github.io/specifications/dcat-ap/#DataService.documentation</a>)
+                    <br />
+                                    vlastnost
+                <a href="https://datagov-cz.github.io/cache-slovniku/foaf.ttl#page">page (@en)</a> (<a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>)
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Název ze slovníku</td>
+                <td>documentation (@en)</td>
+              </tr>
+
+              <tr>
+                <td>Definice ze slovníku</td>
+                <td>A page or document about this Data Service (@en)</td>
+              </tr>
+
+            </table>
+          </section>
+      </section>
+
+      <section>
+        <h1>Použité prefixy</h1>
+        <table id="table-namespaces" class="simple">
+          <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
+          <tbody>
+              <tr><td><code>dcat</code></td><td><a href=http://www.w3.org/ns/dcat#><code>http://www.w3.org/ns/dcat#</code></a></td></tr>
+              <tr><td><code>vcard</code></td><td><a href=http://www.w3.org/2006/vcard/ns#><code>http://www.w3.org/2006/vcard/ns#</code></a></td></tr>
+              <tr><td><code>dcterms</code></td><td><a href=http://purl.org/dc/terms/><code>http://purl.org/dc/terms/</code></a></td></tr>
+              <tr><td><code>skos</code></td><td><a href=http://www.w3.org/2004/02/skos/core#><code>http://www.w3.org/2004/02/skos/core#</code></a></td></tr>
+              <tr><td><code>foaf</code></td><td><a href=http://xmlns.com/foaf/0.1/><code>http://xmlns.com/foaf/0.1/</code></a></td></tr>
+              <tr><td><code>rdfs</code></td><td><a href=http://www.w3.org/2000/01/rdf-schema#><code>http://www.w3.org/2000/01/rdf-schema#</code></a></td></tr>
+              <tr><td><code>rdf</code></td><td><a href=http://www.w3.org/1999/02/22-rdf-syntax-ns#><code>http://www.w3.org/1999/02/22-rdf-syntax-ns#</code></a></td></tr>
+              <tr><td><code>xsd</code></td><td><a href=http://www.w3.org/2001/XMLSchema#><code>http://www.w3.org/2001/XMLSchema#</code></a></td></tr>
+          </tbody>
+        </table>
+      </section>
+
+      <section>
+        <h1>Přílohy</h1>
+        <table class="def">
+            <tr>
+              <td>Slovník</td>
+              <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
+            </tr>
+            <tr>
+              <td>Aplikační profil</td>
+              <td><a href="./dsv.ttl">./dsv.ttl</a></td>
+            </tr>
+        </table>
+      </section>
+
+    <style>
+      table.simple {
+        margin: auto;
+        border-spacing: 0;
+        border-collapse: collapse;
+      }
+
+      table.simple th {
+        padding: 3px 10px;
+        text-align: left;
+      }
+
+      table.simple td {
+        border-top: 1px solid #ddd;
+        padding: 3px 10px;
+      }
+    </style>
+    </body>
+  </html>
