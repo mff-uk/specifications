@@ -5249,7 +5249,7 @@ Note that ELI ontology accommodates different point of view on what should be co
                 <td>
                   <a href="http://www.w3.org/2001/XMLSchema#decimal">xsd:decimal</a>
 
-                        [0..1]
+                        [0..*]
 
               </td>
               </tr>
@@ -8657,6 +8657,63 @@ Note that ELI ontology accommodates different point of view on what should be co
               <tr>
                 <td>Definition from vocabulary</td>
                 <td>A page or document about this thing.</td>
+              </tr>
+
+            </table>
+          </section>
+          <section id="rights">
+            <h4>rights</h4>
+
+            <table class="def">
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.rights">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.rights</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>rights</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A statement that specifies rights associated with the Catalogue.</td>
+              </tr>
+              <tr>
+                <td>Domain</td>
+                <td>
+                  <a href="#Catalogue">Catalogue</a>
+
+                  
+                </td>
+              </tr>
+              <tr>
+                <td>Range</td>
+                <td>
+                  <a href="#Rights-Statement">Rights Statement</a>
+
+                        [0..*]
+
+              </td>
+              </tr>
+
+              <tr>
+                <td>Profiles</td>
+                <td>                
+                <a href="https://mff-uk.github.io/specifications/dcat-dap/#rights">rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights</a>)
+                    <br />
+                                    property
+                <a href="https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl#Rights">Rights</a> (<a href="http://purl.org/dc/terms/rights">dcterms:rights</a>)
+
+</td>
+              </tr>
+
+              <tr>
+                <td>Label from vocabulary</td>
+                <td>rights</td>
+              </tr>
+
+              <tr>
+                <td>Definition from vocabulary</td>
+                <td>A statement that concerns all rights not addressed with dcterms:license or dcterms:accessRights, such as copyright statements.</td>
               </tr>
 
             </table>
