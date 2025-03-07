@@ -69,13 +69,13 @@
   "http://purl.org/dc/terms/references": [
     [
       {
+        "@id": "https://mff-uk.github.io/specifications/dcat-dap/"
+      },
+      {
         "@id": "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
       },
       {
         "@id": "https://op.europa.eu/documents/3938058/11669184/eli.owl/"
-      },
-      {
-        "@id": "https://mff-uk.github.io/specifications/dcat-dap/"
       }
     ]
   ]
@@ -181,7 +181,7 @@
                 </tr>
                 <tr>
                   <td>Definition</td>
-                  <td>A record in a data catalog, describing the registration of a single dataset or data service.</td>
+                  <td>A record in a catalog, describing the registration of a single dcat:Resource.</td>
                 </tr>
                 <tr>
                   <td>Profiles</td>
@@ -201,7 +201,7 @@
 
                 <tr>
                   <td>Definition from vocabulary</td>
-                  <td>A record in a data catalog, describing the registration of a single dataset or data service.</td>
+                  <td>A record in a catalog, describing the registration of a single dcat:Resource.</td>
                 </tr>
 
               </table>
@@ -1989,9 +1989,9 @@ Note that ELI ontology accommodates different point of view on what should be co
               <tr>
                 <td>Range</td>
                 <td>
-                  <a href="#Catalogue">Catalogue</a>
+                  <a href="#Document">Document</a>
 
-                        [0..1]
+                        [0..*]
 
               </td>
               </tr>
@@ -7735,7 +7735,7 @@ Note that ELI ontology accommodates different point of view on what should be co
               <tr>
                 <td>Range</td>
                 <td>
-                  <a href="#Resource">Resource</a>
+                  <a href="#Document">Document</a>
 
                         [0..*]
 
@@ -8635,7 +8635,7 @@ Note that ELI ontology accommodates different point of view on what should be co
               <tr>
                 <td>Range</td>
                 <td>
-                  <a href="#Resource">Resource</a>
+                  <a href="#Document">Document</a>
 
                         [0..*]
 
