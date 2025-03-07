@@ -13,8 +13,8 @@
     skos:prefLabel "Catalogue"@en, "Catalogo"@it, "Catalogue"@fr, "Catálogo"@es, "Katalog"@cs, "Κατάλογος"@el, "فهرس قوائم البيانات"@ar, "カタログ"@ja, "Katalog"@da;
     skos:definition "A catalogue or repository that hosts the Datasets or Data Services being described."@en, "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."@es, "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati)."@it, "Une collection élaborée de métadonnées sur les jeux de données"@fr, "Řízená kolekce metadat o datových sadách a datových službách"@cs, "Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων"@el, "مجموعة من توصيفات قوائم البيانات"@ar, "データ・カタログは、データセットに関するキュレートされたメタデータの集合です。"@ja, "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). "@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>;
-    dsv:reusesPropertyValue _:n3-3238.
-_:n3-3238 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-141.
+_:n3-141 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>.
 
@@ -24,8 +24,8 @@ _:n3-3238 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "The legislation that mandates the creation or management of the Catalogue."@en;
-    dsv:reusesPropertyValue _:n3-3239.
-_:n3-3239 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-142.
+_:n3-142 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>.
 
@@ -40,8 +40,8 @@ _:n3-3239 a dsv:PropertyValueReuse;
     skos:prefLabel "catalogue"@en, "catalogo"@it, "catálogo"@es, "katalog"@cs, "katalog"@da;
     skos:definition "A catalogue whose contents are of interest in the context of this catalogue."@en, "Katalog, jehož obsah je v kontextu tohoto katalogu zajímavý."@cs, "Un catalogo i cui contenuti sono di interesse nel contesto di questo catalogo."@it, "Un catálogo cuyo contenido es de interés en el contexto del catálogo que está siendo descripto."@es, "Et katalog hvis indhold er relevant i forhold til det aktuelle katalog."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog>;
-    dsv:reusesPropertyValue _:n3-3240.
-_:n3-3240 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-143.
+_:n3-143 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog>.
 
@@ -54,8 +54,8 @@ _:n3-3240 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An entity responsible for the creation of the catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator>;
-    dsv:reusesPropertyValue _:n3-3241.
-_:n3-3241 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-144.
+_:n3-144 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator>.
 
@@ -69,8 +69,8 @@ _:n3-3241 a dsv:PropertyValueReuse;
     skos:definition "A Dataset that is part of the Catalogue."@en, "Kolekce dat, která je katalogizována v katalogu."@cs, "Relie un catalogue à un jeu de données faisant partie de ce catalogue."@fr, "Un conjunto de datos que se lista en el catálogo."@es, "Una raccolta di dati che è elencata nel catalogo."@it, "Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο."@el, "تربط الفهرس بقائمة بيانات ضمنه"@ar, "カタログの一部であるデータセット。"@ja, "En samling af data som er opført i kataloget."@da;
     <http://purl.org/vocab/vann/usageNote> "As empty Catalogues are usually indications of problems, this property should be combined with the property service to implement an empty Catalogue check."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset>;
-    dsv:reusesPropertyValue _:n3-3242.
-_:n3-3242 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-145.
+_:n3-145 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset>.
 
@@ -93,13 +93,13 @@ _:n3-3242 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A related Catalogue that is part of the described Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart>;
-    dsv:reusesPropertyValue _:n3-3243.
-_:n3-3243 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-146.
+_:n3-146 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.hasPart> dsv:reusesPropertyValue _:n3-3244.
-_:n3-3244 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.hasPart> dsv:reusesPropertyValue _:n3-147.
+_:n3-147 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart>.
 
@@ -113,8 +113,8 @@ _:n3-3244 a dsv:PropertyValueReuse;
     skos:definition "A web page that acts as the main page for the Catalogue."@en;
     <http://purl.org/vocab/vann/usageNote> ""@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage>;
-    dsv:reusesPropertyValue _:n3-3245.
-_:n3-3245 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-148.
+_:n3-148 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage>.
 
@@ -128,8 +128,8 @@ _:n3-3245 a dsv:PropertyValueReuse;
     skos:definition "A language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated if the metadata is provided in multiple languages."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language>;
-    dsv:reusesPropertyValue _:n3-3246.
-_:n3-3246 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-149.
+_:n3-149 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language>.
 
@@ -152,8 +152,8 @@ _:n3-3246 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An entity (organisation) responsible for making the Catalogue available."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>;
-    dsv:reusesPropertyValue _:n3-3247.
-_:n3-3247 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-150.
+_:n3-150 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>.
 
@@ -166,13 +166,13 @@ _:n3-3247 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A Catalogue Record that is part of the Catalogue."@en, "Describe la registración de un conjunto de datos o un servicio de datos en el catálogo."@es, "Záznam popisující registraci jedné datové sady či datové služby jakožto součásti katalogu."@cs, "Relie un catalogue à ses registres."@fr, "Un record che descrive la registrazione di un singolo set di dati o di un servizio dati che fa parte del catalogo."@it, "Συνδέει έναν κατάλογο με τις καταγραφές του."@el, "تربط الفهرس بسجل ضمنه"@ar, "カタログの一部であるカタログ・レコード。"@ja, "En post der beskriver registreringen af et enkelt datasæt eller en datatjeneste som er opført i kataloget."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record>;
-    dsv:reusesPropertyValue _:n3-3248.
-_:n3-3248 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-151.
+_:n3-151 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.record> dsv:reusesPropertyValue _:n3-3249.
-_:n3-3249 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.record> dsv:reusesPropertyValue _:n3-152.
+_:n3-152 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record>.
 
@@ -186,8 +186,8 @@ _:n3-3249 a dsv:PropertyValueReuse;
     skos:definition "A site or end-point (Data Service) that is listed in the Catalogue."@en, "Umístění či přístupový bod registrovaný v katalogu."@cs, "Un sitio o 'endpoint' que está listado en el catálogo."@es, "Un sito o endpoint elencato nel catalogo."@it, "Et websted eller et endpoint som er opført i kataloget."@da;
     <http://purl.org/vocab/vann/usageNote> "As empty Catalogues are usually indications of problems, this property should be combined with the property dataset to implement an empty Catalogue check."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service>;
-    dsv:reusesPropertyValue _:n3-3250.
-_:n3-3250 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-153.
+_:n3-153 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service>.
 
@@ -200,8 +200,8 @@ _:n3-3250 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A temporal period that the Catalogue covers."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>;
-    dsv:reusesPropertyValue _:n3-3251.
-_:n3-3251 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-154.
+_:n3-154 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>.
 
@@ -235,13 +235,13 @@ _:n3-3251 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The date of formal issuance (e.g., publication) of the Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>;
-    dsv:reusesPropertyValue _:n3-3252.
-_:n3-3252 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-155.
+_:n3-155 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.releaseDate> dsv:reusesPropertyValue _:n3-3253.
-_:n3-3253 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.releaseDate> dsv:reusesPropertyValue _:n3-156.
+_:n3-156 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>.
 
@@ -255,8 +255,8 @@ _:n3-3253 a dsv:PropertyValueReuse;
     skos:definition "A name given to the Catalogue."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the name."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>;
-    dsv:reusesPropertyValue _:n3-3254.
-_:n3-3254 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-157.
+_:n3-157 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>.
 
@@ -270,8 +270,8 @@ _:n3-3254 a dsv:PropertyValueReuse;
     skos:definition "A free-text account of the Catalogue."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the description."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>;
-    dsv:reusesPropertyValue _:n3-3255.
-_:n3-3255 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-158.
+_:n3-158 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>.
 
@@ -284,13 +284,13 @@ _:n3-3255 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A statement that specifies rights associated with the Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights>;
-    dsv:reusesPropertyValue _:n3-3256.
-_:n3-3256 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-159.
+_:n3-159 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.rights> dsv:reusesPropertyValue _:n3-3257.
-_:n3-3257 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.rights> dsv:reusesPropertyValue _:n3-160.
+_:n3-160 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights>.
 
@@ -302,13 +302,13 @@ _:n3-3257 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:prefLabel "Catalogue Record"@en, "Katalogizační záznam"@cs, "Record di catalogo"@it, "Registre du catalogue"@fr, "Registro del catálogo"@es, "Καταγραφή καταλόγου"@el, "سجل"@ar, "カタログ・レコード"@ja, "Katalogpost"@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>;
-    dsv:reusesPropertyValue _:n3-3258.
-_:n3-3258 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-161.
+_:n3-161 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord> dsv:reusesPropertyValue _:n3-3259.
-_:n3-3259 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord> dsv:reusesPropertyValue _:n3-162.
+_:n3-162 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>.
 
@@ -320,8 +320,8 @@ _:n3-3259 a dsv:PropertyValueReuse;
     skos:prefLabel "application profile"@en;
     skos:definition "An Application Profile that the Catalogued Resource's metadata conforms to."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo>;
-    dsv:reusesPropertyValue _:n3-3260.
-_:n3-3260 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-163.
+_:n3-163 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo>.
 
@@ -356,8 +356,8 @@ _:n3-3260 a dsv:PropertyValueReuse;
     skos:definition "A link to the Dataset, Data service or Catalog described in the record."@en;
     <http://purl.org/vocab/vann/usageNote> "A catalogue record will refer to one entity in a catalogue. This can be either a Dataset or a Data Service. To ensure an unambigous reading of the cardinality the range is set to Catalogued Resource. However it is not the intend with this range to require the explicit use of the class Catalogued Record. As abstract class, an subclass should be used."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic>;
-    dsv:reusesPropertyValue _:n3-3261.
-_:n3-3261 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-164.
+_:n3-164 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic>.
 
@@ -370,8 +370,8 @@ _:n3-3261 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:prefLabel "source"@en;
     <http://purl.org/vocab/vann/usageNote> "The original metadata that was used in creating metadata for the Dataset, Data Service or Dataset Series."@en;
-    dsv:reusesPropertyValue _:n3-3262.
-_:n3-3262 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-165.
+_:n3-165 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource dct:source.
 
@@ -385,13 +385,13 @@ _:n3-3262 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The date on which the description of the Resource was included in the Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate>;
-    dsv:reusesPropertyValue _:n3-3263.
-_:n3-3263 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-166.
+_:n3-166 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.listingDate> dsv:reusesPropertyValue _:n3-3264.
-_:n3-3264 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.listingDate> dsv:reusesPropertyValue _:n3-167.
+_:n3-167 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate>.
 
@@ -405,8 +405,8 @@ _:n3-3264 a dsv:PropertyValueReuse;
     skos:prefLabel "modification date"@en;
     skos:definition "The most recent date on which the Catalogue entry was changed or modified."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate>;
-    dsv:reusesPropertyValue _:n3-3265.
-_:n3-3265 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-168.
+_:n3-168 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate>.
 
@@ -419,13 +419,13 @@ _:n3-3265 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A name given to the Catalogue Record."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title>;
-    dsv:reusesPropertyValue _:n3-3266.
-_:n3-3266 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-169.
+_:n3-169 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.title> dsv:reusesPropertyValue _:n3-3267.
-_:n3-3267 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.title> dsv:reusesPropertyValue _:n3-170.
+_:n3-170 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title>.
 
@@ -438,13 +438,13 @@ _:n3-3267 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A free-text account of the record. This property can be repeated for parallel language versions of the description."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description>;
-    dsv:reusesPropertyValue _:n3-3268.
-_:n3-3268 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-171.
+_:n3-171 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.description> dsv:reusesPropertyValue _:n3-3269.
-_:n3-3269 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.description> dsv:reusesPropertyValue _:n3-172.
+_:n3-172 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description>.
 
@@ -455,18 +455,18 @@ _:n3-3269 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#DataService> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#DataService>;
-    dsv:reusesPropertyValue _:n3-3270.
-_:n3-3270 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-173.
+_:n3-173 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService> dsv:reusesPropertyValue _:n3-3271.
-_:n3-3271 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService> dsv:reusesPropertyValue _:n3-174.
+_:n3-174 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService> dsv:reusesPropertyValue _:n3-3272.
-_:n3-3272 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService> dsv:reusesPropertyValue _:n3-175.
+_:n3-175 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService>.
 
@@ -477,13 +477,13 @@ _:n3-3272 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Information regarding access or restrictions based on privacy, security, or other policies."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights>;
-    dsv:reusesPropertyValue _:n3-3273.
-_:n3-3273 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-176.
+_:n3-176 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService.accessRights> dsv:reusesPropertyValue _:n3-3274.
-_:n3-3274 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService.accessRights> dsv:reusesPropertyValue _:n3-177.
+_:n3-177 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights>.
 
@@ -495,8 +495,8 @@ _:n3-3274 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "The legislation that mandates the creation or management of the Data Service."@en;
-    dsv:reusesPropertyValue _:n3-3275.
-_:n3-3275 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-178.
+_:n3-178 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>.
 
@@ -511,8 +511,8 @@ _:n3-3275 a dsv:PropertyValueReuse;
     skos:definition "An established (technical) standard to which the Data Service conforms."@en;
     <http://purl.org/vocab/vann/usageNote> "The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE Address data model."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>;
-    dsv:reusesPropertyValue _:n3-3276.
-_:n3-3276 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-179.
+_:n3-179 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>.
 
@@ -525,13 +525,13 @@ _:n3-3276 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es, "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it, "Contact information that can be used for sending comments about the Data Service."@en, "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs, "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr, "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el, "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"@ar, "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"@ja, "Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>;
-    dsv:reusesPropertyValue _:n3-3277.
-_:n3-3277 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-180.
+_:n3-180 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService.contactPoint> dsv:reusesPropertyValue _:n3-3278.
-_:n3-3278 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService.contactPoint> dsv:reusesPropertyValue _:n3-181.
+_:n3-181 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>.
 
@@ -554,13 +554,13 @@ _:n3-3278 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A description of the services available via the end-points, including their operations, parameters etc."@en, "Popis přístupového bodu služby včetně operací, parametrů apod."@cs, "Una descripción del end-point del servicio, incluyendo sus operaciones, parámetros, etc."@es, "Una descrizione dell'endpoint del servizio, incluse le sue operazioni, parametri, ecc."@it, "En beskrivelse af det pågældende tjenesteendpoint, inklusiv dets operationer, parametre etc."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription>;
-    dsv:reusesPropertyValue _:n3-3279.
-_:n3-3279 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-182.
+_:n3-182 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription> dsv:reusesPropertyValue _:n3-3280.
-_:n3-3280 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription> dsv:reusesPropertyValue _:n3-183.
+_:n3-183 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription>.
 
@@ -573,13 +573,13 @@ _:n3-3280 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Kořenové umístění nebo hlavní přístupový bod služby (IRI přístupné přes Web)."@cs, "La locazione principale o l'endpoint primario del servizio (un IRI risolvibile via web)."@it, "La posición raíz o end-point principal del servicio (una IRI web)."@es, "The root location or primary endpoint of the service (an IRI)."@en, "Rodplaceringen eller det primære endpoint for en tjeneste (en web-resolverbar IRI)."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl>;
-    dsv:reusesPropertyValue _:n3-3281.
-_:n3-3281 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-184.
+_:n3-184 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl> dsv:reusesPropertyValue _:n3-3282.
-_:n3-3282 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl> dsv:reusesPropertyValue _:n3-185.
+_:n3-185 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl>.
 
@@ -603,8 +603,8 @@ _:n3-3282 a dsv:PropertyValueReuse;
     skos:definition "A web page that provides access to the Data Service and/or additional information."@en, "Una pagina web che può essere navigata per ottenere l'accesso al catalogo, ad un dataset, alle distribuzioni del dataset e/o ad informazioni addizionali."@it, "Una página web que puede ser visitada en un explorador Web para tener acceso el catálogo, un conjunto de datos, sus distribuciones y/o información adicional."@es, "Une page Web accessible par un navigateur Web donnant accès au catalogue, un jeu de données, ses distributions et/ou des informations additionnelles."@fr, "Webová stránka, na kterou lze pro získání přístupu ke katalogu, datové sadě, jejím distribucím a/nebo dalším informacím přistoupit webovým prohlížečem."@cs, "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες."@el, "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها "@ar, "データセット、その配信および（または）追加情報にアクセスするためにウエブ・ブラウザでナビゲートできるウェブページ。"@ja, "En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information."@da;
     <http://purl.org/vocab/vann/usageNote> "It is intended to point to a landing page at the original data service provider, not to a page on a site of a third party, such as an aggregator."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage>;
-    dsv:reusesPropertyValue _:n3-3283.
-_:n3-3283 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-186.
+_:n3-186 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage>.
 
@@ -627,8 +627,8 @@ _:n3-3283 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An entity (organisation) responsible for making the Data Service available."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>;
-    dsv:reusesPropertyValue _:n3-3284.
-_:n3-3284 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-187.
+_:n3-187 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>.
 
@@ -641,13 +641,13 @@ _:n3-3284 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "This property refers to a collection of data that this data service can distribute."@en, "Kolekce dat, kterou je tato Datová služba schopna poskytnout."@cs, "Una colección de datos que este Servicio de Datos puede distribuir."@es, "Una raccolta di dati che questo DataService può distribuire."@it, "En samling af data som denne datatjeneste kan distribuere."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset>;
-    dsv:reusesPropertyValue _:n3-3285.
-_:n3-3285 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-188.
+_:n3-188 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService.servesDataset> dsv:reusesPropertyValue _:n3-3286.
-_:n3-3286 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService.servesDataset> dsv:reusesPropertyValue _:n3-189.
+_:n3-189 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset>.
 
@@ -671,13 +671,13 @@ _:n3-3286 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A keyword or tag describing the Data Service."@en, "Klíčové slovo nebo značka popisující zdroj."@cs, "Un mot-clé ou étiquette décrivant une ressource."@fr, "Una palabra clave o etiqueta que describe un recurso."@es, "Una parola chiave o un'etichetta per descrivere la risorsa."@it, "Μία λέξη-κλειδί ή μία ετικέτα που περιγράφει το σύνολο δεδομένων."@el, "كلمة  مفتاحيه توصف قائمة البيانات"@ar, "データセットを記述しているキーワードまたはタグ。"@ja, "Et nøgleord eller tag til beskrivelse af en ressource."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>;
-    dsv:reusesPropertyValue _:n3-3287.
-_:n3-3287 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-190.
+_:n3-190 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DataService.keyword> dsv:reusesPropertyValue _:n3-3288.
-_:n3-3288 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DataService.keyword> dsv:reusesPropertyValue _:n3-191.
+_:n3-191 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>.
 
@@ -691,8 +691,8 @@ _:n3-3288 a dsv:PropertyValueReuse;
     skos:definition "A name given to the Data Service."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the name."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>;
-    dsv:reusesPropertyValue _:n3-3289.
-_:n3-3289 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-192.
+_:n3-192 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>.
 
@@ -706,8 +706,8 @@ _:n3-3289 a dsv:PropertyValueReuse;
     skos:definition "A free-text account of the Data Service."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the description."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>;
-    dsv:reusesPropertyValue _:n3-3290.
-_:n3-3290 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-193.
+_:n3-193 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>.
 
@@ -720,8 +720,8 @@ _:n3-3290 a dsv:PropertyValueReuse;
     skos:definition "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja, "A conceptual entity that represents the information published."@en, "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs, "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it, "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es, "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr, "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el, "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da;
     <http://purl.org/vocab/vann/usageNote> "If a Dataset is used as part of a Dataset Series, the usage of the properties listed below must be coherent with the associated Dataset Series. For this usage, consult the guidelines in section 14. General usage guidelines."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>;
-    dsv:reusesPropertyValue _:n3-3291.
-_:n3-3291 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-194.
+_:n3-194 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>.
 
@@ -732,8 +732,8 @@ _:n3-3291 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Information that indicates whether the Dataset is publicly accessible, has access restrictions or is not public."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights>;
-    dsv:reusesPropertyValue _:n3-3292.
-_:n3-3292 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-195.
+_:n3-195 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights>.
 
@@ -745,8 +745,8 @@ _:n3-3292 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "The legislation that mandates the creation or management of the Dataset."@en;
-    dsv:reusesPropertyValue _:n3-3293.
-_:n3-3293 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-196.
+_:n3-196 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>.
 
@@ -760,8 +760,8 @@ _:n3-3293 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An implementing rule or other specification."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>;
-    dsv:reusesPropertyValue _:n3-3294.
-_:n3-3294 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-197.
+_:n3-197 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>.
 
@@ -774,13 +774,13 @@ _:n3-3294 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es, "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it, "Contact information that can be used for sending comments about the Dataset."@en, "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs, "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr, "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el, "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"@ar, "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"@ja, "Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>;
-    dsv:reusesPropertyValue _:n3-3295.
-_:n3-3295 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-198.
+_:n3-198 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint> dsv:reusesPropertyValue _:n3-3296.
-_:n3-3296 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint> dsv:reusesPropertyValue _:n3-199.
+_:n3-199 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>.
 
@@ -793,13 +793,13 @@ _:n3-3296 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An entity responsible for producing the dataset."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator>;
-    dsv:reusesPropertyValue _:n3-3297.
-_:n3-3297 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-200.
+_:n3-200 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.creator> dsv:reusesPropertyValue _:n3-3298.
-_:n3-3298 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.creator> dsv:reusesPropertyValue _:n3-201.
+_:n3-201 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator>.
 
@@ -813,8 +813,8 @@ _:n3-3298 a dsv:PropertyValueReuse;
     skos:prefLabel "distribuce"@cs, "distribución"@es, "dataset distribution"@en, "distribution"@fr, "distribuzione"@it, "distribution"@da, "διανομή"@el, "توزيع"@ar, "データセット配信"@ja;
     skos:definition "An available Distribution for the Dataset."@en, "Connecte un jeu de données à des distributions disponibles."@fr, "Dostupná distribuce datové sady."@cs, "Una distribución disponible del conjunto de datos."@es, "Una distribuzione disponibile per il set di dati."@it, "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του."@el, "تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات"@ar, "データセットを、その利用可能な配信に接続します。"@ja, "En tilgængelig repræsentation af datasættet."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution>;
-    dsv:reusesPropertyValue _:n3-3299.
-_:n3-3299 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-202.
+_:n3-202 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution>.
 
@@ -826,18 +826,18 @@ _:n3-3299 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries>;
-    dsv:reusesPropertyValue _:n3-3300.
-_:n3-3300 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-203.
+_:n3-203 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries> dsv:reusesPropertyValue _:n3-3301.
-_:n3-3301 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries> dsv:reusesPropertyValue _:n3-204.
+_:n3-204 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries> dsv:reusesPropertyValue _:n3-3302.
-_:n3-3302 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries> dsv:reusesPropertyValue _:n3-205.
+_:n3-205 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries>.
 
@@ -850,8 +850,8 @@ _:n3-3302 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier>;
-    dsv:reusesPropertyValue _:n3-3303.
-_:n3-3303 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-206.
+_:n3-206 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier>.
 
@@ -863,18 +863,18 @@ _:n3-3303 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>;
-    dsv:reusesPropertyValue _:n3-3304.
-_:n3-3304 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-207.
+_:n3-207 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword> dsv:reusesPropertyValue _:n3-3305.
-_:n3-3305 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword> dsv:reusesPropertyValue _:n3-208.
+_:n3-208 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword> dsv:reusesPropertyValue _:n3-3306.
-_:n3-3306 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword> dsv:reusesPropertyValue _:n3-209.
+_:n3-209 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>.
 
@@ -888,8 +888,8 @@ _:n3-3306 a dsv:PropertyValueReuse;
     skos:definition "A web page that provides access to the Dataset, its Distributions and/or additional information."@en, "Una pagina web che può essere navigata per ottenere l'accesso al catalogo, ad un dataset, alle distribuzioni del dataset e/o ad informazioni addizionali."@it, "Una página web que puede ser visitada en un explorador Web para tener acceso el catálogo, un conjunto de datos, sus distribuciones y/o información adicional."@es, "Une page Web accessible par un navigateur Web donnant accès au catalogue, un jeu de données, ses distributions et/ou des informations additionnelles."@fr, "Webová stránka, na kterou lze pro získání přístupu ke katalogu, datové sadě, jejím distribucím a/nebo dalším informacím přistoupit webovým prohlížečem."@cs, "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες."@el, "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها "@ar, "データセット、その配信および（または）追加情報にアクセスするためにウエブ・ブラウザでナビゲートできるウェブページ。"@ja, "En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information."@da;
     <http://purl.org/vocab/vann/usageNote> "It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage>;
-    dsv:reusesPropertyValue _:n3-3307.
-_:n3-3307 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-210.
+_:n3-210 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage>.
 
@@ -903,8 +903,8 @@ _:n3-3307 a dsv:PropertyValueReuse;
     skos:definition "A language of the Dataset."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated if there are multiple languages in the Dataset."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language>;
-    dsv:reusesPropertyValue _:n3-3308.
-_:n3-3308 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-211.
+_:n3-211 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language>.
 
@@ -947,8 +947,8 @@ _:n3-3308 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An entity (organisation) responsible for making the Dataset available."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>;
-    dsv:reusesPropertyValue _:n3-3309.
-_:n3-3309 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-212.
+_:n3-212 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>.
 
@@ -961,8 +961,8 @@ _:n3-3309 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An Agent having some form of responsibility for the resource."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution>;
-    dsv:reusesPropertyValue _:n3-3310.
-_:n3-3310 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-213.
+_:n3-213 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution>.
 
@@ -975,8 +975,8 @@ _:n3-3310 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Enlace a una descripción de la relación con otro recurso."@es, "Link a una descrizione di una relazione con un'altra risorsa."@it, "A description of a relationship with another resource."@en, "Odkaz na popis vztahu s jiným zdrojem."@cs, "Reference til en beskrivelse af en relation til en anden ressource."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation>;
-    dsv:reusesPropertyValue _:n3-3311.
-_:n3-3311 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-214.
+_:n3-214 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation>.
 
@@ -998,8 +998,8 @@ _:n3-3311 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The date of formal issuance (e.g., publication) of the Dataset."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>;
-    dsv:reusesPropertyValue _:n3-3312.
-_:n3-3312 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-215.
+_:n3-215 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>.
 
@@ -1011,8 +1011,8 @@ _:n3-3312 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "A sample distribution of the dataset."@en;
-    dsv:reusesPropertyValue _:n3-3313.
-_:n3-3313 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-216.
+_:n3-216 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://www.w3.org/ns/adms#sample>.
 
@@ -1034,13 +1034,13 @@ _:n3-3313 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution>;
-    dsv:reusesPropertyValue _:n3-3314.
-_:n3-3314 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-217.
+_:n3-217 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution> dsv:reusesPropertyValue _:n3-3315.
-_:n3-3315 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution> dsv:reusesPropertyValue _:n3-218.
+_:n3-218 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution>.
 
@@ -1052,18 +1052,18 @@ _:n3-3315 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>;
-    dsv:reusesPropertyValue _:n3-3316.
-_:n3-3316 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-219.
+_:n3-219 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage> dsv:reusesPropertyValue _:n3-3317.
-_:n3-3317 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage> dsv:reusesPropertyValue _:n3-220.
+_:n3-220 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage> dsv:reusesPropertyValue _:n3-3318.
-_:n3-3318 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage> dsv:reusesPropertyValue _:n3-221.
+_:n3-221 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>.
 
@@ -1075,18 +1075,18 @@ _:n3-3318 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution>;
-    dsv:reusesPropertyValue _:n3-3319.
-_:n3-3319 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-222.
+_:n3-222 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution> dsv:reusesPropertyValue _:n3-3320.
-_:n3-3320 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution> dsv:reusesPropertyValue _:n3-223.
+_:n3-223 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution> dsv:reusesPropertyValue _:n3-3321.
-_:n3-3321 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution> dsv:reusesPropertyValue _:n3-224.
+_:n3-224 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution>.
 
@@ -1111,8 +1111,8 @@ _:n3-3321 a dsv:PropertyValueReuse;
     skos:definition "A name given to the Dataset."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the name."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>;
-    dsv:reusesPropertyValue _:n3-3322.
-_:n3-3322 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-225.
+_:n3-225 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>.
 
@@ -1135,18 +1135,18 @@ _:n3-3322 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version>;
-    dsv:reusesPropertyValue _:n3-3323.
-_:n3-3323 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-226.
+_:n3-226 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.version> dsv:reusesPropertyValue _:n3-3324.
-_:n3-3324 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.version> dsv:reusesPropertyValue _:n3-227.
+_:n3-227 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.version> dsv:reusesPropertyValue _:n3-3325.
-_:n3-3325 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.version> dsv:reusesPropertyValue _:n3-228.
+_:n3-228 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version>.
 
@@ -1160,8 +1160,8 @@ _:n3-3325 a dsv:PropertyValueReuse;
     skos:definition "A description of the differences between this version and a previous version of the Dataset."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the version notes."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo>;
-    dsv:reusesPropertyValue _:n3-3326.
-_:n3-3326 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-229.
+_:n3-229 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo>.
 
@@ -1174,13 +1174,13 @@ _:n3-3326 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The frequency at which the Dataset is updated."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency>;
-    dsv:reusesPropertyValue _:n3-3327.
-_:n3-3327 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-230.
+_:n3-230 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency> dsv:reusesPropertyValue _:n3-3328.
-_:n3-3328 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency> dsv:reusesPropertyValue _:n3-231.
+_:n3-231 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency>.
 
@@ -1193,13 +1193,13 @@ _:n3-3328 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:prefLabel "geographical coverage"@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>;
-    dsv:reusesPropertyValue _:n3-3329.
-_:n3-3329 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-232.
+_:n3-232 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage> dsv:reusesPropertyValue _:n3-3330.
-_:n3-3330 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage> dsv:reusesPropertyValue _:n3-233.
+_:n3-233 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>.
 
@@ -1213,8 +1213,8 @@ _:n3-3330 a dsv:PropertyValueReuse;
     skos:definition "A free-text account of the Dataset."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the description."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>;
-    dsv:reusesPropertyValue _:n3-3331.
-_:n3-3331 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-234.
+_:n3-234 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>.
 
@@ -1226,18 +1226,18 @@ _:n3-3331 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy>;
-    dsv:reusesPropertyValue _:n3-3332.
-_:n3-3332 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-235.
+_:n3-235 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.wasGeneratedBy> dsv:reusesPropertyValue _:n3-3333.
-_:n3-3333 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.wasGeneratedBy> dsv:reusesPropertyValue _:n3-236.
+_:n3-236 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.wasGeneratedBy> dsv:reusesPropertyValue _:n3-3334.
-_:n3-3334 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.wasGeneratedBy> dsv:reusesPropertyValue _:n3-237.
+_:n3-237 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy>.
 
@@ -1258,13 +1258,13 @@ _:n3-3334 a dsv:PropertyValueReuse;
     a dsv:Profile;
     <http://purl.org/vocab/vann/usageNote> "It is recommended to avoid Dataset Series without a dataset in the collection. Therefore at least one Dataset should refer to a Dataset Series using the property in series (dcat:inSeries)."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries>;
-    dsv:reusesPropertyValue _:n3-3335.
-_:n3-3335 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-238.
+_:n3-238 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries> dsv:reusesPropertyValue _:n3-3336.
-_:n3-3336 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries> dsv:reusesPropertyValue _:n3-239.
+_:n3-239 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries>.
 
@@ -1274,8 +1274,8 @@ _:n3-3336 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "The legislation that mandates the creation or management of the Dataset Series."@en;
-    dsv:reusesPropertyValue _:n3-3337.
-_:n3-3337 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-240.
+_:n3-240 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>.
 
@@ -1289,13 +1289,13 @@ _:n3-3337 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es, "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it, "Contact information that can be used for sending comments about the Dataset Series."@en, "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs, "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr, "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el, "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"@ar, "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"@ja, "Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>;
-    dsv:reusesPropertyValue _:n3-3338.
-_:n3-3338 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-241.
+_:n3-241 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.contactPoint> dsv:reusesPropertyValue _:n3-3339.
-_:n3-3339 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.contactPoint> dsv:reusesPropertyValue _:n3-242.
+_:n3-242 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>.
 
@@ -1309,8 +1309,8 @@ _:n3-3339 a dsv:PropertyValueReuse;
     skos:definition "The frequency at which the Dataset Series is updated."@en;
     <http://purl.org/vocab/vann/usageNote> "The frequency of a dataset series is not equal to the frequency of the dataset in the collection."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency>;
-    dsv:reusesPropertyValue _:n3-3340.
-_:n3-3340 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-243.
+_:n3-243 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency>.
 
@@ -1335,8 +1335,8 @@ _:n3-3340 a dsv:PropertyValueReuse;
     skos:definition "A free-text account of the Dataset Series."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions. It is recommended to provide an indication about the dimensions the Dataset Series evolves."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>;
-    dsv:reusesPropertyValue _:n3-3341.
-_:n3-3341 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-244.
+_:n3-244 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>.
 
@@ -1361,8 +1361,8 @@ _:n3-3341 a dsv:PropertyValueReuse;
     skos:definition "An entity (organisation) responsible for ensuring the coherency of the Dataset Series."@en;
     <http://purl.org/vocab/vann/usageNote> "The publisher of the dataset series may not be the publisher of all datasets.  E.g. a digital archive could take over the publishing of older datasets in the series. "@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>;
-    dsv:reusesPropertyValue _:n3-3342.
-_:n3-3342 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-245.
+_:n3-245 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>.
 
@@ -1376,8 +1376,8 @@ _:n3-3342 a dsv:PropertyValueReuse;
     skos:definition "The date of formal issuance (e.g., publication) of the Dataset Series."@en;
     <http://purl.org/vocab/vann/usageNote> "The moment when the dataset series was established as a managed resource. This is not equal to the release date of the oldest dataset in the collection of the dataset series."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>;
-    dsv:reusesPropertyValue _:n3-3343.
-_:n3-3343 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-246.
+_:n3-246 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>.
 
@@ -1391,8 +1391,8 @@ _:n3-3343 a dsv:PropertyValueReuse;
     skos:definition "A temporal period that the Dataset Series covers."@en;
     <http://purl.org/vocab/vann/usageNote> "When temporal coverage is a dimension in the dataset series then the temporal coverage of each dataset in the collection should be part of the temporal coverage. In that case, an open ended value is recommended, e.g. after 2012."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>;
-    dsv:reusesPropertyValue _:n3-3344.
-_:n3-3344 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-247.
+_:n3-247 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>.
 
@@ -1406,8 +1406,8 @@ _:n3-3344 a dsv:PropertyValueReuse;
     skos:definition "A name given to the Dataset Series."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the name."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>;
-    dsv:reusesPropertyValue _:n3-3345.
-_:n3-3345 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-248.
+_:n3-248 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>.
 
@@ -1418,18 +1418,18 @@ _:n3-3345 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Distribution> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>;
-    dsv:reusesPropertyValue _:n3-3346.
-_:n3-3346 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-249.
+_:n3-249 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution> dsv:reusesPropertyValue _:n3-3347.
-_:n3-3347 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution> dsv:reusesPropertyValue _:n3-250.
+_:n3-250 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution> dsv:reusesPropertyValue _:n3-3348.
-_:n3-3348 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution> dsv:reusesPropertyValue _:n3-251.
+_:n3-251 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>.
 
@@ -1439,18 +1439,18 @@ _:n3-3348 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService>;
-    dsv:reusesPropertyValue _:n3-3349.
-_:n3-3349 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-252.
+_:n3-252 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService> dsv:reusesPropertyValue _:n3-3350.
-_:n3-3350 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService> dsv:reusesPropertyValue _:n3-253.
+_:n3-253 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService> dsv:reusesPropertyValue _:n3-3351.
-_:n3-3351 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService> dsv:reusesPropertyValue _:n3-254.
+_:n3-254 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService>.
 
@@ -1464,8 +1464,8 @@ _:n3-3351 a dsv:PropertyValueReuse;
     skos:definition "A URL that gives access to a Distribution of the Dataset."@en, "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, un Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable."@fr, "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de destino, descarga, URL feed, punto de acceso SPARQL. Esta propriedad se debe usar cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar."@es, "URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL."@cs, "Un URL di una risorsa che consente di accedere a una distribuzione del set di dati. Per esempio, pagina di destinazione, feed, endpoint SPARQL. Da utilizzare per tutti i casi, tranne  quando  si tratta di un semplice link per il download nel qual caso è preferito downloadURL."@it, "Μπορεί να είναι οποιουδήποτε είδους URL που δίνει πρόσβαση στη διανομή ενός συνόλου δεδομένων. Π.χ. ιστοσελίδα αρχικής πρόσβασης, μεταφόρτωση, feed URL, σημείο διάθεσης SPARQL. Να χρησιμοποιείται όταν ο κατάλογος δεν περιέχει πληροφορίες εαν πρόκειται ή όχι για μεταφορτώσιμο αρχείο."@el, "أي رابط يتيح الوصول إلى البيانات. إذا كان الرابط هو ربط مباشر لملف يمكن تحميله استخدم الخاصية downloadURL"@ar, "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"@ja, "En URL for en ressource som giver adgang til en repræsentation af datsættet. Fx destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben downloadURL foretrækkes."@da;
     <http://purl.org/vocab/vann/usageNote> "The resource at the access URL may contain information about how to get the Dataset."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl>;
-    dsv:reusesPropertyValue _:n3-3352.
-_:n3-3352 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-255.
+_:n3-255 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl>.
 
@@ -1477,8 +1477,8 @@ _:n3-3352 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "The legislation that mandates the creation or management of the Distribution."@en;
-    dsv:reusesPropertyValue _:n3-3353.
-_:n3-3353 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-256.
+_:n3-256 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>.
 
@@ -1490,13 +1490,13 @@ _:n3-3353 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.availability> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
-    dsv:reusesPropertyValue _:n3-3354.
-_:n3-3354 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-257.
+_:n3-257 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://data.europa.eu/r5r/availability>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.availability> dsv:reusesPropertyValue _:n3-3355.
-_:n3-3355 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.availability> dsv:reusesPropertyValue _:n3-258.
+_:n3-258 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <http://data.europa.eu/r5r/availability>.
 
@@ -1509,37 +1509,37 @@ _:n3-3355 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize>;
-    dsv:reusesPropertyValue _:n3-3356.
-_:n3-3356 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-259.
+_:n3-259 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize> dsv:reusesPropertyValue _:n3-3357.
-_:n3-3357 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize> dsv:reusesPropertyValue _:n3-260.
+_:n3-260 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize> dsv:reusesPropertyValue _:n3-3358.
-_:n3-3358 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize> dsv:reusesPropertyValue _:n3-261.
+_:n3-261 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize> dsv:cardinality <https://w3id.org/dsv#0n>;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize> dsv:cardinality <https://w3id.org/dsv#01>;
     a dsv:DatatypePropertyProfile;
-    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#integer>.
+    dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#nonNegativeInteger>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "A mechanism that can be used to verify that the contents of a distribution have not changed."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum>;
-    dsv:reusesPropertyValue _:n3-3359.
-_:n3-3359 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-262.
+_:n3-262 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum> dsv:reusesPropertyValue _:n3-3360.
-_:n3-3360 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum> dsv:reusesPropertyValue _:n3-263.
+_:n3-263 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum>.
 
@@ -1553,8 +1553,8 @@ _:n3-3360 a dsv:PropertyValueReuse;
     skos:definition "El formato de la distribución en el que los datos están en forma comprimida, e.g. para reducir el tamaño del archivo a bajar."@es, "Formát komprese souboru, ve kterém jsou data poskytována v komprimované podobě, např. ke snížení velikosti souboru ke stažení."@cs, "Il formato di compressione della distribuzione nel quale i dati sono in forma compressa, ad es. per ridurre le dimensioni del file da scaricare."@it, "The format of the file in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file."@en, "Kompressionsformatet for distributionen som indeholder data i et komprimeret format, fx for at reducere størrelsen af downloadfilen."@da;
     <http://purl.org/vocab/vann/usageNote> "It SHOULD be expressed using a media type as defined in the official register of media types managed by IANA."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat>;
-    dsv:reusesPropertyValue _:n3-3361.
-_:n3-3361 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-264.
+_:n3-264 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat>.
 
@@ -1567,13 +1567,13 @@ _:n3-3361 a dsv:PropertyValueReuse;
     a dsv:Profile;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the description."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description>;
-    dsv:reusesPropertyValue _:n3-3362.
-_:n3-3362 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-265.
+_:n3-265 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.description> dsv:reusesPropertyValue _:n3-3363.
-_:n3-3363 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.description> dsv:reusesPropertyValue _:n3-266.
+_:n3-266 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description>.
 
@@ -1595,13 +1595,13 @@ _:n3-3363 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Ceci est un lien direct à un fichier téléchargeable en un format donnée. Exple fichier CSV ou RDF. Le format est décrit par les propriétés de distribution dcterms:format et/ou dcat:mediaType."@fr, "La URL de un archivo descargable en el formato dato. Por ejemplo, archivo CSV o archivo RDF. El formato se describe con las propiedades de la distribución dcterms:format y/o dcat:mediaType."@es, "Questo è un link diretto al file scaricabile in un dato formato. E.g. un file CSV o un file RDF. Il formato è descritto dal dcterms:format e/o dal dcat:mediaType della distribuzione."@it, "A URL that is a direct link to a downloadable file in a given format."@en, "URL souboru ke stažení v daném formátu, například CSV nebo RDF soubor. Formát je popsán vlastností distribuce dcterms:format a/nebo dcat:mediaType."@cs, "dcat:downloadURLはdcat:accessURLの特定の形式です。しかし、DCATプロファイルが非ダウンロード・ロケーションに対してのみaccessURLを用いる場合には、より強い分離を課すことを望む可能性があるため、この含意を強化しないように、DCATは、dcat:downloadURLをdcat:accessURLのサブプロパティーであると定義しません。"@ja, "Είναι ένας σύνδεσμος άμεσης μεταφόρτωσης ενός αρχείου σε μια δεδομένη μορφή. Π.χ. ένα αρχείο CSV ή RDF. Η μορφη αρχείου περιγράφεται από τις ιδιότητες dcterms:format ή/και dcat:mediaType της διανομής."@el, "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dcterms:format dcat:mediaType "@ar, "URL til fil der kan downloades i et bestemt format. Fx en CSV-fil eller en RDF-fil. Formatet for distributionen angives ved hjælp af egenskaberne dcterms:format og/eller dcat:mediaType."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl>;
-    dsv:reusesPropertyValue _:n3-3364.
-_:n3-3364 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-267.
+_:n3-267 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl> dsv:reusesPropertyValue _:n3-3365.
-_:n3-3365 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl> dsv:reusesPropertyValue _:n3-268.
+_:n3-268 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl>.
 
@@ -1613,18 +1613,18 @@ _:n3-3365 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format>;
-    dsv:reusesPropertyValue _:n3-3366.
-_:n3-3366 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-269.
+_:n3-269 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format> dsv:reusesPropertyValue _:n3-3367.
-_:n3-3367 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format> dsv:reusesPropertyValue _:n3-270.
+_:n3-270 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format> dsv:reusesPropertyValue _:n3-3368.
-_:n3-3368 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format> dsv:reusesPropertyValue _:n3-271.
+_:n3-271 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format>.
 
@@ -1637,13 +1637,13 @@ _:n3-3368 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The policy expressing the rights associated with the distribution if using the [ODRL] vocabulary."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy>;
-    dsv:reusesPropertyValue _:n3-3369.
-_:n3-3369 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-272.
+_:n3-272 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.hasPolicy> dsv:reusesPropertyValue _:n3-3370.
-_:n3-3370 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.hasPolicy> dsv:reusesPropertyValue _:n3-273.
+_:n3-273 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy>.
 
@@ -1667,8 +1667,8 @@ _:n3-3370 a dsv:PropertyValueReuse;
     skos:prefLabel "licence"@en;
     skos:definition "A licence under which the Distribution is made available."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license>;
-    dsv:reusesPropertyValue _:n3-3371.
-_:n3-3371 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-274.
+_:n3-274 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license>.
 
@@ -1681,13 +1681,13 @@ _:n3-3371 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:prefLabel "linked schemas"@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo>;
-    dsv:reusesPropertyValue _:n3-3372.
-_:n3-3372 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-275.
+_:n3-275 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas> dsv:reusesPropertyValue _:n3-3373.
-_:n3-3373 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas> dsv:reusesPropertyValue _:n3-276.
+_:n3-276 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo>.
 
@@ -1699,18 +1699,18 @@ _:n3-3373 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType>;
-    dsv:reusesPropertyValue _:n3-3374.
-_:n3-3374 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-277.
+_:n3-277 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType> dsv:reusesPropertyValue _:n3-3375.
-_:n3-3375 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType> dsv:reusesPropertyValue _:n3-278.
+_:n3-278 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType> dsv:reusesPropertyValue _:n3-3376.
-_:n3-3376 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType> dsv:reusesPropertyValue _:n3-279.
+_:n3-279 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType>.
 
@@ -1724,8 +1724,8 @@ _:n3-3376 a dsv:PropertyValueReuse;
     skos:prefLabel "modification date"@en;
     skos:definition "The most recent date on which the Distribution was changed or modified."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate>;
-    dsv:reusesPropertyValue _:n3-3377.
-_:n3-3377 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-280.
+_:n3-280 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate>.
 
@@ -1738,13 +1738,13 @@ _:n3-3377 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The date of formal issuance (e.g., publication) of the Distribution."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate>;
-    dsv:reusesPropertyValue _:n3-3378.
-_:n3-3378 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-281.
+_:n3-281 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.releaseDate> dsv:reusesPropertyValue _:n3-3379.
-_:n3-3379 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.releaseDate> dsv:reusesPropertyValue _:n3-282.
+_:n3-282 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate>.
 
@@ -1756,18 +1756,18 @@ _:n3-3379 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution>;
-    dsv:reusesPropertyValue _:n3-3380.
-_:n3-3380 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-283.
+_:n3-283 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.spatialResolution> dsv:reusesPropertyValue _:n3-3381.
-_:n3-3381 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.spatialResolution> dsv:reusesPropertyValue _:n3-284.
+_:n3-284 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.spatialResolution> dsv:reusesPropertyValue _:n3-3382.
-_:n3-3382 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.spatialResolution> dsv:reusesPropertyValue _:n3-285.
+_:n3-285 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution>.
 
@@ -1779,18 +1779,18 @@ _:n3-3382 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution>;
-    dsv:reusesPropertyValue _:n3-3383.
-_:n3-3383 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-286.
+_:n3-286 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.temporalResolution> dsv:reusesPropertyValue _:n3-3384.
-_:n3-3384 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.temporalResolution> dsv:reusesPropertyValue _:n3-287.
+_:n3-287 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.temporalResolution> dsv:reusesPropertyValue _:n3-3385.
-_:n3-3385 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.temporalResolution> dsv:reusesPropertyValue _:n3-288.
+_:n3-288 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution>.
 
@@ -1803,13 +1803,13 @@ _:n3-3385 a dsv:PropertyValueReuse;
     a dsv:Profile;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the description."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title>;
-    dsv:reusesPropertyValue _:n3-3386.
-_:n3-3386 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-289.
+_:n3-289 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title> dsv:reusesPropertyValue _:n3-3387.
-_:n3-3387 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title> dsv:reusesPropertyValue _:n3-290.
+_:n3-290 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title>.
 
@@ -1821,18 +1821,18 @@ _:n3-3387 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat>;
-    dsv:reusesPropertyValue _:n3-3388.
-_:n3-3388 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-291.
+_:n3-291 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat> dsv:reusesPropertyValue _:n3-3389.
-_:n3-3389 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat> dsv:reusesPropertyValue _:n3-292.
+_:n3-292 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat> dsv:reusesPropertyValue _:n3-3390.
-_:n3-3390 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat> dsv:reusesPropertyValue _:n3-293.
+_:n3-293 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat>.
 
@@ -1845,8 +1845,8 @@ _:n3-3390 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A statement that specifies rights associated with the Distribution."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights>;
-    dsv:reusesPropertyValue _:n3-3391.
-_:n3-3391 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-294.
+_:n3-294 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights>.
 
@@ -1859,8 +1859,8 @@ _:n3-3391 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The status of the distribution in the context of maturity lifecycle."@en;
     <http://purl.org/vocab/vann/usageNote> "It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn."@en;
-    dsv:reusesPropertyValue _:n3-3392.
-_:n3-3392 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-295.
+_:n3-295 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://www.w3.org/ns/adms#status>.
 
@@ -1872,18 +1872,18 @@ _:n3-3392 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Relationship> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>;
-    dsv:reusesPropertyValue _:n3-3393.
-_:n3-3393 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-296.
+_:n3-296 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Relationship> dsv:reusesPropertyValue _:n3-3394.
-_:n3-3394 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Relationship> dsv:reusesPropertyValue _:n3-297.
+_:n3-297 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Relationship> dsv:reusesPropertyValue _:n3-3395.
-_:n3-3395 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Relationship> dsv:reusesPropertyValue _:n3-298.
+_:n3-298 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>.
 
@@ -1893,18 +1893,18 @@ _:n3-3395 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole>;
-    dsv:reusesPropertyValue _:n3-3396.
-_:n3-3396 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-299.
+_:n3-299 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole> dsv:reusesPropertyValue _:n3-3397.
-_:n3-3397 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole> dsv:reusesPropertyValue _:n3-300.
+_:n3-300 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole> dsv:reusesPropertyValue _:n3-3398.
-_:n3-3398 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole> dsv:reusesPropertyValue _:n3-301.
+_:n3-301 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole>.
 
@@ -1916,18 +1916,18 @@ _:n3-3398 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation>;
-    dsv:reusesPropertyValue _:n3-3399.
-_:n3-3399 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-302.
+_:n3-302 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.relation> dsv:reusesPropertyValue _:n3-3400.
-_:n3-3400 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.relation> dsv:reusesPropertyValue _:n3-303.
+_:n3-303 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.relation> dsv:reusesPropertyValue _:n3-3401.
-_:n3-3401 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Relationship.relation> dsv:reusesPropertyValue _:n3-304.
+_:n3-304 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation>.
 
@@ -1938,18 +1938,18 @@ _:n3-3401 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Resource> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
-    dsv:reusesPropertyValue _:n3-3402.
-_:n3-3402 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-305.
+_:n3-305 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Resource> dsv:reusesPropertyValue _:n3-3403.
-_:n3-3403 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Resource> dsv:reusesPropertyValue _:n3-306.
+_:n3-306 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Resource> dsv:reusesPropertyValue _:n3-3404.
-_:n3-3404 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Resource> dsv:reusesPropertyValue _:n3-307.
+_:n3-307 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
 
@@ -1958,18 +1958,18 @@ _:n3-3404 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Role> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Role>;
-    dsv:reusesPropertyValue _:n3-3405.
-_:n3-3405 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-308.
+_:n3-308 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Role>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Role> dsv:reusesPropertyValue _:n3-3406.
-_:n3-3406 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Role> dsv:reusesPropertyValue _:n3-309.
+_:n3-309 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Role>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Role> dsv:reusesPropertyValue _:n3-3407.
-_:n3-3407 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Role> dsv:reusesPropertyValue _:n3-310.
+_:n3-310 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Role>.
 
@@ -1980,8 +1980,8 @@ _:n3-3407 a dsv:PropertyValueReuse;
     skos:definition "Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources."@en;
     <http://purl.org/vocab/vann/usageNote> "If the Agent is an organisation, the use of the Organization Ontology is recommended."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Agent>;
-    dsv:reusesPropertyValue _:n3-3408.
-_:n3-3408 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-311.
+_:n3-311 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Agent>.
 
@@ -1992,8 +1992,8 @@ _:n3-3408 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A name of the agent."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for different versions of the name (e.g. the name in different languages)."@en;
-    dsv:reusesPropertyValue _:n3-3409.
-_:n3-3409 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-312.
+_:n3-312 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://xmlns.com/foaf/0.1/name>.
 
@@ -2025,8 +2025,8 @@ _:n3-3409 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A preferred label of the concept."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated for parallel language versions of the label."@en;
-    dsv:reusesPropertyValue _:n3-3410.
-_:n3-3410 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-313.
+_:n3-313 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource skos:prefLabel.
 
@@ -2039,8 +2039,8 @@ _:n3-3410 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "This class represents the legislation,policy or policies that lie behind the Rules that govern the service."@en;
     <http://purl.org/vocab/vann/usageNote> "The definition and properties of the Legal Resource class are aligned with the ontology included in \"Council conclusions inviting the introduction of the European Legislation Identifier (ELI)\". For describing the attributes of a Legal Resource (labels, preferred labels, alternative labels, definition, etc.) we refer to the (ELI) ontology. In this data specification the use is restricted to instances of this class that follow the (ELI) URI guidelines."@en;
-    dsv:reusesPropertyValue _:n3-3411.
-_:n3-3411 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-314.
+_:n3-314 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://data.europa.eu/eli/ontology#LegalResource>.
 
@@ -2051,13 +2051,13 @@ _:n3-3411 a dsv:PropertyValueReuse;
     a dsv:Profile;
     <http://purl.org/vocab/vann/usageNote> "It can be represented using a controlled vocabulary or with geographic coordinates. In the latter case, the use of the Core Location Vocabulary is recommended, following the approach described in the GeoDCAT-AP specification."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Location>;
-    dsv:reusesPropertyValue _:n3-3412.
-_:n3-3412 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-315.
+_:n3-315 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Location> dsv:reusesPropertyValue _:n3-3413.
-_:n3-3413 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Location> dsv:reusesPropertyValue _:n3-316.
+_:n3-316 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location>.
 
@@ -2069,8 +2069,8 @@ _:n3-3413 a dsv:PropertyValueReuse;
     skos:prefLabel "bbox"@en, "quadro di delimitazione"@it, "cuadro delimitador"@es, "ohraničení oblasti"@cs, "bounding box"@da;
     skos:definition "El cuadro delimitador geográfico para un recurso."@es, "Ohraničení geografické oblasti zdroje."@cs, "The geographic bounding box of a resource."@en, "Il riquadro di delimitazione geografica di una risorsa."@it, "Den geografiske omskrevne firkant af en ressource."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox>;
-    dsv:reusesPropertyValue _:n3-3414.
-_:n3-3414 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-317.
+_:n3-317 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox>.
 
@@ -2083,13 +2083,13 @@ _:n3-3414 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "El centro geográfico (centroide) de un recurso."@es, "Geografický střed (centroid) zdroje."@cs, "The geographic center (centroid) of a resource."@en, "Il centro geografico (centroide) di una risorsa."@it, "Det geometrisk tyngdepunkt (centroid) for en ressource."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid>;
-    dsv:reusesPropertyValue _:n3-3415.
-_:n3-3415 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-318.
+_:n3-318 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Location.centroid> dsv:reusesPropertyValue _:n3-3416.
-_:n3-3416 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Location.centroid> dsv:reusesPropertyValue _:n3-319.
+_:n3-319 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid>.
 
@@ -2102,13 +2102,13 @@ _:n3-3416 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The corresponding geometry for a resource."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry>;
-    dsv:reusesPropertyValue _:n3-3417.
-_:n3-3417 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-320.
+_:n3-320 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry> dsv:reusesPropertyValue _:n3-3418.
-_:n3-3418 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry> dsv:reusesPropertyValue _:n3-321.
+_:n3-321 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry>.
 
@@ -2119,8 +2119,8 @@ _:n3-3418 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Document> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "A textual resource intended for human consumption that contains information, e.g. a web page about a Dataset."@en;
-    dsv:reusesPropertyValue _:n3-3419.
-_:n3-3419 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-322.
+_:n3-322 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Document>.
 
@@ -2131,13 +2131,13 @@ _:n3-3419 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A system of signs, symbols, sounds, gestures, or rules used in communication, e.g. a language."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem>;
-    dsv:reusesPropertyValue _:n3-3420.
-_:n3-3420 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-323.
+_:n3-323 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem> dsv:reusesPropertyValue _:n3-3421.
-_:n3-3421 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem> dsv:reusesPropertyValue _:n3-324.
+_:n3-324 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem>.
 
@@ -2147,13 +2147,13 @@ _:n3-3421 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:prefLabel "Licence Document"@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>;
-    dsv:reusesPropertyValue _:n3-3422.
-_:n3-3422 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-325.
+_:n3-325 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument> dsv:reusesPropertyValue _:n3-3423.
-_:n3-3423 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument> dsv:reusesPropertyValue _:n3-326.
+_:n3-326 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>.
 
@@ -2172,18 +2172,18 @@ _:n3-3423 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>;
-    dsv:reusesPropertyValue _:n3-3424.
-_:n3-3424 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-327.
+_:n3-327 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement> dsv:reusesPropertyValue _:n3-3425.
-_:n3-3425 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement> dsv:reusesPropertyValue _:n3-328.
+_:n3-328 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement> dsv:reusesPropertyValue _:n3-3426.
-_:n3-3426 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement> dsv:reusesPropertyValue _:n3-329.
+_:n3-329 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
 
@@ -2193,13 +2193,13 @@ _:n3-3426 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A standard or other specification to which a resource conforms."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Standard>;
-    dsv:reusesPropertyValue _:n3-3427.
-_:n3-3427 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-330.
+_:n3-330 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Standard> dsv:reusesPropertyValue _:n3-3428.
-_:n3-3428 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Standard> dsv:reusesPropertyValue _:n3-331.
+_:n3-331 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
 
@@ -2209,13 +2209,13 @@ _:n3-3428 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Anything described by RDF."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>;
-    dsv:reusesPropertyValue _:n3-3429.
-_:n3-3429 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-332.
+_:n3-332 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource> dsv:reusesPropertyValue _:n3-3430.
-_:n3-3430 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource> dsv:reusesPropertyValue _:n3-333.
+_:n3-333 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
@@ -2223,13 +2223,13 @@ _:n3-3430 a dsv:PropertyValueReuse;
 
 <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
-    dsv:reusesPropertyValue _:n3-3431.
-_:n3-3431 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-334.
+_:n3-334 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource dct:ProvenanceStatement.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement> dsv:reusesPropertyValue _:n3-3432.
-_:n3-3432 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement> dsv:reusesPropertyValue _:n3-335.
+_:n3-335 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource dct:ProvenanceStatement.
 
@@ -2240,13 +2240,13 @@ _:n3-3432 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A non-empty group of Permissions and/or Prohibitions."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Policy>;
-    dsv:reusesPropertyValue _:n3-3433.
-_:n3-3433 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-336.
+_:n3-336 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Policy>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Policy> dsv:reusesPropertyValue _:n3-3434.
-_:n3-3434 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Policy> dsv:reusesPropertyValue _:n3-337.
+_:n3-337 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Policy>.
 
@@ -2255,18 +2255,18 @@ _:n3-3434 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>;
-    dsv:reusesPropertyValue _:n3-3435.
-_:n3-3435 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-338.
+_:n3-338 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime> dsv:reusesPropertyValue _:n3-3436.
-_:n3-3436 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime> dsv:reusesPropertyValue _:n3-339.
+_:n3-339 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime> dsv:reusesPropertyValue _:n3-3437.
-_:n3-3437 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime> dsv:reusesPropertyValue _:n3-340.
+_:n3-340 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>.
 
@@ -2276,18 +2276,18 @@ _:n3-3437 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning>;
-    dsv:reusesPropertyValue _:n3-3438.
-_:n3-3438 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-341.
+_:n3-341 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.beginning> dsv:reusesPropertyValue _:n3-3439.
-_:n3-3439 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.beginning> dsv:reusesPropertyValue _:n3-342.
+_:n3-342 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.beginning> dsv:reusesPropertyValue _:n3-3440.
-_:n3-3440 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.beginning> dsv:reusesPropertyValue _:n3-343.
+_:n3-343 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning>.
 
@@ -2299,18 +2299,18 @@ _:n3-3440 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end>;
-    dsv:reusesPropertyValue _:n3-3441.
-_:n3-3441 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-344.
+_:n3-344 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.end> dsv:reusesPropertyValue _:n3-3442.
-_:n3-3442 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.end> dsv:reusesPropertyValue _:n3-345.
+_:n3-345 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.end> dsv:reusesPropertyValue _:n3-3443.
-_:n3-3443 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.end> dsv:reusesPropertyValue _:n3-346.
+_:n3-346 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end>.
 
@@ -2322,18 +2322,18 @@ _:n3-3443 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate>;
-    dsv:reusesPropertyValue _:n3-3444.
-_:n3-3444 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-347.
+_:n3-347 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate> dsv:reusesPropertyValue _:n3-3445.
-_:n3-3445 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate> dsv:reusesPropertyValue _:n3-348.
+_:n3-348 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate> dsv:reusesPropertyValue _:n3-3446.
-_:n3-3446 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate> dsv:reusesPropertyValue _:n3-349.
+_:n3-349 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate>.
 
@@ -2345,18 +2345,18 @@ _:n3-3446 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate>;
-    dsv:reusesPropertyValue _:n3-3447.
-_:n3-3447 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-350.
+_:n3-350 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate> dsv:reusesPropertyValue _:n3-3448.
-_:n3-3448 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate> dsv:reusesPropertyValue _:n3-351.
+_:n3-351 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate> dsv:reusesPropertyValue _:n3-3449.
-_:n3-3449 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate> dsv:reusesPropertyValue _:n3-352.
+_:n3-352 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate>.
 
@@ -2367,18 +2367,18 @@ _:n3-3449 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent>;
-    dsv:reusesPropertyValue _:n3-3450.
-_:n3-3450 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-353.
+_:n3-353 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent> dsv:reusesPropertyValue _:n3-3451.
-_:n3-3451 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent> dsv:reusesPropertyValue _:n3-354.
+_:n3-354 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent> dsv:reusesPropertyValue _:n3-3452.
-_:n3-3452 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent> dsv:reusesPropertyValue _:n3-355.
+_:n3-355 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent>.
 
@@ -2387,18 +2387,18 @@ _:n3-3452 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#MediaType> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>;
-    dsv:reusesPropertyValue _:n3-3453.
-_:n3-3453 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-356.
+_:n3-356 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#MediaType> dsv:reusesPropertyValue _:n3-3454.
-_:n3-3454 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#MediaType> dsv:reusesPropertyValue _:n3-357.
+_:n3-357 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#MediaType> dsv:reusesPropertyValue _:n3-3455.
-_:n3-3455 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#MediaType> dsv:reusesPropertyValue _:n3-358.
+_:n3-358 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
 
@@ -2408,8 +2408,8 @@ _:n3-3455 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "This is based on the UN/CEFACT Identifier class."@en;
     <http://purl.org/vocab/vann/usageNote> "An identifier in a particular context, consisting of the\n- content string that is the identifier;\n- an optional identifier for the identifier scheme;\n- an optional identifier for the version of the identifier scheme;\n- an optional identifier for the agency that manages the identifier scheme."@en;
-    dsv:reusesPropertyValue _:n3-3456.
-_:n3-3456 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-359.
+_:n3-359 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://www.w3.org/ns/adms#Identifier>.
 
@@ -2420,8 +2420,8 @@ _:n3-3456 a dsv:PropertyValueReuse;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "A string that is an identifier in the context of the identifier scheme referenced by its datatype."@en;
-    dsv:reusesPropertyValue _:n3-3457.
-_:n3-3457 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-360.
+_:n3-360 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource skos:notation.
 
@@ -2433,18 +2433,18 @@ _:n3-3457 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Geometry> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Geometry>;
-    dsv:reusesPropertyValue _:n3-3458.
-_:n3-3458 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-361.
+_:n3-361 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Geometry>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Geometry> dsv:reusesPropertyValue _:n3-3459.
-_:n3-3459 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Geometry> dsv:reusesPropertyValue _:n3-362.
+_:n3-362 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Geometry>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Geometry> dsv:reusesPropertyValue _:n3-3460.
-_:n3-3460 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Geometry> dsv:reusesPropertyValue _:n3-363.
+_:n3-363 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Geometry>.
 
@@ -2454,13 +2454,13 @@ _:n3-3460 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A rate at which something recurs, e.g. the publication of a Dataset."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Frequency>;
-    dsv:reusesPropertyValue _:n3-3461.
-_:n3-3461 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-364.
+_:n3-364 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Frequency>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Frequency> dsv:reusesPropertyValue _:n3-3462.
-_:n3-3462 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Frequency> dsv:reusesPropertyValue _:n3-365.
+_:n3-365 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Frequency>.
 
@@ -2470,8 +2470,8 @@ _:n3-3462 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "An aggregation of one or more SKOS concepts."@en;
     <http://purl.org/vocab/vann/usageNote> "In DCAT-AP, a Concept Scheme is used to denote a codelist. In section 10. Controlled Vocabularies the expectations are elaborated in more detail."@en;
-    dsv:reusesPropertyValue _:n3-3463.
-_:n3-3463 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-366.
+_:n3-366 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource skos:ConceptScheme.
 
@@ -2492,18 +2492,18 @@ _:n3-3463 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm>;
-    dsv:reusesPropertyValue _:n3-3464.
-_:n3-3464 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-367.
+_:n3-367 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm> dsv:reusesPropertyValue _:n3-3465.
-_:n3-3465 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm> dsv:reusesPropertyValue _:n3-368.
+_:n3-368 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm> dsv:reusesPropertyValue _:n3-3466.
-_:n3-3466 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm> dsv:reusesPropertyValue _:n3-369.
+_:n3-369 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm>.
 
@@ -2513,13 +2513,13 @@ _:n3-3466 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "Attribution is the ascribing of an entity to an agent."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Attribution>;
-    dsv:reusesPropertyValue _:n3-3467.
-_:n3-3467 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-370.
+_:n3-370 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Attribution>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Attribution> dsv:reusesPropertyValue _:n3-3468.
-_:n3-3468 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Attribution> dsv:reusesPropertyValue _:n3-371.
+_:n3-371 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Attribution>.
 
@@ -2528,8 +2528,8 @@ _:n3-3468 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Activity> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:definition "An activity is something that occurs over a period of time and acts upon or with entities; it may include consuming, processing, transforming, modifying, relocating, using, or generating entities."@en;
-    dsv:reusesPropertyValue _:n3-3469.
-_:n3-3469 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-372.
+_:n3-372 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <http://www.w3.org/ns/prov#Activity>.
 
@@ -2541,8 +2541,8 @@ _:n3-3469 a dsv:PropertyValueReuse;
     skos:definition "A description following the vCard specification, e.g. to provide telephone number and e-mail address for a contact point."@en;
     <http://purl.org/vocab/vann/usageNote> "Note that the class Kind is the parent class for the four explicit types of vCard (Individual, Organization, Location, Group)."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Kind>;
-    dsv:reusesPropertyValue _:n3-3470.
-_:n3-3470 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-373.
+_:n3-373 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Kind>.
 
@@ -2553,8 +2553,8 @@ _:n3-3470 a dsv:PropertyValueReuse;
     skos:definition "A value that allows the contents of a file to be authenticated."@en;
     <http://purl.org/vocab/vann/usageNote> "This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Checksum>;
-    dsv:reusesPropertyValue _:n3-3471.
-_:n3-3471 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-374.
+_:n3-374 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum>.
 
@@ -2565,13 +2565,13 @@ _:n3-3471 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "The algorithm used to produce the subject Checksum."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm>;
-    dsv:reusesPropertyValue _:n3-3472.
-_:n3-3472 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-375.
+_:n3-375 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm> dsv:reusesPropertyValue _:n3-3473.
-_:n3-3473 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm> dsv:reusesPropertyValue _:n3-376.
+_:n3-376 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm>.
 
@@ -2584,13 +2584,13 @@ _:n3-3473 a dsv:PropertyValueReuse;
     a dsv:Profile;
     skos:definition "A lower case hexadecimal encoded digest value produced using a specific algorithm."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue>;
-    dsv:reusesPropertyValue _:n3-3474.
-_:n3-3474 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-377.
+_:n3-377 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Checksum.checksumValue> dsv:reusesPropertyValue _:n3-3475.
-_:n3-3475 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Checksum.checksumValue> dsv:reusesPropertyValue _:n3-378.
+_:n3-378 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue>.
 
@@ -2601,18 +2601,18 @@ _:n3-3475 a dsv:PropertyValueReuse;
 <https://mff-uk.github.io/specifications/dcat-ap/#Instant> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Instant>;
-    dsv:reusesPropertyValue _:n3-3476.
-_:n3-3476 a dsv:PropertyValueReuse;
+    dsv:reusesPropertyValue _:n3-379.
+_:n3-379 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:prefLabel;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Instant>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Instant> dsv:reusesPropertyValue _:n3-3477.
-_:n3-3477 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Instant> dsv:reusesPropertyValue _:n3-380.
+_:n3-380 a dsv:PropertyValueReuse;
     dsv:reusedProperty skos:definition;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Instant>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Instant> dsv:reusesPropertyValue _:n3-3478.
-_:n3-3478 a dsv:PropertyValueReuse;
+<https://mff-uk.github.io/specifications/dcat-ap/#Instant> dsv:reusesPropertyValue _:n3-381.
+_:n3-381 a dsv:PropertyValueReuse;
     dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
     dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Instant>.
 
