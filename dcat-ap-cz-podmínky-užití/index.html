@@ -1,6 +1,6 @@
+
+
 <!DOCTYPE html>
-  
-  
   <html>
     <head>
       <meta charset="utf-8" />
@@ -8,79 +8,79 @@
       <meta name="color-scheme" content="light dark">
       <script type="application/ld+json">
         {
-  "@id": "",
-  "@type": [
-    "http://purl.org/dc/terms/Standard",
-    "http://www.w3.org/2002/07/owl#Ontology"
-  ],
-  "http://purl.org/dc/terms/title": [
-    {
-      "@language": "cs",
-      "@value": "DCAT-AP-CZ - podmínky užití"
-    },
-    {
-      "@language": "en",
-      "@value": "DCAT-AP-CZ - terms of use"
-    }
-  ],
-  "https://w3id.org/dsv#artefact": [
-    {
-      "@type": [
-        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-      ],
-      "http://www.w3.org/ns/dx/prof/hasArtifact": [
-        {
-          "@id": "./model.owl.ttl"
-        }
-      ],
-      "http://www.w3.org/ns/dx/prof/hasRole": [
-        {
-          "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-      ],
-      "http://www.w3.org/ns/dx/prof/hasArtifact": [
-        {
-          "@id": "./dsv.ttl"
-        }
-      ],
-      "http://www.w3.org/ns/dx/prof/hasRole": [
-        {
-          "@id": "http://www.w3.org/ns/dx/prof/role/schema"
-        }
-      ]
-    },
-    {
-      "@type": [
-        "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-      ],
-      "http://www.w3.org/ns/dx/prof/hasArtifact": [
-        {
-          "@id": ""
-        }
-      ],
-      "http://www.w3.org/ns/dx/prof/hasRole": [
-        {
-          "@id": "http://www.w3.org/ns/dx/prof/role/specification"
-        }
-      ]
-    }
-  ],
-  "http://purl.org/dc/terms/references": [
-    [
-      {
-        "@id": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
-      },
-      {
-        "@id": "https://www.w3.org/ns/dcat3.ttl"
+        "@id": "",
+        "@type": [
+          "http://purl.org/dc/terms/Standard",
+          "http://www.w3.org/2002/07/owl#Ontology"
+        ],
+        "http://purl.org/dc/terms/title": [
+          {
+            "@language": "cs",
+            "@value": "DCAT-AP-CZ - podmínky užití"
+          },
+          {
+            "@language": "en",
+            "@value": "DCAT-AP-CZ - terms of use"
+          }
+        ],
+        "https://w3id.org/dsv#artefact": [
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": "./model.owl.ttl"
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": "./dsv.ttl"
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": ""
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/specification"
+              }
+            ]
+          }
+        ],
+        "http://purl.org/dc/terms/references": [
+          [
+            {
+              "@id": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+            },
+            {
+              "@id": "https://www.w3.org/ns/dcat3.ttl"
+            }
+          ]
+        ]
       }
-    ]
-  ]
-}
       </script>
       <script
         src="https://www.w3.org/Tools/respec/respec-w3c"
@@ -90,47 +90,78 @@
       <script class="remove">
         // All config options at https://respec.org/docs/
         var respecConfig = {
-          specStatus: "unofficial",
-          editors: [{ name: "Dataspecer", url: "https://dataspecer.com" }],
-          //github: "some-org/mySpec",
-          shortName: "todo",
-          //xref: "web-platform",
-          //group: "my-working-group",
+          specStatus: "base",
+          shortName: "dcat-ap-cz-podmínky-užití",               
+          showPreviousVersion: false,
+          thisVersion: "https://mff-uk.github.io/specifications/dcat-ap-cz-podmínky-užití/",
+          latestVersion: "https://mff-uk.github.io/specifications/dcat-ap-cz-podmínky-užití/",
+          editors: [{
+            name: "Jakub Klímek",
+            orcid: "0000-0001-7234-3051",
+            company:    "Charles University",
+            companyURL: "https://www.mff.cuni.cz"
+          }],
+          inlineCSS: "true",
+          github: "https://github.com/mff-uk/specifications/",
+          otherLinks: [{
+              key: "Links",
+              data: [{
+                  value: "Dataspecer",
+                  href: "https://dataspecer.com"
+              },{
+                  value: "Data Specification Vocabulary",
+                  href: "https://w3id.org/dsv#"
+              }]
+          }]
         };
       </script>
-          <style>
-      .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
-      max-width: 100%;
-      margin: auto;
-      height: auto;
-      }
-    </style>
-    </head>
+      
+      <style>
+        .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
+          max-width: 100%;
+          margin: auto;
+          height: auto;
+        }
+      
+        table.simple {
+          margin: auto;
+          border-spacing: 0;
+          border-collapse: collapse;
+        }
+      
+        table.simple th {
+          padding: 3px 10px;
+          text-align: left;
+        }
+      
+        table.simple td {
+          border-top: 1px solid #ddd;
+          padding: 3px 10px;
+        }
+      </style>    </head>
     <body>
+      <p class="copyright"></p>
       <section id="abstract">
         <p>
           Tento soubor dokumentuje
           <strong>DCAT-AP-CZ - podmínky užití</strong>.</p>
       </section>
 
-      <!--<section id="sotd">
-      </section>-->
-
       <section>
-        <h1>Přehled</h1>
+        <h2>Přehled</h2>
 
           <figure>
-            <img src="./8612bc65-7f0c-456c-83af-6bff1023c1bf.svg" alt="alt text 2" />
-            <figcaption>Overview diagram</figcaption>
+            <img src="./8612bc65-7f0c-456c-83af-6bff1023c1bf.svg" alt="Main view" />
+            <figcaption>Main view</figcaption>
           </figure>
+      </section>
 
+      <section>
         <h2>Třídy</h2>
-        Tato sekce popisuje všechny třídy v tomto slovníku.
-        
 
-              <section id="Specifikace-podmínek-užití">
+            <section id="Specifikace">
               <h4>Specifikace podmínek užití</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -147,12 +178,13 @@
               </table>
             </section>
 
+        </section>
 
+        <section>
         <h2>Vlastnosti</h2>
-            <section id="Specifikace-podmínek-užití">
-
+            <section id="specifikace">
               <h4>Specifikace podmínek užití</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -166,15 +198,15 @@
                   <td>Definiční obor</td>
                   <td>
                     <a href="http://www.w3.org/ns/dcat#Distribution">Distribuce</a>
-
+            
                     
                   </td>
                 </tr>
                 <tr>
                   <td>Obor hodnot</td>
                   <td>
-                    <a href="#Specifikace-podmínek-užití">Specifikace podmínek užití</a>
-
+                    <a href="#Specifikace">Specifikace podmínek užití</a>
+            
                     
                   </td>
                   </tr>
@@ -183,11 +215,9 @@
                     <td><a href="http://purl.org/dc/terms/license">License (@en)</a></td>
                   </tr>
               </table>
-            </section>
-            <section id="Autorské-dílo">
-
+            </section>            <section id="autorské-dílo">
               <h4>Autorské dílo</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -200,8 +230,8 @@
                 <tr>
                   <td>Definiční obor</td>
                   <td>
-                    <a href="#Specifikace-podmínek-užití">Specifikace podmínek užití</a>
-
+                    <a href="#Specifikace">Specifikace podmínek užití</a>
+            
                     
                   </td>
                 </tr>
@@ -209,16 +239,14 @@
                   <td>Obor hodnot</td>
                   <td>
                     <a href="http://purl.org/dc/terms/LicenseDocument">License Document (@en)</a>
-
+            
                     
                   </td>
                   </tr>
               </table>
-            </section>
-            <section id="Jména-autorů-díla">
-
+            </section>            <section id="autor">
               <h4>Jména autorů díla</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -231,8 +259,8 @@
                 <tr>
                   <td>Definiční obor</td>
                   <td>
-                    <a href="#Specifikace-podmínek-užití">Specifikace podmínek užití</a>
-
+                    <a href="#Specifikace">Specifikace podmínek užití</a>
+            
                     
                   </td>
                 </tr>
@@ -240,16 +268,14 @@
                   <td>Obor hodnot</td>
                   <td>
                     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
-
+            
                     
                   </td>
                   </tr>
               </table>
-            </section>
-            <section id="Jména-autorů-originální-databáze">
-
+            </section>            <section id="autor-databáze">
               <h4>Jména autorů originální databáze</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -262,8 +288,8 @@
                 <tr>
                   <td>Definiční obor</td>
                   <td>
-                    <a href="#Specifikace-podmínek-užití">Specifikace podmínek užití</a>
-
+                    <a href="#Specifikace">Specifikace podmínek užití</a>
+            
                     
                   </td>
                 </tr>
@@ -271,16 +297,14 @@
                   <td>Obor hodnot</td>
                   <td>
                     <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
-
+            
                     
                   </td>
                   </tr>
               </table>
-            </section>
-            <section id="Originální-databáze">
-
+            </section>            <section id="databáze-jako-autorské-dílo">
               <h4>Originální databáze</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -293,8 +317,8 @@
                 <tr>
                   <td>Definiční obor</td>
                   <td>
-                    <a href="#Specifikace-podmínek-užití">Specifikace podmínek užití</a>
-
+                    <a href="#Specifikace">Specifikace podmínek užití</a>
+            
                     
                   </td>
                 </tr>
@@ -302,16 +326,14 @@
                   <td>Obor hodnot</td>
                   <td>
                     <a href="http://purl.org/dc/terms/LicenseDocument">License Document (@en)</a>
-
+            
                     
                   </td>
                   </tr>
               </table>
-            </section>
-            <section id="Zvláštní-právo-pořizovatele-databáze">
-
+            </section>            <section id="databáze-chráněná-zvláštními-právy">
               <h4>Zvláštní právo pořizovatele databáze</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -324,8 +346,8 @@
                 <tr>
                   <td>Definiční obor</td>
                   <td>
-                    <a href="#Specifikace-podmínek-užití">Specifikace podmínek užití</a>
-
+                    <a href="#Specifikace">Specifikace podmínek užití</a>
+            
                     
                   </td>
                 </tr>
@@ -333,16 +355,14 @@
                   <td>Obor hodnot</td>
                   <td>
                     <a href="http://purl.org/dc/terms/LicenseDocument">License Document (@en)</a>
-
+            
                     
                   </td>
                   </tr>
               </table>
-            </section>
-            <section id="Osobní-údaje">
-
+            </section>            <section id="osobní-údaje">
               <h4>Osobní údaje</h4>
-
+            
               <table class="def">
                 <tr>
                   <td>IRI</td>
@@ -355,8 +375,8 @@
                 <tr>
                   <td>Definiční obor</td>
                   <td>
-                    <a href="#Specifikace-podmínek-užití">Specifikace podmínek užití</a>
-
+                    <a href="#Specifikace">Specifikace podmínek užití</a>
+            
                     
                   </td>
                 </tr>
@@ -364,17 +384,17 @@
                   <td>Obor hodnot</td>
                   <td>
                     <a href="http://purl.org/dc/terms/LicenseDocument">License Document (@en)</a>
-
+            
                     
                   </td>
                   </tr>
               </table>
             </section>
+        </section>
 
-      </section>
 
       <section>
-        <h1>Použité prefixy</h1>
+        <h2>Použité prefixy</h2>
         <table id="table-namespaces" class="simple">
           <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
           <tbody>
@@ -382,37 +402,26 @@
           </tbody>
         </table>
       </section>
-
       <section>
-        <h1>Přílohy</h1>
-        <table class="def">
+        <h2>Přílohy</h2>
+          <p>Součástí této specifikace jsou následující přílohy.</p>
+          <table class="def">
+          <thead>
             <tr>
-              <td>Slovník</td>
-              <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
+              <th>Příloha</th>
+              <th>Odkaz</th>
             </tr>
-            <tr>
-              <td>Aplikační profil</td>
-              <td><a href="./dsv.ttl">./dsv.ttl</a></td>
-            </tr>
+          </thead>
+          <tbody>
+              <tr>
+                <td>Slovník</td>
+                <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
+              </tr>
+              <tr>
+                <td>Aplikační profil</td>
+                <td><a href="./dsv.ttl">./dsv.ttl</a></td>
+              </tr>
+          </tbody>
         </table>
-      </section>
-
-    <style>
-      table.simple {
-        margin: auto;
-        border-spacing: 0;
-        border-collapse: collapse;
-      }
-
-      table.simple th {
-        padding: 3px 10px;
-        text-align: left;
-      }
-
-      table.simple td {
-        border-top: 1px solid #ddd;
-        padding: 3px 10px;
-      }
-    </style>
-    </body>
+      </section>    </body>
   </html>
