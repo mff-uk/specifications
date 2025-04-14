@@ -70,7 +70,97 @@
             ]
           }
         ],
+        "http://www.w3.org/ns/dx/prof/hasResource": [
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": "./model.owl.ttl"
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": "./dsv.ttl"
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": ""
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/specification"
+              }
+            ]
+          }
+        ],
         "http://purl.org/dc/terms/references": [
+          [
+            {
+              "@id": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+            },
+            {
+              "@id": "https://datagov-cz.github.io/cache-slovniku/skos.rdf"
+            },
+            {
+              "@id": "https://www.w3.org/ns/dcat3.ttl"
+            },
+            {
+              "@id": "https://datagov-cz.github.io/cache-slovniku/foaf.ttl"
+            },
+            {
+              "@id": "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
+            },
+            {
+              "@id": "https://www.w3.org/2006/vcard/ns"
+            },
+            {
+              "@id": "https://www.w3.org/ns/prov-o"
+            },
+            {
+              "@id": "https://www.w3.org/ns/odrl/2/ODRL22.ttl"
+            },
+            {
+              "@id": "https://www.w3.org/ns/legacy_adms"
+            },
+            {
+              "@id": "https://datagov-cz.github.io/cache-slovniku/spdx-ontology.2.3.1.ttl"
+            },
+            {
+              "@id": "https://datagov-cz.github.io/cache-slovniku/time.ttl"
+            },
+            {
+              "@id": "https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/voc/core-location-ap.ttl"
+            },
+            {
+              "@id": "https://www.w3.org/ns/legacy_locn.ttl"
+            }
+          ]
+        ],
+        "http://www.w3.org/ns/dx/prof/isProfileOf": [
           [
             {
               "@id": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
@@ -186,18 +276,18 @@
       <section>
         <h2>Overview</h2>
 
-          <figure>
-            <img src="./b9a56cd3-6121-4f33-87a6-35485211f2e5.svg" alt="Main view" />
-            <figcaption>Main view</figcaption>
-          </figure>
-          <figure>
-            <img src="./1jcyy.svg" alt="" />
-            <figcaption></figcaption>
-          </figure>
-          <figure>
-            <img src="./9z0nki.svg" alt="" />
-            <figcaption></figcaption>
-          </figure>
+          <a href="./1jcyy.svg">
+            <figure>
+              <img src="./1jcyy.svg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
+          <a href="./9z0nki.svg">
+            <figure>
+              <img src="./9z0nki.svg" alt="" />
+              <figcaption></figcaption>
+            </figure>
+          </a>
       </section>
 
       <section>
@@ -2208,7 +2298,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -2336,7 +2426,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -2438,7 +2528,7 @@
                     </tr>
                   </table>
                 </section>    <section id="CataloguedResource.keyword">
-                  <h4>keyword</h4>
+                  <h4>keyword/tag</h4>
                 
                   <table class="def">
                     <tr>
@@ -2447,7 +2537,7 @@
                     </tr>
                     <tr>
                       <td>Label</td>
-                      <td>keyword</td>
+                      <td>keyword/tag</td>
                     </tr>
                     <tr>
                       <td>Definition</td>
@@ -2785,7 +2875,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -2913,7 +3003,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -2977,7 +3067,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -3041,7 +3131,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -3105,7 +3195,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -3170,7 +3260,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -3362,7 +3452,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -3426,7 +3516,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -3490,7 +3580,7 @@
                     <tr>
                       <td>Range</td>
                       <td>
-                        <a href="https://www.w3.org/2002/07/owl#Thing">https://www.w3.org/2002/07/owl#Thing</a>
+                        <a href="#rdfs-Resource">Resource</a>
                 
                             [0..*]
                 
@@ -3735,6 +3825,17 @@
                 <p>Backwards associations</p>
                 <ul>
                     <li><a href="#Catalog.themeTaxonomy"></a></li>
+                    <li><a href="#CataloguedResource.theme-category"></a></li>
+                    <li><a href="#CataloguedResource.relation"></a></li>
+                    <li><a href="#CataloguedResource.hasPart"></a></li>
+                    <li><a href="#CataloguedResource.isReferencedBy"></a></li>
+                    <li><a href="#CataloguedResource.previousVersion"></a></li>
+                    <li><a href="#CataloguedResource.hasVersion"></a></li>
+                    <li><a href="#CataloguedResource.hasCurrentVersion"></a></li>
+                    <li><a href="#CataloguedResource.replaces"></a></li>
+                    <li><a href="#CataloguedResource.first"></a></li>
+                    <li><a href="#CataloguedResource.last"></a></li>
+                    <li><a href="#CataloguedResource.previous"></a></li>
                     <li><a href="#Distribution.accessUrl"></a></li>
                     <li><a href="#Distribution.downloadUrl"></a></li>
                     <li><a href="#DataService.endpointUrl"></a></li>

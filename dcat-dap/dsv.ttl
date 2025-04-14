@@ -18,6 +18,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#Catalog>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Catalog>.
 
@@ -31,7 +32,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/homepage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_homepage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://xmlns.com/foaf/0.1/homepage>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Document>.
@@ -46,7 +48,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#themeTaxonomy>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_themes>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#themeTaxonomy>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
@@ -64,7 +67,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#resource>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_resource>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#resource>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
@@ -81,7 +85,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#dataset>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_dataset>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#dataset>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>.
@@ -98,7 +103,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#service>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_service>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#service>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#DataService>.
@@ -115,7 +121,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#catalog>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_catalog>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#catalog>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>.
@@ -129,7 +136,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#record>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_catalog_record>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#record>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>.
@@ -143,6 +151,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#CatalogRecord>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#CatalogRecord>.
 
@@ -151,7 +160,8 @@
     a dsv:Profile;
     skos:prefLabel "title"@en;
     skos:definition "A name given to the record."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:record_title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:title;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -162,7 +172,8 @@
     skos:prefLabel "listing date"@en;
     skos:definition "The date of listing (i.e., formal recording) of the corresponding dataset or service in the catalog."@en;
     <http://purl.org/vocab/vann/usageNote> "This indicates the date of listing the dataset in the catalog and not the publication date of the dataset itself."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:record_listing_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:issued;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -173,7 +184,8 @@
     skos:prefLabel "update/modification date"@en;
     skos:definition "Most recent date on which the catalog entry was changed, updated or modified."@en;
     <http://purl.org/vocab/vann/usageNote> "This indicates the date of last change of a catalog entry, i.e., the catalog metadata description of the dataset, and not the date of the dataset itself."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:record_update_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:modified;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -188,7 +200,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/primaryTopic>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:record_primary_topic>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property <http://xmlns.com/foaf/0.1/primaryTopic>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
@@ -203,7 +216,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:conformsTo
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:record_conforms_to>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:conformsTo;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
@@ -213,7 +227,8 @@
     a dsv:Profile;
     skos:prefLabel "description"@en;
     skos:definition "A free-text account of the record."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:record_description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -230,6 +245,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#Dataset>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Dataset>.
 
@@ -245,7 +261,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#distribution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#distribution>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>.
@@ -256,7 +273,8 @@
     skos:prefLabel "frequency"@en;
     skos:definition "The frequency at which a dataset is published."@en;
     <http://purl.org/vocab/vann/usageNote> "The value of dcterms:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:accrualPeriodicity;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Frequency>.
@@ -273,7 +291,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#inSeries>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#inSeries>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries>.
@@ -284,7 +303,8 @@
     skos:prefLabel "spatial/geographical coverage"@en;
     skos:definition "The geographical area covered by the dataset."@en;
     <http://purl.org/vocab/vann/usageNote> "The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:spatial;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Location>.
@@ -295,7 +315,8 @@
     skos:prefLabel "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
     skos:definition "minimum spatial separation resolvable in a dataset, measured in meters."@en-us, "minimum spatial separation resolvable in a dataset, measured in metres."@en-gb, "minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech."@cs, "mínima separacíon espacial disponible en un conjunto de datos, medida en metros."@es, "separazione spaziale minima risolvibile in un set di dati, misurata in metri."@it, "mindste geografiske afstand som kan erkendes i et datasæt, målt i meter."@da, "Minimum spatial separation resolvable in a dataset, measured in meters."@en;
     <http://purl.org/vocab/vann/usageNote> "If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial_resolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#spatialResolutionInMeters>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
@@ -306,7 +327,8 @@
     skos:prefLabel "temporal coverage"@en;
     skos:definition "The temporal period that the dataset covers."@en;
     <http://purl.org/vocab/vann/usageNote> "The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:temporal;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>.
@@ -321,7 +343,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#temporalResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal_resolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#temporalResolution>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
@@ -332,7 +355,8 @@
     skos:prefLabel "was generated by"@en;
     skos:definition "An activity that generated, or provides the business context for, the creation of the dataset.\n"@en;
     <http://purl.org/vocab/vann/usageNote> "The activity associated with generation of a dataset will typically be an initiative, project, mission, survey, on-going activity (\"business as usual\") etc. Multiple prov:wasGeneratedBy properties can be used to indicate the dataset production context at various levels of granularity.\n\nUse prov:qualifiedGeneration to attach additional details about the relationship between the dataset and the activity, e.g., the exact time that the dataset was produced during the lifetime of a project"@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_was_generated_by>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/prov#wasGeneratedBy>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Entity>.
@@ -349,6 +373,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#Resource>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Resource>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Resource>.
 
@@ -362,7 +387,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:accessRights
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:accessRights;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
@@ -377,7 +403,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:conformsTo
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:conformsTo;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
@@ -394,7 +421,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#contactPoint>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#contactPoint>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Kind>.
@@ -409,7 +437,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:creator
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_creator>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:creator;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Agent>.
@@ -423,7 +452,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:title
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:title;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -434,7 +464,8 @@
     skos:prefLabel "release date"@en;
     skos:definition "Date of formal issuance (e.g., publication) of the resource."@en;
     <http://purl.org/vocab/vann/usageNote> "This property SHOULD be set using the first known date of issuance."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:issued;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -445,7 +476,8 @@
     skos:prefLabel "update/modification date"@en;
     skos:definition "Most recent date on which the resource was changed, updated or modified."@en;
     <http://purl.org/vocab/vann/usageNote> "The value of this property indicates a change to the actual resource, not a change to the catalog record. An absent value MAY indicate that the resource has never changed after its initial publication, or that the date of last modification is not known, or that the resource is continuously updated."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:modified;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -456,7 +488,8 @@
     skos:prefLabel "language"@en;
     skos:definition "A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution"@en;
     <http://purl.org/vocab/vann/usageNote> "Repeat this property if the resource is available in multiple languages.\nThe value(s) provided for members of a catalog (i.e., dataset or service) override the value(s) provided for the catalog if they conflict.\nIf representations of a dataset are available for each language separately, define an instance of dcat:Distribution for each language and describe the specific language of each distribution using dcterms:language (i.e., the dataset will have multiple dcterms:language values and each distribution will have just one as the value of its dcterms:language property). In case of multilingual distributions, the distributions will have multiple dcterms:language values."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:language;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem>.
@@ -471,7 +504,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:publisher
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:publisher;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Agent>.
@@ -482,7 +516,8 @@
     skos:prefLabel "identifier"@en;
     skos:definition "A unique identifier of the resource being described or cataloged."@en;
     <http://purl.org/vocab/vann/usageNote> "The identifier might be used as part of the IRI of the resource, but still having it represented explicitly is useful.\nThe identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_identifier>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:identifier;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -497,10 +532,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#theme>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#theme>;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -512,7 +548,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:type
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:type;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Class>.
@@ -527,10 +564,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:relation
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_relation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:relation;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -545,7 +583,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#qualifiedRelation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_relation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#qualifiedRelation>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>.
@@ -553,16 +592,14 @@
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
     a dsv:Profile;
+    skos:prefLabel "keyword/tag"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
     dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <http://www.w3.org/ns/dcat#keyword>
-], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#keyword>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_keyword>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#keyword>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -579,7 +616,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#landingPage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_landing_page>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#landingPage>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Document>.
@@ -590,7 +628,8 @@
     skos:prefLabel "qualified attribution"@en;
     skos:definition "Link to an Agent having some form of responsibility for the resource"@en;
     <http://purl.org/vocab/vann/usageNote> "Used to link to an Agent where the nature of the relationship is known but does not match one of the standard [DCTERMS] properties (dcterms:creator, dcterms:publisher). Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. See 15.1 Relationships between datasets and agents for usage examples."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_attribution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/prov#qualifiedAttribution>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Attribution>.
@@ -601,7 +640,8 @@
     skos:prefLabel "license"@en;
     skos:definition "A legal document under which the resource is made available."@en;
     <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights MAY be provided for the Resource."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_license>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:license;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>.
@@ -612,7 +652,8 @@
     skos:prefLabel "rights"@en;
     skos:definition "A statement that concerns all rights not addressed with dcterms:license or dcterms:accessRights, such as copyright statements."@en;
     <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights MAY be provided for the Resource."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_rights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:rights;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
@@ -626,10 +667,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:hasPart
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_part>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:hasPart;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPolicy> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -637,7 +679,8 @@
     skos:prefLabel "has policy"@en;
     skos:definition "An ODRL conformant policy expressing the rights associated with the resource."@en;
     <http://purl.org/vocab/vann/usageNote> "Information about rights expressed as an ODRL policy [ODRL-MODEL] using the ODRL vocabulary [ODRL-VOCAB] MAY be provided for the resource. See also guidance at 9. License and rights statements."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_policy>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/odrl/2/hasPolicy>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Policy>.
@@ -648,10 +691,11 @@
     skos:prefLabel "is referenced by"@en;
     skos:definition "A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource."@en;
     <http://purl.org/vocab/vann/usageNote> "In relation to the use case of data citation, when the cataloged resource is a dataset, the dcterms:isReferencedBy property allows to relate the dataset to the resources (such as scholarly publications) that cite or point to the dataset. Multiple dcterms:isReferencedBy properties can be used to indicate the dataset has been referenced by multiple publications, or other resources.\nThis property is used to associate a resource with the resource (of type dcat:Resource) in question. For other relations to resources not covered with this property, the more generic property dcat:qualifiedRelation can be used. See also 15. Qualified relations."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_policy>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:isReferencedBy;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previousVersion> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -666,10 +710,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#previousVersion>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_previous_version>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#previousVersion>;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -684,10 +729,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#hasVersion>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_version>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#hasVersion>;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasCurrentVersion> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -702,10 +748,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#hasCurrentVersion>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_current_version>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#hasCurrentVersion>;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.replaces> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -716,10 +763,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:replaces
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_replaces>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:replaces;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -734,7 +782,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#version>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#version>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -745,7 +794,8 @@
     skos:prefLabel "version notes"@en;
     skos:definition "A description of changes between this version and the previous version of the resource [VOCAB-ADMS]."@en;
     <http://purl.org/vocab/vann/usageNote> "In case of backward compatibility issues with the previous version of the resource, a textual description of them SHOULD be specified by using this property."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/adms#versionNotes>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -763,10 +813,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#first>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_first>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#first>;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.last> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -781,10 +832,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#last>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_last>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#last>;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previous> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -799,10 +851,11 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#prev>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_previous>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#prev>;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange <https://www.w3.org/2002/07/owl#Thing>.
+    dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
 
 <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.status> dsv:domain <https://mff-uk.github.io/specifications/dcat-dap/#Resource>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#applicationProfileConceptualModel>;
@@ -814,7 +867,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#status>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/adms#status>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Concept>.
@@ -824,7 +877,8 @@
     a dsv:Profile;
     skos:prefLabel "description"@en;
     skos:definition "A free-text account of the resource."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -867,6 +921,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#DataService>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#DataService>.
 
@@ -879,7 +934,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#endpointURL>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_url>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#endpointURL>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
@@ -894,7 +950,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#endpointDescription>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#endpointDescription>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
@@ -911,7 +968,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#servesDataset>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_serves_dataset>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#servesDataset>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>.
@@ -1012,6 +1070,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#Relationship>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Relationship>.
 
@@ -1021,7 +1080,8 @@
     skos:prefLabel "relation"@en;
     skos:definition "The resource related to the source resource."@en;
     <http://purl.org/vocab/vann/usageNote> "In the context of a dcat:Relationship this is expected to point to another dcat:Dataset or other cataloged resource."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_relation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:relation;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Resource>.
@@ -1036,7 +1096,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#hadRole>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_hadRole>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#hadRole>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Role>.
@@ -1065,7 +1126,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#hadRole>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_hadRole>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#hadRole>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Role>.
@@ -1110,6 +1172,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#Distribution>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Distribution>.
 
@@ -1118,7 +1181,8 @@
     a dsv:Profile;
     skos:prefLabel "title"@en;
     skos:definition "A name given to the distribution."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:title;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1133,7 +1197,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:issued
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_release_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:issued;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1147,7 +1212,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:modified
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_update_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:modified;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1158,7 +1224,8 @@
     skos:prefLabel "license"@en;
     skos:definition "A legal document under which the distribution is made available."@en;
     <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:license;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>.
@@ -1169,7 +1236,8 @@
     skos:prefLabel "access rights"@en;
     skos:definition "A rights statement that concerns how the distribution is accessed."@en;
     <http://purl.org/vocab/vann/usageNote> "Information about licenses and rights MAY be provided for the Distribution. See also guidance at 9. License and rights statements."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_rights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:accessRights;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
@@ -1180,7 +1248,8 @@
     skos:prefLabel "rights"@en;
     skos:definition "Information about rights held in and over the distribution."@en;
     <http://purl.org/vocab/vann/usageNote> "dcterms:license, which is a sub-property of dcterms:rights, can be used to link a distribution to a license document. However, dcterms:rights allows linking to a rights statement that can include licensing information as well as other information that supplements the license such as attribution.\n\nInformation about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_rights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:rights;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>.
@@ -1191,7 +1260,8 @@
     skos:prefLabel "has policy"@en;
     skos:definition "An ODRL conformant policy expressing the rights associated with the distribution."@en;
     <http://purl.org/vocab/vann/usageNote> "Information about rights expressed as an ODRL policy [ODRL-MODEL] using the ODRL vocabulary [ODRL-VOCAB] MAY be provided for the distribution. See also guidance at 9. License and rights statements."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_has_policy>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/odrl/2/hasPolicy>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Policy>.
@@ -1202,7 +1272,8 @@
     skos:prefLabel "URL d'accès"@fr, "URL de acceso"@es, "URL πρόσβασης"@el, "access URL"@en, "indirizzo di accesso"@it, "přístupová adresa"@cs, "رابط وصول"@ar, "アクセスURL"@ja, "adgangsadresse"@da;
     skos:definition "A URL of the resource that gives access to a distribution of the dataset. E.g., landing page, feed, SPARQL endpoint."@en, "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, un Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable."@fr, "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de destino, descarga, URL feed, punto de acceso SPARQL. Esta propriedad se debe usar cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar."@es, "URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL."@cs, "Un URL di una risorsa che consente di accedere a una distribuzione del set di dati. Per esempio, pagina di destinazione, feed, endpoint SPARQL. Da utilizzare per tutti i casi, tranne  quando  si tratta di un semplice link per il download nel qual caso è preferito downloadURL."@it, "Μπορεί να είναι οποιουδήποτε είδους URL που δίνει πρόσβαση στη διανομή ενός συνόλου δεδομένων. Π.χ. ιστοσελίδα αρχικής πρόσβασης, μεταφόρτωση, feed URL, σημείο διάθεσης SPARQL. Να χρησιμοποιείται όταν ο κατάλογος δεν περιέχει πληροφορίες εαν πρόκειται ή όχι για μεταφορτώσιμο αρχείο."@el, "أي رابط يتيح الوصول إلى البيانات. إذا كان الرابط هو ربط مباشر لملف يمكن تحميله استخدم الخاصية downloadURL"@ar, "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"@ja, "En URL for en ressource som giver adgang til en repræsentation af datsættet. Fx destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben downloadURL foretrækkes."@da;
     <http://purl.org/vocab/vann/usageNote> "dcat:accessURL SHOULD be used for the URL of a service or location that can provide access to this distribution, typically through a Web form, query or API call.\n\ndcat:downloadURL is preferred for direct links to downloadable resources.\n\nIf the distribution(s) are accessible only through a landing page (i.e., direct download URLs are not known), then the landing page URL associated with the dcat:Dataset SHOULD be duplicated as access URL on a distribution (see 5.7 Dataset available only behind some Web page)."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_url>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#accessURL>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
@@ -1217,7 +1288,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#accessService>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_service>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#accessService>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#DataService>.
@@ -1235,7 +1307,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#downloadURL>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#downloadURL>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>.
@@ -1253,7 +1326,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#byteSize>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#byteSize>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#nonNegativeInteger>.
@@ -1264,7 +1338,8 @@
     skos:prefLabel "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
     skos:definition "The minimum spatial separation resolvable in a dataset distribution, measured in meters."@en-us, "minimum spatial separation resolvable in a dataset, measured in metres."@en-gb, "minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech."@cs, "mínima separacíon espacial disponible en un conjunto de datos, medida en metros."@es, "separazione spaziale minima risolvibile in un set di dati, misurata in metri."@it, "mindste geografiske afstand som kan erkendes i et datasæt, målt i meter."@da;
     <http://purl.org/vocab/vann/usageNote> "If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset.\nAlternative spatial resolutions might be provided as different dataset distributions"@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_spatial_resolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#spatialResolutionInMeters>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1279,7 +1354,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#temporalResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_temporal_resolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#temporalResolution>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
@@ -1290,7 +1366,8 @@
     skos:prefLabel "conforms to"@en;
     skos:definition "An established standard to which the distribution conforms."@en;
     <http://purl.org/vocab/vann/usageNote> "This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_conforms_to>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:conformsTo;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Standard>.
@@ -1308,7 +1385,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#mediaType>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#mediaType>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
@@ -1319,7 +1397,8 @@
     skos:prefLabel "format"@en;
     skos:definition "The file format of the distribution."@en;
     <http://purl.org/vocab/vann/usageNote> "dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [IANA-MEDIA-TYPES]."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_format>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:format;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent>.
@@ -1337,7 +1416,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#compressFormat>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_compression_format>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#compressFormat>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
@@ -1355,7 +1435,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#packageFormat>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_packaging_format>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#packageFormat>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>.
@@ -1370,7 +1451,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://spdx.org/rdf/terms#checksum>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_checksum>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://spdx.org/rdf/terms#checksum>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Checksum>.
@@ -1380,7 +1462,8 @@
     a dsv:Profile;
     skos:prefLabel "description"@en;
     skos:definition "A free-text account of the distribution."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1398,6 +1481,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#DatasetSeries>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#DatasetSeries>.
 
@@ -1427,6 +1511,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:Location
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Location>;
     a dsv:ClassProfile;
     dsv:class dct:Location.
 
@@ -1440,7 +1525,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/locn#geometry>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:location_geometry>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/locn#geometry>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Geometry>.
@@ -1458,7 +1544,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#bbox>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:location_bbox>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#bbox>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1476,7 +1563,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#centroid>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:location_centroid>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#centroid>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1490,6 +1578,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource dct:PeriodOfTime
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Period_of_Time>;
     a dsv:ClassProfile;
     dsv:class dct:PeriodOfTime.
 
@@ -1503,7 +1592,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#startDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:period_start_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#startDate>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1520,7 +1610,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#endDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:period_end_date>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/dcat#endDate>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -1531,7 +1622,8 @@
     skos:prefLabel "beginning"@en, "tiene principio"@es;
     skos:definition "Beginning of a period or interval."@en, "Comienzo de una entidad temporal."@es;
     <http://purl.org/vocab/vann/usageNote> "Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_beginning>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/2006/time#hasBeginning>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Instant>.
@@ -1542,7 +1634,8 @@
     skos:prefLabel "end"@en, "tiene fin"@es;
     skos:definition "End of a period or interval."@en, "Final de una entidad temporal."@es;
     <http://purl.org/vocab/vann/usageNote> "Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_end>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/2006/time#hasEnd>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#Instant>.
@@ -1598,6 +1691,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:Concept
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Concept>;
     a dsv:ClassProfile;
     dsv:class skos:Concept.
 
@@ -1609,6 +1703,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:ConceptScheme
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Concept_Scheme>;
     a dsv:ClassProfile;
     dsv:class skos:ConceptScheme.
 
@@ -1624,6 +1719,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Person>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a dsv:ClassProfile;
     dsv:class <http://xmlns.com/foaf/0.1/Person>.
 
@@ -1639,6 +1735,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Organization>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a dsv:ClassProfile;
     dsv:class <http://xmlns.com/foaf/0.1/Organization>.
 
@@ -1654,6 +1751,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#Role>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Role>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Role>.
 
@@ -1694,6 +1792,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://spdx.org/rdf/terms#Checksum>
 ];
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Checksum>;
     a dsv:ClassProfile;
     dsv:class <http://spdx.org/rdf/terms#Checksum>.
 
@@ -1703,7 +1802,8 @@
     skos:prefLabel "algorithm"@en;
     skos:definition "Identifies the algorithm used to produce the subject Checksum [SPDX]."@en;
     <http://purl.org/vocab/vann/usageNote> "Version 2.2 of [SPDX] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:checksum_algorithm>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://spdx.org/rdf/terms#algorithm>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm>.
@@ -1717,7 +1817,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://spdx.org/rdf/terms#checksumValue>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:checksum_checksum_value>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://spdx.org/rdf/terms#checksumValue>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#hexBinary>.
