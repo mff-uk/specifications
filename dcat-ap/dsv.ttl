@@ -18,7 +18,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.applicableLegislation> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -29,7 +31,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.applicablelegislation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
@@ -45,7 +48,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.catalogue>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>.
 
@@ -59,7 +63,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.creator>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -74,7 +79,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.dataset>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
 
@@ -84,7 +90,8 @@
     skos:prefLabel "geographical coverage"@en;
     skos:definition "A geographical area covered by the Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.geographicalcoverage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Location>.
 
@@ -102,7 +109,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.haspart>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>.
 
@@ -117,7 +125,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.homepage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -132,7 +141,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.language>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
 
@@ -142,7 +152,8 @@
     skos:prefLabel "licence"@en;
     skos:definition "A licence under which the Catalogue can be used or reused."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license>;
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.licence>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument>.
 
@@ -156,7 +167,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>
 ];
-    dsv:cardinality <https://w3id.org/dsv#11>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -174,7 +186,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.record>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord>.
 
@@ -189,7 +202,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.service>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#DataService>.
 
@@ -203,7 +217,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.temporalcoverage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>.
 
@@ -214,7 +229,8 @@
     skos:definition "El sistema de organización del conocimiento utilizado para clasificar conjuntos de datos de catálogos."@es, "Il sistema di organizzazione della conoscenza (KOS) usato per classificare i dataset del catalogo."@it, "Le systhème d'ogranisation de connaissances utilisé pour classifier les jeux de données du catalogue."@fr, "Systém organizace znalostí (KOS) použitý pro klasifikaci datových sad v katalogu."@cs, "A knowledge organization system used to classify the Resources that are in the Catalogue."@en, "Το σύστημα οργάνωσης γνώσης που χρησιμοποιείται για την κατηγοριοποίηση των συνόλων δεδομένων του καταλόγου."@el, "لائحة التصنيفات المستخدمه لتصنيف قوائم البيانات ضمن الفهرس"@ar, "カタログのデータセットを分類するために用いられる知識組織化体系（KOS；knowledge organization system）。"@ja, "Vidensorganiseringssystem (KOS) som anvendes til at klassificere datasæt i kataloget."@da;
     <http://purl.org/vocab/vann/usageNote> "This property refers to a knowledge organization system used to classify the Catalogue's Datasets. It must have at least the value NAL:data-theme as this is the manatory controlled vocabulary for dcat:theme."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy>;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.themes>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme>.
 
@@ -224,7 +240,8 @@
     skos:prefLabel "modification date"@en;
     skos:definition "The most recent date on which the Catalogue was modified."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate>;
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.modificationdate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -242,7 +259,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.releasedate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -257,7 +275,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -272,7 +291,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -290,7 +310,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.rights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -307,7 +328,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.applicationProfile> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -320,7 +343,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.applicationprofile>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -329,7 +353,8 @@
     a dsv:Profile;
     skos:prefLabel "change type"@en;
     skos:definition "The status of the catalogue record in the context of editorial flow of the dataset and data service descriptions."@en;
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.changetype>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property <http://www.w3.org/ns/adms#status>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
@@ -340,7 +365,8 @@
     skos:prefLabel "language"@en;
     skos:definition "A language used in the textual metadata describing titles, descriptions, etc. of the Catalogued Resource."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated if the metadata is provided in multiple languages."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.language>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:language;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
@@ -356,7 +382,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic>
 ];
-    dsv:cardinality <https://w3id.org/dsv#11>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.primarytopic>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Resource>.
 
@@ -370,7 +397,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:source
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.sourcemetadata>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property dct:source;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord>.
@@ -389,7 +417,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.listingdate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -404,7 +433,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#11>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.modificationdate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -422,7 +452,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -440,7 +471,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -461,7 +493,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#DataService.accessRights> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#DataService>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -477,7 +511,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.accessrights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -490,7 +525,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.applicablelegislation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
@@ -506,7 +542,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.conformsto>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -524,7 +561,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.contactpoint>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Kind>.
 
@@ -533,7 +571,8 @@
     a dsv:Profile;
     skos:prefLabel "documentation"@en;
     skos:definition "A page or document about this Data Service"@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.documentation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
@@ -552,7 +591,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointdescription>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -570,7 +610,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointURL>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -579,7 +620,8 @@
     a dsv:Profile;
     skos:prefLabel "format"@en;
     skos:definition "The structure that can be returned by querying the endpointURL."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.format>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:format;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent>.
@@ -595,7 +637,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.landingpage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -605,7 +648,8 @@
     skos:prefLabel "licence"@en;
     skos:definition "A licence under which the Data service is made available."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license>;
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.licence>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument>.
 
@@ -619,7 +663,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.publisher>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -637,7 +682,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.servesdataset>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
 
@@ -648,25 +694,24 @@
     skos:definition "A category of the Data Service."@en, "Hlavní téma zdroje. Zdroj může mít více témat."@cs, "La categoria principale della risorsa. Una risorsa può avere più temi."@it, "La categoría principal del recurso. Un recurso puede tener varios temas."@es, "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr, "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el, "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar, "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja, "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da;
     <http://purl.org/vocab/vann/usageNote> "A Data Service may be associated with multiple themes."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category>;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.theme>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#DataService.keyword> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#DataService>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
+    skos:prefLabel "keyword"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
     skos:definition "A keyword or tag describing the Data Service."@en, "Klíčové slovo nebo značka popisující zdroj."@cs, "Un mot-clé ou étiquette décrivant une ressource."@fr, "Una palabra clave o etiqueta que describe un recurso."@es, "Una parola chiave o un'etichetta per descrivere la risorsa."@it, "Μία λέξη-κλειδί ή μία ετικέτα που περιγράφει το σύνολο δεδομένων."@el, "كلمة  مفتاحيه توصف قائمة البيانات"@ar, "データセットを記述しているキーワードまたはタグ。"@ja, "Et nøgleord eller tag til beskrivelse af en ressource."@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>
-], [
-  a dsv:PropertyValueReuse;
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.keyword>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -681,7 +726,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -696,7 +742,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -711,7 +758,9 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.accessRights> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -723,7 +772,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -736,7 +786,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
@@ -751,7 +802,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.conformsto>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -769,7 +821,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Kind>.
 
@@ -787,7 +840,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.creator>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -802,7 +856,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.datasetdistribution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>.
 
@@ -823,7 +878,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.inseries>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries>.
 
@@ -837,19 +893,17 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.identifier>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
+    skos:prefLabel "keyword"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>;
     dsv:reusesPropertyValue [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>
-], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>
@@ -858,7 +912,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.keyword>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -873,7 +928,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.landingpage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -888,7 +944,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.language>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
 
@@ -898,7 +955,8 @@
     skos:prefLabel "modification date"@en;
     skos:definition "The most recent date on which the Dataset was changed or modified."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate>;
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -908,6 +966,7 @@
     skos:prefLabel "other identifier"@en;
     skos:definition "A secondary identifier of the Dataset"@en;
     <http://purl.org/vocab/vann/usageNote> "Examples are MAST/ADS [MASTADS], DOI [DOI], EZID [EZID] or W3ID [W3ID]."@en;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.otheridentifier>;
     dsv:property <http://www.w3.org/ns/adms#identifier>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Identifier>.
@@ -917,7 +976,8 @@
     a dsv:Profile;
     skos:prefLabel "provenance"@en;
     skos:definition "A statement about the lineage of a Dataset."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.provenance>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:provenance;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement>.
@@ -932,7 +992,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -946,7 +1007,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.qualifiedattribution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Attribution>.
 
@@ -960,7 +1022,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.qualifiedrelation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Relationship>.
 
@@ -970,6 +1033,7 @@
     skos:prefLabel "related resource"@en;
     skos:definition "A related resource."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.relatedresource>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -983,7 +1047,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -996,7 +1061,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#sample>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.sample>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/adms#sample>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>.
@@ -1006,6 +1072,7 @@
     a dsv:Profile;
     skos:prefLabel "source"@en;
     skos:definition "A related Dataset from which the described Dataset is derived."@en;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.source>;
     dsv:property dct:source;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
@@ -1023,7 +1090,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.spatialresolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
 
@@ -1044,7 +1112,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>.
 
@@ -1065,7 +1134,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalresolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
 
@@ -1076,7 +1146,8 @@
     skos:definition "A category of the Dataset."@en, "Hlavní téma zdroje. Zdroj může mít více témat."@cs, "La categoria principale della risorsa. Una risorsa può avere più temi."@it, "La categoría principal del recurso. Un recurso puede tener varios temas."@es, "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr, "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el, "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar, "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja, "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da;
     <http://purl.org/vocab/vann/usageNote> "A Dataset may be associated with multiple themes."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category>;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.theme>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -1091,7 +1162,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1102,7 +1174,8 @@
     skos:definition "A type of the Dataset."@en;
     <http://purl.org/vocab/vann/usageNote> "A recommended controlled vocabulary data-type is foreseen."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre>;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -1123,7 +1196,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.version>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -1138,7 +1212,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.versionnotes>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1156,7 +1231,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Frequency>.
 
@@ -1174,7 +1250,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Location>.
 
@@ -1189,7 +1266,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1210,7 +1288,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.wasgeneratedby>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Activity>.
 
@@ -1219,6 +1298,7 @@
     a dsv:Profile;
     skos:prefLabel "documentation"@en;
     skos:definition "A page or document about this Dataset."@en;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.documentation>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
@@ -1237,7 +1317,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.isreferencedby>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Resource>.
 
@@ -1255,7 +1336,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.hasversion>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
 
@@ -1273,7 +1355,9 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.applicableLegislation> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -1284,7 +1368,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.applicablelegislation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
@@ -1303,7 +1388,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.contactpoint>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Kind>.
 
@@ -1318,7 +1404,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.frequency>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Frequency>.
 
@@ -1329,7 +1416,8 @@
     skos:definition "A geographic region that is covered by the Dataset Series."@en;
     <http://purl.org/vocab/vann/usageNote> "When spatial coverage is a dimension in the dataset series then the spatial coverage of each dataset in the collection should be part of the spatial coverage. In that case, an open ended value is recommended, e.g. EU or a broad bounding box covering the expected values."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.geographicalcoverage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Location>.
 
@@ -1344,7 +1432,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1355,7 +1444,8 @@
     skos:definition "The most recent date on which the Dataset Series was changed or modified."@en;
     <http://purl.org/vocab/vann/usageNote> "This is not equal to the most recent modified dataset in the collection of the dataset series."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate>;
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.modificationdate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -1370,7 +1460,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.publisher>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -1385,7 +1476,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.releasedate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -1400,7 +1492,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.temporalcoverage>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>.
 
@@ -1415,7 +1508,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1435,7 +1529,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -1454,7 +1550,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessservice>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#DataService>.
 
@@ -1469,7 +1566,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessURL>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -1482,7 +1580,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
@@ -1499,7 +1598,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://data.europa.eu/r5r/availability>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property <http://data.europa.eu/r5r/availability>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
@@ -1521,7 +1621,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.bytesize>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#nonNegativeInteger>.
 
@@ -1539,7 +1640,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.checksum>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Checksum>.
 
@@ -1554,7 +1656,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.compressionformat>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>.
 
@@ -1572,7 +1675,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.description>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1581,6 +1685,7 @@
     a dsv:Profile;
     skos:prefLabel "documentation"@en;
     skos:definition "A page or document about this Distribution."@en;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.documentation>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
@@ -1599,7 +1704,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.downloadURL>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -1620,7 +1726,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.format>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent>.
 
@@ -1638,7 +1745,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.haspolicy>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Policy>.
 
@@ -1648,6 +1756,7 @@
     skos:prefLabel "language"@en;
     skos:definition "A language used in the Distribution."@en;
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated if the metadata is provided in multiple languages."@en;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.language>;
     dsv:property dct:language;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
@@ -1663,7 +1772,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument>.
 
@@ -1681,7 +1791,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.linkedschemas>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -1702,7 +1813,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.mediatype>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>.
 
@@ -1717,7 +1829,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.modificationdate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -1735,7 +1848,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.releasedate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -1756,7 +1870,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.spatialresolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
 
@@ -1777,7 +1892,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.temporalresolution>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
 
@@ -1795,7 +1911,8 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1816,7 +1933,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.packagingformat>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>.
 
@@ -1830,7 +1948,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.rights>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -1844,7 +1963,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#status>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property <http://www.w3.org/ns/adms#status>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
@@ -1865,7 +1985,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Relationship>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Relationship>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -1884,7 +2006,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Relationship.hadrole>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Role>.
 
@@ -1905,7 +2028,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Relationship.relation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -1925,7 +2049,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Resource>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CataloguedResource>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Role> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1943,7 +2069,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Role>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Role>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Agent> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1955,7 +2083,9 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Agent>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Agent.name> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Agent>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -1967,7 +2097,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/name>
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent.name>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     dsv:property <http://xmlns.com/foaf/0.1/name>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
@@ -1977,7 +2108,8 @@
     a dsv:Profile;
     skos:prefLabel "type"@en;
     skos:definition "The nature of the agent."@en;
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent.type>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property dct:type;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
@@ -1987,8 +2119,10 @@
     skos:prefLabel "Concept"@en;
     skos:definition "An idea or notion; a unit of thought."@en;
     <http://purl.org/vocab/vann/usageNote> "In DCAT-AP, a Concept is used to denote codes within a codelist. In section 10. Controlled Vocabularies the expectations are elaborated in more detail."@en;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept>;
     a dsv:ClassProfile;
-    dsv:class skos:Concept.
+    dsv:class skos:Concept;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Concept.preferredLabel> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Concept>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -2000,7 +2134,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:prefLabel
 ];
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept.preferredlabel>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     dsv:property skos:prefLabel;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
@@ -2014,8 +2149,10 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/eli/ontology#LegalResource>
 ];
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource>;
     a dsv:ClassProfile;
-    dsv:class <http://data.europa.eu/eli/ontology#LegalResource>.
+    dsv:class <http://data.europa.eu/eli/ontology#LegalResource>;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Location> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2030,7 +2167,9 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Location.bbox> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Location>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -2043,7 +2182,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.bbox>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -2061,7 +2201,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.centroid>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -2079,7 +2220,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.geometry>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Geometry>.
 
@@ -2091,8 +2233,10 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Document>
 ];
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document>;
     a dsv:ClassProfile;
-    dsv:class <http://xmlns.com/foaf/0.1/Document>.
+    dsv:class <http://xmlns.com/foaf/0.1/Document>;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2107,7 +2251,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LinguisticSystem>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2122,14 +2267,16 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#LicenseDocument>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#LicenseDocument.type> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:prefLabel "type"@en;
     skos:definition "A type of licence, e.g. indicating 'public domain' or 'royalties required'."@en;
-    dsv:cardinality <https://w3id.org/dsv#0n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument.type>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:type;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
@@ -2150,7 +2297,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#RightsStatement>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Standard> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2165,7 +2314,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Standard>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2180,6 +2331,7 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#rdfs-Resource>
 ];
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource>;
     a dsv:ClassProfile.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -2193,8 +2345,10 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:ProvenanceStatement
 ];
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement>;
     a dsv:ClassProfile;
-    dsv:class dct:ProvenanceStatement.
+    dsv:class dct:ProvenanceStatement;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Policy> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2209,7 +2363,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Policy>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Policy>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2227,7 +2383,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.beginning> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -2246,7 +2404,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.beginning>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Instant>.
 
@@ -2267,7 +2426,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.end>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Instant>.
 
@@ -2288,7 +2448,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.enddate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -2309,7 +2470,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv#01>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.startdate>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -2329,7 +2491,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaTypeOrExtent>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#MediaType> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2347,7 +2511,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#MediaType>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaType>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Identifier> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2358,8 +2524,10 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#Identifier>
 ];
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier>;
     a dsv:ClassProfile;
-    dsv:class <http://www.w3.org/ns/adms#Identifier>.
+    dsv:class <http://www.w3.org/ns/adms#Identifier>;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Identifier.notation> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Identifier>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -2370,7 +2538,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:notation
 ];
-    dsv:cardinality <https://w3id.org/dsv#11>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier.notation>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
     dsv:property skos:notation;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
@@ -2391,7 +2560,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Geometry>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Geometry>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Frequency> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2406,7 +2577,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Frequency>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2417,8 +2590,10 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:ConceptScheme
 ];
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ConceptScheme>;
     a dsv:ClassProfile;
-    dsv:class skos:ConceptScheme.
+    dsv:class skos:ConceptScheme;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme.title> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -2426,7 +2601,8 @@
     skos:prefLabel "title"@en;
     skos:definition "A name of the concept scheme."@en;
     <http://purl.org/vocab/vann/usageNote> "May be repeated for different versions of the name."@en;
-    dsv:cardinality <https://w3id.org/dsv#1n>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ConceptScheme.title>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     dsv:property dct:title;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
@@ -2447,7 +2623,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#ChecksumAlgorithm>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ChecksumAlgorithm>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Attribution> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2462,7 +2640,9 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Attribution>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Attribution>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Activity> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2472,8 +2652,10 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/prov#Activity>
 ];
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity>;
     a dsv:ClassProfile;
-    dsv:class <http://www.w3.org/ns/prov#Activity>.
+    dsv:class <http://www.w3.org/ns/prov#Activity>;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Kind> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2485,7 +2667,9 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Kind>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Checksum> dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -2497,7 +2681,9 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Checksum>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#main>.
 
 <https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Checksum>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
@@ -2513,7 +2699,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm>
 ];
-    dsv:cardinality <https://w3id.org/dsv#11>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Checksum.algorithm>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm>.
 
@@ -2531,7 +2718,8 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue>
 ];
-    dsv:cardinality <https://w3id.org/dsv#11>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Checksum.checksumvalue>;
+    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#hexBinary>.
 
@@ -2551,4 +2739,6 @@
   dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap/#Instant>
 ];
-    a dsv:ClassProfile.
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Timeinstant>;
+    a dsv:ClassProfile;
+    dsv:classRole <https://w3id.org/dsv/class-role#supportive>.
