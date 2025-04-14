@@ -70,13 +70,70 @@
             ]
           }
         ],
+        "http://www.w3.org/ns/dx/prof/hasResource": [
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": "./model.owl.ttl"
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": "./dsv.ttl"
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/schema"
+              }
+            ]
+          },
+          {
+            "@type": [
+              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+            ],
+            "http://www.w3.org/ns/dx/prof/hasArtifact": [
+              {
+                "@id": ""
+              }
+            ],
+            "http://www.w3.org/ns/dx/prof/hasRole": [
+              {
+                "@id": "http://www.w3.org/ns/dx/prof/role/specification"
+              }
+            ]
+          }
+        ],
         "http://purl.org/dc/terms/references": [
           [
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-ap-cz-podmínky-užití/"
+              "@id": "https://mff-uk.github.io/specifications/dcat-ap/"
             },
             {
+              "@id": "https://mff-uk.github.io/specifications/dcat-ap-cz-podmínky-užití/"
+            }
+          ]
+        ],
+        "http://www.w3.org/ns/dx/prof/isProfileOf": [
+          [
+            {
               "@id": "https://mff-uk.github.io/specifications/dcat-ap/"
+            },
+            {
+              "@id": "https://mff-uk.github.io/specifications/dcat-ap-cz-podmínky-užití/"
             }
           ]
         ]
@@ -153,10 +210,12 @@
       <section>
         <h2>Přehled</h2>
 
-          <figure>
-            <img src="./a9aad48a-7018-43ea-975b-55bd8137e36d.svg" alt="View for DCAT-AP-CZ" />
-            <figcaption>View for DCAT-AP-CZ</figcaption>
-          </figure>
+          <a href="./a9aad48a-7018-43ea-975b-55bd8137e36d.svg">
+            <figure>
+              <img src="./a9aad48a-7018-43ea-975b-55bd8137e36d.svg" alt="View for DCAT-AP-CZ" />
+              <figcaption>View for DCAT-AP-CZ</figcaption>
+            </figure>
+          </a>
       </section>
 
       <section>
@@ -1815,7 +1874,7 @@
                                       vlastnost
                       
                       <a href="http://xmlns.com/foaf/0.1/homepage">homepage (@en)</a> (<a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a>)
-                        <br />Definice: <i>This axiom needed so that Protege loads DCAT 3 without errors.</i>
+                        <br />Definice: <i>A homepage for some thing.</i>
                 
                             </li>
                         </ul>
@@ -2799,7 +2858,7 @@
                     <tr>
                       <td>Obor hodnot</td>
                       <td>
-                        <a href="http://www.w3.org/1999/02/22-rdf-syntax-ns#langString">rdf:langString</a>
+                        <a href="https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text">https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text</a>
                 
                             [0..1]
                 
@@ -3095,11 +3154,6 @@
                             <li>
                                     
                   profil
-                  <a href="#Distribuce">Distribuce</a> (<a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce</a>)
-                    <ul style="list-style-type: none;">
-                        <li>
-                                  
-                  profil
                   <a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution</a>)
                     <ul style="list-style-type: none;">
                         <li>
@@ -3119,14 +3173,15 @@
                         </li>
                     </ul>
             
-                        </li>
-                    </ul>
-            
                             </li>
                       </ul>
                     </td>
                   </tr>
             
+                <tr>
+                  <td>Popis použití v profilu</td>
+                  <td> (@en)</td>
+                </tr>
               </table>
             
             
@@ -3197,6 +3252,10 @@
                         </td>
                       </tr>
                 
+                    <tr>
+                      <td>Popis použití v profilu</td>
+                      <td> (@en)</td>
+                    </tr>
                   </table>
                 </section>
             </section>            <section id="DistribuceSoubor">
@@ -3223,11 +3282,6 @@
                             <li>
                                     
                   profil
-                  <a href="#Distribuce">Distribuce</a> (<a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce">https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce</a>)
-                    <ul style="list-style-type: none;">
-                        <li>
-                                  
-                  profil
                   <a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">Distribuce</a> (<a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution</a>)
                     <ul style="list-style-type: none;">
                         <li>
@@ -3247,14 +3301,15 @@
                         </li>
                     </ul>
             
-                        </li>
-                    </ul>
-            
                             </li>
                       </ul>
                     </td>
                   </tr>
             
+                <tr>
+                  <td>Popis použití v profilu</td>
+                  <td> (@en)</td>
+                </tr>
               </table>
             
             
@@ -3326,6 +3381,10 @@
                         </td>
                       </tr>
                 
+                    <tr>
+                      <td>Popis použití v profilu</td>
+                      <td> (@en)</td>
+                    </tr>
                   </table>
                 </section>    <section id="Distribuce-SouborKeStažení.formátSouboruKeStažení">
                   <h4>formát souboru ke stažení</h4>
@@ -3395,6 +3454,10 @@
                         </td>
                       </tr>
                 
+                    <tr>
+                      <td>Popis použití v profilu</td>
+                      <td> (@en)</td>
+                    </tr>
                   </table>
                 </section>    <section id="Distribuce-SouborKeStažení.typMédia">
                   <h4>typ média</h4>
@@ -3463,6 +3526,10 @@
                         </td>
                       </tr>
                 
+                    <tr>
+                      <td>Popis použití v profilu</td>
+                      <td> (@en)</td>
+                    </tr>
                   </table>
                 </section>    <section id="Distribuce-SouborKeStažení.formátBalíčku">
                   <h4>formát balíčku</h4>
@@ -3531,6 +3598,10 @@
                         </td>
                       </tr>
                 
+                    <tr>
+                      <td>Popis použití v profilu</td>
+                      <td> (@en)</td>
+                    </tr>
                   </table>
                 </section>    <section id="Distribuce-SouborKeStažení.formátKomprese">
                   <h4>formát komprese</h4>
@@ -3600,6 +3671,10 @@
                         </td>
                       </tr>
                 
+                    <tr>
+                      <td>Popis použití v profilu</td>
+                      <td> (@en)</td>
+                    </tr>
                   </table>
                 </section>    <section id="Distribuce-SouborKeStažení.strojověČitelnéSchémaSouboruKeStažení">
                   <h4>Strojově čitelné schéma souboru ke stažení</h4>
@@ -3669,6 +3744,10 @@
                         </td>
                       </tr>
                 
+                    <tr>
+                      <td>Popis použití v profilu</td>
+                      <td> (@en)</td>
+                    </tr>
                   </table>
                 </section>
             </section>            <section id="FormátSouboru">
@@ -4765,6 +4844,79 @@
                     <li><a href="#DatováSada.dokumentace"></a></li>
                     <li><a href="#DatováSlužba.dokumentace"></a></li>
                 </ul>
+            
+            
+            </section>            <section id="Jednotlivec">
+              <h4>Jednotlivec</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Jednotlivec">https://ofn.gov.cz/dcat-ap-cz/draft/#Jednotlivec</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Jednotlivec</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Jednotlivá fyzická osoba.</td>
+                </tr>
+            
+                  <tr>
+                    <td>Profiluje</td>
+                    <td>
+                      <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                            <li>
+                                    třída
+                  
+                  <a href="http://www.w3.org/2006/vcard/ns#Individual">Individual (@en)</a> (<a href="http://www.w3.org/2006/vcard/ns#Individual">vcard:Individual</a>)
+                    <br />Definice: <i>An object representing a single person or entity</i>
+            
+                            </li>
+                      </ul>
+                    </td>
+                  </tr>
+            
+              </table>
+            
+            
+            
+            </section>            <section id="Organizace">
+              <h4>Organizace</h4>
+            
+              <table class="def">
+                <tr>
+                  <td>IRI</td>
+                  <td><a href="https://ofn.gov.cz/dcat-ap-cz/draft/#Organizace">https://ofn.gov.cz/dcat-ap-cz/draft/#Organizace</a></td>
+                </tr>
+                <tr>
+                  <td>Název</td>
+                  <td>Organizace</td>
+                </tr>
+                <tr>
+                  <td>Definice</td>
+                  <td>Organizace, právnická osoba nebo její část.</td>
+                </tr>
+            
+                  <tr>
+                    <td>Profiluje</td>
+                    <td>
+                      <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                            <li>
+                                    třída
+                  
+                  <a href="http://www.w3.org/2006/vcard/ns#Organization">Organization (@en)</a> (<a href="http://www.w3.org/2006/vcard/ns#Organization">vcard:Organization</a>)
+                    <br />Definice: <i>An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.
+            </i>
+            
+                            </li>
+                      </ul>
+                    </td>
+                  </tr>
+            
+              </table>
+            
             
             
             </section>
