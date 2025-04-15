@@ -34,6 +34,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.applicablelegislation>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
 
@@ -50,6 +51,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.catalogue>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>.
 
@@ -65,6 +67,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.creator>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -81,6 +84,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.dataset>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
 
@@ -92,6 +96,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.geographicalcoverage>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Location>.
 
@@ -111,6 +116,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.haspart>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>.
 
@@ -127,6 +133,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.homepage>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -143,6 +150,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.language>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
 
@@ -154,6 +162,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.licence>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument>.
 
@@ -169,6 +178,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -188,6 +198,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.record>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord>.
 
@@ -204,6 +215,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.service>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#DataService>.
 
@@ -219,6 +231,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.temporalcoverage>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>.
 
@@ -231,6 +244,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.themes>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme>.
 
@@ -242,6 +256,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.modificationdate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -261,6 +276,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.releasedate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -277,6 +293,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -293,6 +310,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -312,6 +330,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.rights>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -345,6 +364,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.applicationprofile>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -356,6 +376,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.changetype>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property <http://www.w3.org/ns/adms#status>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -368,6 +389,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.language>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:language;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
 
@@ -384,6 +406,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.primarytopic>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Resource>.
 
@@ -400,6 +423,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.sourcemetadata>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property dct:source;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord>.
 
@@ -419,6 +443,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.listingdate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -435,6 +460,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.modificationdate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -454,6 +480,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.title>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -473,6 +500,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.description>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -513,6 +541,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.accessrights>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -528,6 +557,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.applicablelegislation>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
 
@@ -544,6 +574,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.conformsto>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -563,6 +594,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.contactpoint>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Kind>.
 
@@ -574,6 +606,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.documentation>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -593,6 +626,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointdescription>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -612,6 +646,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointURL>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -623,6 +658,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.format>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:format;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent>.
 
@@ -639,6 +675,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.landingpage>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -650,6 +687,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.licence>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument>.
 
@@ -665,6 +703,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.publisher>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -684,6 +723,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.servesdataset>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
 
@@ -696,6 +736,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.theme>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -712,6 +753,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.keyword>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -728,6 +770,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.title>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -744,6 +787,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.description>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -774,6 +818,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -789,6 +834,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
 
@@ -804,6 +850,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.conformsto>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -823,6 +870,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Kind>.
 
@@ -842,6 +890,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.creator>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -858,6 +907,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.datasetdistribution>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>.
 
@@ -895,6 +945,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.identifier>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -914,6 +965,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.keyword>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -930,6 +982,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.landingpage>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -946,6 +999,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.language>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
 
@@ -957,6 +1011,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -968,6 +1023,7 @@
     <http://purl.org/vocab/vann/usageNote> "Examples are MAST/ADS [MASTADS], DOI [DOI], EZID [EZID] or W3ID [W3ID]."@en;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.otheridentifier>;
     dsv:property <http://www.w3.org/ns/adms#identifier>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Identifier>.
 
@@ -979,6 +1035,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.provenance>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:provenance;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement>.
 
@@ -994,6 +1051,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -1009,6 +1067,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.qualifiedattribution>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Attribution>.
 
@@ -1024,6 +1083,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.qualifiedrelation>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Relationship>.
 
@@ -1034,6 +1094,7 @@
     skos:definition "A related resource."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.relatedresource>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -1064,6 +1125,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.sample>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://www.w3.org/ns/adms#sample>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>.
 
@@ -1074,6 +1136,7 @@
     skos:definition "A related Dataset from which the described Dataset is derived."@en;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.source>;
     dsv:property dct:source;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
 
@@ -1092,6 +1155,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.spatialresolution>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
 
@@ -1114,6 +1178,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>.
 
@@ -1136,6 +1201,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalresolution>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
 
@@ -1148,6 +1214,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.theme>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -1164,6 +1231,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.title>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1176,6 +1244,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -1198,6 +1267,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.version>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -1214,6 +1284,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.versionnotes>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1233,6 +1304,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Frequency>.
 
@@ -1252,6 +1324,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Location>.
 
@@ -1268,6 +1341,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.description>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1300,6 +1374,7 @@
     skos:definition "A page or document about this Dataset."@en;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.documentation>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -1319,6 +1394,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.isreferencedby>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Resource>.
 
@@ -1338,6 +1414,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.hasversion>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>.
 
@@ -1462,6 +1539,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.publisher>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Agent>.
 
@@ -1552,6 +1630,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessservice>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#DataService>.
 
@@ -1568,6 +1647,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessURL>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -1583,6 +1663,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
 
@@ -1601,6 +1682,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property <http://data.europa.eu/r5r/availability>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -1623,6 +1705,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.bytesize>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#nonNegativeInteger>.
 
@@ -1642,6 +1725,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.checksum>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Checksum>.
 
@@ -1658,6 +1742,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.compressionformat>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>.
 
@@ -1677,6 +1762,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.description>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1687,6 +1773,7 @@
     skos:definition "A page or document about this Distribution."@en;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.documentation>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Document>.
 
@@ -1706,6 +1793,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.downloadURL>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>.
 
@@ -1728,6 +1816,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.format>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent>.
 
@@ -1747,6 +1836,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.haspolicy>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Policy>.
 
@@ -1758,6 +1848,7 @@
     <http://purl.org/vocab/vann/usageNote> "This property can be repeated if the metadata is provided in multiple languages."@en;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.language>;
     dsv:property dct:language;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem>.
 
@@ -1774,6 +1865,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument>.
 
@@ -1793,6 +1885,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.linkedschemas>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Standard>.
 
@@ -1815,6 +1908,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.mediatype>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>.
 
@@ -1831,6 +1925,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.modificationdate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -1850,6 +1945,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.releasedate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -1872,6 +1968,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.spatialresolution>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
 
@@ -1894,6 +1991,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.temporalresolution>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
 
@@ -1913,6 +2011,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.title>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1935,6 +2034,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.packagingformat>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>.
 
@@ -1950,6 +2050,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.rights>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement>.
 
@@ -1966,6 +2067,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property <http://www.w3.org/ns/adms#status>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -2100,6 +2202,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent.name>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
     dsv:property <http://xmlns.com/foaf/0.1/name>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#mandatory>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -2111,6 +2214,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent.type>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
     dsv:property dct:type;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -2184,6 +2288,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.bbox>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -2203,6 +2308,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.centroid>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -2222,6 +2328,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.geometry>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Geometry>.
 
@@ -2278,6 +2385,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument.type>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
     dsv:property dct:type;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Concept>.
 
@@ -2406,6 +2514,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.beginning>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Instant>.
 
@@ -2428,6 +2537,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.end>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#optional>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Instant>.
 
@@ -2450,6 +2560,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.enddate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -2472,6 +2583,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.startdate>;
     dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:requirementLevel <https://w3id.org/dsv/requirement-level#recommended>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
