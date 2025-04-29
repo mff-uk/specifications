@@ -4,6 +4,10 @@
 @prefix dsv: <https://w3id.org/dsv#>.
 @prefix owl: <http://www.w3.org/2002/07/owl#>.
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
+@prefix vann: <http://purl.org/vocab/vann/>.
+@prefix cardinality: <https://w3id.org/dsv/cardinality#>.
+@prefix requirement: <https://w3id.org/dsv/requirement-level#>.
+@prefix role: <https://w3id.org/dsv/class-role#>.
 
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel> a dsv:ConceptualModel.
@@ -21,10 +25,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada.jeSoučástí> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -37,10 +42,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#SérieDatovýchSad>.
 
@@ -52,10 +57,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.title>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:cardinality cardinality:11;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
 
@@ -67,10 +72,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.description>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:cardinality cardinality:11;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
 
@@ -82,10 +87,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.publisher>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.publisher>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Poskytovatel>.
 
@@ -100,10 +105,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#DatovéTéma>.
 
@@ -115,10 +120,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Frekvence>.
 
@@ -136,10 +141,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -154,10 +159,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#PrvekRÚIAN>.
 
@@ -172,10 +177,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#GeografickéÚzemí>.
 
@@ -187,10 +192,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#ČasovýInterval>.
 
@@ -205,10 +210,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod>.
 
@@ -223,7 +228,7 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.documentation>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.documentation>
 ];
     a dsv:ObjectPropertyProfile;
@@ -237,10 +242,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.conformsTo>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.conformsTo>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Standard>.
 
@@ -252,10 +257,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#TémaEuroVoc>.
 
@@ -267,10 +272,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
 
@@ -285,10 +290,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
 
@@ -300,10 +305,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.applicableLegislation>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#PrávníPředpis>.
 
@@ -321,10 +326,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.datasetDistribution>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Dataset.datasetDistribution>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce>.
 
@@ -341,10 +346,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog.popis> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#Katalog>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -354,10 +360,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.description>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.description>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:cardinality cardinality:11;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
 
@@ -369,10 +375,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.title>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:cardinality cardinality:11;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
 
@@ -384,10 +390,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.publisher>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.publisher>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:cardinality cardinality:11;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Poskytovatel>.
 
@@ -400,7 +406,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#contactPoint>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <http://www.w3.org/ns/dcat#contactPoint>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod>.
@@ -413,7 +419,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.homepage>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.homepage>
 ];
     a dsv:ObjectPropertyProfile;
@@ -433,10 +439,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.dataset>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.dataset>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSada>.
 
@@ -450,10 +456,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba.příslušnýPrávníPředpis> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -466,10 +473,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.applicableLegislation>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#PrávníPředpis>.
 
@@ -481,10 +488,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#DataService.title>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#11>;
+    dsv:cardinality cardinality:11;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
 
@@ -502,10 +509,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#1n>;
+    dsv:cardinality cardinality:1n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj>.
 
@@ -523,10 +530,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj>.
 
@@ -535,9 +542,9 @@
     a dsv:Profile;
     skos:prefLabel "conforms to"@en, "specifikace"@cs;
     skos:definition "An established (technical) standard to which the Data Service conforms."@en, "Specifikaci, jíž se datová služba řídí."@cs;
-    <http://purl.org/vocab/vann/usageNote> "Takovou specifikací je například SPARQL. Seznam možných hodnot lze nalézt například v seznamu udržovaném Open Source Geospatial Foundation."@cs;
+    skos:scopeNote "Takovou specifikací je například SPARQL. Seznam možných hodnot lze nalézt například v seznamu udržovaném Open Source Geospatial Foundation."@cs;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#DataService.conformsTo>;
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Standard>.
 
@@ -549,7 +556,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#DataService.documentation>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DataService.documentation>
 ];
     a dsv:ObjectPropertyProfile;
@@ -563,10 +570,11 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -581,10 +589,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce.přístupovéUrl> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -597,10 +606,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj>.
 
@@ -615,10 +624,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.applicableLegislation>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.applicableLegislation>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#PrávníPředpis>.
 
@@ -633,10 +642,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
 
@@ -652,7 +661,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/specifikace>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     dsv:property <https://data.gov.cz/slovník/podmínky-užití/specifikace>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#SpecifikacePodmínekUžití>.
@@ -664,10 +673,11 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Kind>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Kind>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod.jméno> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -678,7 +688,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#fn>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <http://www.w3.org/2006/vcard/ns#fn>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <https://ofn.gov.cz/zdroj/základní-datové-typy/2020-07-01/text>.
@@ -692,7 +702,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/2006/vcard/ns#hasEmail>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <http://www.w3.org/2006/vcard/ns#hasEmail>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj>.
@@ -704,10 +714,11 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#ČasovýInterval.datumZačátku> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#ČasovýInterval>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -723,10 +734,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -744,10 +755,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -755,10 +766,11 @@
     a dsv:Profile;
     skos:prefLabel "Distribuce - Datová služba"@cs, "Distribución"@es, "Distribution"@en, "Distribution"@fr, "Distribuzione"@it, "Διανομή"@el, "التوزيع"@ar, "配信"@ja, "Distribution"@da;
     skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en, "Konkrétní reprezentace datové sady datovou službou."@cs, "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed."@it, "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS."@fr, "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."@es, "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed."@el, "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك."@ar, "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"@ja, "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)."@da;
-    <http://purl.org/vocab/vann/usageNote> ""@en;
+    skos:scopeNote ""@en;
     dsv:specializes <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce>, <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce>;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>;
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-DatováSlužba.přístupováSlužba> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#DistribuceDatováSlužba>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -771,10 +783,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#DatováSlužba>.
 
@@ -782,10 +794,11 @@
     a dsv:Profile;
     skos:prefLabel "Distribuce - Soubor ke stažení"@cs, "Distribución"@es, "Distribution"@en, "Distribution"@fr, "Distribuzione"@it, "Διανομή"@el, "التوزيع"@ar, "配信"@ja, "Distribution"@da;
     skos:definition "A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above)."@en, "Konkrétní reprezentace datové sady jako souboru ke stažení."@cs, "Rappresenta una forma disponibile e specifica del dataset. Ciascun dataset può essere disponibile in forme differenti, che possono rappresentare formati diversi o diversi punti di accesso per un dataset. Esempi di distribuzioni sono un file CSV scaricabile, una API o un RSS feed."@it, "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible sous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution sont des fichirs CSV, des API ou des flux RSS."@fr, "Una representación específica de los datos. Cada conjunto de datos puede estar disponible en formas diferentes, las cuáles pueden variar en distintas formas, incluyendo el idioma, 'media-type' o formato, organización esquemática, resolución temporal y espacial, nivel de detalle o perfiles (que pueden especificar cualquiera o todas las diferencias anteriores)."@es, "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε διαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης. Παραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed."@el, "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك."@ar, "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"@ja, "En specifik repræsentation af et datasæt. Et datasæt kan være tilgængelig i mange serialiseringer der kan variere på forskellige vis, herunder sprog, medietype eller format, systemorganisering, tidslig- og geografisk opløsning, detaljeringsniveau eller profiler (der kan specificere en eller flere af ovenstående)."@da;
-    <http://purl.org/vocab/vann/usageNote> ""@en;
+    skos:scopeNote ""@en;
     dsv:specializes <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce>, <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce>, <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce>;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>;
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Distribuce-SouborKeStažení.odkazNaStaženíSouboru> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#DistribuceSoubor>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -795,10 +808,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj>.
 
@@ -810,10 +823,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#FormátSouboru>.
 
@@ -831,10 +844,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#TypMédia>.
 
@@ -852,10 +865,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#TypMédia>.
 
@@ -873,10 +886,10 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.compressionFormat>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.compressionFormat>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#TypMédia>.
 
@@ -888,10 +901,10 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#0n>;
+    dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj>.
 
@@ -905,10 +918,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#TypMédia> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -920,10 +934,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#MediaType>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#GeografickéÚzemí> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -935,10 +950,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Frekvence> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -950,10 +966,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Frequency>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Frequency>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -965,10 +982,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Concept>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Concept>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#DatovéTéma> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -980,10 +998,11 @@
   dsv:reusedFromResource <https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#TémaEuroVoc> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -995,10 +1014,11 @@
   dsv:reusedFromResource <https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://ofn.gov.cz/dcat-ap-cz/draft/#Koncept>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#PrávníPředpis> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1010,10 +1030,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Poskytovatel> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1022,10 +1043,11 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Agent>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Agent>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Zdroj> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1034,10 +1056,11 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#PrvekRÚIAN> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1049,10 +1072,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Location>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Standard> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1061,10 +1085,11 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-ap/#Standard>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Standard>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#SpecifikacePodmínekUžití> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1078,7 +1103,8 @@
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/Specifikace>
 ];
     a dsv:ClassProfile;
-    dsv:class <https://data.gov.cz/slovník/podmínky-užití/Specifikace>.
+    dsv:class <https://data.gov.cz/slovník/podmínky-užití/Specifikace>;
+    dsv:classRole role:main.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#SpecifikacePodmínekUžití.jménaAutorůOriginálníDatabáze> dsv:domain <https://ofn.gov.cz/dcat-ap-cz/draft/#SpecifikacePodmínekUžití>;
     dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
@@ -1092,7 +1118,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/autor-databáze>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <https://data.gov.cz/slovník/podmínky-užití/autor-databáze>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
@@ -1109,7 +1135,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/autor>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <https://data.gov.cz/slovník/podmínky-užití/autor>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
@@ -1126,7 +1152,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/databáze-jako-autorské-dílo>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <https://data.gov.cz/slovník/podmínky-užití/databáze-jako-autorské-dílo>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Licence>.
@@ -1143,7 +1169,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/autorské-dílo>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <https://data.gov.cz/slovník/podmínky-užití/autorské-dílo>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Licence>.
@@ -1160,7 +1186,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/databáze-chráněná-zvláštními-právy>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <https://data.gov.cz/slovník/podmínky-užití/databáze-chráněná-zvláštními-právy>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Licence>.
@@ -1177,7 +1203,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://data.gov.cz/slovník/podmínky-užití/osobní-údaje>
 ];
-    dsv:cardinality <https://w3id.org/dsv/cardinality#01>;
+    dsv:cardinality cardinality:01;
     dsv:property <https://data.gov.cz/slovník/podmínky-užití/osobní-údaje>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://ofn.gov.cz/dcat-ap-cz/draft/#Licence>.
@@ -1191,7 +1217,8 @@
   dsv:reusedFromResource dct:LicenseDocument
 ];
     a dsv:ClassProfile;
-    dsv:class dct:LicenseDocument.
+    dsv:class dct:LicenseDocument;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Dokument> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1203,10 +1230,11 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Document>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty <http://purl.org/vocab/vann/usageNote>;
+  dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap/#Document>
 ];
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Jednotlivec> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1214,7 +1242,8 @@
     skos:definition "An object representing a single person or entity"@en, "Jednotlivá fyzická osoba."@cs;
     dsv:specializes <https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod>;
     a dsv:ClassProfile;
-    dsv:class <http://www.w3.org/2006/vcard/ns#Individual>.
+    dsv:class <http://www.w3.org/2006/vcard/ns#Individual>;
+    dsv:classRole role:supportive.
 
 <https://ofn.gov.cz/dcat-ap-cz/draft/#Organizace> dct:isPartOf <https://ofn.gov.cz/dcat-ap-cz/draft/#applicationProfileConceptualModel>;
     a dsv:Profile;
@@ -1222,4 +1251,5 @@
     skos:definition "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.\n"@en, "Organizace, právnická osoba nebo její část."@cs;
     dsv:specializes <https://ofn.gov.cz/dcat-ap-cz/draft/#KontaktníBod>;
     a dsv:ClassProfile;
-    dsv:class <http://www.w3.org/2006/vcard/ns#Organization>.
+    dsv:class <http://www.w3.org/2006/vcard/ns#Organization>;
+    dsv:classRole role:supportive.
