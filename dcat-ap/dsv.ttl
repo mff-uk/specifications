@@ -1114,6 +1114,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate>;
     dsv:cardinality cardinality:01;
+    dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -1368,6 +1369,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.wasgeneratedby>;
     dsv:cardinality cardinality:0n;
+    dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Activity>.
 
@@ -1452,6 +1454,7 @@
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.applicablelegislation>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
+    dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#LegalResource>.
 
@@ -1471,6 +1474,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.contactpoint>;
     dsv:cardinality cardinality:0n;
+    dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Kind>.
 
@@ -1487,6 +1491,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.frequency>;
     dsv:cardinality cardinality:01;
+    dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Frequency>.
 
@@ -1499,6 +1504,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.geographicalcoverage>;
     dsv:cardinality cardinality:0n;
+    dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#Location>.
 
@@ -1515,6 +1521,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.description>;
     dsv:cardinality cardinality:0n;
+    dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
@@ -1527,6 +1534,7 @@
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate>;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.modificationdate>;
     dsv:cardinality cardinality:01;
+    dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
@@ -1560,6 +1568,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.releasedate>;
     dsv:cardinality cardinality:01;
+    dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
@@ -1576,6 +1585,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.temporalcoverage>;
     dsv:cardinality cardinality:0n;
+    dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange <https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime>.
 
@@ -1592,6 +1602,7 @@
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.title>;
     dsv:cardinality cardinality:1n;
+    dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 
