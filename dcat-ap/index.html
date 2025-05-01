@@ -166,7 +166,83 @@
           }],
           inlineCSS: "true",
           github: "https://github.com/mff-uk/specifications/",
-          otherLinks: [{
+          localBiblio: {
+              "DXWG": {
+                "href" : "https://www.w3.org/2017/dxwg/wiki/Main_Page",
+                "title" : "Dataset Exchange Working Group",
+                "publisher" : "W3C"
+                },
+              "ISA":{
+                  "href":"https://ec.europa.eu/isa/",
+                  "title":"Interoperability Solutions for European Public Administrations (ISA)",
+                  "publisher":"European Commission"
+                },
+              "ISA2":{
+                "href":"https://ec.europa.eu/isa2/",
+                "title":"Interoperability solutions for public administrations, businesses and citizens (ISA²)",
+                "publisher":"European Commission"
+              },
+              "SEMIC":{
+                "href":"https://joinup.ec.europa.eu/",
+                "title":"JoinUp welcomes Interoperable Europe",
+                "publisher":"European Commission"
+                },
+              "DEU" : {
+                "href":"https://data.europa.eu",
+                "title":"The official portal for European data",
+                "publisher":"European Commission"
+              },
+          		"HVD" : {
+          		  "href":"https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:32023R0138",
+          		  "title":"Implementing Regulation for High Value Datasets",
+          		  "publisher":"European Union"
+          		},
+          		"DCAT-AP-HVD" : {
+          		  "href":"https://semiceu.github.io/uri.semic.eu-generated/DCAT-AP/releases/2.2.0-hvd/",
+          		  "title":"Usage Guidelines of DCAT-AP for High-Value Datasets",
+          		  "publisher":"European Commission"
+          		},
+              "PSI" : {
+                "href": "https://eur-lex.europa.eu/eli/dir/2019/1024/oj",
+                "title" :  "Directive on open data and the re-use of public sector information (recast)",
+                "publisher" : "European Union"
+              },
+              "MASTADS" : {
+                "href": "https://archive.stsci.edu/pub_dsn.html",
+                "title" :  "Referencing Data Sets in Astronomical Literature",
+                "publisher" : "MAST"
+              },
+              "DATACITE" : {
+                "href": "http://www.datacite.org/",
+                "title" :  "DataCite",
+                "publisher" : "DataCite"
+              },
+              "DOI" : {
+                "href": "http://www.doi.org/",
+                "title" :  "Digital Object Identifier",
+                "publisher" : "DOI Foundation"
+              },
+              "EZID" : {
+                "href": "https://ezid.cdlib.org/",
+                "title" :  "EZID",
+                "publisher" : "California Digital Library"
+              },
+              "W3ID" : {
+                "href": "https://w3id.org/",
+                "title" :  "Permanent Identifiers for the Web",
+                "publisher" : "W3C Permanent Identifier Community Group"
+              },
+              "ODRL" : {
+                "href": "https://www.w3.org/ns/odrl/2/",
+                "title" :  "The Open Digital Rights Language Ontology Version 2.2",
+                "publisher" : "W3C POE Working Group"
+              },
+              "FAIR" : {
+                "href": "https://www.openaire.eu/how-to-make-your-data-fair",
+                "title" :  "How to make your data FAIR",
+                "publisher" : "OpenAire"
+              }    
+          },    otherLinks: [{
               key: "Links",
               data: [{
                   value: "Original DCAT-AP 3.0.0 specification",
@@ -208,9 +284,27 @@
     <body>
       <p class="copyright"></p>
       <section id="abstract">
-        <p>
-          This file documents
-          <strong>DCAT-AP 3.0.0 based on DCAT 3 DAP</strong>.</p>
+        <p>DCAT-AP is a DCAT profile for sharing information about Catalogues containing Datasets and Data Services descriptions in Europe, under maintenance by the SEMIC action, Interoperable Europe.</p>
+        <p>This Application Profile provides a minimal common basis within Europe to share Datasets and Data Services cross-border and cross-domain.</p>      </section>
+
+      <section>
+        <h2>Introduction</h2>
+      </section>
+
+      <section>
+        <h2>Status</h2>
+      </section>
+
+      <section>
+        <h2>License</h2>
+      </section>
+
+      <section>
+        <h2>Conformance</h2>
+      </section>
+
+      <section>
+        <h2>Terminology</h2>
       </section>
 
       <section>
@@ -4623,13 +4717,13 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.identifier">
+                    </section>    <section id="Dataset.otherIdentifier">
                       <h4>other identifier</h4>
                     
                       <table class="def">
                         <tr>
                           <td>IRI</td>
-                          <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.identifier">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.identifier</a></td>
+                          <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.otherIdentifier">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.otherIdentifier</a></td>
                         </tr>
                         <tr>
                           <td>Label</td>
@@ -4676,7 +4770,7 @@
                     
                         <tr>
                           <td>Usage note</td>
-                          <td>Examples are MAST/ADS [MASTADS], DOI [DOI], EZID [EZID] or W3ID [W3ID].</td>
+                          <td>Examples are MAST/ADS [[MASTADS]], DOI [[DOI]], EZID [[EZID]] or W3ID [[W3ID]].</td>
                         </tr>
                       </table>
                     </section>    <section id="Dataset.provenance">
@@ -7135,7 +7229,7 @@
                         </tr>
                         <tr>
                           <td>Definition</td>
-                          <td>The policy expressing the rights associated with the distribution if using the [ODRL] vocabulary.</td>
+                          <td>The policy expressing the rights associated with the distribution if using the [[ODRL]] vocabulary.</td>
                         </tr>
                         <tr>
                           <td>Domain</td>
@@ -9057,7 +9151,7 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Dataset.identifier"></a></li>
+                        <li><a href="#Dataset.otherIdentifier"></a></li>
                     </ul>
                 
                     <section id="Identifier.notation">

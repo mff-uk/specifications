@@ -1019,12 +1019,12 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#date>.
 
-<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.identifier> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>;
+<https://mff-uk.github.io/specifications/dcat-ap/#Dataset.otherIdentifier> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Dataset>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
     skos:prefLabel "other identifier"@en;
     skos:definition "A secondary identifier of the Dataset"@en;
-    skos:scopeNote "Examples are MAST/ADS [MASTADS], DOI [DOI], EZID [EZID] or W3ID [W3ID]."@en;
+    skos:scopeNote "Examples are MAST/ADS [[MASTADS]], DOI [[DOI]], EZID [[EZID]] or W3ID [[W3ID]]."@en;
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.otheridentifier>;
     dsv:property <http://www.w3.org/ns/adms#identifier>;
     dsv:requirementLevel requirement:optional;
@@ -1838,7 +1838,7 @@
 <https://mff-uk.github.io/specifications/dcat-ap/#Distribution.hasPolicy> dsv:domain <https://mff-uk.github.io/specifications/dcat-ap/#Distribution>;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap/#applicationProfileConceptualModel>;
     a dsv:Profile;
-    skos:definition "The policy expressing the rights associated with the distribution if using the [ODRL] vocabulary."@en;
+    skos:definition "The policy expressing the rights associated with the distribution if using the [[ODRL]] vocabulary."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
