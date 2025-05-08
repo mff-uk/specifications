@@ -5,6 +5,8 @@ A repository for sample specifications from [Dataspecer](https://dataspecer.com)
   - [Complete DCAT 3 DAP Dataspecer project](dcat-dap/export.zip) (download and import as file).
 - [DCAT-AP 3.0](dcat-ap/), compare with the original [DCAT-AP 3.0](https://semiceu.github.io/DCAT-AP/releases/3.0.0/). See the profiling hierarchy from DCAT-AP to DCAT-DAP (above).
   - [Complete DCAT 3 DAP Dataspecer project](dcat-ap/export.zip) (download and import as file).
+- [Data Specification Vocabulary (DSV)](https://mff-uk.github.io/data-specification-vocabulary/dsv/)
+- [Data Specification Vocabulary Default Application Profile (DSV-DAP)](https://mff-uk.github.io/data-specification-vocabulary/dsv-dap/)
 - [DCAT-AP-CZ](https://ofn.gov.cz/dcat-ap-cz) (in Czech), reusing DCAT-AP.
 - [DCAT-AP-CZ terms of use vocabulary](https://ofn.gov.cz/dcat-ap-cz-podmínky-užití/) (in Czech)
 - [DCAT-AP-CZ dataset types](https://ofn.gov.cz/dcat-ap-cz-typy-datových-sad-dle-zdroje/) (in Czech)
