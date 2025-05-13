@@ -8,141 +8,174 @@
       <meta name="color-scheme" content="light dark">
       <script type="application/ld+json">
         {
-        "@id": "",
+        "@id": "https://mff-uk.github.io/specifications/dcat-ap",
         "@type": [
-          "http://purl.org/dc/terms/Standard",
-          "http://www.w3.org/2002/07/owl#Ontology"
+          "dsv:ApplicationProfileSpecificationDocument",
+          "adms:AssetDistribution",
+          "prof:ResourceDescriptor"
         ],
-        "http://purl.org/dc/terms/title": [
+        "hasArtifact": ".",
+        "hasRole": "role:Guidance",
+        "format": "filetype:HTML",
+        "inSpecificationOf": [
           {
-            "@language": "en",
-            "@value": "DCAT-AP 3.0.0 based on DCAT 3 DAP"
-          },
-          {
-            "@language": "cs",
-            "@value": "DCAT-AP 3.0.0 na základě DCAT 3 DAP"
-          }
-        ],
-        "https://w3id.org/dsv#artefact": [
-          {
+            "@id": "https://mff-uk.github.io/specifications/dcat-ap/#",
             "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
+              "dsv:ApplicationProfile",
+              "prof:Profile"
             ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./model.owl.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
-              }
-            ]
-          },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./dsv.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/schema"
-              }
-            ]
-          },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": ""
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/specification"
-              }
-            ]
-          }
-        ],
-        "http://www.w3.org/ns/dx/prof/hasResource": [
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./model.owl.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/vocabulary"
-              }
-            ]
-          },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": "./dsv.ttl"
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/schema"
-              }
-            ]
-          },
-          {
-            "@type": [
-              "http://www.w3.org/ns/dx/prof/ResourceDescriptor"
-            ],
-            "http://www.w3.org/ns/dx/prof/hasArtifact": [
-              {
-                "@id": ""
-              }
-            ],
-            "http://www.w3.org/ns/dx/prof/hasRole": [
-              {
-                "@id": "http://www.w3.org/ns/dx/prof/role/specification"
-              }
-            ]
-          }
-        ],
-        "http://purl.org/dc/terms/references": [
-          [
-            {
-              "@id": "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
+            "title": {
+              "en": "DCAT-AP 3.0.0 based on DCAT 3 DAP",
+              "cs": "DCAT-AP 3.0.0 na základě DCAT 3 DAP"
             },
-            {
-              "@id": "https://op.europa.eu/documents/3938058/11669184/eli.owl/"
-            },
-            {
-              "@id": "https://mff-uk.github.io/specifications/dcat-dap/"
+            "isProfileOf": [
+              {
+                "hasArtifact": [
+                  "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
+                ]
+              },
+              {
+                "hasArtifact": [
+                  "https://op.europa.eu/documents/3938058/11669184/eli.owl/"
+                ]
+              },
+              {
+                "@id": "https://mff-uk.github.io/specifications/dcat-dap/#",
+                "hasArtifact": [
+                  "https://mff-uk.github.io/specifications/dcat-dap/"
+                ]
+              }
+            ],
+            "hasResource": [
+              {
+                "@id": "https://mff-uk.github.io/specifications/dcat-ap#dsv",
+                "@type": [
+                  "adms:AssetDistribution",
+                  "prof:ResourceDescriptor"
+                ],
+                "hasArtifact": "./dsv.ttl",
+                "hasRole": "role:Specification",
+                "format": "filetype:RDF_TURTLE",
+                "conformsTo": [
+                  "dsv:ApplicationProfileSpecificationDocument",
+                  "prof:Profile"
+                ]
+              },
+              {
+                "@id": "https://mff-uk.github.io/specifications/dcat-ap#rr5e6",
+                "@type": [
+                  "adms:AssetDistribution",
+                  "prof:ResourceDescriptor"
+                ],
+                "hasArtifact": "./rr5e6.svg",
+                "hasRole": "role:Guidance",
+                "format": "filetype:SVG",
+                "conformsTo": "https://www.w3.org/TR/SVG/"
+              },
+              {
+                "@id": "https://mff-uk.github.io/specifications/dcat-ap",
+                "@type": [
+                  "dsv:ApplicationProfileSpecificationDocument",
+                  "adms:AssetDistribution",
+                  "prof:ResourceDescriptor"
+                ],
+                "hasArtifact": ".",
+                "hasRole": "role:Guidance",
+                "format": "filetype:HTML"
+              }
+            ]
+          }
+        ],
+        "@context": {
+          "@version": 1.1,
+          "prof": "http://www.w3.org/ns/dx/prof/",
+          "role": "prof:role/",
+          "dsv": "https://w3id.org/dsv#",
+          "owl": "http://www.w3.org/2002/07/owl#",
+          "adms": "http://www.w3.org/ns/adms#",
+          "filetype": "http://publications.europa.eu/resource/authority/file-type/",
+          "title": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@container": "@language"
+          },
+          "description": {
+            "@id": "http://purl.org/dc/terms/description",
+            "@container": "@language"
+          },
+          "conformsTo": {
+            "@id": "http://purl.org/dc/terms/conformsTo",
+            "@type": "@id",
+            "@container": "@set"
+          },
+          "format": {
+            "@id": "http://purl.org/dc/terms/format",
+            "@type": "@id"
+          },
+          "hasRole": {
+            "@id": "prof:hasRole",
+            "@type": "@id"
+          },
+          "hasArtifact": {
+            "@id": "prof:hasArtifact",
+            "@type": "@id"
+          },
+          "inSpecificationOf": {
+            "@reverse": "prof:hasResource",
+            "@type": "@id",
+            "@context": {
+              "title": {
+                "@id": "http://purl.org/dc/terms/title",
+                "@container": "@language"
+              },
+              "description": {
+                "@id": "http://purl.org/dc/terms/description",
+                "@container": "@language"
+              },
+              "hasToken": {
+                "@id": "prof:hasToken",
+                "@type": "xsd:token"
+              },
+              "isProfileOf": {
+                "@id": "prof:isProfileOf",
+                "@container": "@set",
+                "@context": {
+                  "title": {
+                    "@id": "http://purl.org/dc/terms/title",
+                    "@container": "@language"
+                  },
+                  "hasResource": {
+                    "@id": "prof:hasResource",
+                    "@type": "@id",
+                    "@container": "@set"
+                  }
+                }
+              },
+              "hasResource": {
+                "@id": "prof:hasResource",
+                "@container": "@set",
+                "@context": {
+                  "conformsTo": {
+                    "@id": "http://purl.org/dc/terms/conformsTo",
+                    "@type": "@id",
+                    "@container": "@set"
+                  },
+                  "format": {
+                    "@id": "http://purl.org/dc/terms/format",
+                    "@type": "@id"
+                  },
+                  "hasRole": {
+                    "@id": "prof:hasRole",
+                    "@type": "@id"
+                  },
+                  "hasArtifact": {
+                    "@id": "prof:hasArtifact",
+                    "@type": "@id"
+                  }
+                }
+              }
             }
-          ]
-        ],
-        "http://www.w3.org/ns/dx/prof/isProfileOf": [
-          [
-            {
-              "@id": "https://semiceu.github.io/DCAT-AP/r5r/releases/3.0.0/voc/r5r.jsonld"
-            },
-            {
-              "@id": "https://op.europa.eu/documents/3938058/11669184/eli.owl/"
-            },
-            {
-              "@id": "https://mff-uk.github.io/specifications/dcat-dap/"
-            }
-          ]
-        ]
+          }
+        }
       }
       </script>
       <script
@@ -329,6 +362,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Agent">https://mff-uk.github.io/specifications/dcat-ap/#Agent</a></td>
                     </tr>
@@ -384,6 +424,13 @@
                       <h4>name</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://xmlns.com/foaf/0.1/name">foaf:name</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Agent.name">https://mff-uk.github.io/specifications/dcat-ap/#Agent.name</a></td>
@@ -442,6 +489,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/type">dcterms:type</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Agent.type">https://mff-uk.github.io/specifications/dcat-ap/#Agent.type</a></td>
                         </tr>
@@ -495,6 +549,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue</a></td>
                     </tr>
@@ -543,6 +604,13 @@
                       <h4>applicable legislation</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.applicableLegislation</a></td>
@@ -595,6 +663,13 @@
                       <h4>catalogue</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#catalog">dcat:catalog</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.catalogue">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.catalogue</a></td>
@@ -656,6 +731,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/creator">dcterms:creator</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.creator">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.creator</a></td>
                         </tr>
@@ -715,6 +797,13 @@
                       <h4>dataset</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#dataset">dcat:dataset</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.dataset">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.dataset</a></td>
@@ -779,6 +868,13 @@
                       <h4>description</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/description">dcterms:description</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.description">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.description</a></td>
@@ -845,6 +941,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.geographicalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.geographicalCoverage</a></td>
                         </tr>
@@ -906,6 +1009,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/hasPart">dcterms:hasPart</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.hasPart">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.hasPart</a></td>
                         </tr>
@@ -966,6 +1076,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.homepage">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.homepage</a></td>
                         </tr>
@@ -1011,7 +1128,7 @@
                                           property
                           
                           <a href="http://xmlns.com/foaf/0.1/homepage">homepage</a> (<a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a>)
-                            <br />Definition: <i>A homepage for some thing.</i>
+                            <br />Definition: <i>This axiom needed so that Protege loads DCAT 3 without errors.</i>
                     
                                 </li>
                             </ul>
@@ -1030,6 +1147,13 @@
                       <h4>language</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/language">dcterms:language</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.language">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.language</a></td>
@@ -1096,6 +1220,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/license">dcterms:license</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.licence">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.licence</a></td>
                         </tr>
@@ -1156,6 +1287,13 @@
                       <h4>modification date</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/modified">dcterms:modified</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.modificationDate">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.modificationDate</a></td>
@@ -1218,6 +1356,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.publisher">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.publisher</a></td>
                         </tr>
@@ -1277,6 +1422,13 @@
                       <h4>record</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#record">dcat:record</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.record">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.record</a></td>
@@ -1338,6 +1490,13 @@
                       <h4>release date</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/issued">dcterms:issued</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.releaseDate">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.releaseDate</a></td>
@@ -1404,6 +1563,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/rights">dcterms:rights</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.rights">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.rights</a></td>
                         </tr>
@@ -1469,6 +1635,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#service">dcat:service</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.service">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.service</a></td>
                         </tr>
@@ -1533,6 +1706,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/temporal">dcterms:temporal</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.temporalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.temporalCoverage</a></td>
                         </tr>
@@ -1593,6 +1773,13 @@
                       <h4>themes</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#themeTaxonomy">dcat:themeTaxonomy</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.themes">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.themes</a></td>
@@ -1659,6 +1846,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.title">https://mff-uk.github.io/specifications/dcat-ap/#Catalogue.title</a></td>
                         </tr>
@@ -1724,6 +1918,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord</a></td>
                     </tr>
@@ -1772,6 +1973,13 @@
                       <h4>application profile</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.applicationProfile">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.applicationProfile</a></td>
@@ -1837,6 +2045,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/adms#status">adms:status</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.changeType">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.changeType</a></td>
                         </tr>
@@ -1888,6 +2103,13 @@
                       <h4>description</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/description">dcterms:description</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.description">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.description</a></td>
@@ -1950,6 +2172,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/language">dcterms:language</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.language">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.language</a></td>
                         </tr>
@@ -2005,6 +2234,13 @@
                       <h4>listing date</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/issued">dcterms:issued</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.listingDate">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.listingDate</a></td>
@@ -2071,6 +2307,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/modified">dcterms:modified</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.modificationDate">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.modificationDate</a></td>
                         </tr>
@@ -2136,6 +2379,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://xmlns.com/foaf/0.1/primaryTopic">foaf:primaryTopic</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.primaryTopic">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.primaryTopic</a></td>
                         </tr>
@@ -2181,7 +2431,7 @@
                                           property
                           
                           <a href="http://xmlns.com/foaf/0.1/primaryTopic">primary topic</a> (<a href="http://xmlns.com/foaf/0.1/primaryTopic">foaf:primaryTopic</a>)
-                            <br />Definition: <i>The primary topic of some page or document.</i>
+                            <br />Definition: <i>This axiom needed so that Protege loads DCAT 3 without errors.</i>
                     
                                 </li>
                             </ul>
@@ -2200,6 +2450,13 @@
                       <h4>source</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/source">dcterms:source</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.source">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.source</a></td>
@@ -2256,6 +2513,13 @@
                       <h4>title</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.title">https://mff-uk.github.io/specifications/dcat-ap/#CatalogueRecord.title</a></td>
@@ -2319,6 +2583,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Resource">https://mff-uk.github.io/specifications/dcat-ap/#Resource</a></td>
                     </tr>
@@ -2367,6 +2638,13 @@
                   <h4>Checksum</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://spdx.org/rdf/terms#Checksum">spdx:Checksum</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Checksum">https://mff-uk.github.io/specifications/dcat-ap/#Checksum</a></td>
@@ -2418,6 +2696,13 @@
                       <h4>algorithm</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://spdx.org/rdf/terms#algorithm">spdx:algorithm</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm">https://mff-uk.github.io/specifications/dcat-ap/#Checksum.algorithm</a></td>
@@ -2484,6 +2769,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://spdx.org/rdf/terms#checksumValue">spdx:checksumValue</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Checksum.checksumValue">https://mff-uk.github.io/specifications/dcat-ap/#Checksum.checksumValue</a></td>
                         </tr>
@@ -2545,6 +2837,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#DataService">dcat:DataService</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService">https://mff-uk.github.io/specifications/dcat-ap/#DataService</a></td>
                     </tr>
@@ -2593,6 +2892,13 @@
                       <h4>access rights</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/accessRights">dcterms:accessRights</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.accessRights">https://mff-uk.github.io/specifications/dcat-ap/#DataService.accessRights</a></td>
@@ -2658,6 +2964,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#DataService.applicableLegislation</a></td>
                         </tr>
@@ -2709,6 +3022,13 @@
                       <h4>conforms to</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.conformsTo">https://mff-uk.github.io/specifications/dcat-ap/#DataService.conformsTo</a></td>
@@ -2774,6 +3094,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.contactPoint">https://mff-uk.github.io/specifications/dcat-ap/#DataService.contactPoint</a></td>
                         </tr>
@@ -2833,6 +3160,13 @@
                       <h4>description</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/description">dcterms:description</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.description">https://mff-uk.github.io/specifications/dcat-ap/#DataService.description</a></td>
@@ -2899,6 +3233,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.documentation">https://mff-uk.github.io/specifications/dcat-ap/#DataService.documentation</a></td>
                         </tr>
@@ -2950,6 +3291,13 @@
                       <h4>endpoint description</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#endpointDescription">dcat:endpointDescription</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription">https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointDescription</a></td>
@@ -3016,6 +3364,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#endpointURL">dcat:endpointURL</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl">https://mff-uk.github.io/specifications/dcat-ap/#DataService.endpointUrl</a></td>
                         </tr>
@@ -3076,6 +3431,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/format">dcterms:format</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.format">https://mff-uk.github.io/specifications/dcat-ap/#DataService.format</a></td>
                         </tr>
@@ -3127,6 +3489,13 @@
                       <h4>keyword</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#keyword">dcat:keyword</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.keyword">https://mff-uk.github.io/specifications/dcat-ap/#DataService.keyword</a></td>
@@ -3187,6 +3556,13 @@
                       <h4>landing page</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#landingPage">dcat:landingPage</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.landingPage">https://mff-uk.github.io/specifications/dcat-ap/#DataService.landingPage</a></td>
@@ -3252,6 +3628,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/license">dcterms:license</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.licence">https://mff-uk.github.io/specifications/dcat-ap/#DataService.licence</a></td>
                         </tr>
@@ -3313,6 +3696,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.publisher">https://mff-uk.github.io/specifications/dcat-ap/#DataService.publisher</a></td>
                         </tr>
@@ -3373,6 +3763,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#servesDataset">dcat:servesDataset</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.servesDataset">https://mff-uk.github.io/specifications/dcat-ap/#DataService.servesDataset</a></td>
                         </tr>
@@ -3432,6 +3829,13 @@
                       <h4>theme</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.theme">https://mff-uk.github.io/specifications/dcat-ap/#DataService.theme</a></td>
@@ -3496,6 +3900,13 @@
                       <h4>title</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DataService.title">https://mff-uk.github.io/specifications/dcat-ap/#DataService.title</a></td>
@@ -3562,6 +3973,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset">https://mff-uk.github.io/specifications/dcat-ap/#Dataset</a></td>
                     </tr>
@@ -3615,6 +4033,13 @@
                       <h4>access rights</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/accessRights">dcterms:accessRights</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.accessRights">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.accessRights</a></td>
@@ -3676,6 +4101,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.applicableLegislation</a></td>
                         </tr>
@@ -3727,6 +4159,13 @@
                       <h4>conforms to</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.conformsTo">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.conformsTo</a></td>
@@ -3788,6 +4227,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.contactPoint</a></td>
                         </tr>
@@ -3847,6 +4293,13 @@
                       <h4>creator</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/creator">dcterms:creator</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.creator">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.creator</a></td>
@@ -3912,6 +4365,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#distribution">dcat:distribution</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.datasetDistribution">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.datasetDistribution</a></td>
                         </tr>
@@ -3971,6 +4431,13 @@
                       <h4>description</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/description">dcterms:description</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.description">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.description</a></td>
@@ -4037,6 +4504,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.documentation">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.documentation</a></td>
                         </tr>
@@ -4088,6 +4562,13 @@
                       <h4>frequency</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/accrualPeriodicity">dcterms:accrualPeriodicity</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.frequency</a></td>
@@ -4154,6 +4635,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.geographicalCoverage</a></td>
                         </tr>
@@ -4218,6 +4706,13 @@
                       <h4>has version</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#hasVersion">dcat:hasVersion</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.hasVersion">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.hasVersion</a></td>
@@ -4285,6 +4780,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/identifier">dcterms:identifier</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.identifier">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.identifier</a></td>
                         </tr>
@@ -4346,6 +4848,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#inSeries">dcat:inSeries</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.inSeries</a></td>
                         </tr>
@@ -4405,6 +4914,13 @@
                       <h4>is referenced by</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/isReferencedBy">dcterms:isReferencedBy</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.isReferencedBy">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.isReferencedBy</a></td>
@@ -4472,6 +4988,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#keyword">dcat:keyword</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.keyword</a></td>
                         </tr>
@@ -4531,6 +5054,13 @@
                       <h4>landing page</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#landingPage">dcat:landingPage</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.landingPage">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.landingPage</a></td>
@@ -4595,6 +5125,13 @@
                       <h4>language</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/language">dcterms:language</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.language">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.language</a></td>
@@ -4661,6 +5198,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/modified">dcterms:modified</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.modificationDate">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.modificationDate</a></td>
                         </tr>
@@ -4722,6 +5266,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/adms#identifier">adms:identifier</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.otherIdentifier">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.otherIdentifier</a></td>
                         </tr>
@@ -4778,6 +5329,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/provenance">dcterms:provenance</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.provenance">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.provenance</a></td>
                         </tr>
@@ -4829,6 +5387,13 @@
                       <h4>publisher</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.publisher">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.publisher</a></td>
@@ -4889,6 +5454,13 @@
                       <h4>qualified attribution</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.qualifiedAttribution">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.qualifiedAttribution</a></td>
@@ -4951,6 +5523,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#qualifiedRelation">dcat:qualifiedRelation</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.qualifiedRelation">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.qualifiedRelation</a></td>
                         </tr>
@@ -5011,6 +5590,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/relation">dcterms:relation</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.relation">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.relation</a></td>
                         </tr>
@@ -5070,6 +5656,13 @@
                       <h4>release date</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/issued">dcterms:issued</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.releaseDate">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.releaseDate</a></td>
@@ -5132,6 +5725,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/adms#sample">adms:sample</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.sample">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.sample</a></td>
                         </tr>
@@ -5184,6 +5784,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/source">dcterms:source</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.source">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.source</a></td>
                         </tr>
@@ -5235,6 +5842,13 @@
                       <h4>spatial resolution</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:spatialResolutionInMeters</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.spatialResolution</a></td>
@@ -5296,6 +5910,13 @@
                       <h4>temporal coverage</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/temporal">dcterms:temporal</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalCoverage</a></td>
@@ -5362,6 +5983,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#temporalResolution">dcat:temporalResolution</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.temporalResolution</a></td>
                         </tr>
@@ -5427,6 +6055,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.theme</a></td>
                         </tr>
@@ -5490,6 +6125,13 @@
                       <h4>title</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.title">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.title</a></td>
@@ -5555,6 +6197,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/type">dcterms:type</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.type">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.type</a></td>
                         </tr>
@@ -5618,6 +6267,13 @@
                       <h4>version</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#version">dcat:version</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.version">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.version</a></td>
@@ -5683,6 +6339,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/adms#versionNotes">adms:versionNotes</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.versionNotes">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.versionNotes</a></td>
                         </tr>
@@ -5747,6 +6410,13 @@
                       <h4>was generated by</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/prov#wasGeneratedBy">prov:wasGeneratedBy</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Dataset.wasGeneratedBy">https://mff-uk.github.io/specifications/dcat-ap/#Dataset.wasGeneratedBy</a></td>
@@ -5818,6 +6488,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#DatasetSeries">dcat:DatasetSeries</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries</a></td>
                     </tr>
@@ -5868,6 +6545,13 @@
                       <h4>applicable legislation</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.applicableLegislation</a></td>
@@ -5920,6 +6604,13 @@
                       <h4>contact point</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.contactPoint">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.contactPoint</a></td>
@@ -5980,6 +6671,13 @@
                       <h4>description</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/description">dcterms:description</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.description">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.description</a></td>
@@ -6046,6 +6744,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/accrualPeriodicity">dcterms:accrualPeriodicity</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.frequency">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.frequency</a></td>
                         </tr>
@@ -6110,6 +6815,13 @@
                       <h4>geographical coverage</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.geographicalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.geographicalCoverage</a></td>
@@ -6176,6 +6888,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/modified">dcterms:modified</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.modificationDate">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.modificationDate</a></td>
                         </tr>
@@ -6241,6 +6960,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.publisher">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.publisher</a></td>
                         </tr>
@@ -6304,6 +7030,13 @@
                       <h4>release date</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/issued">dcterms:issued</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.releaseDate">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.releaseDate</a></td>
@@ -6370,6 +7103,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/temporal">dcterms:temporal</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.temporalCoverage">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.temporalCoverage</a></td>
                         </tr>
@@ -6434,6 +7174,13 @@
                       <h4>title</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.title">https://mff-uk.github.io/specifications/dcat-ap/#DatasetSeries.title</a></td>
@@ -6500,6 +7247,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution</a></td>
                     </tr>
@@ -6547,6 +7301,13 @@
                       <h4>access service</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#accessService">dcat:accessService</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessService</a></td>
@@ -6611,6 +7372,13 @@
                       <h4>access URL</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#accessURL">dcat:accessURL</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.accessUrl</a></td>
@@ -6677,6 +7445,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://data.europa.eu/r5r/applicableLegislation">http://data.europa.eu/r5r/applicableLegislation</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.applicableLegislation">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.applicableLegislation</a></td>
                         </tr>
@@ -6729,6 +7504,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://data.europa.eu/r5r/availability">http://data.europa.eu/r5r/availability</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.availability">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.availability</a></td>
                         </tr>
@@ -6780,6 +7562,13 @@
                       <h4>byte size</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#byteSize">dcat:byteSize</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.byteSize</a></td>
@@ -6846,6 +7635,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://spdx.org/rdf/terms#checksum">spdx:checksum</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.checksum</a></td>
                         </tr>
@@ -6910,6 +7706,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#compressFormat">dcat:compressFormat</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.compressionFormat">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.compressionFormat</a></td>
                         </tr>
@@ -6973,6 +7776,13 @@
                       <h4>description</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/description">dcterms:description</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.description">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.description</a></td>
@@ -7039,6 +7849,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.documentation">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.documentation</a></td>
                         </tr>
@@ -7090,6 +7907,13 @@
                       <h4>download URL</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#downloadURL">dcat:downloadURL</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.downloadUrl</a></td>
@@ -7154,6 +7978,13 @@
                       <h4>format</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/format">dcterms:format</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.format</a></td>
@@ -7220,6 +8051,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/odrl/2/hasPolicy">odrl:hasPolicy</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.hasPolicy">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.hasPolicy</a></td>
                         </tr>
@@ -7265,7 +8103,7 @@
                                           property
                           
                           <a href="http://www.w3.org/ns/odrl/2/hasPolicy">Target Policy</a> (<a href="http://www.w3.org/ns/odrl/2/hasPolicy">odrl:hasPolicy</a>)
-                            <br />Definition: <i></i>
+                            <br />Definition: <i>Identifies an ODRL Policy for which the identified Asset is the target Asset to all the Rules.</i>
                     
                                 </li>
                             </ul>
@@ -7284,6 +8122,13 @@
                       <h4>language</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/language">dcterms:language</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.language">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.language</a></td>
@@ -7340,6 +8185,13 @@
                       <h4>licence</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/license">dcterms:license</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.licence">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.licence</a></td>
@@ -7406,6 +8258,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.linkedSchemas</a></td>
                         </tr>
@@ -7471,6 +8330,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#mediaType">dcat:mediaType</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.mediaType</a></td>
                         </tr>
@@ -7535,6 +8401,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/modified">dcterms:modified</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.modificationDate">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.modificationDate</a></td>
                         </tr>
@@ -7594,6 +8467,13 @@
                       <h4>packaging format</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#packageFormat">dcat:packageFormat</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.packagingFormat</a></td>
@@ -7659,6 +8539,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/issued">dcterms:issued</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.releaseDate">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.releaseDate</a></td>
                         </tr>
@@ -7723,6 +8610,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/rights">dcterms:rights</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.rights">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.rights</a></td>
                         </tr>
@@ -7783,6 +8677,13 @@
                       <h4>spatial resolution</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:spatialResolutionInMeters</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.spatialResolution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.spatialResolution</a></td>
@@ -7850,6 +8751,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/adms#status">adms:status</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.status">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.status</a></td>
                         </tr>
@@ -7905,6 +8813,13 @@
                       <h4>temporal resolution</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#temporalResolution">dcat:temporalResolution</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.temporalResolution">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.temporalResolution</a></td>
@@ -7972,6 +8887,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title">https://mff-uk.github.io/specifications/dcat-ap/#Distribution.title</a></td>
                         </tr>
@@ -8038,6 +8960,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Kind">https://mff-uk.github.io/specifications/dcat-ap/#Kind</a></td>
                     </tr>
@@ -8092,6 +9021,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument">https://mff-uk.github.io/specifications/dcat-ap/#LicenceDocument</a></td>
                     </tr>
@@ -8140,6 +9076,13 @@
                       <h4>type</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/type">dcterms:type</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#LicenseDocument.type">https://mff-uk.github.io/specifications/dcat-ap/#LicenseDocument.type</a></td>
@@ -8194,6 +9137,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/Location">dcterms:Location</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Location">https://mff-uk.github.io/specifications/dcat-ap/#Location</a></td>
                     </tr>
@@ -8246,6 +9196,13 @@
                       <h4>bbox</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#bbox">dcat:bbox</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Location.bbox">https://mff-uk.github.io/specifications/dcat-ap/#Location.bbox</a></td>
@@ -8311,6 +9268,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#centroid">dcat:centroid</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Location.centroid">https://mff-uk.github.io/specifications/dcat-ap/#Location.centroid</a></td>
                         </tr>
@@ -8374,6 +9338,13 @@
                       <h4>geometry</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/locn#geometry">locn:geometry</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry">https://mff-uk.github.io/specifications/dcat-ap/#Location.geometry</a></td>
@@ -8441,6 +9412,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#Relationship">dcat:Relationship</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Relationship">https://mff-uk.github.io/specifications/dcat-ap/#Relationship</a></td>
                     </tr>
@@ -8487,6 +9465,13 @@
                       <h4>had role</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole">https://mff-uk.github.io/specifications/dcat-ap/#Relationship.hadRole</a></td>
@@ -8552,6 +9537,13 @@
                       <h4>relation</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/relation">dcterms:relation</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Relationship.relation">https://mff-uk.github.io/specifications/dcat-ap/#Relationship.relation</a></td>
@@ -8624,6 +9616,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/prov#Activity">prov:Activity</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Activity">https://mff-uk.github.io/specifications/dcat-ap/#Activity</a></td>
                     </tr>
@@ -8663,6 +9662,13 @@
                   <h4>Attribution</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Attribution">https://mff-uk.github.io/specifications/dcat-ap/#Attribution</a></td>
@@ -8712,6 +9718,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm">https://mff-uk.github.io/specifications/dcat-ap/#ChecksumAlgorithm</a></td>
                     </tr>
@@ -8760,6 +9773,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept">https://mff-uk.github.io/specifications/dcat-ap/#Concept</a></td>
                     </tr>
@@ -8780,7 +9800,7 @@
                                         class
                       
                       <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
-                        <br />Definition: <i></i>
+                        <br />Definition: <i>An idea or notion; a unit of thought.</i>
                 
                                 </li>
                           </ul>
@@ -8809,6 +9829,13 @@
                       <h4>preferred label</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/2004/02/skos/core#prefLabel">skos:prefLabel</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Concept.preferredLabel">https://mff-uk.github.io/specifications/dcat-ap/#Concept.preferredLabel</a></td>
@@ -8869,6 +9896,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme">https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme</a></td>
                     </tr>
@@ -8889,7 +9923,7 @@
                                         class
                       
                       <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> (<a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a>)
-                        <br />Definition: <i></i>
+                        <br />Definition: <i>A set of concepts, optionally including statements about semantic relationships between those concepts.</i>
                 
                                 </li>
                           </ul>
@@ -8911,6 +9945,13 @@
                       <h4>title</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://purl.org/dc/terms/title">dcterms:title</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme.title">https://mff-uk.github.io/specifications/dcat-ap/#ConceptScheme.title</a></td>
@@ -8970,6 +10011,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://xmlns.com/foaf/0.1/Document">foaf:Document</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Document">https://mff-uk.github.io/specifications/dcat-ap/#Document</a></td>
                     </tr>
@@ -9014,6 +10062,13 @@
                   <h4>Frequency</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/Frequency">dcterms:Frequency</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Frequency">https://mff-uk.github.io/specifications/dcat-ap/#Frequency</a></td>
@@ -9064,6 +10119,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Geometry">https://mff-uk.github.io/specifications/dcat-ap/#Geometry</a></td>
                     </tr>
@@ -9112,6 +10174,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/adms#Identifier">adms:Identifier</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Identifier">https://mff-uk.github.io/specifications/dcat-ap/#Identifier</a></td>
                     </tr>
@@ -9159,6 +10228,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Identifier.notation">https://mff-uk.github.io/specifications/dcat-ap/#Identifier.notation</a></td>
                         </tr>
@@ -9199,7 +10275,7 @@
                                             property
                           
                           <a href="http://www.w3.org/2004/02/skos/core#notation">notation</a> (<a href="http://www.w3.org/2004/02/skos/core#notation">skos:notation</a>)
-                            <br />Definition: <i></i>
+                            <br />Definition: <i>A notation, also known as classification code, is a string of characters such as &quot;T58.5&quot; or &quot;303.4833&quot; used to uniquely identify a concept within the scope of a given concept scheme.</i>
                     
                                     </li>
                               </ul>
@@ -9212,6 +10288,13 @@
                   <h4>Legal Resource</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://data.europa.eu/eli/ontology#LegalResource">http://data.europa.eu/eli/ontology#LegalResource</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#LegalResource">https://mff-uk.github.io/specifications/dcat-ap/#LegalResource</a></td>
@@ -9266,6 +10349,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/LinguisticSystem">dcterms:LinguisticSystem</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem">https://mff-uk.github.io/specifications/dcat-ap/#LinguisticSystem</a></td>
                     </tr>
@@ -9317,6 +10407,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/MediaType">dcterms:MediaType</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#MediaType">https://mff-uk.github.io/specifications/dcat-ap/#MediaType</a></td>
                     </tr>
@@ -9367,6 +10464,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent">https://mff-uk.github.io/specifications/dcat-ap/#MediaTypeOrExtent</a></td>
                     </tr>
@@ -9415,6 +10519,13 @@
                   <h4>Period of Time</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/PeriodOfTime">dcterms:PeriodOfTime</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime">https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime</a></td>
@@ -9465,6 +10576,13 @@
                       <h4>beginning</h4>
                     
                       <table class="def">
+                        <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/2006/time#hasBeginning">time:hasBeginning</a>
+                          </td>
+                        </tr>
                         <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.beginning">https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.beginning</a></td>
@@ -9531,6 +10649,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/2006/time#hasEnd">time:hasEnd</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.end">https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.end</a></td>
                         </tr>
@@ -9596,6 +10721,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#endDate">dcat:endDate</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate">https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.endDate</a></td>
                         </tr>
@@ -9656,6 +10788,13 @@
                     
                       <table class="def">
                         <tr>
+                          <td>Profiled relationship IRI(s)</td>
+                          <td>
+                              
+                              <a href="http://www.w3.org/ns/dcat#startDate">dcat:startDate</a>
+                          </td>
+                        </tr>
+                        <tr>
                           <td>IRI</td>
                           <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate">https://mff-uk.github.io/specifications/dcat-ap/#PeriodOfTime.startDate</a></td>
                         </tr>
@@ -9701,7 +10840,7 @@
                                           property
                           
                           <a href="http://www.w3.org/ns/dcat#startDate">start date</a> (<a href="http://www.w3.org/ns/dcat#startDate">dcat:startDate</a>)
-                            <br />Definition: <i></i>
+                            <br />Definition: <i>The start of the period</i>
                     
                                 </li>
                             </ul>
@@ -9721,6 +10860,13 @@
                   <h4>Policy</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/odrl/2/Policy">odrl:Policy</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Policy">https://mff-uk.github.io/specifications/dcat-ap/#Policy</a></td>
@@ -9747,7 +10893,7 @@
                                       class
                       
                       <a href="http://www.w3.org/ns/odrl/2/Policy">Policy</a> (<a href="http://www.w3.org/ns/odrl/2/Policy">odrl:Policy</a>)
-                        <br />Definition: <i></i>
+                        <br />Definition: <i>A non-empty group of Permissions and/or Prohibitions.</i>
                 
                             </li>
                         </ul>
@@ -9769,6 +10915,13 @@
                   <h4>Provenance Statement</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/ProvenanceStatement">dcterms:ProvenanceStatement</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement">https://mff-uk.github.io/specifications/dcat-ap/#ProvenanceStatement</a></td>
@@ -9809,6 +10962,13 @@
                   <h4>Rights Statement</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/RightsStatement">dcterms:RightsStatement</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement">https://mff-uk.github.io/specifications/dcat-ap/#RightsStatement</a></td>
@@ -9861,6 +11021,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Role">https://mff-uk.github.io/specifications/dcat-ap/#Role</a></td>
                     </tr>
@@ -9908,6 +11075,13 @@
                   <h4>Standard</h4>
                 
                   <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://purl.org/dc/terms/Standard">dcterms:Standard</a>
+                      </td>
+                    </tr>
                     <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Standard">https://mff-uk.github.io/specifications/dcat-ap/#Standard</a></td>
@@ -9960,6 +11134,13 @@
                 
                   <table class="def">
                     <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/2006/time#Instant">time:Instant</a>
+                      </td>
+                    </tr>
+                    <tr>
                       <td>IRI</td>
                       <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Instant">https://mff-uk.github.io/specifications/dcat-ap/#Instant</a></td>
                     </tr>
@@ -10011,6 +11192,13 @@
               <h4>Resource</h4>
             
               <table class="def">
+                <tr>
+                  <td>Profiled class IRI(s)</td>
+                  <td>
+                      
+                      <a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>
+                  </td>
+                </tr>
                 <tr>
                   <td>IRI</td>
                   <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource">https://mff-uk.github.io/specifications/dcat-ap/#rdfs-Resource</a></td>
@@ -10234,10 +11422,6 @@
             </tr>
           </thead>
           <tbody>
-              <tr>
-                <td>Vocabulary</td>
-                <td><a href="./model.owl.ttl">./model.owl.ttl</a></td>
-              </tr>
               <tr>
                 <td>Application profile</td>
                 <td><a href="./dsv.ttl">./dsv.ttl</a></td>
