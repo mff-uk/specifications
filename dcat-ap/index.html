@@ -544,6 +544,62 @@
                     
                       </table>
                     </section>
+                </section>                <section id="CataloguedResource">
+                  <h4>Cataloged Resource</h4>
+                
+                  <table class="def">
+                    <tr>
+                      <td>Profiled class IRI(s)</td>
+                      <td>
+                          
+                          <a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>IRI</td>
+                      <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Resource">https://mff-uk.github.io/specifications/dcat-ap/#Resource</a></td>
+                    </tr>
+                    <tr>
+                      <td>Label</td>
+                      <td>Cataloged Resource</td>
+                    </tr>
+                    <tr>
+                      <td>Definition</td>
+                      <td>Resource published or curated by a single agent.</td>
+                    </tr>
+                
+                      <tr>
+                        <td>Profiles</td>
+                        <td>
+                          <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                                <li>
+                                        
+                      class profile
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Resource">https://mff-uk.github.io/specifications/dcat-dap/#Resource</a>)
+                        <ul style="list-style-type: none;">
+                            <li>
+                                      class
+                      
+                      <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                        <br />Definition: <i>Resource published or curated by a single agent.</i>
+                
+                            </li>
+                        </ul>
+                
+                                </li>
+                          </ul>
+                        </td>
+                      </tr>
+                
+                  </table>
+                
+                    <p>Backwards associations</p>
+                    <ul>
+                        <li><a href="#Dataset.isreferencedby"></a></li>
+                        <li><a href="#CatalogueRecord.primarytopic"></a></li>
+                    </ul>
+                
+                
                 </section>                <section id="Catalogue">
                   <h4>Catalogue</h4>
                 
@@ -575,7 +631,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog">Catalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog">https://mff-uk.github.io/specifications/dcat-dap/#Catalog</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog">Catalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog">https://mff-uk.github.io/specifications/dcat-dap/#Catalog</a>)
                         <br />Definition: <i>A curated collection of metadata about resources.</i>
                         <ul style="list-style-type: none;">
                             <li>
@@ -597,10 +653,10 @@
                     <p>Backwards associations</p>
                     <ul>
                         <li><a href="#Catalogue.catalogue"></a></li>
-                        <li><a href="#Catalogue.hasPart"></a></li>
+                        <li><a href="#Catalogue.haspart"></a></li>
                     </ul>
                 
-                    <section id="Catalogue.applicableLegislation">
+                    <section id="Catalogue.applicablelegislation">
                       <h4>applicable legislation</h4>
                     
                       <table class="def">
@@ -709,7 +765,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog">catalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_catalog">catalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -776,7 +832,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator">creator</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_creator">creator</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -843,7 +899,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset">dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_dataset">dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -914,7 +970,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
                             <br />Definition: <i>A free-text account of the resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -936,7 +992,7 @@
                           <td>This property can be repeated for parallel language versions of the description.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Catalogue.geographicalCoverage">
+                    </section>    <section id="Catalogue.geographicalcoverage">
                       <h4>geographical coverage</h4>
                     
                       <table class="def">
@@ -986,7 +1042,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
                             <br />Definition: <i>The geographical area covered by the dataset.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1004,7 +1060,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Catalogue.hasPart">
+                    </section>    <section id="Catalogue.haspart">
                       <h4>has part</h4>
                     
                       <table class="def">
@@ -1054,7 +1110,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart">has part</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_part">has part</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -1121,7 +1177,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage">homepage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_homepage">homepage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage</a>)
                             <br />Definition: <i>A homepage of the catalog (a public Web document usually available in HTML).</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1193,7 +1249,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language">language</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language">language</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language</a>)
                             <br />Definition: <i>A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1265,7 +1321,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license</a>)
                             <br />Definition: <i>A legal document under which the resource is made available.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1283,7 +1339,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Catalogue.modificationDate">
+                    </section>    <section id="Catalogue.modificationdate">
                       <h4>modification date</h4>
                     
                       <table class="def">
@@ -1333,7 +1389,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate</a>)
                             <br />Definition: <i>Most recent date on which the resource was changed, updated or modified.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1401,7 +1457,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -1468,7 +1524,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record">record</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_catalog_record">record</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record</a>)
                             <br />Definition: <i>A record describing the registration of a single resource (e.g., a dataset, a data service) that is part of the catalog.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1486,7 +1542,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Catalogue.releaseDate">
+                    </section>    <section id="Catalogue.releasedate">
                       <h4>release date</h4>
                     
                       <table class="def">
@@ -1536,7 +1592,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate</a>)
                             <br />Definition: <i>Date of formal issuance (e.g., publication) of the resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1592,7 +1648,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#RightsStatement">Rights Statement</a>
+                            <a href="#Rightsstatement">Rights Statement</a>
                     
                                 [0..*]
                     
@@ -1608,7 +1664,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights">rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_rights">rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights</a>)
                             <br />Definition: <i>A statement that concerns all rights not addressed with dcterms:license or dcterms:accessRights, such as copyright statements.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1680,7 +1736,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service">service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_service">service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -1701,7 +1757,7 @@
                           <td>As empty Catalogues are usually indications of problems, this property should be combined with the property dataset to implement an empty Catalogue check.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Catalogue.temporalCoverage">
+                    </section>    <section id="Catalogue.temporalcoverage">
                       <h4>temporal coverage</h4>
                     
                       <table class="def">
@@ -1735,7 +1791,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#PeriodOfTime">Period of Time</a>
+                            <a href="#Periodoftime">Period of Time</a>
                     
                                 [0..*]
                     
@@ -1751,7 +1807,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage</a>)
                             <br />Definition: <i>The temporal period that the dataset covers.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1819,7 +1875,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy">theme taxonomy</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_themes">theme taxonomy</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy">https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy</a>)
                             <br />Definition: <i>A knowledge organization system (KOS) used to classify the resources documented in the catalog (e.g., datasets and services).</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -1891,7 +1947,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -1944,7 +2000,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord">Catalog Record</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record">Catalog Record</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord</a>)
                         <br />Definition: <i>A record in a catalog, describing the registration of a single dcat:Resource.</i>
                         <ul style="list-style-type: none;">
                             <li>
@@ -1966,10 +2022,10 @@
                     <p>Backwards associations</p>
                     <ul>
                         <li><a href="#Catalogue.record"></a></li>
-                        <li><a href="#CatalogueRecord.source"></a></li>
+                        <li><a href="#CatalogueRecord.sourcemetadata"></a></li>
                     </ul>
                 
-                    <section id="CatalogueRecord.applicationProfile">
+                    <section id="CatalogueRecord.applicationprofile">
                       <h4>application profile</h4>
                     
                       <table class="def">
@@ -2019,7 +2075,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -2040,7 +2096,7 @@
                           <td>This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalog record metadata conforms to.</td>
                         </tr>
                       </table>
-                    </section>    <section id="CatalogueRecord.changeType">
+                    </section>    <section id="CatalogueRecord.changetype">
                       <h4>change type</h4>
                     
                       <table class="def">
@@ -2149,7 +2205,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description</a>)
                             <br />Definition: <i>A free-text account of the record.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -2230,7 +2286,7 @@
                           <td>This property can be repeated if the metadata is provided in multiple languages.</td>
                         </tr>
                       </table>
-                    </section>    <section id="CatalogueRecord.listingDate">
+                    </section>    <section id="CatalogueRecord.listingdate">
                       <h4>listing date</h4>
                     
                       <table class="def">
@@ -2280,7 +2336,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate">listing date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_listing_date">listing date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate</a>)
                             <br />Definition: <i>The date of listing (i.e., formal recording) of the corresponding dataset or service in the catalog.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -2302,7 +2358,7 @@
                           <td>This indicates the date of listing the dataset in the catalog and not the publication date of the dataset itself.</td>
                         </tr>
                       </table>
-                    </section>    <section id="CatalogueRecord.modificationDate">
+                    </section>    <section id="CatalogueRecord.modificationdate">
                       <h4>modification date</h4>
                     
                       <table class="def">
@@ -2352,7 +2408,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate</a>)
                             <br />Definition: <i>Most recent date on which the catalog entry was changed, updated or modified.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -2374,7 +2430,7 @@
                           <td>This indicates the date of last change of a catalog entry, i.e., the catalog metadata description of the dataset, and not the date of the dataset itself.</td>
                         </tr>
                       </table>
-                    </section>    <section id="CatalogueRecord.primaryTopic">
+                    </section>    <section id="CatalogueRecord.primarytopic">
                       <h4>primary topic</h4>
                     
                       <table class="def">
@@ -2408,7 +2464,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#Resource">Cataloged Resource</a>
+                            <a href="#CataloguedResource">Cataloged Resource</a>
                     
                                 [1..1]
                     
@@ -2424,7 +2480,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic">primary topic</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_primary_topic">primary topic</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic</a>)
                             <br />Definition: <i>The dcat:Resource (dataset or service) described in the record.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -2446,7 +2502,7 @@
                           <td>A catalogue record will refer to one entity in a catalogue. This can be either a Dataset or a Data Service. To ensure an unambigous reading of the cardinality the range is set to Catalogued Resource. However it is not the intend with this range to require the explicit use of the class Catalogued Record. As abstract class, an subclass should be used.</td>
                         </tr>
                       </table>
-                    </section>    <section id="CatalogueRecord.source">
+                    </section>    <section id="CatalogueRecord.sourcemetadata">
                       <h4>source</h4>
                     
                       <table class="def">
@@ -2559,7 +2615,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title">https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title</a>)
                             <br />Definition: <i>A name given to the record.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -2578,62 +2634,6 @@
                     
                       </table>
                     </section>
-                </section>                <section id="Resource">
-                  <h4>Cataloged Resource</h4>
-                
-                  <table class="def">
-                    <tr>
-                      <td>Profiled class IRI(s)</td>
-                      <td>
-                          
-                          <a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td>IRI</td>
-                      <td><a href="https://mff-uk.github.io/specifications/dcat-ap/#Resource">https://mff-uk.github.io/specifications/dcat-ap/#Resource</a></td>
-                    </tr>
-                    <tr>
-                      <td>Label</td>
-                      <td>Cataloged Resource</td>
-                    </tr>
-                    <tr>
-                      <td>Definition</td>
-                      <td>Resource published or curated by a single agent.</td>
-                    </tr>
-                
-                      <tr>
-                        <td>Profiles</td>
-                        <td>
-                          <ul style="list-style-type: none; padding-left: 0; margin: 0;">
-                                <li>
-                                        
-                      class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Resource">https://mff-uk.github.io/specifications/dcat-dap/#Resource</a>)
-                        <ul style="list-style-type: none;">
-                            <li>
-                                      class
-                      
-                      <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
-                        <br />Definition: <i>Resource published or curated by a single agent.</i>
-                
-                            </li>
-                        </ul>
-                
-                                </li>
-                          </ul>
-                        </td>
-                      </tr>
-                
-                  </table>
-                
-                    <p>Backwards associations</p>
-                    <ul>
-                        <li><a href="#Dataset.isReferencedBy"></a></li>
-                        <li><a href="#CatalogueRecord.primaryTopic"></a></li>
-                    </ul>
-                
-                
                 </section>                <section id="Checksum">
                   <h4>Checksum</h4>
                 
@@ -2665,7 +2665,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum">Checksum</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum">https://mff-uk.github.io/specifications/dcat-dap/#Checksum</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Checksum">Checksum</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum">https://mff-uk.github.io/specifications/dcat-dap/#Checksum</a>)
                         <ul style="list-style-type: none;">
                             <li>
                                       class
@@ -2742,7 +2742,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm">algorithm</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm">https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:checksum_algorithm">algorithm</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm">https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm</a>)
                             <br />Definition: <i>Identifies the algorithm used to produce the subject Checksum [SPDX].</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -2764,7 +2764,7 @@
                           <td>Version 2.2 of [SPDX] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Checksum.checksumValue">
+                    </section>    <section id="Checksum.checksumvalue">
                       <h4>checksum value</h4>
                     
                       <table class="def">
@@ -2814,7 +2814,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue">checksum value</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue">https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:checksum_checksum_value">checksum value</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue">https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -2863,7 +2863,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService">Data service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService">https://mff-uk.github.io/specifications/dcat-dap/#DataService</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service">Data service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService">https://mff-uk.github.io/specifications/dcat-dap/#DataService</a>)
                         <br />Definition: <i>A collection of operations that provides access to one or more datasets or data processing functions.</i>
                         <ul style="list-style-type: none;">
                             <li>
@@ -2884,11 +2884,11 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Distribution.accessService"></a></li>
+                        <li><a href="#Distribution.accessservice"></a></li>
                         <li><a href="#Catalogue.service"></a></li>
                     </ul>
                 
-                    <section id="DataService.accessRights">
+                    <section id="DataService.accessrights">
                       <h4>access rights</h4>
                     
                       <table class="def">
@@ -2922,7 +2922,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#RightsStatement">Rights Statement</a>
+                            <a href="#Rightsstatement">Rights Statement</a>
                     
                                 [0..1]
                     
@@ -2938,7 +2938,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights">access rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights">access rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -2959,7 +2959,7 @@
                           <td>Information about licenses and rights MAY be provided for the Resource.</td>
                         </tr>
                       </table>
-                    </section>    <section id="DataService.applicableLegislation">
+                    </section>    <section id="DataService.applicablelegislation">
                       <h4>applicable legislation</h4>
                     
                       <table class="def">
@@ -3018,7 +3018,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="DataService.conformsTo">
+                    </section>    <section id="DataService.conformsto">
                       <h4>conforms to</h4>
                     
                       <table class="def">
@@ -3068,7 +3068,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3089,7 +3089,7 @@
                           <td>The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE Address data model.</td>
                         </tr>
                       </table>
-                    </section>    <section id="DataService.contactPoint">
+                    </section>    <section id="DataService.contactpoint">
                       <h4>contact point</h4>
                     
                       <table class="def">
@@ -3139,7 +3139,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">contact point</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point">contact point</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3206,7 +3206,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
                             <br />Definition: <i>A free-text account of the resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -3287,7 +3287,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="DataService.endpointDescription">
+                    </section>    <section id="DataService.endpointdescription">
                       <h4>endpoint description</h4>
                     
                       <table class="def">
@@ -3321,7 +3321,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#rdfs-Resource">Resource</a>
+                            <a href="#Resource">Resource</a>
                     
                                 [0..*]
                     
@@ -3337,7 +3337,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription">endpoint description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription">https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_description">endpoint description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription">https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3359,7 +3359,7 @@
                     An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description [OpenAPI], an OGC GetCapabilities response [WFS], [ISO-19142], [WMS], [ISO-19128], a SPARQL Service Description [SPARQL11-SERVICE-DESCRIPTION], an [OpenSearch] or [WSDL20] document, a Hydra API description [HYDRA], else in text or some other informal mode if a formal representation is not possible.</td>
                         </tr>
                       </table>
-                    </section>    <section id="DataService.endpointUrl">
+                    </section>    <section id="DataService.endpointURL">
                       <h4>endpoint URL</h4>
                     
                       <table class="def">
@@ -3393,7 +3393,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#rdfs-Resource">Resource</a>
+                            <a href="#Resource">Resource</a>
                     
                                 [1..*]
                     
@@ -3409,7 +3409,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl">endpoint URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl">https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_url">endpoint URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl">https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3460,7 +3460,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#MediaTypeOrExtent">Media Type or Extent</a>
+                            <a href="#MediaTypeorExtent">Media Type or Extent</a>
                     
                                 [0..*]
                     
@@ -3535,7 +3535,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword">keyword/tag</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_keyword">keyword/tag</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3552,7 +3552,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="DataService.landingPage">
+                    </section>    <section id="DataService.landingpage">
                       <h4>landing page</h4>
                     
                       <table class="def">
@@ -3602,7 +3602,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage">landing page</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_landing_page">landing page</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3673,7 +3673,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license</a>)
                             <br />Definition: <i>A legal document under which the resource is made available.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -3741,7 +3741,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3758,7 +3758,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="DataService.servesDataset">
+                    </section>    <section id="DataService.servesdataset">
                       <h4>serves dataset</h4>
                     
                       <table class="def">
@@ -3808,7 +3808,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset">serves dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset">https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_serves_dataset">serves dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset">https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3875,7 +3875,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">theme/category</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme">theme/category</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3946,7 +3946,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -3999,7 +3999,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset">https://mff-uk.github.io/specifications/dcat-dap/#Dataset</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset">https://mff-uk.github.io/specifications/dcat-dap/#Dataset</a>)
                         <ul style="list-style-type: none;">
                             <li>
                                       class
@@ -4024,12 +4024,12 @@
                     <p>Backwards associations</p>
                     <ul>
                         <li><a href="#Catalogue.dataset"></a></li>
-                        <li><a href="#Dataset.hasVersion"></a></li>
-                        <li><a href="#DataService.servesDataset"></a></li>
+                        <li><a href="#Dataset.hasversion"></a></li>
+                        <li><a href="#DataService.servesdataset"></a></li>
                         <li><a href="#Dataset.source"></a></li>
                     </ul>
                 
-                    <section id="Dataset.accessRights">
+                    <section id="Dataset.accessrights">
                       <h4>access rights</h4>
                     
                       <table class="def">
@@ -4063,7 +4063,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#RightsStatement">Rights Statement</a>
+                            <a href="#Rightsstatement">Rights Statement</a>
                     
                                 [0..1]
                     
@@ -4079,7 +4079,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights">access rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights">access rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -4096,7 +4096,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.applicableLegislation">
+                    </section>    <section id="Dataset.applicablelegislation">
                       <h4>applicable legislation</h4>
                     
                       <table class="def">
@@ -4155,7 +4155,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.conformsTo">
+                    </section>    <section id="Dataset.conformsto">
                       <h4>conforms to</h4>
                     
                       <table class="def">
@@ -4205,7 +4205,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -4222,7 +4222,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.contactPoint">
+                    </section>    <section id="Dataset.contactpoint">
                       <h4>contact point</h4>
                     
                       <table class="def">
@@ -4272,7 +4272,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">contact point</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point">contact point</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -4339,7 +4339,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator">creator</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_creator">creator</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -4360,7 +4360,7 @@
                           <td>Resources of type foaf:Agent are recommended as values for this property.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Dataset.datasetDistribution">
+                    </section>    <section id="Dataset.datasetdistribution">
                       <h4>dataset distribution</h4>
                     
                       <table class="def">
@@ -4410,7 +4410,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution">distribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_distribution">distribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -4477,7 +4477,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
                             <br />Definition: <i>A free-text account of the resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -4608,7 +4608,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency">frequency</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency">frequency</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency</a>)
                             <br />Definition: <i>The frequency at which a dataset is published.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -4630,7 +4630,7 @@
                           <td>The value of dcterms:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Dataset.geographicalCoverage">
+                    </section>    <section id="Dataset.geographicalcoverage">
                       <h4>geographical coverage</h4>
                     
                       <table class="def">
@@ -4680,7 +4680,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
                             <br />Definition: <i>The geographical area covered by the dataset.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -4702,7 +4702,7 @@
                           <td>The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Dataset.hasVersion">
+                    </section>    <section id="Dataset.hasversion">
                       <h4>has version</h4>
                     
                       <table class="def">
@@ -4752,7 +4752,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion">has version</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_version">has version</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -4825,7 +4825,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier">identifier</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_identifier">identifier</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier</a>)
                             <br />Definition: <i>A unique identifier of the resource being described or cataloged.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -4843,7 +4843,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.inSeries">
+                    </section>    <section id="Dataset.inseries">
                       <h4>in series</h4>
                     
                       <table class="def">
@@ -4893,7 +4893,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries">in series</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_in_series">in series</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -4910,7 +4910,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.isReferencedBy">
+                    </section>    <section id="Dataset.isreferencedby">
                       <h4>is referenced by</h4>
                     
                       <table class="def">
@@ -4944,7 +4944,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#Resource">Cataloged Resource</a>
+                            <a href="#CataloguedResource">Cataloged Resource</a>
                     
                                 [0..*]
                     
@@ -4960,7 +4960,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy">is referenced by</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_policy">is referenced by</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy</a>)
                             <br />Definition: <i>A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -5033,7 +5033,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword">keyword/tag</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_keyword">keyword/tag</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -5050,7 +5050,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.landingPage">
+                    </section>    <section id="Dataset.landingpage">
                       <h4>landing page</h4>
                     
                       <table class="def">
@@ -5100,7 +5100,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage">landing page</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_landing_page">landing page</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -5171,7 +5171,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language">language</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language">language</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language</a>)
                             <br />Definition: <i>A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -5193,7 +5193,7 @@
                           <td>This property can be repeated if there are multiple languages in the Dataset.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Dataset.modificationDate">
+                    </section>    <section id="Dataset.modificationdate">
                       <h4>modification date</h4>
                     
                       <table class="def">
@@ -5243,7 +5243,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate</a>)
                             <br />Definition: <i>Most recent date on which the resource was changed, updated or modified.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -5261,7 +5261,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.otherIdentifier">
+                    </section>    <section id="Dataset.otheridentifier">
                       <h4>other identifier</h4>
                     
                       <table class="def">
@@ -5433,7 +5433,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -5450,7 +5450,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.qualifiedAttribution">
+                    </section>    <section id="Dataset.qualifiedattribution">
                       <h4>qualified attribution</h4>
                     
                       <table class="def">
@@ -5500,7 +5500,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution">qualified attribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_attribution">qualified attribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution</a>)
                             <br />Definition: <i>Link to an Agent having some form of responsibility for the resource</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -5518,7 +5518,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.qualifiedRelation">
+                    </section>    <section id="Dataset.qualifiedrelation">
                       <h4>qualified relation</h4>
                     
                       <table class="def">
@@ -5568,7 +5568,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation">qualified relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_relation">qualified relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -5585,7 +5585,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.relation">
+                    </section>    <section id="Dataset.relatedresource">
                       <h4>related resource</h4>
                     
                       <table class="def">
@@ -5619,7 +5619,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#rdfs-Resource">Resource</a>
+                            <a href="#Resource">Resource</a>
                     
                                 [0..*]
                     
@@ -5635,7 +5635,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation">relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_relation">relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -5652,7 +5652,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.releaseDate">
+                    </section>    <section id="Dataset.releasedate">
                       <h4>release date</h4>
                     
                       <table class="def">
@@ -5702,7 +5702,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate</a>)
                             <br />Definition: <i>Date of formal issuance (e.g., publication) of the resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -5838,7 +5838,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.spatialResolution">
+                    </section>    <section id="Dataset.spatialresolution">
                       <h4>spatial resolution</h4>
                     
                       <table class="def">
@@ -5888,7 +5888,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution">spatial resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial_resolution">spatial resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution</a>)
                             <br />Definition: <i>Minimum spatial separation resolvable in a dataset, measured in meters.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -5906,7 +5906,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Dataset.temporalCoverage">
+                    </section>    <section id="Dataset.temporalcoverage">
                       <h4>temporal coverage</h4>
                     
                       <table class="def">
@@ -5940,7 +5940,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#PeriodOfTime">Period of Time</a>
+                            <a href="#Periodoftime">Period of Time</a>
                     
                                 [0..*]
                     
@@ -5956,7 +5956,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage</a>)
                             <br />Definition: <i>The temporal period that the dataset covers.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -5978,7 +5978,7 @@
                           <td>The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Dataset.temporalResolution">
+                    </section>    <section id="Dataset.temporalresolution">
                       <h4>temporal resolution</h4>
                     
                       <table class="def">
@@ -6028,7 +6028,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution">temporal resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal_resolution">temporal resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution</a>)
                             <br />Definition: <i>Minimum time period resolvable in the dataset.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -6100,7 +6100,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">theme/category</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme">theme/category</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -6171,7 +6171,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -6242,7 +6242,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre">type/genre</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type">type/genre</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -6313,7 +6313,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version">version</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">version</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -6334,7 +6334,7 @@
                           <td>DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]&#x27;s Best Practice 7: Provide a version indicator.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Dataset.versionNotes">
+                    </section>    <section id="Dataset.versionnotes">
                       <h4>version notes</h4>
                     
                       <table class="def">
@@ -6384,7 +6384,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo">version notes</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">version notes</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo</a>)
                             <br />Definition: <i>A description of changes between this version and the previous version of the resource [VOCAB-ADMS].</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -6406,7 +6406,7 @@
                           <td>This property can be repeated for parallel language versions of the version notes.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Dataset.wasGeneratedBy">
+                    </section>    <section id="Dataset.wasgeneratedby">
                       <h4>was generated by</h4>
                     
                       <table class="def">
@@ -6457,7 +6457,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy">was generated by</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_was_generated_by">was generated by</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy</a>)
                             <br />Definition: <i>An activity that generated, or provides the business context for, the creation of the dataset.
                     </i>
                             <ul style="list-style-type: none;">
@@ -6514,7 +6514,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries">Dataset series</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries">https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series">Dataset series</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries">https://mff-uk.github.io/specifications/dcat-dap/#DatasetSeries</a>)
                         <ul style="list-style-type: none;">
                             <li>
                                       class
@@ -6538,10 +6538,10 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Dataset.inSeries"></a></li>
+                        <li><a href="#Dataset.inseries"></a></li>
                     </ul>
                 
-                    <section id="DatasetSeries.applicableLegislation">
+                    <section id="DatasetSeries.applicablelegislation">
                       <h4>applicable legislation</h4>
                     
                       <table class="def">
@@ -6600,7 +6600,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="DatasetSeries.contactPoint">
+                    </section>    <section id="DatasetSeries.contactpoint">
                       <h4>contact point</h4>
                     
                       <table class="def">
@@ -6650,7 +6650,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">contact point</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_contact_point">contact point</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -6717,7 +6717,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description</a>)
                             <br />Definition: <i>A free-text account of the resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -6789,7 +6789,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency">frequency</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency">frequency</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency</a>)
                             <br />Definition: <i>The frequency at which a dataset is published.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -6811,7 +6811,7 @@
                           <td>The frequency of a dataset series is not equal to the frequency of the dataset in the collection.</td>
                         </tr>
                       </table>
-                    </section>    <section id="DatasetSeries.geographicalCoverage">
+                    </section>    <section id="DatasetSeries.geographicalcoverage">
                       <h4>geographical coverage</h4>
                     
                       <table class="def">
@@ -6861,7 +6861,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage</a>)
                             <br />Definition: <i>The geographical area covered by the dataset.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -6883,7 +6883,7 @@
                           <td>When spatial coverage is a dimension in the dataset series then the spatial coverage of each dataset in the collection should be part of the spatial coverage. In that case, an open ended value is recommended, e.g. EU or a broad bounding box covering the expected values.</td>
                         </tr>
                       </table>
-                    </section>    <section id="DatasetSeries.modificationDate">
+                    </section>    <section id="DatasetSeries.modificationdate">
                       <h4>modification date</h4>
                     
                       <table class="def">
@@ -6933,7 +6933,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate</a>)
                             <br />Definition: <i>Most recent date on which the resource was changed, updated or modified.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -7005,7 +7005,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -7026,7 +7026,7 @@
                           <td>The publisher of the dataset series may not be the publisher of all datasets.  E.g. a digital archive could take over the publishing of older datasets in the series. </td>
                         </tr>
                       </table>
-                    </section>    <section id="DatasetSeries.releaseDate">
+                    </section>    <section id="DatasetSeries.releasedate">
                       <h4>release date</h4>
                     
                       <table class="def">
@@ -7076,7 +7076,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate</a>)
                             <br />Definition: <i>Date of formal issuance (e.g., publication) of the resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -7098,7 +7098,7 @@
                           <td>The moment when the dataset series was established as a managed resource. This is not equal to the release date of the oldest dataset in the collection of the dataset series.</td>
                         </tr>
                       </table>
-                    </section>    <section id="DatasetSeries.temporalCoverage">
+                    </section>    <section id="DatasetSeries.temporalcoverage">
                       <h4>temporal coverage</h4>
                     
                       <table class="def">
@@ -7132,7 +7132,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#PeriodOfTime">Period of Time</a>
+                            <a href="#Periodoftime">Period of Time</a>
                     
                                 [0..*]
                     
@@ -7148,7 +7148,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage">https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage</a>)
                             <br />Definition: <i>The temporal period that the dataset covers.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -7220,7 +7220,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title">https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -7273,7 +7273,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution">Distribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series">Distribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution</a>)
                         <ul style="list-style-type: none;">
                             <li>
                                       class
@@ -7293,11 +7293,11 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Dataset.datasetDistribution"></a></li>
+                        <li><a href="#Dataset.datasetdistribution"></a></li>
                         <li><a href="#Dataset.sample"></a></li>
                     </ul>
                 
-                    <section id="Distribution.accessService">
+                    <section id="Distribution.accessservice">
                       <h4>access service</h4>
                     
                       <table class="def">
@@ -7347,7 +7347,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService">access service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_service">access service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -7368,7 +7368,7 @@
                           <td>dcat:accessService SHOULD be used to link to a description of a dcat:DataService that can provide access to this distribution.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.accessUrl">
+                    </section>    <section id="Distribution.accessURL">
                       <h4>access URL</h4>
                     
                       <table class="def">
@@ -7402,7 +7402,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#rdfs-Resource">Resource</a>
+                            <a href="#Resource">Resource</a>
                     
                                 [1..*]
                     
@@ -7418,7 +7418,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl">access URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_url">access URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl</a>)
                             <br />Definition: <i>A URL of the resource that gives access to a distribution of the dataset. E.g., landing page, feed, SPARQL endpoint.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -7440,7 +7440,7 @@
                           <td>The resource at the access URL may contain information about how to get the Dataset.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.applicableLegislation">
+                    </section>    <section id="Distribution.applicablelegislation">
                       <h4>applicable legislation</h4>
                     
                       <table class="def">
@@ -7558,7 +7558,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Distribution.byteSize">
+                    </section>    <section id="Distribution.bytesize">
                       <h4>byte size</h4>
                     
                       <table class="def">
@@ -7608,7 +7608,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize">byte size</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size">byte size</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -7680,7 +7680,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum">checksum</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_checksum">checksum</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -7701,7 +7701,7 @@
                           <td>The checksum is related to the download URL.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.compressionFormat">
+                    </section>    <section id="Distribution.compressionformat">
                       <h4>compression format</h4>
                     
                       <table class="def">
@@ -7751,7 +7751,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat">compression format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_compression_format">compression format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -7822,7 +7822,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_description">description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description</a>)
                             <br />Definition: <i>A free-text account of the distribution.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -7903,7 +7903,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Distribution.downloadUrl">
+                    </section>    <section id="Distribution.downloadURL">
                       <h4>download URL</h4>
                     
                       <table class="def">
@@ -7937,7 +7937,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#rdfs-Resource">Resource</a>
+                            <a href="#Resource">Resource</a>
                     
                                 [0..*]
                     
@@ -7953,7 +7953,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl">download URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url">download URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -8008,7 +8008,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#MediaTypeOrExtent">Media Type or Extent</a>
+                            <a href="#MediaTypeorExtent">Media Type or Extent</a>
                     
                                 [0..1]
                     
@@ -8024,7 +8024,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format">format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_format">format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format</a>)
                             <br />Definition: <i>The file format of the distribution.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -8046,7 +8046,7 @@
                           <td>dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [IANA-MEDIA-TYPES].</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.hasPolicy">
+                    </section>    <section id="Distribution.haspolicy">
                       <h4>has policy</h4>
                     
                       <table class="def">
@@ -8096,7 +8096,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy">has policy</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_has_policy">has policy</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy</a>)
                             <br />Definition: <i>An ODRL conformant policy expressing the rights associated with the distribution.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -8231,7 +8231,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license</a>)
                             <br />Definition: <i>A legal document under which the distribution is made available.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -8253,7 +8253,7 @@
                           <td>Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.linkedSchemas">
+                    </section>    <section id="Distribution.linkedschemas">
                       <h4>linked schemas</h4>
                     
                       <table class="def">
@@ -8303,7 +8303,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo</a>)
                             <br />Definition: <i>An established standard to which the distribution conforms.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -8325,7 +8325,7 @@
                           <td>This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.mediaType">
+                    </section>    <section id="Distribution.mediatype">
                       <h4>media type</h4>
                     
                       <table class="def">
@@ -8375,7 +8375,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType">media type</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type">media type</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -8396,7 +8396,7 @@
                           <td>This property SHOULD be used when the media type of the distribution is defined in IANA [IANA-MEDIA-TYPES], otherwise dcterms:format MAY be used with different values.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.modificationDate">
+                    </section>    <section id="Distribution.modificationdate">
                       <h4>modification date</h4>
                     
                       <table class="def">
@@ -8446,7 +8446,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -8463,7 +8463,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Distribution.packagingFormat">
+                    </section>    <section id="Distribution.packagingformat">
                       <h4>packaging format</h4>
                     
                       <table class="def">
@@ -8513,7 +8513,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat">packaging format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_packaging_format">packaging format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -8534,7 +8534,7 @@
                           <td>This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [IANA-MEDIA-TYPES], if available.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.releaseDate">
+                    </section>    <section id="Distribution.releasedate">
                       <h4>release date</h4>
                     
                       <table class="def">
@@ -8584,7 +8584,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -8639,7 +8639,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#RightsStatement">Rights Statement</a>
+                            <a href="#Rightsstatement">Rights Statement</a>
                     
                                 [0..1]
                     
@@ -8655,7 +8655,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights">rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_rights">rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights</a>)
                             <br />Definition: <i>Information about rights held in and over the distribution.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -8673,7 +8673,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="Distribution.spatialResolution">
+                    </section>    <section id="Distribution.spatialresolution">
                       <h4>spatial resolution</h4>
                     
                       <table class="def">
@@ -8723,7 +8723,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution">spatial resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_spatial_resolution">spatial resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution</a>)
                             <br />Definition: <i>The minimum spatial separation resolvable in a dataset distribution, measured in meters.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -8809,7 +8809,7 @@
                           <td>It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn.</td>
                         </tr>
                       </table>
-                    </section>    <section id="Distribution.temporalResolution">
+                    </section>    <section id="Distribution.temporalresolution">
                       <h4>temporal resolution</h4>
                     
                       <table class="def">
@@ -8859,7 +8859,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution">temporal resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_temporal_resolution">temporal resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution</a>)
                             <br />Definition: <i>Minimum time period resolvable in the dataset distribution.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -8932,7 +8932,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_title">title</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title">https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title</a>)
                             <br />Definition: <i>A name given to the distribution.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -9010,9 +9010,9 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#DataService.contactPoint"></a></li>
-                        <li><a href="#Dataset.contactPoint"></a></li>
-                        <li><a href="#DatasetSeries.contactPoint"></a></li>
+                        <li><a href="#DataService.contactpoint"></a></li>
+                        <li><a href="#Dataset.contactpoint"></a></li>
+                        <li><a href="#DatasetSeries.contactpoint"></a></li>
                     </ul>
                 
                 
@@ -9072,7 +9072,7 @@
                         <li><a href="#Distribution.licence"></a></li>
                     </ul>
                 
-                    <section id="LicenseDocument.type">
+                    <section id="LicenceDocument.type">
                       <h4>type</h4>
                     
                       <table class="def">
@@ -9163,7 +9163,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Location">Location</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location">https://mff-uk.github.io/specifications/dcat-dap/#Location</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Location">Location</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location">https://mff-uk.github.io/specifications/dcat-dap/#Location</a>)
                         <ul style="list-style-type: none;">
                             <li>
                                       class
@@ -9187,9 +9187,9 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Catalogue.geographicalCoverage"></a></li>
-                        <li><a href="#Dataset.geographicalCoverage"></a></li>
-                        <li><a href="#DatasetSeries.geographicalCoverage"></a></li>
+                        <li><a href="#Catalogue.geographicalcoverage"></a></li>
+                        <li><a href="#Dataset.geographicalcoverage"></a></li>
+                        <li><a href="#DatasetSeries.geographicalcoverage"></a></li>
                     </ul>
                 
                     <section id="Location.bbox">
@@ -9242,7 +9242,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox">bounding box</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox">https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_bbox">bounding box</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox">https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -9313,7 +9313,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid">centroid</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid">https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_centroid">centroid</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid">https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -9384,7 +9384,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry">geometry</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry">https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_geometry">geometry</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry">https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry</a>)
                             <br />Definition: <i>Associates a spatial thing [SDW-BP] with a corresponding geometry.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -9438,7 +9438,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship">Relationship</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship">https://mff-uk.github.io/specifications/dcat-dap/#Relationship</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person">Relationship</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship">https://mff-uk.github.io/specifications/dcat-dap/#Relationship</a>)
                         <ul style="list-style-type: none;">
                             <li>
                                       class
@@ -9458,10 +9458,10 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Dataset.qualifiedRelation"></a></li>
+                        <li><a href="#Dataset.qualifiedrelation"></a></li>
                     </ul>
                 
-                    <section id="Relationship.hadRole">
+                    <section id="Relationship.hadrole">
                       <h4>had role</h4>
                     
                       <table class="def">
@@ -9511,7 +9511,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole">had role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole">https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_hadRole">had role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole">https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -9567,7 +9567,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#rdfs-Resource">Resource</a>
+                            <a href="#Resource">Resource</a>
                     
                                 [1..*]
                     
@@ -9583,7 +9583,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation">relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation">https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_relation">relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation">https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation</a>)
                             <br />Definition: <i>The resource related to the source resource.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -9654,7 +9654,7 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Dataset.wasGeneratedBy"></a></li>
+                        <li><a href="#Dataset.wasgeneratedby"></a></li>
                     </ul>
                 
                 
@@ -9709,7 +9709,7 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Dataset.qualifiedAttribution"></a></li>
+                        <li><a href="#Dataset.qualifiedattribution"></a></li>
                     </ul>
                 
                 
@@ -9816,16 +9816,16 @@
                     <p>Backwards associations</p>
                     <ul>
                         <li><a href="#Distribution.availability"></a></li>
-                        <li><a href="#CatalogueRecord.changeType"></a></li>
+                        <li><a href="#CatalogueRecord.changetype"></a></li>
                         <li><a href="#Distribution.status"></a></li>
                         <li><a href="#DataService.theme"></a></li>
                         <li><a href="#Dataset.theme"></a></li>
                         <li><a href="#Agent.type"></a></li>
-                        <li><a href="#LicenseDocument.type"></a></li>
+                        <li><a href="#LicenceDocument.type"></a></li>
                         <li><a href="#Dataset.type"></a></li>
                     </ul>
                 
-                    <section id="Concept.preferredLabel">
+                    <section id="Concept.preferredlabel">
                       <h4>preferred label</h4>
                     
                       <table class="def">
@@ -10053,8 +10053,8 @@
                         <li><a href="#Distribution.documentation"></a></li>
                         <li><a href="#Dataset.documentation"></a></li>
                         <li><a href="#Catalogue.homepage"></a></li>
-                        <li><a href="#DataService.landingPage"></a></li>
-                        <li><a href="#Dataset.landingPage"></a></li>
+                        <li><a href="#DataService.landingpage"></a></li>
+                        <li><a href="#Dataset.landingpage"></a></li>
                     </ul>
                 
                 
@@ -10220,7 +10220,7 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Dataset.otherIdentifier"></a></li>
+                        <li><a href="#Dataset.otheridentifier"></a></li>
                     </ul>
                 
                     <section id="Identifier.notation">
@@ -10336,11 +10336,11 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Catalogue.applicableLegislation"></a></li>
-                        <li><a href="#DataService.applicableLegislation"></a></li>
-                        <li><a href="#Dataset.applicableLegislation"></a></li>
-                        <li><a href="#DatasetSeries.applicableLegislation"></a></li>
-                        <li><a href="#Distribution.applicableLegislation"></a></li>
+                        <li><a href="#Catalogue.applicablelegislation"></a></li>
+                        <li><a href="#DataService.applicablelegislation"></a></li>
+                        <li><a href="#Dataset.applicablelegislation"></a></li>
+                        <li><a href="#DatasetSeries.applicablelegislation"></a></li>
+                        <li><a href="#Distribution.applicablelegislation"></a></li>
                     </ul>
                 
                 
@@ -10453,13 +10453,13 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Distribution.compressionFormat"></a></li>
-                        <li><a href="#Distribution.mediaType"></a></li>
-                        <li><a href="#Distribution.packagingFormat"></a></li>
+                        <li><a href="#Distribution.compressionformat"></a></li>
+                        <li><a href="#Distribution.mediatype"></a></li>
+                        <li><a href="#Distribution.packagingformat"></a></li>
                     </ul>
                 
                 
-                </section>                <section id="MediaTypeOrExtent">
+                </section>                <section id="MediaTypeorExtent">
                   <h4>Media Type or Extent</h4>
                 
                   <table class="def">
@@ -10515,7 +10515,7 @@
                     </ul>
                 
                 
-                </section>                <section id="PeriodOfTime">
+                </section>                <section id="Periodoftime">
                   <h4>Period of Time</h4>
                 
                   <table class="def">
@@ -10546,7 +10546,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime">Period of Time</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Period_of_Time">Period of Time</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime</a>)
                         <br />Definition: <i>An interval of time that is named or defined by its start and end.</i>
                         <ul style="list-style-type: none;">
                             <li>
@@ -10567,12 +10567,12 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Catalogue.temporalCoverage"></a></li>
-                        <li><a href="#Dataset.temporalCoverage"></a></li>
-                        <li><a href="#DatasetSeries.temporalCoverage"></a></li>
+                        <li><a href="#Catalogue.temporalcoverage"></a></li>
+                        <li><a href="#Dataset.temporalcoverage"></a></li>
+                        <li><a href="#DatasetSeries.temporalcoverage"></a></li>
                     </ul>
                 
-                    <section id="PeriodOfTime.beginning">
+                    <section id="Periodoftime.beginning">
                       <h4>beginning</h4>
                     
                       <table class="def">
@@ -10598,7 +10598,7 @@
                         <tr>
                           <td>Domain</td>
                           <td>
-                            <a href="#PeriodOfTime">Period of Time</a>
+                            <a href="#Periodoftime">Period of Time</a>
                     
                             
                           </td>
@@ -10606,7 +10606,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#Instant">Time instant</a>
+                            <a href="#Timeinstant">Time instant</a>
                     
                                 [0..1]
                     
@@ -10622,7 +10622,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning">beginning</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_beginning">beginning</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning</a>)
                             <br />Definition: <i>Beginning of a period or interval.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -10644,7 +10644,7 @@
                           <td>Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval</td>
                         </tr>
                       </table>
-                    </section>    <section id="PeriodOfTime.end">
+                    </section>    <section id="Periodoftime.end">
                       <h4>end</h4>
                     
                       <table class="def">
@@ -10670,7 +10670,7 @@
                         <tr>
                           <td>Domain</td>
                           <td>
-                            <a href="#PeriodOfTime">Period of Time</a>
+                            <a href="#Periodoftime">Period of Time</a>
                     
                             
                           </td>
@@ -10678,7 +10678,7 @@
                         <tr>
                           <td>Range</td>
                           <td>
-                            <a href="#Instant">Time instant</a>
+                            <a href="#Timeinstant">Time instant</a>
                     
                                 [0..1]
                     
@@ -10694,7 +10694,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end">end</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_end">end</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end</a>)
                             <br />Definition: <i>End of a period or interval.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -10716,7 +10716,7 @@
                           <td>Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval</td>
                         </tr>
                       </table>
-                    </section>    <section id="PeriodOfTime.endDate">
+                    </section>    <section id="Periodoftime.enddate">
                       <h4>end date</h4>
                     
                       <table class="def">
@@ -10742,7 +10742,7 @@
                         <tr>
                           <td>Domain</td>
                           <td>
-                            <a href="#PeriodOfTime">Period of Time</a>
+                            <a href="#Periodoftime">Period of Time</a>
                     
                             
                           </td>
@@ -10766,7 +10766,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate">end date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_end_date">end date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate</a>)
                             <ul style="list-style-type: none;">
                                 <li>
                                           property
@@ -10783,7 +10783,7 @@
                           </tr>
                     
                       </table>
-                    </section>    <section id="PeriodOfTime.startDate">
+                    </section>    <section id="Periodoftime.startdate">
                       <h4>start date</h4>
                     
                       <table class="def">
@@ -10809,7 +10809,7 @@
                         <tr>
                           <td>Domain</td>
                           <td>
-                            <a href="#PeriodOfTime">Period of Time</a>
+                            <a href="#Periodoftime">Period of Time</a>
                     
                             
                           </td>
@@ -10833,7 +10833,7 @@
                                     <li>
                                             
                           property profile
-                          <a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate">start date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate</a>)
+                          <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_start_date">start date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate">https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate</a>)
                             <br />Definition: <i>The start of the period.</i>
                             <ul style="list-style-type: none;">
                                 <li>
@@ -10907,7 +10907,7 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Distribution.hasPolicy"></a></li>
+                        <li><a href="#Distribution.haspolicy"></a></li>
                     </ul>
                 
                 
@@ -10958,7 +10958,7 @@
                     </ul>
                 
                 
-                </section>                <section id="RightsStatement">
+                </section>                <section id="Rightsstatement">
                   <h4>Rights Statement</h4>
                 
                   <table class="def">
@@ -11009,8 +11009,8 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#DataService.accessRights"></a></li>
-                        <li><a href="#Dataset.accessRights"></a></li>
+                        <li><a href="#DataService.accessrights"></a></li>
+                        <li><a href="#Dataset.accessrights"></a></li>
                         <li><a href="#Distribution.rights"></a></li>
                         <li><a href="#Catalogue.rights"></a></li>
                     </ul>
@@ -11047,7 +11047,7 @@
                                 <li>
                                         
                       class profile
-                      <a href="https://mff-uk.github.io/specifications/dcat-dap/#Role">Role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Role">https://mff-uk.github.io/specifications/dcat-dap/#Role</a>)
+                      <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Role">Role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap/#Role">https://mff-uk.github.io/specifications/dcat-dap/#Role</a>)
                         <ul style="list-style-type: none;">
                             <li>
                                       class
@@ -11067,7 +11067,7 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#Relationship.hadRole"></a></li>
+                        <li><a href="#Relationship.hadrole"></a></li>
                     </ul>
                 
                 
@@ -11122,14 +11122,14 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#CatalogueRecord.applicationProfile"></a></li>
-                        <li><a href="#DataService.conformsTo"></a></li>
-                        <li><a href="#Dataset.conformsTo"></a></li>
-                        <li><a href="#Distribution.linkedSchemas"></a></li>
+                        <li><a href="#CatalogueRecord.applicationprofile"></a></li>
+                        <li><a href="#DataService.conformsto"></a></li>
+                        <li><a href="#Dataset.conformsto"></a></li>
+                        <li><a href="#Distribution.linkedschemas"></a></li>
                     </ul>
                 
                 
-                </section>                <section id="Instant">
+                </section>                <section id="Timeinstant">
                   <h4>Time instant</h4>
                 
                   <table class="def">
@@ -11180,15 +11180,15 @@
                 
                     <p>Backwards associations</p>
                     <ul>
-                        <li><a href="#PeriodOfTime.beginning"></a></li>
-                        <li><a href="#PeriodOfTime.end"></a></li>
+                        <li><a href="#Periodoftime.beginning"></a></li>
+                        <li><a href="#Periodoftime.end"></a></li>
                     </ul>
                 
                 
                 </section>          </section>
 
 
-            <section id="rdfs-Resource">
+            <section id="Resource">
               <h4>Resource</h4>
             
               <table class="def">
@@ -11239,11 +11239,11 @@
             
                 <p>Backwards associations</p>
                 <ul>
-                    <li><a href="#Distribution.accessUrl"></a></li>
-                    <li><a href="#Distribution.downloadUrl"></a></li>
-                    <li><a href="#DataService.endpointDescription"></a></li>
-                    <li><a href="#DataService.endpointUrl"></a></li>
-                    <li><a href="#Dataset.relation"></a></li>
+                    <li><a href="#Distribution.accessURL"></a></li>
+                    <li><a href="#Distribution.downloadURL"></a></li>
+                    <li><a href="#DataService.endpointdescription"></a></li>
+                    <li><a href="#DataService.endpointURL"></a></li>
+                    <li><a href="#Dataset.relatedresource"></a></li>
                     <li><a href="#Relationship.relation"></a></li>
                 </ul>
             
