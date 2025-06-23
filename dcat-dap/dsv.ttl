@@ -248,7 +248,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/dcat#Dataset>
 ];
-    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Dataset>.
 
