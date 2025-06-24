@@ -9,11 +9,11 @@
 @prefix requirement: <https://w3id.org/dsv/requirement-level#>.
 @prefix role: <https://w3id.org/dsv/class-role#>.
 @prefix prof: <http://www.w3.org/ns/dx/prof/>.
-@prefix : <https://mff-uk.github.io/specifications/dcat-dap/#>.
+@prefix : <https://mff-uk.github.io/specifications/dcat-dap#>.
 
 
-<https://mff-uk.github.io/specifications/dcat-dap/#> a prof:Profile, dsv:ApplicationProfile.
-:Catalog dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#> a prof:Profile, dsv:ApplicationProfile.
+:Catalog dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "A curated collection of metadata about resources."@en, "Una colección curada de metadatos sobre recursos (por ejemplo, conjuntos de datos y servicios de datos en el contexto de un catálogo de datos)."@es, "Una raccolta curata di metadati sulle risorse (ad es. sui dataset e relativi servizi nel contesto di cataloghi di dati)."@it, "Une collection élaborée de métadonnées sur les jeux de données"@fr, "Řízená kolekce metadat o datových sadách a datových službách"@cs, "Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων"@el, "مجموعة من توصيفات قوائم البيانات"@ar, "データ・カタログは、データセットに関するキュレートされたメタデータの集合です。"@ja, "En udvalgt og arrangeret samling af metadata om ressourcer (fx datasæt og datatjenester i kontekst af et datakatalog). "@da;
     skos:scopeNote "A Web-based data catalog is typically represented as a single instance of this class.\nDatasets and data services are examples of resources in the context of a data catalog."@en;
@@ -27,8 +27,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Catalog>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.homepage> dsv:domain :Catalog;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Catalog.homepage> dsv:domain :Catalog;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "A homepage of the catalog (a public Web document usually available in HTML)."@en;
     skos:scopeNote "foaf:homepage is an inverse functional property (IFP) which means that it MUST be unique and precisely identify the Web-page for the resource. This property indicates the canonical Web-page, which might be helpful in cases where there is more than one Web-page about the resource."@en;
@@ -43,8 +43,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Document.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.themeTaxonomy> dsv:domain :Catalog;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Catalog.themeTaxonomy> dsv:domain :Catalog;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "El sistema de organización del conocimiento utilizado para clasificar conjuntos de datos de catálogos."@es, "Il sistema di organizzazione della conoscenza (KOS) usato per classificare i dataset del catalogo."@it, "Le systhème d'ogranisation de connaissances utilisé pour classifier les jeux de données du catalogue."@fr, "Systém organizace znalostí (KOS) použitý pro klasifikaci datových sad v katalogu."@cs, "A knowledge organization system (KOS) used to classify the resources documented in the catalog (e.g., datasets and services)."@en, "Το σύστημα οργάνωσης γνώσης που χρησιμοποιείται για την κατηγοριοποίηση των συνόλων δεδομένων του καταλόγου."@el, "لائحة التصنيفات المستخدمه لتصنيف قوائم البيانات ضمن الفهرس"@ar, "カタログのデータセットを分類するために用いられる知識組織化体系（KOS；knowledge organization system）。"@ja, "Vidensorganiseringssystem (KOS) som anvendes til at klassificere datasæt i kataloget."@da;
     skos:scopeNote "It is recommended that the taxonomy is organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, which allows each member to be denoted by an IRI and published as Linked Data."@en;
@@ -59,8 +59,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.resource> dsv:domain :Catalog;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Catalog.resource> dsv:domain :Catalog;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This is the most general predicate for membership of a catalog. Use of a more specific sub-property is recommended when available."@en;
     dsv:reusesPropertyValue [
@@ -78,8 +78,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.dataset> dsv:domain :Catalog;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Catalog.dataset> dsv:domain :Catalog;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -96,8 +96,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Dataset.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.service> dsv:domain :Catalog;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Catalog.service> dsv:domain :Catalog;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -114,8 +114,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :DataService.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.catalog> dsv:domain :Catalog;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Catalog.catalog> dsv:domain :Catalog;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -132,8 +132,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Catalog.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Catalog.record> dsv:domain :Catalog;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Catalog.record> dsv:domain :Catalog;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "A record describing the registration of a single resource (e.g., a dataset, a data service) that is part of the catalog."@en, "Describe la registración de un conjunto de datos o un servicio de datos en el catálogo."@es, "Záznam popisující registraci jedné datové sady či datové služby jakožto součásti katalogu."@cs, "Relie un catalogue à ses registres."@fr, "Un record che descrive la registrazione di un singolo set di dati o di un servizio dati che fa parte del catalogo."@it, "Συνδέει έναν κατάλογο με τις καταγραφές του."@el, "تربط الفهرس بسجل ضمنه"@ar, "カタログの一部であるカタログ・レコード。"@ja, "En post der beskriver registreringen af et enkelt datasæt eller en datatjeneste som er opført i kataloget."@da;
     dsv:reusesPropertyValue [
@@ -146,7 +146,7 @@
     dsv:property <http://www.w3.org/ns/dcat#record>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :CatalogRecord.
-:CatalogRecord dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:CatalogRecord dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "1つのデータセットを記述したデータ・カタログ内のレコード。"@ja, "A record in a catalog, describing the registration of a single dcat:Resource."@en, "Un record in un catalogo di dati che descrive un singolo dataset o servizio di dati."@it, "Un registre du catalogue ou une entrée du catalogue, décrivant un seul jeu de données."@fr, "Un registro en un catálogo de datos que describe un solo conjunto de datos o un servicio de datos."@es, "Záznam v datovém katalogu popisující jednu datovou sadu či datovou službu."@cs, "Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων."@el, "En post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en datatjeneste."@da;
     skos:scopeNote "This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset or service and metadata about the entry in the catalog about the dataset or service. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date SHOULD only be specified for the catalog record. Notice that the W3C PROV Ontology [PROV-O] allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset or its registration."@en;
@@ -159,8 +159,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#CatalogRecord>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.title> dsv:domain :CatalogRecord;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.title> dsv:domain :CatalogRecord;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;
     skos:definition "A name given to the record."@en;
@@ -170,8 +170,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.listingDate> dsv:domain :CatalogRecord;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.listingDate> dsv:domain :CatalogRecord;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "listing date"@en;
     skos:definition "The date of listing (i.e., formal recording) of the corresponding dataset or service in the catalog."@en;
@@ -182,8 +182,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.update-modificationDate> dsv:domain :CatalogRecord;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.update-modificationDate> dsv:domain :CatalogRecord;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "update/modification date"@en;
     skos:definition "Most recent date on which the catalog entry was changed, updated or modified."@en;
@@ -194,8 +194,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.primaryTopic> dsv:domain :CatalogRecord;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.primaryTopic> dsv:domain :CatalogRecord;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "The dcat:Resource (dataset or service) described in the record."@en;
     skos:scopeNote "foaf:primaryTopic property is functional: each catalog record can have at most one primary topic, i.e., describes one cataloged resource."@en;
@@ -210,8 +210,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.conformsTo> dsv:domain :CatalogRecord;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.conformsTo> dsv:domain :CatalogRecord;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "conforms to"@en;
     skos:scopeNote "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalog record metadata conforms to."@en;
@@ -226,8 +226,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Standard.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CatalogRecord.description> dsv:domain :CatalogRecord;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.description> dsv:domain :CatalogRecord;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "description"@en;
     skos:definition "A free-text account of the record."@en;
@@ -236,7 +236,7 @@
     dsv:property dct:description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
-:Dataset dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Dataset dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:specializes :Resource;
     dsv:reusesPropertyValue [
@@ -252,8 +252,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Dataset>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.distribution> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.distribution> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -270,8 +270,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Distribution.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.frequency> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.frequency> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "frequency"@en;
     skos:definition "The frequency at which a dataset is published."@en;
@@ -282,8 +282,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Frequency.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.inSeries> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.inSeries> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -300,8 +300,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :DatasetSeries.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatial-geographicalCoverage> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "spatial/geographical coverage"@en;
     skos:definition "The geographical area covered by the dataset."@en;
@@ -312,8 +312,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Location.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.spatialResolution> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatialResolution> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
     skos:definition "minimum spatial separation resolvable in a dataset, measured in meters."@en-us, "minimum spatial separation resolvable in a dataset, measured in metres."@en-gb, "minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech."@cs, "mínima separacíon espacial disponible en un conjunto de datos, medida en metros."@es, "separazione spaziale minima risolvibile in un set di dati, misurata in metri."@it, "mindste geografiske afstand som kan erkendes i et datasæt, målt i meter."@da, "Minimum spatial separation resolvable in a dataset, measured in meters."@en;
@@ -324,8 +324,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#decimal>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalCoverage> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalCoverage> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "temporal coverage"@en;
     skos:definition "The temporal period that the dataset covers."@en;
@@ -336,8 +336,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :PeriodOfTime.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.temporalResolution> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalResolution> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "Minimum time period resolvable in the dataset."@en, "minimální doba trvání rozlišitelná v datové sadě."@cs, "periodo di tempo minimo risolvibile in un set di dati."@it, "período de tiempo mínimo en el conjunto de datos."@es, "mindste tidsperiode der kan resolveres i datasættet."@da;
     skos:scopeNote "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset."@en;
@@ -352,8 +352,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Dataset.wasGeneratedBy> dsv:domain :Dataset;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Dataset.wasGeneratedBy> dsv:domain :Dataset;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "was generated by"@en;
     skos:definition "An activity that generated, or provides the business context for, the creation of the dataset.\n"@en;
@@ -363,7 +363,7 @@
     dsv:property <http://www.w3.org/ns/prov#wasGeneratedBy>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Entity.
-:Resource dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Resource dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "Cataloged Resource"@en, "Katalogizovaný zdroj"@cs, "Recurso catalogado"@es, "Risorsa catalogata"@it, "Katalogiseret ressource"@da;
     skos:scopeNote "The class of all cataloged resources, the super-class of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog.\n\nThis class carries properties common to all cataloged resources, including datasets and data services.\n\nThe instances of this class SHOULD be included in a catalog.\n\nWhen describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dcterms:type property to indicate the specific type.\n\ndcat:Resource is an extension point that enables the definition of any kind of catalog. Additional sub-classes may be defined in a DCAT profile or other DCAT application for catalogs of other kinds of resources."@en;
@@ -376,8 +376,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Resource>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.accessRights> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.accessRights> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "access rights"@en;
     skos:scopeNote "Information about licenses and rights MAY be provided for the Resource."@en;
@@ -392,8 +392,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :RightsStatement.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.conformsTo> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.conformsTo> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "conforms to"@en;
     skos:scopeNote "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the cataloged resource content conforms to."@en;
@@ -408,8 +408,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Standard.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.contactPoint> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -426,8 +426,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Kind.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.creator> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.creator> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "creator"@en;
     skos:scopeNote "Resources of type foaf:Agent are recommended as values for this property."@en;
@@ -442,8 +442,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Agent.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.title> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;
     dsv:reusesPropertyValue [
@@ -457,8 +457,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.releaseDate> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "release date"@en;
     skos:definition "Date of formal issuance (e.g., publication) of the resource."@en;
@@ -469,8 +469,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.update-modificationDate> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.update-modificationDate> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "update/modification date"@en;
     skos:definition "Most recent date on which the resource was changed, updated or modified."@en;
@@ -481,8 +481,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.language> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.language> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "language"@en;
     skos:definition "A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution"@en;
@@ -493,8 +493,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :LinguisticSystem.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.publisher> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "publisher"@en;
     skos:scopeNote "Resources of type foaf:Agent are recommended as values for this property."@en;
@@ -509,8 +509,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Agent.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.identifier> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.identifier> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "identifier"@en;
     skos:definition "A unique identifier of the resource being described or cataloged."@en;
@@ -521,8 +521,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.theme-category> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.theme-category> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "tema"@es, "tema"@it, "theme/category"@en, "thème"@fr, "téma"@cs, "Θέμα"@el, "التصنيف"@ar, "テーマ/カテゴリー"@ja, "emne"@da;
     skos:scopeNote "The set of themes used to categorize the resources are organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, describing all the categories and their relations in the catalog."@en;
@@ -537,8 +537,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.type-genre> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.type-genre> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "type/genre"@en;
     skos:scopeNote "The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:\nDCMI Type vocabulary [DCTERMS]\n[ISO-19115-1] scope codes\nDatacite resource types [DataCite]\nPARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (see item 15 contentType)\nMARC intellectual resource types\nSome members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [ISO-19115-1] CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.\n\nTo describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element."@en;
@@ -553,8 +553,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Class.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.relation> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.relation> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "relation"@en;
     skos:scopeNote "dcterms:relation SHOULD be used where the nature of the relationship between a cataloged resource and related resources is not known. A more specific sub-property SHOULD be used if the nature of the relationship of the link is known. The property dcat:distribution SHOULD be used to link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution"@en;
@@ -569,8 +569,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedRelation> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedRelation> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "Used to link to another resource where the nature of the relationship is known but does not match one of the standard [DCTERMS] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [PROV-O] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf).\n"@en;
     dsv:reusesPropertyValue [
@@ -588,8 +588,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Relationship.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.keyword> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.keyword> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "keyword/tag"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
     dsv:reusesPropertyValue [
@@ -603,8 +603,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.landingPage> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.landingPage> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -621,8 +621,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Document.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.qualifiedAttribution> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedAttribution> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "qualified attribution"@en;
     skos:definition "Link to an Agent having some form of responsibility for the resource"@en;
@@ -633,8 +633,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Attribution.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.license> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.license> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "license"@en;
     skos:definition "A legal document under which the resource is made available."@en;
@@ -645,8 +645,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :LicenseDocument.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.rights> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.rights> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "rights"@en;
     skos:definition "A statement that concerns all rights not addressed with dcterms:license or dcterms:accessRights, such as copyright statements."@en;
@@ -657,8 +657,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :RightsStatement.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPart> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasPart> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "has part"@en;
     dsv:reusesPropertyValue [
@@ -672,8 +672,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasPolicy> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasPolicy> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "has policy"@en;
     skos:definition "An ODRL conformant policy expressing the rights associated with the resource."@en;
@@ -684,8 +684,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Policy.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.isReferencedBy> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.isReferencedBy> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "is referenced by"@en;
     skos:definition "A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource."@en;
@@ -696,8 +696,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previousVersion> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.previousVersion> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This property is meant to be used to specify a version chain, consisting of snapshots of a resource.\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. One of the typical cases here is representing the history of the versions of a dataset that have been released over time."@en;
     dsv:reusesPropertyValue [
@@ -715,8 +715,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasVersion> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasVersion> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g., snapshots [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations."@en;
     dsv:reusesPropertyValue [
@@ -734,8 +734,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.hasCurrentVersion> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasCurrentVersion> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This property is intended for relating a non-versioned or abstract resource to a single snapshot that can be used as a permalink to indicate the current version of the content [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle."@en;
     dsv:reusesPropertyValue [
@@ -753,8 +753,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.replaces> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.replaces> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "replaces"@en;
     dsv:reusesPropertyValue [
@@ -768,8 +768,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.version> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.version> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]'s Best Practice 7: Provide a version indicator."@en;
     dsv:reusesPropertyValue [
@@ -787,8 +787,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.versionInfo> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.versionInfo> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "version notes"@en;
     skos:definition "A description of changes between this version and the previous version of the resource [VOCAB-ADMS]."@en;
@@ -799,8 +799,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.first> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.first> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
     dsv:reusesPropertyValue [
@@ -818,8 +818,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.last> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.last> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
     dsv:reusesPropertyValue [
@@ -837,8 +837,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.previous> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.previous> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "In DCAT this property is used for resources belonging to a dcat:DatasetSeries.\n\nIt is important to note that this property is different from dcat:previousVersion, as it does not denote a previous version of the same resource, but a distinct resource immediately preceding the current one in an ordered collection of resources."@en;
     dsv:reusesPropertyValue [
@@ -856,8 +856,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.status> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.status> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "The status of the resource in the context of a particular workflow process [VOCAB-ADMS]."@en;
     skos:scopeNote "DCAT does not prescribe the use of any specific set of life-cycle statuses, but refers to existing standards and community practices fit for the relevant application scenario."@en;
@@ -871,8 +871,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Concept.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#CataloguedResource.description> dsv:domain :Resource;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description> dsv:domain :Resource;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "description"@en;
     skos:definition "A free-text account of the resource."@en;
@@ -881,7 +881,7 @@
     dsv:property dct:description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
-:Document dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Document dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -894,7 +894,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class <http://xmlns.com/foaf/0.1/Document>.
-:rdfs-Resource dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:rdfs-Resource dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -907,7 +907,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class rdfs:Resource.
-:DataService dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:DataService dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "A collection of operations that provides access to one or more datasets or data processing functions."@en, "Umístění či přístupový bod poskytující operace související s hledáním, přistupem k, či výkonem funkcí na datech či souvisejících zdrojích."@cs, "Un sitio o end-point que provee operaciones relacionadas a funciones de descubrimiento, acceso, o procesamiento de datos o recursos relacionados."@es, "Un sito o end-point che fornisce operazioni relative alla scoperta, all'accesso o all'elaborazione di funzioni su dati o risorse correlate."@it, "Et websted eller endpoint der udstiller operationer relateret til opdagelse af, adgang til eller behandlende funktioner på data eller relaterede ressourcer."@da;
     skos:scopeNote "If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property.\nThe kind of service can be indicated using the dcterms:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type code list [INSPIRE-SDST]."@en;
@@ -921,8 +921,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#DataService>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointUrl> dsv:domain :DataService;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#DataService.endpointUrl> dsv:domain :DataService;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "end-point del servicio"@es, "end-point del servizio"@it, "přístupový bod služby"@cs, "endpoint URL"@en, "tjenesteendpoint"@da;
     dsv:reusesPropertyValue [
@@ -936,8 +936,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#DataService.endpointDescription> dsv:domain :DataService;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#DataService.endpointDescription> dsv:domain :DataService;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "descripción del end-point del servicio"@es, "endpoint description"@en, "descrizione dell'endpoint del servizio"@it, "popis přístupového bodu služby"@cs, "endpointbeskrivelse"@da;
     skos:scopeNote "The endpoint description gives specific details of the actual endpoint instances, while dcterms:conformsTo is used to indicate the general standard or specification that the endpoints implement.\nAn endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description [OpenAPI], an OGC GetCapabilities response [WFS], [ISO-19142], [WMS], [ISO-19128], a SPARQL Service Description [SPARQL11-SERVICE-DESCRIPTION], an [OpenSearch] or [WSDL20] document, a Hydra API description [HYDRA], else in text or some other informal mode if a formal representation is not possible."@en;
@@ -952,8 +952,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#DataService.servesDataset> dsv:domain :DataService;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#DataService.servesDataset> dsv:domain :DataService;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -969,7 +969,7 @@
     dsv:property <http://www.w3.org/ns/dcat#servesDataset>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Dataset.
-:RightsStatement dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:RightsStatement dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -982,7 +982,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class dct:RightsStatement.
-:Standard dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Standard dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -995,7 +995,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class dct:Standard.
-:Kind dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Kind dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1008,7 +1008,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/2006/vcard/ns#Kind>.
-:Agent dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Agent dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1021,7 +1021,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class <http://xmlns.com/foaf/0.1/Agent>.
-:LinguisticSystem dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:LinguisticSystem dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1034,7 +1034,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class dct:LinguisticSystem.
-:Class dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Class dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1047,7 +1047,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class rdfs:Class.
-:Relationship dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Relationship dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard [DCTERMS] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [PROV-O] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)"@en;
     dsv:reusesPropertyValue [
@@ -1063,8 +1063,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Relationship>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Relationship.relation> dsv:domain :Relationship;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Relationship.relation> dsv:domain :Relationship;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "relation"@en;
     skos:definition "The resource related to the source resource."@en;
@@ -1075,8 +1075,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Relationship.hadRole> dsv:domain :Relationship;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Relationship.hadRole> dsv:domain :Relationship;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
     skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [ISO-19115] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
@@ -1090,7 +1090,7 @@
     dsv:property <http://www.w3.org/ns/dcat#hadRole>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Role.
-:Attribution dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Attribution dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1104,8 +1104,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/prov#Attribution>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Attribution.hadRole> dsv:domain :Attribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Attribution.hadRole> dsv:domain :Attribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
     skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [ISO-19115] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
@@ -1119,7 +1119,7 @@
     dsv:property <http://www.w3.org/ns/dcat#hadRole>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Role.
-:LicenseDocument dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:LicenseDocument dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1132,7 +1132,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class dct:LicenseDocument.
-:Policy dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Policy dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1145,7 +1145,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/odrl/2/Policy>.
-:Distribution dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Distribution dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en;
     dsv:reusesPropertyValue [
@@ -1161,8 +1161,8 @@
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Distribution>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.title> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.title> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "title"@en;
     skos:definition "A name given to the distribution."@en;
@@ -1172,8 +1172,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.releaseDate> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.releaseDate> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "release date"@en;
     skos:scopeNote "This property SHOULD be set using the first known date of issuance."@en;
@@ -1188,8 +1188,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.update-modificationDate> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.update-modificationDate> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "update/modification date"@en;
     dsv:reusesPropertyValue [
@@ -1203,8 +1203,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.license> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.license> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "license"@en;
     skos:definition "A legal document under which the distribution is made available."@en;
@@ -1215,8 +1215,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :LicenseDocument.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessRights> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.accessRights> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "access rights"@en;
     skos:definition "A rights statement that concerns how the distribution is accessed."@en;
@@ -1227,8 +1227,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :RightsStatement.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.rights> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.rights> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "rights"@en;
     skos:definition "Information about rights held in and over the distribution."@en;
@@ -1239,8 +1239,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :RightsStatement.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.hasPolicy> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.hasPolicy> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "has policy"@en;
     skos:definition "An ODRL conformant policy expressing the rights associated with the distribution."@en;
@@ -1251,8 +1251,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Policy.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessUrl> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.accessUrl> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "URL d'accès"@fr, "URL de acceso"@es, "URL πρόσβασης"@el, "access URL"@en, "indirizzo di accesso"@it, "přístupová adresa"@cs, "رابط وصول"@ar, "アクセスURL"@ja, "adgangsadresse"@da;
     skos:definition "A URL of the resource that gives access to a distribution of the dataset. E.g., landing page, feed, SPARQL endpoint."@en, "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, un Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable."@fr, "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de destino, descarga, URL feed, punto de acceso SPARQL. Esta propriedad se debe usar cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar."@es, "URL zdroje, přes které je přístupná distribuce datové sady. Příkladem může být vstupní stránka, RSS kanál či SPARQL endpoint. Použijte ve všech případech kromě URL souboru ke stažení, pro které je lepší použít dcat:downloadURL."@cs, "Un URL di una risorsa che consente di accedere a una distribuzione del set di dati. Per esempio, pagina di destinazione, feed, endpoint SPARQL. Da utilizzare per tutti i casi, tranne  quando  si tratta di un semplice link per il download nel qual caso è preferito downloadURL."@it, "Μπορεί να είναι οποιουδήποτε είδους URL που δίνει πρόσβαση στη διανομή ενός συνόλου δεδομένων. Π.χ. ιστοσελίδα αρχικής πρόσβασης, μεταφόρτωση, feed URL, σημείο διάθεσης SPARQL. Να χρησιμοποιείται όταν ο κατάλογος δεν περιέχει πληροφορίες εαν πρόκειται ή όχι για μεταφορτώσιμο αρχείο."@el, "أي رابط يتيح الوصول إلى البيانات. إذا كان الرابط هو ربط مباشر لملف يمكن تحميله استخدم الخاصية downloadURL"@ar, "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"@ja, "En URL for en ressource som giver adgang til en repræsentation af datsættet. Fx destinationsside, feed, SPARQL-endpoint. Anvendes i alle sammenhænge undtagen til angivelse af et simpelt download link hvor anvendelse af egenskaben downloadURL foretrækkes."@da;
@@ -1263,8 +1263,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.accessService> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.accessService> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "access service"@en, "servicio de acceso de datos"@es, "servizio di accesso ai dati"@it, "služba pro přístup k datům"@cs, "dataadgangstjeneste"@da;
     skos:scopeNote "dcat:accessService SHOULD be used to link to a description of a dcat:DataService that can provide access to this distribution."@en;
@@ -1279,8 +1279,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :DataService.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.downloadUrl> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.downloadUrl> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "dcat:downloadURL SHOULD be used for the URL at which this distribution is available directly, typically through a HTTP Get request."@en;
     dsv:reusesPropertyValue [
@@ -1298,8 +1298,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.byteSize> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.byteSize> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "The size in bytes can be approximated (as a non-negative integer) when the precise size is not known.\nWhile it is recommended that the size be given as an integer, alternative literals such as '1.5 MB' are sometimes used."@en;
     dsv:reusesPropertyValue [
@@ -1317,8 +1317,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#nonNegativeInteger>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.spatialResolution> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.spatialResolution> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
     skos:definition "The minimum spatial separation resolvable in a dataset distribution, measured in meters."@en-us, "minimum spatial separation resolvable in a dataset, measured in metres."@en-gb, "minimální prostorový rozestup rozeznatelný v datové sadě, měřeno v metrech."@cs, "mínima separacíon espacial disponible en un conjunto de datos, medida en metros."@es, "separazione spaziale minima risolvibile in un set di dati, misurata in metri."@it, "mindste geografiske afstand som kan erkendes i et datasæt, målt i meter."@da;
@@ -1329,8 +1329,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.temporalResolution> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.temporalResolution> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "Minimum time period resolvable in the dataset distribution."@en, "minimální doba trvání rozlišitelná v datové sadě."@cs, "periodo di tempo minimo risolvibile in un set di dati."@it, "período de tiempo mínimo en el conjunto de datos."@es, "mindste tidsperiode der kan resolveres i datasættet."@da;
     skos:scopeNote "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.\nAlternative temporal resolutions might be provided in different dataset distributions"@en;
@@ -1345,8 +1345,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.conformsTo> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.conformsTo> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "conforms to"@en;
     skos:definition "An established standard to which the distribution conforms."@en;
@@ -1357,8 +1357,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Standard.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.mediaType> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.mediaType> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This property SHOULD be used when the media type of the distribution is defined in IANA [IANA-MEDIA-TYPES], otherwise dcterms:format MAY be used with different values."@en;
     dsv:reusesPropertyValue [
@@ -1376,8 +1376,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :MediaType.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.format> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.format> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "format"@en;
     skos:definition "The file format of the distribution."@en;
@@ -1388,8 +1388,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :MediaTypeOrExtent.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.compressionFormat> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.compressionFormat> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [IANA-MEDIA-TYPES], if available."@en;
     dsv:reusesPropertyValue [
@@ -1407,8 +1407,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :MediaType.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.packagingFormat> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.packagingFormat> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [IANA-MEDIA-TYPES], if available."@en;
     dsv:reusesPropertyValue [
@@ -1426,8 +1426,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :MediaType.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.checksum> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.checksum> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "checksum"@en;
     skos:scopeNote "The checksum is related to the download URL."@en;
@@ -1442,8 +1442,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Checksum.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Distribution.description> dsv:domain :Distribution;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Distribution.description> dsv:domain :Distribution;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "description"@en;
     skos:definition "A free-text account of the distribution."@en;
@@ -1452,7 +1452,7 @@
     dsv:property dct:description;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
-:DatasetSeries dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:DatasetSeries dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "Dataset series can be also soft-typed via property dcterms:type as in the approach used in [GeoDCAT-AP], and adopted in [DCAT-AP-IT] and [GeoDCAT-AP-IT]).\nCommon scenarios for dataset series include: time series composed of periodically released subsets; map-series composed of items of the same type or theme but with differing spatial footprints."@en;
     dsv:specializes :Dataset;
@@ -1468,7 +1468,7 @@
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#DatasetSeries>.
-:Frequency dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Frequency dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1481,7 +1481,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class dct:Frequency.
-:Location dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Location dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [LOCN] SHOULD be used.\nFor a geographic bounding box delimiting a spatial area the property dcat:bbox SHOULD be used.\nFor the geographic center of a spatial area, or another characteristic point, the property dcat:centroid SHOULD be used."@en;
     dsv:reusesPropertyValue [
@@ -1497,8 +1497,8 @@
     a dsv:ClassProfile;
     dsv:class dct:Location.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Location.geometry> dsv:domain :Location;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Location.geometry> dsv:domain :Location;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "Associates a spatial thing [SDW-BP] with a corresponding geometry."@en;
     skos:scopeNote "The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [GeoSPARQL]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [GeoSPARQL]."@en;
@@ -1513,8 +1513,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Geometry.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Location.boundingBox> dsv:domain :Location;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Location.boundingBox> dsv:domain :Location;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [GeoSPARQL])."@en;
     dsv:reusesPropertyValue [
@@ -1532,8 +1532,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Location.centroid> dsv:domain :Location;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Location.centroid> dsv:domain :Location;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [GeoSPARQL])."@en;
     dsv:reusesPropertyValue [
@@ -1550,7 +1550,7 @@
     dsv:property <http://www.w3.org/ns/dcat#centroid>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
-:PeriodOfTime dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:PeriodOfTime dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "An interval of time that is named or defined by its start and end."@en;
     skos:scopeNote "The start and end of the interval SHOULD be given by using properties dcat:startDate or time:hasBeginning, and dcat:endDate or time:hasEnd, respectively. The interval can also be open - i.e., it can have just a start or just an end."@en;
@@ -1563,8 +1563,8 @@
     a dsv:ClassProfile;
     dsv:class dct:PeriodOfTime.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.startDate> dsv:domain :PeriodOfTime;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.startDate> dsv:domain :PeriodOfTime;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "The start of the period."@en;
     skos:scopeNote "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] and typed using the appropriate XML Schema datatype [XMLSCHEMA11-2] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."@en;
@@ -1579,8 +1579,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.endDate> dsv:domain :PeriodOfTime;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.endDate> dsv:domain :PeriodOfTime;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1597,8 +1597,8 @@
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdfs:Literal.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.beginning> dsv:domain :PeriodOfTime;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.beginning> dsv:domain :PeriodOfTime;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "beginning"@en, "tiene principio"@es;
     skos:definition "Beginning of a period or interval."@en, "Comienzo de una entidad temporal."@es;
@@ -1609,8 +1609,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Instant.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#PeriodOfTime.end> dsv:domain :PeriodOfTime;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.end> dsv:domain :PeriodOfTime;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "end"@en, "tiene fin"@es;
     skos:definition "End of a period or interval."@en, "Final de una entidad temporal."@es;
@@ -1620,7 +1620,7 @@
     dsv:property <http://www.w3.org/2006/time#hasEnd>;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Instant.
-:Entity dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Entity dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1633,7 +1633,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/prov#Entity>.
-:MediaType dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:MediaType dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1646,7 +1646,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class dct:MediaType.
-:MediaTypeOrExtent dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:MediaTypeOrExtent dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1659,7 +1659,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class dct:MediaTypeOrExtent.
-:Concept dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Concept dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "A category or a theme used to describe datasets in the catalog."@en;
     skos:scopeNote "It is recommended to use either skos:inScheme or skos:topConceptOf on every skos:Concept used to classify datasets to link it to the concept scheme it belongs to. This concept scheme is typically associated with the catalog using dcat:themeTaxonomy."@en;
@@ -1671,7 +1671,7 @@
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Concept>;
     a dsv:ClassProfile;
     dsv:class skos:Concept.
-:ConceptScheme dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:ConceptScheme dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "A knowledge organization system (KOS) used to represent themes/categories of datasets in the catalog."@en;
     dsv:reusesPropertyValue [
@@ -1682,7 +1682,7 @@
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Concept_Scheme>;
     a dsv:ClassProfile;
     dsv:class skos:ConceptScheme.
-:Person dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Person dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "[FOAF] provides several properties to describe these entities."@en;
     dsv:reusesPropertyValue [
@@ -1697,7 +1697,7 @@
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a dsv:ClassProfile;
     dsv:class <http://xmlns.com/foaf/0.1/Person>.
-:Organization dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Organization dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "[FOAF] provides several properties to describe these entities."@en;
     dsv:reusesPropertyValue [
@@ -1712,7 +1712,7 @@
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a dsv:ClassProfile;
     dsv:class <http://xmlns.com/foaf/0.1/Organization>.
-:Role dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Role dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:scopeNote "Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [ISO-19115-1] CI_RoleCode.\nUsed in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as\n\n[ISO-19115-1] DS_AssociationTypeCode\nIANA Registry of Link Relations [IANA-RELATIONS]\nDataCite metadata schema [DataCite]\nMARC relators"@en;
     dsv:reusesPropertyValue [
@@ -1727,7 +1727,7 @@
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Class:Role>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/dcat#Role>.
-:Instant dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Instant dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1740,7 +1740,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/2006/time#Instant>.
-:Geometry dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Geometry dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1753,7 +1753,7 @@
 ];
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/locn#Geometry>.
-:Checksum dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:Checksum dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "Checksum"@en;
     skos:scopeNote "The Checksum includes the algorithm (spdx:algorithm) and value (spdx:checksumValue) that allows the integrity of a file to be verified to ensure no errors occurred in transmission or storage."@en;
@@ -1766,8 +1766,8 @@
     a dsv:ClassProfile;
     dsv:class <http://spdx.org/rdf/terms#Checksum>.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Checksum.algorithm> dsv:domain :Checksum;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Checksum.algorithm> dsv:domain :Checksum;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "algorithm"@en;
     skos:definition "Identifies the algorithm used to produce the subject Checksum [SPDX]."@en;
@@ -1778,8 +1778,8 @@
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ChecksumAlgorithm.
 
-<https://mff-uk.github.io/specifications/dcat-dap/#Checksum.checksumValue> dsv:domain :Checksum;
-    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+<https://mff-uk.github.io/specifications/dcat-dap#Checksum.checksumValue> dsv:domain :Checksum;
+    dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "checksum value"@en;
     dsv:reusesPropertyValue [
@@ -1792,7 +1792,7 @@
     dsv:property <http://spdx.org/rdf/terms#checksumValue>;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#hexBinary>.
-:ChecksumAlgorithm dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap/#>;
+:ChecksumAlgorithm dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "Checksum Algorithm"@en;
     dsv:reusesPropertyValue [
