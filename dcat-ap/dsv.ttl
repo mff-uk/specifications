@@ -23,7 +23,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Catalog>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -36,7 +36,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.applicablelegislation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.applicablelegislation>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     dsv:requirementLevel requirement:optional;
@@ -54,7 +54,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Catalog.catalog>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.catalogue>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.catalogue>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -64,13 +64,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "An entity responsible for the creation of the catalogue."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.creator>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.creator>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.creator>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.creator>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.creator>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.creator>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -87,7 +87,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Catalog.dataset>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.dataset>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.dataset>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -99,7 +99,7 @@
     skos:prefLabel "geographical coverage"@en;
     skos:definition "A geographical area covered by the Catalogue."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.geographicalcoverage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.geographicalcoverage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -109,17 +109,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "A related Catalogue that is part of the described Catalogue."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasPart>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasPart>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasPart>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasPart>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasPart>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasPart>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.haspart>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.haspart>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -136,7 +136,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Catalog.homepage>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.homepage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.homepage>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -147,13 +147,13 @@
     a dsv:TermProfile;
     skos:definition "A language used in the textual metadata describing titles, descriptions, etc. of the Datasets in the Catalogue."@en;
     skos:scopeNote "This property can be repeated if the metadata is provided in multiple languages."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.language>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.language>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.language>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.language>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.language>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.language>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -164,8 +164,8 @@
     a dsv:TermProfile;
     skos:prefLabel "licence"@en;
     skos:definition "A licence under which the Catalogue can be used or reused."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.license>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.licence>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.license>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.licence>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -175,13 +175,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "An entity (organisation) responsible for making the Catalogue available."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.publisher>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.publisher>;
     dsv:cardinality cardinality:11;
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
@@ -201,7 +201,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Catalog.record>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.record>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.record>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -218,7 +218,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Catalog.service>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.service>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.service>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -234,7 +234,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalCoverage>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.temporalcoverage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.temporalcoverage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -247,7 +247,7 @@
     skos:definition "El sistema de organización del conocimiento utilizado para clasificar conjuntos de datos de catálogos."@es, "Il sistema di organizzazione della conoscenza (KOS) usato per classificare i dataset del catalogo."@it, "Le systhème d'ogranisation de connaissances utilisé pour classifier les jeux de données du catalogue."@fr, "Systém organizace znalostí (KOS) použitý pro klasifikaci datových sad v katalogu."@cs, "A knowledge organization system used to classify the Resources that are in the Catalogue."@en, "Το σύστημα οργάνωσης γνώσης που χρησιμοποιείται για την κατηγοριοποίηση των συνόλων δεδομένων του καταλόγου."@el, "لائحة التصنيفات المستخدمه لتصنيف قوائم البيانات ضمن الفهرس"@ar, "カタログのデータセットを分類するために用いられる知識組織化体系（KOS；knowledge organization system）。"@ja, "Vidensorganiseringssystem (KOS) som anvendes til at klassificere datasæt i kataloget."@da;
     skos:scopeNote "This property refers to a knowledge organization system used to classify the Catalogue's Datasets. It must have at least the value NAL:data-theme as this is the manatory controlled vocabulary for dcat:theme."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#Catalog.themeTaxonomy>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.themes>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.themes>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -258,8 +258,8 @@
     a dsv:TermProfile;
     skos:prefLabel "modification date"@en;
     skos:definition "The most recent date on which the Catalogue was modified."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.update-modificationDate>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.modificationdate>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.update-modificationDate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.modificationdate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -269,17 +269,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "The date of formal issuance (e.g., publication) of the Catalogue."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.releasedate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.releasedate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -290,13 +290,13 @@
     a dsv:TermProfile;
     skos:definition "A name given to the Catalogue."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the name."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.title>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.title>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -307,13 +307,13 @@
     a dsv:TermProfile;
     skos:definition "A free-text account of the Catalogue."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the description."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.description>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.description>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -323,17 +323,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "A statement that specifies rights associated with the Catalogue."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.rights>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.rights>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.rights>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.rights>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.rights>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.rights>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Catalogue.rights>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Catalogue.rights>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -351,7 +351,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -366,7 +366,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.conformsTo>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.applicationprofile>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.applicationprofile>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -377,7 +377,7 @@
     a dsv:TermProfile;
     skos:prefLabel "change type"@en;
     skos:definition "The status of the catalogue record in the context of editorial flow of the dataset and data service descriptions."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.changetype>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.changetype>;
     dsv:cardinality cardinality:01;
     dsv:property <http://www.w3.org/ns/adms#status>;
     dsv:requirementLevel requirement:recommended;
@@ -390,7 +390,7 @@
     skos:prefLabel "language"@en;
     skos:definition "A language used in the textual metadata describing titles, descriptions, etc. of the Catalogued Resource."@en;
     skos:scopeNote "This property can be repeated if the metadata is provided in multiple languages."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.language>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.language>;
     dsv:cardinality cardinality:0n;
     dsv:property dct:language;
     dsv:requirementLevel requirement:optional;
@@ -408,11 +408,11 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.primaryTopic>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.primarytopic>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.primarytopic>;
     dsv:cardinality cardinality:11;
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :Resource.
+    dsv:objectPropertyRange :CataloguedResource.
 
 <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.source> dsv:domain :CatalogueRecord;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -424,7 +424,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:source
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.sourcemetadata>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.sourcemetadata>;
     dsv:cardinality cardinality:01;
     dsv:property dct:source;
     dsv:requirementLevel requirement:optional;
@@ -445,7 +445,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.listingDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.listingdate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.listingdate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -462,7 +462,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.update-modificationDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.modificationdate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.modificationdate>;
     dsv:cardinality cardinality:11;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -482,7 +482,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.title>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.title>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.title>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -502,14 +502,14 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.description>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CatalogueRecord.description>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CatalogueRecord.description>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange rdf:langString.
 :DataService dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
-    dsv:specializes :Resource;
+    dsv:specializes :CataloguedResource;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#DataService>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -524,7 +524,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#DataService>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -532,17 +532,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "Information regarding access or restrictions based on privacy, security, or other policies."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.accessRights>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.accessRights>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.accessRights>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.accessRights>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.accessRights>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.accessRights>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.accessrights>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.accessrights>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -557,7 +557,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.applicablelegislation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.applicablelegislation>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     dsv:requirementLevel requirement:optional;
@@ -569,13 +569,13 @@
     a dsv:TermProfile;
     skos:definition "An established (technical) standard to which the Data Service conforms."@en;
     skos:scopeNote "The standards referred here SHOULD describe the Data Service and not the data it serves. The latter is provided by the dataset with which this Data Service is connected. For instance the data service adheres to the OGC WFS API standard, while the associated dataset adheres to the INSPIRE Address data model."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.conformsTo>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.conformsTo>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.conformsTo>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.conformsTo>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.conformsto>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.conformsto>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -585,17 +585,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es, "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it, "Contact information that can be used for sending comments about the Data Service."@en, "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs, "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr, "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el, "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"@ar, "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"@ja, "Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.contactpoint>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.contactpoint>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -606,7 +606,7 @@
     a dsv:TermProfile;
     skos:prefLabel "documentation"@en;
     skos:definition "A page or document about this Data Service"@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.documentation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.documentation>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
     dsv:requirementLevel requirement:optional;
@@ -627,7 +627,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#DataService.endpointDescription>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointdescription>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.endpointdescription>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -647,7 +647,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#DataService.endpointUrl>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.endpointURL>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.endpointURL>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
@@ -658,7 +658,7 @@
     a dsv:TermProfile;
     skos:prefLabel "format"@en;
     skos:definition "The structure that can be returned by querying the endpointURL."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.format>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.format>;
     dsv:cardinality cardinality:0n;
     dsv:property dct:format;
     dsv:requirementLevel requirement:optional;
@@ -670,13 +670,13 @@
     a dsv:TermProfile;
     skos:definition "A web page that provides access to the Data Service and/or additional information."@en, "Una pagina web che può essere navigata per ottenere l'accesso al catalogo, ad un dataset, alle distribuzioni del dataset e/o ad informazioni addizionali."@it, "Una página web que puede ser visitada en un explorador Web para tener acceso el catálogo, un conjunto de datos, sus distribuciones y/o información adicional."@es, "Une page Web accessible par un navigateur Web donnant accès au catalogue, un jeu de données, ses distributions et/ou des informations additionnelles."@fr, "Webová stránka, na kterou lze pro získání přístupu ke katalogu, datové sadě, jejím distribucím a/nebo dalším informacím přistoupit webovým prohlížečem."@cs, "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες."@el, "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها "@ar, "データセット、その配信および（または）追加情報にアクセスするためにウエブ・ブラウザでナビゲートできるウェブページ。"@ja, "En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information."@da;
     skos:scopeNote "It is intended to point to a landing page at the original data service provider, not to a page on a site of a third party, such as an aggregator."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.landingPage>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.landingPage>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.landingPage>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.landingPage>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.landingpage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.landingpage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -687,8 +687,8 @@
     a dsv:TermProfile;
     skos:prefLabel "licence"@en;
     skos:definition "A licence under which the Data service is made available."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.license>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.licence>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.license>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.licence>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -698,13 +698,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "An entity (organisation) responsible for making the Data Service available."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.publisher>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.publisher>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -724,7 +724,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#DataService.servesDataset>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.servesdataset>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.servesdataset>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -736,8 +736,8 @@
     skos:prefLabel "tema"@es, "tema"@it, "theme"@en, "thème"@fr, "téma"@cs, "Θέμα"@el, "التصنيف"@ar, "テーマ/カテゴリー"@ja, "emne"@da;
     skos:definition "A category of the Data Service."@en, "Hlavní téma zdroje. Zdroj může mít více témat."@cs, "La categoria principale della risorsa. Una risorsa può avere più temi."@it, "La categoría principal del recurso. Un recurso puede tener varios temas."@es, "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr, "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el, "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar, "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja, "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da;
     skos:scopeNote "A Data Service may be associated with multiple themes."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.theme-category>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.theme>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.theme-category>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.theme>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -748,13 +748,13 @@
     a dsv:TermProfile;
     skos:prefLabel "keyword"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
     skos:definition "A keyword or tag describing the Data Service."@en, "Klíčové slovo nebo značka popisující zdroj."@cs, "Un mot-clé ou étiquette décrivant une ressource."@fr, "Una palabra clave o etiqueta que describe un recurso."@es, "Una parola chiave o un'etichetta per descrivere la risorsa."@it, "Μία λέξη-κλειδί ή μία ετικέτα που περιγράφει το σύνολο δεδομένων."@el, "كلمة  مفتاحيه توصف قائمة البيانات"@ar, "データセットを記述しているキーワードまたはタグ。"@ja, "Et nøgleord eller tag til beskrivelse af en ressource."@da;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.keyword>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.keyword>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.keyword>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.keyword>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.keyword>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.keyword>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -765,13 +765,13 @@
     a dsv:TermProfile;
     skos:definition "A name given to the Data Service."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the name."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.title>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.title>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -782,13 +782,13 @@
     a dsv:TermProfile;
     skos:definition "A free-text account of the Data Service."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the description."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DataService.description>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DataService.description>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -797,14 +797,14 @@
     a dsv:TermProfile;
     skos:definition "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"@ja, "A conceptual entity that represents the information published."@en, "Kolekce dat poskytovaná či řízená jedním zdrojem, která je k dispozici pro přístup či stažení v jednom či více formátech."@cs, "Raccolta di dati, pubblicati o curati da un'unica fonte, disponibili per l'accesso o il download in uno o più formati."@it, "Una colección de datos, publicados o conservados por una única fuente, y disponibles para ser accedidos o descargados en uno o más formatos."@es, "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats."@fr, "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές."@el, "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"@ar, "En samling af data, udgivet eller udvalgt og arrangeret af en enkelt kilde og som er til råde for adgang til eller download af i en eller flere repræsentationer."@da;
     skos:scopeNote "If a Dataset is used as part of a Dataset Series, the usage of the properties listed below must be coherent with the associated Dataset Series. For this usage, consult the guidelines in section 14. General usage guidelines."@en;
-    dsv:specializes :Resource;
+    dsv:specializes :CataloguedResource;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#Dataset>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -812,13 +812,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "Information that indicates whether the Dataset is publicly accessible, has access restrictions or is not public."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.accessRights>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.accessRights>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.accessRights>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.accessRights>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.accessrights>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.accessrights>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -833,7 +833,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.applicablelegislation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.applicablelegislation>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     dsv:requirementLevel requirement:optional;
@@ -844,13 +844,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "An implementing rule or other specification."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.conformsTo>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.conformsTo>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.conformsTo>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.conformsTo>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.conformsto>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.conformsto>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -860,17 +860,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es, "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it, "Contact information that can be used for sending comments about the Dataset."@en, "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs, "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr, "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el, "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"@ar, "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"@ja, "Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.contactpoint>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.contactpoint>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -880,17 +880,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "An entity responsible for producing the dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.creator>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.creator>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.creator>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.creator>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.creator>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.creator>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.creator>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.creator>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -907,7 +907,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.distribution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.datasetdistribution>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.datasetdistribution>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -930,7 +930,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.inSeries>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.inseries>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.inseries>;
     dsv:cardinality cardinality:0n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :DatasetSeries.
@@ -939,13 +939,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "The main identifier for the Dataset, e.g. the URI or other unique identifier in the context of the Catalogue."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.identifier>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.identifier>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.identifier>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.identifier>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.identifier>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.identifier>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -955,17 +955,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:prefLabel "keyword"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.keyword>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.keyword>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.keyword>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.keyword>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.keyword>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.keyword>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.keyword>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.keyword>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -976,13 +976,13 @@
     a dsv:TermProfile;
     skos:definition "A web page that provides access to the Dataset, its Distributions and/or additional information."@en, "Una pagina web che può essere navigata per ottenere l'accesso al catalogo, ad un dataset, alle distribuzioni del dataset e/o ad informazioni addizionali."@it, "Una página web que puede ser visitada en un explorador Web para tener acceso el catálogo, un conjunto de datos, sus distribuciones y/o información adicional."@es, "Une page Web accessible par un navigateur Web donnant accès au catalogue, un jeu de données, ses distributions et/ou des informations additionnelles."@fr, "Webová stránka, na kterou lze pro získání přístupu ke katalogu, datové sadě, jejím distribucím a/nebo dalším informacím přistoupit webovým prohlížečem."@cs, "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες."@el, "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها "@ar, "データセット、その配信および（または）追加情報にアクセスするためにウエブ・ブラウザでナビゲートできるウェブページ。"@ja, "En webside som der kan navigeres til i en webbrowser for at få adgang til kataloget, et datasæt, dets distributioner og/eller yderligere information."@da;
     skos:scopeNote "It is intended to point to a landing page at the original data provider, not to a page on a site of a third party, such as an aggregator."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.landingPage>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.landingPage>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.landingPage>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.landingPage>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.landingpage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.landingpage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -993,13 +993,13 @@
     a dsv:TermProfile;
     skos:definition "A language of the Dataset."@en;
     skos:scopeNote "This property can be repeated if there are multiple languages in the Dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.language>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.language>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.language>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.language>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.language>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.language>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1010,8 +1010,8 @@
     a dsv:TermProfile;
     skos:prefLabel "modification date"@en;
     skos:definition "The most recent date on which the Dataset was changed or modified."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.update-modificationDate>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.modificationdate>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.update-modificationDate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.modificationdate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1023,7 +1023,7 @@
     skos:prefLabel "other identifier"@en;
     skos:definition "A secondary identifier of the Dataset"@en;
     skos:scopeNote "Examples are MAST/ADS [[MASTADS]], DOI [[DOI]], EZID [[EZID]] or W3ID [[W3ID]]."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.otheridentifier>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.otheridentifier>;
     dsv:property <http://www.w3.org/ns/adms#identifier>;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1034,7 +1034,7 @@
     a dsv:TermProfile;
     skos:prefLabel "provenance"@en;
     skos:definition "A statement about the lineage of a Dataset."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.provenance>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.provenance>;
     dsv:cardinality cardinality:0n;
     dsv:property dct:provenance;
     dsv:requirementLevel requirement:optional;
@@ -1045,13 +1045,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "An entity (organisation) responsible for making the Dataset available."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.publisher>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.publisher>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1061,13 +1061,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "An Agent having some form of responsibility for the resource."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedAttribution>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedAttribution>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedAttribution>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedAttribution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.qualifiedattribution>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.qualifiedattribution>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1077,13 +1077,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "Enlace a una descripción de la relación con otro recurso."@es, "Link a una descrizione di una relazione con un'altra risorsa."@it, "A description of a relationship with another resource."@en, "Odkaz na popis vztahu s jiným zdrojem."@cs, "Reference til en beskrivelse af en relation til en anden ressource."@da;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedRelation>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedRelation>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.qualifiedRelation>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedRelation>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.qualifiedrelation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.qualifiedrelation>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1094,8 +1094,8 @@
     a dsv:TermProfile;
     skos:prefLabel "related resource"@en;
     skos:definition "A related resource."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.relation>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.relatedresource>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.relation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.relatedresource>;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
@@ -1104,13 +1104,13 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "The date of formal issuance (e.g., publication) of the Dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.releasedate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.releasedate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1125,7 +1125,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#sample>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.sample>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.sample>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://www.w3.org/ns/adms#sample>;
     dsv:requirementLevel requirement:optional;
@@ -1137,7 +1137,7 @@
     a dsv:TermProfile;
     skos:prefLabel "source"@en;
     skos:definition "A related Dataset from which the described Dataset is derived."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.source>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.source>;
     dsv:property dct:source;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1156,7 +1156,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatialResolution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.spatialresolution>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.spatialresolution>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1179,7 +1179,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalCoverage>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalcoverage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.temporalcoverage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1202,8 +1202,8 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalResolution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.temporalresolution>;
-    dsv:cardinality cardinality:01;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.temporalresolution>;
+    dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#duration>.
@@ -1214,8 +1214,8 @@
     skos:prefLabel "tema"@es, "tema"@it, "theme"@en, "thème"@fr, "téma"@cs, "Θέμα"@el, "التصنيف"@ar, "テーマ/カテゴリー"@ja, "emne"@da;
     skos:definition "A category of the Dataset."@en, "Hlavní téma zdroje. Zdroj může mít více témat."@cs, "La categoria principale della risorsa. Una risorsa può avere più temi."@it, "La categoría principal del recurso. Un recurso puede tener varios temas."@es, "La catégorie principale de la ressource. Une ressource peut avoir plusieurs thèmes."@fr, "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."@el, "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."@ar, "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"@ja, "Et centralt emne for ressourcen. En ressource kan have flere centrale emner."@da;
     skos:scopeNote "A Dataset may be associated with multiple themes."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.theme-category>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.theme>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.theme-category>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.theme>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1226,13 +1226,13 @@
     a dsv:TermProfile;
     skos:definition "A name given to the Dataset."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the name."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.title>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.title>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -1244,8 +1244,8 @@
     skos:prefLabel "type"@en;
     skos:definition "A type of the Dataset."@en;
     skos:scopeNote "A recommended controlled vocabulary data-type is foreseen."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.type-genre>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.type>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.type-genre>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.type>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1254,21 +1254,21 @@
 <https://mff-uk.github.io/specifications/dcat-ap#Dataset.version> dsv:domain :Dataset;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.version>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.version>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.version>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.version>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.version>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.version>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1279,13 +1279,13 @@
     a dsv:TermProfile;
     skos:definition "A description of the differences between this version and a previous version of the Dataset."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the version notes."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.versionInfo>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.versionInfo>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.versionInfo>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.versionInfo>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.versionnotes>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.versionnotes>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1305,7 +1305,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.frequency>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.frequency>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.frequency>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1325,7 +1325,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.geographicalcoverage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.geographicalcoverage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1336,13 +1336,13 @@
     a dsv:TermProfile;
     skos:definition "A free-text account of the Dataset."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the description."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.description>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.description>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -1365,7 +1365,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.wasGeneratedBy>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.wasgeneratedby>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.wasgeneratedby>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1376,7 +1376,7 @@
     a dsv:TermProfile;
     skos:prefLabel "documentation"@en;
     skos:definition "A page or document about this Dataset."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.documentation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.documentation>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1386,37 +1386,37 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "A related resource, such as a publication, that references, cites, or otherwise points to the dataset."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.isReferencedBy>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.isReferencedBy>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.isReferencedBy>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.isReferencedBy>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.isReferencedBy>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.isReferencedBy>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.isreferencedby>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.isreferencedby>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
-    dsv:objectPropertyRange :Resource.
+    dsv:objectPropertyRange :CataloguedResource.
 
 <https://mff-uk.github.io/specifications/dcat-ap#Dataset.hasVersion> dsv:domain :Dataset;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "A related Dataset that is a version, edition, or adaptation of the described Dataset."@en, "Este recurso tiene una versión específica."@es, "Per questa risorsa esiste una risorsa più specifica e versionata."@it;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasVersion>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasVersion>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasVersion>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasVersion>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.hasVersion>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasVersion>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Dataset.hasversion>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Dataset.hasversion>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1424,7 +1424,7 @@
 :DatasetSeries dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:scopeNote "It is recommended to avoid Dataset Series without a dataset in the collection. Therefore at least one Dataset should refer to a Dataset Series using the property in series (dcat:inSeries)."@en;
-    dsv:specializes :Resource;
+    dsv:specializes :CataloguedResource;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#DatasetSeries>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1435,7 +1435,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#DatasetSeries>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -1448,7 +1448,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.applicablelegislation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.applicablelegislation>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     dsv:requirementLevel requirement:optional;
@@ -1459,17 +1459,17 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     skos:definition "Información relevante de contacto para el recurso catalogado. Se recomienda el uso de vCard."@es, "Informazioni di contatto rilevanti per la risorsa catalogata. Si raccomanda l'uso di vCard."@it, "Contact information that can be used for sending comments about the Dataset Series."@en, "Relevantní kontaktní informace pro katalogizovaný zdroj. Doporučuje se použít slovník VCard."@cs, "Relie un jeu de données à une information de contact utile en utilisant VCard."@fr, "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."@el, "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"@ar, "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"@ja, "Relevante kontaktoplysninger for den katalogiserede ressource. Anvendelse af vCard anbefales."@da;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.contactPoint>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.contactPoint>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.contactpoint>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.contactpoint>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1486,7 +1486,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.frequency>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.frequency>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.frequency>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1499,7 +1499,7 @@
     skos:definition "A geographic region that is covered by the Dataset Series."@en;
     skos:scopeNote "When spatial coverage is a dimension in the dataset series then the spatial coverage of each dataset in the collection should be part of the spatial coverage. In that case, an open ended value is recommended, e.g. EU or a broad bounding box covering the expected values."@en;
     dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.geographicalcoverage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.geographicalcoverage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1510,13 +1510,13 @@
     a dsv:TermProfile;
     skos:definition "A free-text account of the Dataset Series."@en;
     skos:scopeNote "This property can be repeated for parallel language versions. It is recommended to provide an indication about the dimensions the Dataset Series evolves."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.description>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.description>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.description>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.description>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -1528,8 +1528,8 @@
     skos:prefLabel "modification date"@en;
     skos:definition "The most recent date on which the Dataset Series was changed or modified."@en;
     skos:scopeNote "This is not equal to the most recent modified dataset in the collection of the dataset series."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.update-modificationDate>;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.modificationdate>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.update-modificationDate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.modificationdate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1540,13 +1540,13 @@
     a dsv:TermProfile;
     skos:definition "An entity (organisation) responsible for ensuring the coherency of the Dataset Series."@en;
     skos:scopeNote "The publisher of the dataset series may not be the publisher of all datasets.  E.g. a digital archive could take over the publishing of older datasets in the series. "@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.publisher>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.publisher>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.publisher>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1557,13 +1557,13 @@
     a dsv:TermProfile;
     skos:definition "The date of formal issuance (e.g., publication) of the Dataset Series."@en;
     skos:scopeNote "The moment when the dataset series was established as a managed resource. This is not equal to the release date of the oldest dataset in the collection of the dataset series."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.releaseDate>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.releasedate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.releasedate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1580,7 +1580,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalCoverage>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.temporalcoverage>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.temporalcoverage>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1591,13 +1591,13 @@
     a dsv:TermProfile;
     skos:definition "A name given to the Dataset Series."@en;
     skos:scopeNote "This property can be repeated for parallel language versions of the name."@en;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CataloguedResource.title>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.title>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#DatasetSeries.title>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#DatasetSeries.title>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:DatatypePropertyProfile;
@@ -1618,7 +1618,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -1639,7 +1639,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.accessService>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessservice>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.accessservice>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1656,7 +1656,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.accessUrl>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.accessURL>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.accessURL>;
     dsv:cardinality cardinality:1n;
     dsv:requirementLevel requirement:mandatory;
     a dsv:ObjectPropertyProfile;
@@ -1671,7 +1671,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/applicableLegislation>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.applicablelegislation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.applicablelegislation>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://data.europa.eu/r5r/applicableLegislation>;
     dsv:requirementLevel requirement:optional;
@@ -1690,7 +1690,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <http://data.europa.eu/r5r/availability>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.availability>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.availability>;
     dsv:cardinality cardinality:01;
     dsv:property <http://data.europa.eu/r5r/availability>;
     dsv:requirementLevel requirement:recommended;
@@ -1714,7 +1714,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.byteSize>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.bytesize>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.bytesize>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1734,7 +1734,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.checksum>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.checksum>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.checksum>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1751,7 +1751,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.compressionFormat>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.compressionformat>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.compressionformat>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1771,7 +1771,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.description>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.description>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.description>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -1782,7 +1782,7 @@
     a dsv:TermProfile;
     skos:prefLabel "documentation"@en;
     skos:definition "A page or document about this Distribution."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.documentation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.documentation>;
     dsv:property <http://xmlns.com/foaf/0.1/page>;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1802,7 +1802,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.downloadUrl>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.downloadURL>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.downloadURL>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1825,7 +1825,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.format>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.format>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.format>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1845,7 +1845,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.hasPolicy>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.haspolicy>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.haspolicy>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1857,7 +1857,7 @@
     skos:prefLabel "language"@en;
     skos:definition "A language used in the Distribution."@en;
     skos:scopeNote "This property can be repeated if the metadata is provided in multiple languages."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.language>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.language>;
     dsv:property dct:language;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1874,7 +1874,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.license>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.licence>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.licence>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:ObjectPropertyProfile;
@@ -1894,7 +1894,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.conformsTo>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.linkedschemas>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.linkedschemas>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1917,7 +1917,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.mediaType>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.mediatype>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.mediatype>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -1934,7 +1934,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.update-modificationDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.modificationdate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.modificationdate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1954,7 +1954,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.releaseDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.releasedate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.releasedate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -1977,7 +1977,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.spatialResolution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.spatialresolution>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.spatialresolution>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -2000,7 +2000,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.temporalResolution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.temporalresolution>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.temporalresolution>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -2020,7 +2020,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.title>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.title>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.title>;
     dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:DatatypePropertyProfile;
@@ -2043,7 +2043,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.packagingFormat>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.packagingformat>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.packagingformat>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -2059,8 +2059,8 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Distribution.rights>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.rights>;
-    dsv:cardinality cardinality:01;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.rights>;
+    dsv:cardinality cardinality:0n;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :RightsStatement.
@@ -2075,7 +2075,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#status>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Distribution.status>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.status>;
     dsv:cardinality cardinality:01;
     dsv:property <http://www.w3.org/ns/adms#status>;
     dsv:requirementLevel requirement:optional;
@@ -2097,7 +2097,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Relationship>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Relationship>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Relationship>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -2118,7 +2118,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Relationship.hadRole>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Relationship.hadrole>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Relationship.hadrole>;
     dsv:cardinality cardinality:1n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :Role.
@@ -2140,27 +2140,21 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Relationship.relation>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Relationship.relation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Relationship.relation>;
     dsv:cardinality cardinality:1n;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :rdfs-Resource.
-:Resource dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
+:CataloguedResource dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
-    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#Resource>;
+    skos:prefLabel "Catalogued Resource"@en, "Katalogizovaný zdroj"@cs, "Recurso catalogado"@es, "Risorsa catalogata"@it, "Katalogiseret ressource"@da;
+    skos:scopeNote "This class Catalogued Resource is an abstract class for DCAT-AP. Therefore only subclasses should be used in a data exchange."@en;
+    dsv:profileOf <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource>;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Resource>
-], [
-  a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Resource>
-], [
-  a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:scopeNote;
-  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Resource>
+  dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#CataloguedResource>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#CataloguedResource>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 :Role dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2179,7 +2173,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Role>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Role>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Role>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :Agent dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2192,7 +2186,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Agent>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Agent>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -2206,7 +2200,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/name>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent.name>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Agent.name>;
     dsv:cardinality cardinality:1n;
     dsv:property <http://xmlns.com/foaf/0.1/name>;
     dsv:requirementLevel requirement:mandatory;
@@ -2218,7 +2212,7 @@
     a dsv:TermProfile;
     skos:prefLabel "type"@en;
     skos:definition "The nature of the agent."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Agent.type>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Agent.type>;
     dsv:cardinality cardinality:01;
     dsv:property dct:type;
     dsv:requirementLevel requirement:recommended;
@@ -2229,7 +2223,7 @@
     skos:prefLabel "Concept"@en;
     skos:definition "An idea or notion; a unit of thought."@en;
     skos:scopeNote "In DCAT-AP, a Concept is used to denote codes within a codelist. In section 10. Controlled Vocabularies the expectations are elaborated in more detail."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Concept>;
     a dsv:ClassProfile;
     dsv:class skos:Concept;
     dsv:classRole role:supportive.
@@ -2244,7 +2238,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:prefLabel
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Concept.preferredlabel>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Concept.preferredlabel>;
     dsv:cardinality cardinality:1n;
     dsv:property skos:prefLabel;
     a dsv:DatatypePropertyProfile;
@@ -2258,7 +2252,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/eli/ontology#LegalResource>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LegalResource>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#LegalResource>;
     a dsv:ClassProfile;
     dsv:class <http://data.europa.eu/eli/ontology#LegalResource>;
     dsv:classRole role:supportive.
@@ -2275,7 +2269,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Location>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -2290,7 +2284,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Location.boundingBox>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.bbox>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location.bbox>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -2310,7 +2304,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Location.centroid>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.centroid>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location.centroid>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -2330,7 +2324,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Location.geometry>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Location.geometry>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Location.geometry>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -2343,7 +2337,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Document>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Document>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Document>;
     a dsv:ClassProfile;
     dsv:class <http://xmlns.com/foaf/0.1/Document>;
     dsv:classRole role:supportive.
@@ -2383,7 +2377,7 @@
     a dsv:TermProfile;
     skos:prefLabel "type"@en;
     skos:definition "A type of licence, e.g. indicating 'public domain' or 'royalties required'."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#LicenceDocument.type>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#LicenceDocument.type>;
     dsv:cardinality cardinality:0n;
     dsv:property dct:type;
     dsv:requirementLevel requirement:recommended;
@@ -2405,7 +2399,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#RightsStatement>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Rightsstatement>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Rightsstatement>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :Standard dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2421,7 +2415,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Standard>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Standard>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Standard>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :rdfs-Resource dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2437,7 +2431,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#rdfs-Resource>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Resource>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Resource>;
     a dsv:ClassProfile.
 :ProvenanceStatement dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
@@ -2450,7 +2444,7 @@
   dsv:reusedProperty skos:definition;
   dsv:reusedFromResource dct:ProvenanceStatement
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ProvenanceStatement>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#ProvenanceStatement>;
     a dsv:ClassProfile;
     dsv:class dct:ProvenanceStatement;
     dsv:classRole role:supportive.
@@ -2467,7 +2461,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Policy>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Policy>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Policy>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :PeriodOfTime dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2486,7 +2480,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Periodoftime>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 
@@ -2507,7 +2501,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.beginning>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.beginning>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Periodoftime.beginning>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -2530,7 +2524,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.end>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.end>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Periodoftime.end>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:optional;
     a dsv:ObjectPropertyProfile;
@@ -2553,7 +2547,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.endDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.enddate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Periodoftime.enddate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -2576,7 +2570,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.startDate>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Periodoftime.startdate>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Periodoftime.startdate>;
     dsv:cardinality cardinality:01;
     dsv:requirementLevel requirement:recommended;
     a dsv:DatatypePropertyProfile;
@@ -2597,7 +2591,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#MediaTypeOrExtent>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaTypeorExtent>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#MediaTypeorExtent>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :MediaType dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2616,7 +2610,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#MediaType>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#MediaType>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#MediaType>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :Identifier dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2628,7 +2622,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#Identifier>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Identifier>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/adms#Identifier>;
     dsv:classRole role:supportive.
@@ -2642,7 +2636,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:notation
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Identifier.notation>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Identifier.notation>;
     dsv:cardinality cardinality:11;
     dsv:property skos:notation;
     a dsv:DatatypePropertyProfile;
@@ -2663,7 +2657,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Geometry>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Geometry>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Geometry>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :Frequency dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2679,7 +2673,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Frequency>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Frequency>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Frequency>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :ConceptScheme dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2691,7 +2685,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource skos:ConceptScheme
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ConceptScheme>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#ConceptScheme>;
     a dsv:ClassProfile;
     dsv:class skos:ConceptScheme;
     dsv:classRole role:supportive.
@@ -2702,7 +2696,7 @@
     skos:prefLabel "title"@en;
     skos:definition "A name of the concept scheme."@en;
     skos:scopeNote "May be repeated for different versions of the name."@en;
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ConceptScheme.title>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#ConceptScheme.title>;
     dsv:cardinality cardinality:1n;
     dsv:property dct:title;
     a dsv:DatatypePropertyProfile;
@@ -2723,7 +2717,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#ChecksumAlgorithm>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#ChecksumAlgorithm>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#ChecksumAlgorithm>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :Attribution dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2739,7 +2733,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Attribution>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Attribution>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Attribution>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
 :Activity dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2750,7 +2744,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/prov#Activity>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Activity>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Activity>;
     a dsv:ClassProfile;
     dsv:class <http://www.w3.org/ns/prov#Activity>;
     dsv:classRole role:supportive.
@@ -2764,7 +2758,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Kind>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Kind>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Kind>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 :Checksum dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
@@ -2777,7 +2771,7 @@
   dsv:reusedProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Checksum>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Checksum>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Checksum>;
     a dsv:ClassProfile;
     dsv:classRole role:main.
 
@@ -2795,7 +2789,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Checksum.algorithm>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Checksum.algorithm>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Checksum.algorithm>;
     dsv:cardinality cardinality:11;
     a dsv:ObjectPropertyProfile;
     dsv:objectPropertyRange :ChecksumAlgorithm.
@@ -2814,7 +2808,7 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Checksum.checksumValue>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Checksum.checksumvalue>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Checksum.checksumvalue>;
     dsv:cardinality cardinality:11;
     a dsv:DatatypePropertyProfile;
     dsv:datatypePropertyRange <http://www.w3.org/2001/XMLSchema#hexBinary>.
@@ -2834,6 +2828,6 @@
   dsv:reusedProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#Instant>
 ];
-    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0/#Timeinstant>;
+    dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Timeinstant>;
     a dsv:ClassProfile;
     dsv:classRole role:supportive.
