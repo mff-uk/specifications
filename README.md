@@ -3,7 +3,7 @@ A repository for sample specifications from [Dataspecer](https://dataspecer.com)
 
 - [DCAT 3 Default Application Profile](https://mff-uk.github.io/specifications/dcat-dap/), compare with the original [Data Catalog Vocabulary (DCAT) - Version 3](https://www.w3.org/TR/vocab-dcat-3/). You can see e.g. differences between [DCAT3.ttl](https://www.w3.org/ns/dcat3.ttl) and actual definitions in the document, and description of the application profile (reuse of properties from different vocabularies) in the attached DSV file.
   - [Complete DCAT 3 DAP Dataspecer project](https://mff-uk.github.io/specifications/dcat-dap/export.zip) (download and import as file).
-- [DCAT-AP 3.0.1](dcat-ap/), compare with the original [DCAT-AP 3.0.1](https://semiceu.github.io/DCAT-AP/releases/3.0.1/). See the profiling hierarchy from DCAT-AP to DCAT-DAP (above).
+- [DCAT-AP 3.0.1](https://mff-uk.github.io/specifications/dcat-ap/), compare with the original [DCAT-AP 3.0.1](https://semiceu.github.io/DCAT-AP/releases/3.0.1/). See the profiling hierarchy from DCAT-AP to DCAT-DAP (above).
   - [Complete DCAT 3 DAP Dataspecer project](https://mff-uk.github.io/specifications/dcat-ap/export.zip) (download and import as file).
 - [Data Specification Vocabulary (DSV)](https://mff-uk.github.io/data-specification-vocabulary/dsv/)
 - [Data Specification Vocabulary Default Application Profile (DSV-DAP)](https://mff-uk.github.io/data-specification-vocabulary/dsv-dap/)
