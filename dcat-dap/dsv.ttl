@@ -149,7 +149,7 @@
 :CatalogRecord dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "1つのデータセットを記述したデータ・カタログ内のレコード。"@ja, "A record in a catalog, describing the registration of a single dcat:Resource."@en, "Un record in un catalogo di dati che descrive un singolo dataset o servizio di dati."@it, "Un registre du catalogue ou une entrée du catalogue, décrivant un seul jeu de données."@fr, "Un registro en un catálogo de datos que describe un solo conjunto de datos o un servicio de datos."@es, "Záznam v datovém katalogu popisující jednu datovou sadu či datovou službu."@cs, "Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων."@el, "En post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en datatjeneste."@da;
-    skos:scopeNote "This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset or service and metadata about the entry in the catalog about the dataset or service. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date SHOULD only be specified for the catalog record. Notice that the W3C PROV Ontology [PROV-O] allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset or its registration."@en;
+    skos:scopeNote "This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset or service and metadata about the entry in the catalog about the dataset or service. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date SHOULD only be specified for the catalog record. Notice that the W3C PROV Ontology [[PROV-O]] allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset or its registration."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -541,7 +541,7 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "type/genre"@en;
-    skos:scopeNote "The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:\nDCMI Type vocabulary [DCTERMS]\n[ISO-19115-1] scope codes\nDatacite resource types [DataCite]\nPARSE.Insight content-types used by re3data.org [RE3DATA-SCHEMA] (see item 15 contentType)\nMARC intellectual resource types\nSome members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [ISO-19115-1] CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.\n\nTo describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element."@en;
+    skos:scopeNote "The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:\nDCMI Type vocabulary [[DCTERMS]]\n[[ISO-19115-1]] scope codes\nDatacite resource types [[DataCite]]\nPARSE.Insight content-types used by re3data.org [[RE3DATA-SCHEMA]] (see item 15 contentType)\nMARC intellectual resource types\nSome members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [[ISO-19115-1]] CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.\n\nTo describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
@@ -572,7 +572,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedRelation> dsv:domain :CatalogedResource;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "Used to link to another resource where the nature of the relationship is known but does not match one of the standard [DCTERMS] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [PROV-O] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf).\n"@en;
+    skos:scopeNote "Used to link to another resource where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf).\n"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -626,7 +626,7 @@
     a dsv:TermProfile;
     skos:prefLabel "qualified attribution"@en;
     skos:definition "Link to an Agent having some form of responsibility for the resource"@en;
-    skos:scopeNote "Used to link to an Agent where the nature of the relationship is known but does not match one of the standard [DCTERMS] properties (dcterms:creator, dcterms:publisher). Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. See 15.1 Relationships between datasets and agents for usage examples."@en;
+    skos:scopeNote "Used to link to an Agent where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:creator, dcterms:publisher). Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. See 15.1 Relationships between datasets and agents for usage examples."@en;
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_attribution>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://www.w3.org/ns/prov#qualifiedAttribution>;
@@ -677,7 +677,7 @@
     a dsv:TermProfile;
     skos:prefLabel "has policy"@en;
     skos:definition "An ODRL conformant policy expressing the rights associated with the resource."@en;
-    skos:scopeNote "Information about rights expressed as an ODRL policy [ODRL-MODEL] using the ODRL vocabulary [ODRL-VOCAB] MAY be provided for the resource. See also guidance at 9. License and rights statements."@en;
+    skos:scopeNote "Information about rights expressed as an ODRL policy [[ODRL-MODEL]] using the ODRL vocabulary [[ODRL-VOCAB]] MAY be provided for the resource. See also guidance at 9. License and rights statements."@en;
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_policy>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://www.w3.org/ns/odrl/2/hasPolicy>;
@@ -718,7 +718,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasVersion> dsv:domain :CatalogedResource;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g., snapshots [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations."@en;
+    skos:scopeNote "This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g., snapshots [[PAV]].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -771,7 +771,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version> dsv:domain :CatalogedResource;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [DWBP]'s Best Practice 7: Provide a version indicator."@en;
+    skos:scopeNote "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [[DWBP]]'s Best Practice 7: Provide a version indicator."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1049,7 +1049,7 @@
     dsv:class rdfs:Class.
 :Relationship dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard [DCTERMS] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [PROV-O] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)"@en;
+    skos:scopeNote "Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1079,7 +1079,7 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
-    skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [ISO-19115] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
+    skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [[ISO-19115]] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
@@ -1108,7 +1108,7 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:prefLabel "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
-    skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [ISO-19115] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
+    skos:scopeNote "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [[ISO-19115]] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
@@ -1244,7 +1244,7 @@
     a dsv:TermProfile;
     skos:prefLabel "has policy"@en;
     skos:definition "An ODRL conformant policy expressing the rights associated with the distribution."@en;
-    skos:scopeNote "Information about rights expressed as an ODRL policy [ODRL-MODEL] using the ODRL vocabulary [ODRL-VOCAB] MAY be provided for the distribution. See also guidance at 9. License and rights statements."@en;
+    skos:scopeNote "Information about rights expressed as an ODRL policy [[ODRL-MODEL]] using the ODRL vocabulary [[ODRL-VOCAB]] MAY be provided for the distribution. See also guidance at 9. License and rights statements."@en;
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_has_policy>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://www.w3.org/ns/odrl/2/hasPolicy>;
@@ -1360,7 +1360,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#Distribution.mediaType> dsv:domain :Distribution;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "This property SHOULD be used when the media type of the distribution is defined in IANA [IANA-MEDIA-TYPES], otherwise dcterms:format MAY be used with different values."@en;
+    skos:scopeNote "This property SHOULD be used when the media type of the distribution is defined in IANA [[IANA-MEDIA-TYPES]], otherwise dcterms:format MAY be used with different values."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1381,7 +1381,7 @@
     a dsv:TermProfile;
     skos:prefLabel "format"@en;
     skos:definition "The file format of the distribution."@en;
-    skos:scopeNote "dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [IANA-MEDIA-TYPES]."@en;
+    skos:scopeNote "dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [[IANA-MEDIA-TYPES]]."@en;
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_format>;
     dsv:cardinality cardinality:0n;
     dsv:property dct:format;
@@ -1391,7 +1391,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#Distribution.compressionFormat> dsv:domain :Distribution;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [IANA-MEDIA-TYPES], if available."@en;
+    skos:scopeNote "This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1410,7 +1410,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#Distribution.packagingFormat> dsv:domain :Distribution;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [IANA-MEDIA-TYPES], if available."@en;
+    skos:scopeNote "This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1454,7 +1454,7 @@
     dsv:datatypePropertyRange rdfs:Literal.
 :DatasetSeries dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "Dataset series can be also soft-typed via property dcterms:type as in the approach used in [GeoDCAT-AP], and adopted in [DCAT-AP-IT] and [GeoDCAT-AP-IT]).\nCommon scenarios for dataset series include: time series composed of periodically released subsets; map-series composed of items of the same type or theme but with differing spatial footprints."@en;
+    skos:scopeNote "Dataset series can be also soft-typed via property dcterms:type as in the approach used in [[GeoDCAT-AP]], and adopted in [[DCAT-AP-IT]] and [[GeoDCAT-AP-IT]]).\nCommon scenarios for dataset series include: time series composed of periodically released subsets; map-series composed of items of the same type or theme but with differing spatial footprints."@en;
     dsv:specializes :Dataset;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
@@ -1483,7 +1483,7 @@
     dsv:class dct:Frequency.
 :Location dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [LOCN] SHOULD be used.\nFor a geographic bounding box delimiting a spatial area the property dcat:bbox SHOULD be used.\nFor the geographic center of a spatial area, or another characteristic point, the property dcat:centroid SHOULD be used."@en;
+    skos:scopeNote "For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [[LOCN]] SHOULD be used.\nFor a geographic bounding box delimiting a spatial area the property dcat:bbox SHOULD be used.\nFor the geographic center of a spatial area, or another characteristic point, the property dcat:centroid SHOULD be used."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1501,7 +1501,7 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "Associates a spatial thing [SDW-BP] with a corresponding geometry."@en;
-    skos:scopeNote "The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [GeoSPARQL]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [GeoSPARQL]."@en;
+    skos:scopeNote "The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [[GeoSPARQL]]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [[GeoSPARQL]]."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1516,7 +1516,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#Location.boundingBox> dsv:domain :Location;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [GeoSPARQL])."@en;
+    skos:scopeNote "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]])."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1535,7 +1535,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#Location.centroid> dsv:domain :Location;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [GeoSPARQL])."@en;
+    skos:scopeNote "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]])."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1567,7 +1567,7 @@
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
     skos:definition "The start of the period."@en;
-    skos:scopeNote "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [DATETIME] and typed using the appropriate XML Schema datatype [XMLSCHEMA11-2] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."@en;
+    skos:scopeNote "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1582,6 +1582,7 @@
 <https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.endDate> dsv:domain :PeriodOfTime;
     dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
+    skos:scopeNote "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]]"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1602,7 +1603,7 @@
     a dsv:TermProfile;
     skos:prefLabel "beginning"@en, "tiene principio"@es;
     skos:definition "Beginning of a period or interval."@en, "Comienzo de una entidad temporal."@es;
-    skos:scopeNote "Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
+    skos:scopeNote "Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_beginning>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://www.w3.org/2006/time#hasBeginning>;
@@ -1614,7 +1615,7 @@
     a dsv:TermProfile;
     skos:prefLabel "end"@en, "tiene fin"@es;
     skos:definition "End of a period or interval."@en, "Final de una entidad temporal."@es;
-    skos:scopeNote "Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [OWL-TIME]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
+    skos:scopeNote "Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_end>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://www.w3.org/2006/time#hasEnd>;
@@ -1684,7 +1685,7 @@
     dsv:class skos:ConceptScheme.
 :Person dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "[FOAF] provides several properties to describe these entities."@en;
+    skos:scopeNote "[[FOAF]] provides several properties to describe these entities."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1699,7 +1700,7 @@
     dsv:class <http://xmlns.com/foaf/0.1/Person>.
 :Organization dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "[FOAF] provides several properties to describe these entities."@en;
+    skos:scopeNote "[[FOAF]] provides several properties to describe these entities."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1714,7 +1715,7 @@
     dsv:class <http://xmlns.com/foaf/0.1/Organization>.
 :Role dct:isPartOf <https://mff-uk.github.io/specifications/dcat-dap#>;
     a dsv:TermProfile;
-    skos:scopeNote "Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [ISO-19115-1] CI_RoleCode.\nUsed in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as\n\n[ISO-19115-1] DS_AssociationTypeCode\nIANA Registry of Link Relations [IANA-RELATIONS]\nDataCite metadata schema [DataCite]\nMARC relators"@en;
+    skos:scopeNote "Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [[ISO-19115-1]] CI_RoleCode.\nUsed in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as [[ISO-19115-1]] DS_AssociationTypeCode, IANA Registry of Link Relations [[IANA-RELATIONS]], DataCite metadata schema [[DataCite]], MARC relators."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
@@ -1771,7 +1772,7 @@
     a dsv:TermProfile;
     skos:prefLabel "algorithm"@en;
     skos:definition "Identifies the algorithm used to produce the subject Checksum [SPDX]."@en;
-    skos:scopeNote "Version 2.2 of [SPDX] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512."@en;
+    skos:scopeNote "Version 2.2 of [[SPDX]] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512."@en;
     dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-3/#Property:checksum_algorithm>;
     dsv:cardinality cardinality:0n;
     dsv:property <http://spdx.org/rdf/terms#algorithm>;
