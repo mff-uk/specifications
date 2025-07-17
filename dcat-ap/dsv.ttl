@@ -2432,7 +2432,8 @@
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#rdfs-Resource>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Resource>;
-    a dsv:ClassProfile.
+    a dsv:ClassProfile;
+    dsv:classRole role:supportive.
 :ProvenanceStatement dct:isPartOf <https://mff-uk.github.io/specifications/dcat-ap#>;
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
