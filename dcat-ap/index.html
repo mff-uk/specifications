@@ -293,6 +293,17 @@
                       "publisher": "SPDX",
                       "id": "spdx"
             },
+            "DCAT-AP-IT": {
+              "title": "Profilo metadatazione DCAT-AP_IT",
+              "href": "https://docs.italia.it/italia/daf/linee-guida-cataloghi-dati-dcat-ap-it/it/stabile/dcat-ap_it.html",
+              "publisher": "AgID & Team Digitale",
+              "id": "dcat-ap-it"
+          },
+          "GeoDCAT-AP-IT": {
+              "title": "GeoDCAT-AP in Italy, the national guidelines published",
+              "href": "https://web.archive.org/web/20200506120557/https://joinup.ec.europa.eu/collection/semantic-interoperability-community-semic/news/geodcat-apit",
+              "id": "geodcat-ap-it"
+          },
         },    otherLinks: [{
             key: "Links",
             data: [{
@@ -592,6 +603,8 @@
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog">Catalog</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Catalog">dcat-dap:Catalog</a>)
                   <br />Definition: <i>A curated collection of metadata about resources.</i>
+                  <br />Usage note: <i>A Web-based data catalog is typically represented as a single instance of this class.
+          Datasets and data services are examples of resources in the context of a data catalog.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -607,6 +620,11 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Usage note</td>
+                <td>A Web-based data catalog is typically represented as a single instance of this class.
+          Datasets and data services are examples of resources in the context of a data catalog.</td>
+              </tr>
             </table>
           
               <p>Backwards associations</p>
@@ -792,6 +810,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_creator">creator</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.creator">dcat-dap:CatalogedResource.creator</a>)
+                      <br />Usage note: <i>Resources of type foaf:Agent are recommended as values for this property.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1003,6 +1022,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
                       <br />Definition: <i>The geographical area covered by the dataset.</i>
+                      <br />Usage note: <i>The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1138,6 +1158,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_homepage">homepage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Catalog.homepage">dcat-dap:Catalog.homepage</a>)
                       <br />Definition: <i>A homepage of the catalog (a public Web document usually available in HTML).</i>
+                      <br />Usage note: <i>foaf:homepage is an inverse functional property (IFP) which means that it MUST be unique and precisely identify the Web-page for the resource. This property indicates the canonical Web-page, which might be helpful in cases where there is more than one Web-page about the resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1210,6 +1231,9 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language">language</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.language">dcat-dap:CatalogedResource.language</a>)
                       <br />Definition: <i>A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution</i>
+                      <br />Usage note: <i>Repeat this property if the resource is available in multiple languages.
+              The value(s) provided for members of a catalog (i.e., dataset or service) override the value(s) provided for the catalog if they conflict.
+              If representations of a dataset are available for each language separately, define an instance of dcat:Distribution for each language and describe the specific language of each distribution using dcterms:language (i.e., the dataset will have multiple dcterms:language values and each distribution will have just one as the value of its dcterms:language property). In case of multilingual distributions, the distributions will have multiple dcterms:language values.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1282,6 +1306,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.license">dcat-dap:CatalogedResource.license</a>)
                       <br />Definition: <i>A legal document under which the resource is made available.</i>
+                      <br />Usage note: <i>Information about licenses and rights MAY be provided for the Resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1350,6 +1375,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.update-modificationDate">dcat-dap:CatalogedResource.update-modificationDate</a>)
                       <br />Definition: <i>Most recent date on which the resource was changed, updated or modified.</i>
+                      <br />Usage note: <i>The value of this property indicates a change to the actual resource, not a change to the catalog record. An absent value MAY indicate that the resource has never changed after its initial publication, or that the date of last modification is not known, or that the resource is continuously updated.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1417,6 +1443,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher">dcat-dap:CatalogedResource.publisher</a>)
+                      <br />Usage note: <i>Resources of type foaf:Agent are recommended as values for this property.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1553,6 +1580,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate">dcat-dap:CatalogedResource.releaseDate</a>)
                       <br />Definition: <i>Date of formal issuance (e.g., publication) of the resource.</i>
+                      <br />Usage note: <i>This property SHOULD be set using the first known date of issuance.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1625,6 +1653,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_rights">rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.rights">dcat-dap:CatalogedResource.rights</a>)
                       <br />Definition: <i>A statement that concerns all rights not addressed with dcterms:license or dcterms:accessRights, such as copyright statements.</i>
+                      <br />Usage note: <i>Information about licenses and rights MAY be provided for the Resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1768,6 +1797,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalCoverage">dcat-dap:Dataset.temporalCoverage</a>)
                       <br />Definition: <i>The temporal period that the dataset covers.</i>
+                      <br />Usage note: <i>The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1836,6 +1866,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:catalog_themes">theme taxonomy</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Catalog.themeTaxonomy">dcat-dap:Catalog.themeTaxonomy</a>)
                       <br />Definition: <i>A knowledge organization system (KOS) used to classify the resources documented in the catalog (e.g., datasets and services).</i>
+                      <br />Usage note: <i>It is recommended that the taxonomy is organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, which allows each member to be denoted by an IRI and published as Linked Data.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -1961,6 +1992,7 @@
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record">Catalog Record</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord">dcat-dap:CatalogRecord</a>)
                   <br />Definition: <i>A record in a catalog, describing the registration of a single dcat:Resource.</i>
+                  <br />Usage note: <i>This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset or service and metadata about the entry in the catalog about the dataset or service. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date SHOULD only be specified for the catalog record. Notice that the W3C PROV Ontology [[PROV-O]] allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset or its registration.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -1976,6 +2008,10 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Usage note</td>
+                <td>This class is optional and not all catalogs will use it. It exists for catalogs where a distinction is made between metadata about a dataset or service and metadata about the entry in the catalog about the dataset or service. For example, the publication date property of the dataset reflects the date when the information was originally made available by the publishing agency, while the publication date of the catalog record is the date when the dataset was added to the catalog. In cases where both dates differ, or where only the latter is known, the publication date SHOULD only be specified for the catalog record. Notice that the W3C PROV Ontology [[PROV-O]] allows describing further provenance information such as the details of the process and the agent involved in a particular change to a dataset or its registration.</td>
+              </tr>
             </table>
           
               <p>Backwards associations</p>
@@ -2035,6 +2071,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.conformsTo">dcat-dap:CatalogRecord.conformsTo</a>)
+                      <br />Usage note: <i>This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalog record metadata conforms to.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -2297,6 +2334,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_listing_date">listing date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.listingDate">dcat-dap:CatalogRecord.listingDate</a>)
                       <br />Definition: <i>The date of listing (i.e., formal recording) of the corresponding dataset or service in the catalog.</i>
+                      <br />Usage note: <i>This indicates the date of listing the dataset in the catalog and not the publication date of the dataset itself.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -2369,6 +2407,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.update-modificationDate">dcat-dap:CatalogRecord.update-modificationDate</a>)
                       <br />Definition: <i>Most recent date on which the catalog entry was changed, updated or modified.</i>
+                      <br />Usage note: <i>This indicates the date of last change of a catalog entry, i.e., the catalog metadata description of the dataset, and not the date of the dataset itself.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -2441,6 +2480,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:record_primary_topic">primary topic</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord.primaryTopic">dcat-dap:CatalogRecord.primaryTopic</a>)
                       <br />Definition: <i>The dcat:Resource (dataset or service) described in the record.</i>
+                      <br />Usage note: <i>foaf:primaryTopic property is functional: each catalog record can have at most one primary topic, i.e., describes one cataloged resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -2625,6 +2665,15 @@
                                   
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <br />Usage note: <i>The class of all cataloged resources, the super-class of dcat:Dataset, dcat:DataService, dcat:Catalog and any other member of a dcat:Catalog.
+          
+          This class carries properties common to all cataloged resources, including datasets and data services.
+          
+          The instances of this class SHOULD be included in a catalog.
+          
+          When describing a resource which is not a dcat:Dataset or dcat:DataService, it is recommended to create a suitable sub-class of dcat:Resource, or use dcat:Resource with the dcterms:type property to indicate the specific type.
+          
+          dcat:Resource is an extension point that enables the definition of any kind of catalog. Additional sub-classes may be defined in a DCAT profile or other DCAT application for catalogs of other kinds of resources.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -2685,6 +2734,7 @@
                                   
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Checksum">Checksum</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Checksum">dcat-dap:Checksum</a>)
+                  <br />Usage note: <i>The Checksum includes the algorithm (spdx:algorithm) and value (spdx:checksumValue) that allows the integrity of a file to be verified to ensure no errors occurred in transmission or storage.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -2763,6 +2813,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:checksum_algorithm">algorithm</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Checksum.algorithm">dcat-dap:Checksum.algorithm</a>)
                       <br />Definition: <i>Identifies the algorithm used to produce the subject Checksum [SPDX].</i>
+                      <br />Usage note: <i>Version 2.2 of [[SPDX]] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -2884,6 +2935,8 @@
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service">Data service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#DataService">dcat-dap:DataService</a>)
                   <br />Definition: <i>A collection of operations that provides access to one or more datasets or data processing functions.</i>
+                  <br />Usage note: <i>If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property.
+          The kind of service can be indicated using the dcterms:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type code list [INSPIRE-SDST].</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -2899,6 +2952,11 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Usage note</td>
+                <td>If a dcat:DataService is bound to one or more specified Datasets, they are indicated by the dcat:servesDataset property.
+          The kind of service can be indicated using the dcterms:type property. Its value may be taken from a controlled vocabulary such as the INSPIRE spatial data service type code list [INSPIRE-SDST].</td>
+              </tr>
             </table>
           
               <p>Backwards associations</p>
@@ -2958,6 +3016,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights">access rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.accessRights">dcat-dap:CatalogedResource.accessRights</a>)
+                      <br />Usage note: <i>Information about licenses and rights MAY be provided for the Resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -3088,6 +3147,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.conformsTo">dcat-dap:CatalogedResource.conformsTo</a>)
+                      <br />Usage note: <i>This property SHOULD be used to indicate the model, schema, ontology, view or profile that the cataloged resource content conforms to.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -3357,6 +3417,8 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:data_service_endpoint_description">endpoint description</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#DataService.endpointDescription">dcat-dap:DataService.endpointDescription</a>)
+                      <br />Usage note: <i>The endpoint description gives specific details of the actual endpoint instances, while dcterms:conformsTo is used to indicate the general standard or specification that the endpoints implement.
+              An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description [OpenAPI], an OGC GetCapabilities response [WFS], [ISO-19142], [WMS], [ISO-19128], a SPARQL Service Description [SPARQL11-SERVICE-DESCRIPTION], an [OpenSearch] or [WSDL20] document, a Hydra API description [HYDRA], else in text or some other informal mode if a formal representation is not possible.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -3694,6 +3756,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.license">dcat-dap:CatalogedResource.license</a>)
                       <br />Definition: <i>A legal document under which the resource is made available.</i>
+                      <br />Usage note: <i>Information about licenses and rights MAY be provided for the Resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -3761,6 +3824,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher">dcat-dap:CatalogedResource.publisher</a>)
+                      <br />Usage note: <i>Resources of type foaf:Agent are recommended as values for this property.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -3895,6 +3959,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme">theme/category</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.theme-category">dcat-dap:CatalogedResource.theme-category</a>)
+                      <br />Usage note: <i>The set of themes used to categorize the resources are organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, describing all the categories and their relations in the catalog.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4099,6 +4164,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_access_rights">access rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.accessRights">dcat-dap:CatalogedResource.accessRights</a>)
+                      <br />Usage note: <i>Information about licenses and rights MAY be provided for the Resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4225,6 +4291,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.conformsTo">dcat-dap:CatalogedResource.conformsTo</a>)
+                      <br />Usage note: <i>This property SHOULD be used to indicate the model, schema, ontology, view or profile that the cataloged resource content conforms to.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4359,6 +4426,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_creator">creator</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.creator">dcat-dap:CatalogedResource.creator</a>)
+                      <br />Usage note: <i>Resources of type foaf:Agent are recommended as values for this property.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4629,6 +4697,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency">frequency</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.frequency">dcat-dap:Dataset.frequency</a>)
                       <br />Definition: <i>The frequency at which a dataset is published.</i>
+                      <br />Usage note: <i>The value of dcterms:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4701,6 +4770,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
                       <br />Definition: <i>The geographical area covered by the dataset.</i>
+                      <br />Usage note: <i>The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4772,6 +4842,9 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_version">has version</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.hasVersion">dcat-dap:CatalogedResource.hasVersion</a>)
+                      <br />Usage note: <i>This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g., snapshots [[PAV]].
+              
+              The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4846,6 +4919,8 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_identifier">identifier</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.identifier">dcat-dap:CatalogedResource.identifier</a>)
                       <br />Definition: <i>A unique identifier of the resource being described or cataloged.</i>
+                      <br />Usage note: <i>The identifier might be used as part of the IRI of the resource, but still having it represented explicitly is useful.
+              The identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -4981,6 +5056,8 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_has_policy">is referenced by</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.isReferencedBy">dcat-dap:CatalogedResource.isReferencedBy</a>)
                       <br />Definition: <i>A related resource, such as a publication, that references, cites, or otherwise points to the cataloged resource.</i>
+                      <br />Usage note: <i>In relation to the use case of data citation, when the cataloged resource is a dataset, the dcterms:isReferencedBy property allows to relate the dataset to the resources (such as scholarly publications) that cite or point to the dataset. Multiple dcterms:isReferencedBy properties can be used to indicate the dataset has been referenced by multiple publications, or other resources.
+              This property is used to associate a resource with the resource (of type dcat:Resource) in question. For other relations to resources not covered with this property, the more generic property dcat:qualifiedRelation can be used. See also 15. Qualified relations.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5192,6 +5269,9 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_language">language</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.language">dcat-dap:CatalogedResource.language</a>)
                       <br />Definition: <i>A language of the resource. This refers to the natural language used for textual metadata (i.e., titles, descriptions, etc.) of a cataloged resource (i.e., dataset or service) or the textual values of a dataset distribution</i>
+                      <br />Usage note: <i>Repeat this property if the resource is available in multiple languages.
+              The value(s) provided for members of a catalog (i.e., dataset or service) override the value(s) provided for the catalog if they conflict.
+              If representations of a dataset are available for each language separately, define an instance of dcat:Distribution for each language and describe the specific language of each distribution using dcterms:language (i.e., the dataset will have multiple dcterms:language values and each distribution will have just one as the value of its dcterms:language property). In case of multilingual distributions, the distributions will have multiple dcterms:language values.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5264,6 +5344,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.update-modificationDate">dcat-dap:CatalogedResource.update-modificationDate</a>)
                       <br />Definition: <i>Most recent date on which the resource was changed, updated or modified.</i>
+                      <br />Usage note: <i>The value of this property indicates a change to the actual resource, not a change to the catalog record. An absent value MAY indicate that the resource has never changed after its initial publication, or that the date of last modification is not known, or that the resource is continuously updated.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5453,6 +5534,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher">dcat-dap:CatalogedResource.publisher</a>)
+                      <br />Usage note: <i>Resources of type foaf:Agent are recommended as values for this property.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5521,6 +5603,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_attribution">qualified attribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedAttribution">dcat-dap:CatalogedResource.qualifiedAttribution</a>)
                       <br />Definition: <i>Link to an Agent having some form of responsibility for the resource</i>
+                      <br />Usage note: <i>Used to link to an Agent where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:creator, dcterms:publisher). Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. See 15.1 Relationships between datasets and agents for usage examples.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5588,6 +5671,8 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_qualified_relation">qualified relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.qualifiedRelation">dcat-dap:CatalogedResource.qualifiedRelation</a>)
+                      <br />Usage note: <i>Used to link to another resource where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf).
+              </i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5655,6 +5740,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_relation">relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.relation">dcat-dap:CatalogedResource.relation</a>)
+                      <br />Usage note: <i>dcterms:relation SHOULD be used where the nature of the relationship between a cataloged resource and related resources is not known. A more specific sub-property SHOULD be used if the nature of the relationship of the link is known. The property dcat:distribution SHOULD be used to link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5723,6 +5809,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate">dcat-dap:CatalogedResource.releaseDate</a>)
                       <br />Definition: <i>Date of formal issuance (e.g., publication) of the resource.</i>
+                      <br />Usage note: <i>This property SHOULD be set using the first known date of issuance.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5909,6 +5996,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial_resolution">spatial resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatialResolution">dcat-dap:Dataset.spatialResolution</a>)
                       <br />Definition: <i>Minimum spatial separation resolvable in a dataset, measured in meters.</i>
+                      <br />Usage note: <i>If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -5977,6 +6065,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalCoverage">dcat-dap:Dataset.temporalCoverage</a>)
                       <br />Definition: <i>The temporal period that the dataset covers.</i>
+                      <br />Usage note: <i>The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6049,6 +6138,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal_resolution">temporal resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalResolution">dcat-dap:Dataset.temporalResolution</a>)
                       <br />Definition: <i>Minimum time period resolvable in the dataset.</i>
+                      <br />Usage note: <i>If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6120,6 +6210,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_theme">theme/category</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.theme-category">dcat-dap:CatalogedResource.theme-category</a>)
+                      <br />Usage note: <i>The set of themes used to categorize the resources are organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, describing all the categories and their relations in the catalog.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6262,6 +6353,15 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_type">type/genre</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.type-genre">dcat-dap:CatalogedResource.type-genre</a>)
+                      <br />Usage note: <i>The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:
+              DCMI Type vocabulary [[DCTERMS]]
+              [[ISO-19115-1]] scope codes
+              Datacite resource types [[DataCite]]
+              PARSE.Insight content-types used by re3data.org [[RE3DATA-SCHEMA]] (see item 15 contentType)
+              MARC intellectual resource types
+              Some members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [[ISO-19115-1]] CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.
+              
+              To describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6333,6 +6433,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version">version</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.version">dcat-dap:CatalogedResource.version</a>)
+                      <br />Usage note: <i>DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [[DWBP]]&#x27;s Best Practice 7: Provide a version indicator.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6405,6 +6506,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_version_notes">version notes</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.versionInfo">dcat-dap:CatalogedResource.versionInfo</a>)
                       <br />Definition: <i>A description of changes between this version and the previous version of the resource [VOCAB-ADMS].</i>
+                      <br />Usage note: <i>In case of backward compatibility issues with the previous version of the resource, a textual description of them SHOULD be specified by using this property.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6479,12 +6581,14 @@
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_was_generated_by">was generated by</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.wasGeneratedBy">dcat-dap:Dataset.wasGeneratedBy</a>)
                       <br />Definition: <i>An activity that generated, or provides the business context for, the creation of the dataset.
               </i>
+                      <br />Usage note: <i>The activity associated with generation of a dataset will typically be an initiative, project, mission, survey, on-going activity (&quot;business as usual&quot;) etc. Multiple prov:wasGeneratedBy properties can be used to indicate the dataset production context at various levels of granularity.
+              
+              Use prov:qualifiedGeneration to attach additional details about the relationship between the dataset and the activity, e.g., the exact time that the dataset was produced during the lifetime of a project</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
                     
                     <a href="http://www.w3.org/ns/prov#wasGeneratedBy">wasGeneratedBy</a> (<a href="http://www.w3.org/ns/prov#wasGeneratedBy">prov:wasGeneratedBy</a>)
-                      <br />Definition: <i></i>
               
                           </li>
                       </ul>
@@ -6534,6 +6638,8 @@
                                   
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series">Dataset series</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#DatasetSeries">dcat-dap:DatasetSeries</a>)
+                  <br />Usage note: <i>Dataset series can be also soft-typed via property dcterms:type as in the approach used in [[GeoDCAT-AP]], and adopted in [[DCAT-AP-IT]] and [[GeoDCAT-AP-IT]]).
+          Common scenarios for dataset series include: time series composed of periodically released subsets; map-series composed of items of the same type or theme but with differing spatial footprints.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -6810,6 +6916,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_frequency">frequency</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.frequency">dcat-dap:Dataset.frequency</a>)
                       <br />Definition: <i>The frequency at which a dataset is published.</i>
+                      <br />Usage note: <i>The value of dcterms:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6882,6 +6989,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_spatial">spatial/geographical coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.spatial-geographicalCoverage">dcat-dap:Dataset.spatial-geographicalCoverage</a>)
                       <br />Definition: <i>The geographical area covered by the dataset.</i>
+                      <br />Usage note: <i>The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -6954,6 +7062,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_update_date">update/modification date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.update-modificationDate">dcat-dap:CatalogedResource.update-modificationDate</a>)
                       <br />Definition: <i>Most recent date on which the resource was changed, updated or modified.</i>
+                      <br />Usage note: <i>The value of this property indicates a change to the actual resource, not a change to the catalog record. An absent value MAY indicate that the resource has never changed after its initial publication, or that the date of last modification is not known, or that the resource is continuously updated.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7025,6 +7134,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_publisher">publisher</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.publisher">dcat-dap:CatalogedResource.publisher</a>)
+                      <br />Usage note: <i>Resources of type foaf:Agent are recommended as values for this property.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7097,6 +7207,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:resource_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource.releaseDate">dcat-dap:CatalogedResource.releaseDate</a>)
                       <br />Definition: <i>Date of formal issuance (e.g., publication) of the resource.</i>
+                      <br />Usage note: <i>This property SHOULD be set using the first known date of issuance.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7169,6 +7280,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:dataset_temporal">temporal coverage</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset.temporalCoverage">dcat-dap:Dataset.temporalCoverage</a>)
                       <br />Definition: <i>The temporal period that the dataset covers.</i>
+                      <br />Usage note: <i>The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7293,6 +7405,7 @@
                                   
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series">Distribution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution">dcat-dap:Distribution</a>)
+                  <br />Usage note: <i>This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -7308,6 +7421,10 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Usage note</td>
+                <td>This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions.</td>
+              </tr>
             </table>
           
               <p>Backwards associations</p>
@@ -7367,6 +7484,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_service">access service</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.accessService">dcat-dap:Distribution.accessService</a>)
+                      <br />Usage note: <i>dcat:accessService SHOULD be used to link to a description of a dcat:DataService that can provide access to this distribution.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7439,6 +7557,11 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_access_url">access URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.accessUrl">dcat-dap:Distribution.accessUrl</a>)
                       <br />Definition: <i>A URL of the resource that gives access to a distribution of the dataset. E.g., landing page, feed, SPARQL endpoint.</i>
+                      <br />Usage note: <i>dcat:accessURL SHOULD be used for the URL of a service or location that can provide access to this distribution, typically through a Web form, query or API call.
+              
+              dcat:downloadURL is preferred for direct links to downloadable resources.
+              
+              If the distribution(s) are accessible only through a landing page (i.e., direct download URLs are not known), then the landing page URL associated with the dcat:Dataset SHOULD be duplicated as access URL on a distribution (see 5.7 Dataset available only behind some Web page).</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7628,6 +7751,8 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_size">byte size</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.byteSize">dcat-dap:Distribution.byteSize</a>)
+                      <br />Usage note: <i>The size in bytes can be approximated (as a non-negative integer) when the precise size is not known.
+              While it is recommended that the size be given as an integer, alternative literals such as &#x27;1.5 MB&#x27; are sometimes used.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7700,6 +7825,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_checksum">checksum</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.checksum">dcat-dap:Distribution.checksum</a>)
+                      <br />Usage note: <i>The checksum is related to the download URL.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7771,6 +7897,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_compression_format">compression format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.compressionFormat">dcat-dap:Distribution.compressionFormat</a>)
+                      <br />Usage note: <i>This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -7973,6 +8100,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_download_url">download URL</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.downloadUrl">dcat-dap:Distribution.downloadUrl</a>)
+                      <br />Usage note: <i>dcat:downloadURL SHOULD be used for the URL at which this distribution is available directly, typically through a HTTP Get request.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8045,6 +8173,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_format">format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.format">dcat-dap:Distribution.format</a>)
                       <br />Definition: <i>The file format of the distribution.</i>
+                      <br />Usage note: <i>dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [[IANA-MEDIA-TYPES]].</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8117,6 +8246,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_has_policy">has policy</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.hasPolicy">dcat-dap:Distribution.hasPolicy</a>)
                       <br />Definition: <i>An ODRL conformant policy expressing the rights associated with the distribution.</i>
+                      <br />Usage note: <i>Information about rights expressed as an ODRL policy [[ODRL-MODEL]] using the ODRL vocabulary [[ODRL-VOCAB]] MAY be provided for the distribution. See also guidance at 9. License and rights statements.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8252,6 +8382,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_license">license</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.license">dcat-dap:Distribution.license</a>)
                       <br />Definition: <i>A legal document under which the distribution is made available.</i>
+                      <br />Usage note: <i>Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8324,6 +8455,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_conforms_to">conforms to</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.conformsTo">dcat-dap:Distribution.conformsTo</a>)
                       <br />Definition: <i>An established standard to which the distribution conforms.</i>
+                      <br />Usage note: <i>This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8395,6 +8527,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_media_type">media type</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.mediaType">dcat-dap:Distribution.mediaType</a>)
+                      <br />Usage note: <i>This property SHOULD be used when the media type of the distribution is defined in IANA [[IANA-MEDIA-TYPES]], otherwise dcterms:format MAY be used with different values.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8533,6 +8666,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_packaging_format">packaging format</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.packagingFormat">dcat-dap:Distribution.packagingFormat</a>)
+                      <br />Usage note: <i>This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8604,6 +8738,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_release_date">release date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.releaseDate">dcat-dap:Distribution.releaseDate</a>)
+                      <br />Usage note: <i>This property SHOULD be set using the first known date of issuance.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8676,6 +8811,9 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_rights">rights</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.rights">dcat-dap:Distribution.rights</a>)
                       <br />Definition: <i>Information about rights held in and over the distribution.</i>
+                      <br />Usage note: <i>dcterms:license, which is a sub-property of dcterms:rights, can be used to link a distribution to a license document. However, dcterms:rights allows linking to a rights statement that can include licensing information as well as other information that supplements the license such as attribution.
+              
+              Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8744,6 +8882,8 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_spatial_resolution">spatial resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.spatialResolution">dcat-dap:Distribution.spatialResolution</a>)
                       <br />Definition: <i>The minimum spatial separation resolvable in a dataset distribution, measured in meters.</i>
+                      <br />Usage note: <i>If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset.
+              Alternative spatial resolutions might be provided as different dataset distributions</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -8880,6 +9020,8 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:distribution_temporal_resolution">temporal resolution</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Distribution.temporalResolution">dcat-dap:Distribution.temporalResolution</a>)
                       <br />Definition: <i>Minimum time period resolvable in the dataset distribution.</i>
+                      <br />Usage note: <i>If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.
+              Alternative temporal resolutions might be provided in different dataset distributions</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -9183,6 +9325,9 @@
                                   
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Location">Location</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location">dcat-dap:Location</a>)
+                  <br />Usage note: <i>For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [[LOCN]] SHOULD be used.
+          For a geographic bounding box delimiting a spatial area the property dcat:bbox SHOULD be used.
+          For the geographic center of a spatial area, or another characteristic point, the property dcat:centroid SHOULD be used.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -9262,6 +9407,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_bbox">bounding box</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location.boundingBox">dcat-dap:Location.boundingBox</a>)
+                      <br />Usage note: <i>The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]]).</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -9333,6 +9479,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_centroid">centroid</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location.centroid">dcat-dap:Location.centroid</a>)
+                      <br />Usage note: <i>The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]]).</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -9405,6 +9552,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:location_geometry">geometry</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Location.geometry">dcat-dap:Location.geometry</a>)
                       <br />Definition: <i>Associates a spatial thing [SDW-BP] with a corresponding geometry.</i>
+                      <br />Usage note: <i>The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [[GeoSPARQL]]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [[GeoSPARQL]].</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -9458,6 +9606,7 @@
                                   
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person">Relationship</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Relationship">dcat-dap:Relationship</a>)
+                  <br />Usage note: <i>Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -9473,6 +9622,10 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Usage note</td>
+                <td>Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)</td>
+              </tr>
             </table>
           
               <p>Backwards associations</p>
@@ -9531,6 +9684,8 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_hadRole">had role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Relationship.hadRole">dcat-dap:Relationship.hadRole</a>)
+                      <br />Usage note: <i>May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [[ISO-19115]] CI_RoleCode.
+              May be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -9604,6 +9759,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:relationship_relation">relation</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Relationship.relation">dcat-dap:Relationship.relation</a>)
                       <br />Definition: <i>The resource related to the source resource.</i>
+                      <br />Usage note: <i>In the context of a dcat:Relationship this is expected to point to another dcat:Dataset or other cataloged resource.</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -9662,7 +9818,6 @@
                                   class
                 
                 <a href="http://www.w3.org/ns/prov#Activity">Activity</a> (<a href="http://www.w3.org/ns/prov#Activity">prov:Activity</a>)
-                  <br />Definition: <i></i>
           
                           </li>
                     </ul>
@@ -10170,7 +10325,6 @@
                                 class
                 
                 <a href="http://www.w3.org/ns/locn#Geometry">Geometry</a> (<a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>)
-                  <br />Definition: <i></i>
           
                       </li>
                   </ul>
@@ -10567,6 +10721,7 @@
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Period_of_Time">Period of Time</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime">dcat-dap:PeriodOfTime</a>)
                   <br />Definition: <i>An interval of time that is named or defined by its start and end.</i>
+                  <br />Usage note: <i>The start and end of the interval SHOULD be given by using properties dcat:startDate or time:hasBeginning, and dcat:endDate or time:hasEnd, respectively. The interval can also be open - i.e., it can have just a start or just an end.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -10582,6 +10737,10 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Usage note</td>
+                <td>The start and end of the interval SHOULD be given by using properties dcat:startDate or time:hasBeginning, and dcat:endDate or time:hasEnd, respectively. The interval can also be open - i.e., it can have just a start or just an end.</td>
+              </tr>
             </table>
           
               <p>Backwards associations</p>
@@ -10643,6 +10802,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_beginning">beginning</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.beginning">dcat-dap:PeriodOfTime.beginning</a>)
                       <br />Definition: <i>Beginning of a period or interval.</i>
+                      <br />Usage note: <i>Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -10715,6 +10875,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_has_end">end</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.end">dcat-dap:PeriodOfTime.end</a>)
                       <br />Definition: <i>End of a period or interval.</i>
+                      <br />Usage note: <i>Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -10786,6 +10947,7 @@
                                       
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_end_date">end date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.endDate">dcat-dap:PeriodOfTime.endDate</a>)
+                      <br />Usage note: <i>rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]]</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -10858,6 +11020,7 @@
                     property profile
                     <a href="https://www.w3.org/TR/vocab-dcat-3/#Property:period_start_date">start date</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime.startDate">dcat-dap:PeriodOfTime.startDate</a>)
                       <br />Definition: <i>The start of the period.</i>
+                      <br />Usage note: <i>rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime).</i>
                       <ul style="list-style-type: none;">
                           <li>
                                     property
@@ -11131,6 +11294,8 @@
                                   
                 class profile
                 <a href="https://www.w3.org/TR/vocab-dcat-3/#Class:Role">Role</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Role">dcat-dap:Role</a>)
+                  <br />Usage note: <i>Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [[ISO-19115-1]] CI_RoleCode.
+          Used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as [[ISO-19115-1]] DS_AssociationTypeCode, IANA Registry of Link Relations [[IANA-RELATIONS]], DataCite metadata schema [[DataCite]], MARC relators.</i>
                   <ul style="list-style-type: none;">
                       <li>
                                 class
@@ -11146,6 +11311,11 @@
                   </td>
                 </tr>
           
+              <tr>
+                <td>Usage note</td>
+                <td>Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [[ISO-19115-1]] CI_RoleCode.
+          Used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as [[ISO-19115-1]] DS_AssociationTypeCode, IANA Registry of Link Relations [[IANA-RELATIONS]], DataCite metadata schema [[DataCite]], MARC relators.</td>
+              </tr>
             </table>
           
               <p>Backwards associations</p>
@@ -11315,6 +11485,8 @@
               <td>Application profile</td>
               <td><a href="./dsv.ttl">./dsv.ttl</a></td>
             </tr>
+            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
+            <tr><td>Conceptual diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
