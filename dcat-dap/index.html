@@ -299,8 +299,8 @@
       defer
     ></script>
     <script class="remove">
-      // All config options at https://respec.org/docs/
-      var respecConfig = {
+    // All config options at https://respec.org/docs/
+    var respecConfig = {
         specStatus: "base",
         shortName: "dcat-dap",               
         showPreviousVersion: false,
@@ -313,6 +313,7 @@
           companyURL: "https://www.mff.cuni.cz"
         }],
         inlineCSS: "true",
+        historyURI: null,
         maxTocLevel: 3,
         github: "https://github.com/mff-uk/specifications/",
         localBiblio: {
@@ -357,8 +358,7 @@
                 href: "https://w3id.org/dsv#"
             }]
         }]
-      };
-    </script>
+      };</script>
     
     <style>
       .figure img, .sidefigure img, figure img, .figure object, .sidefigure object, figure object, img, .img {
@@ -412,200 +412,10 @@
         </a>
     </section>
 
-
-
       <section>
-          <h2>Class profiles</h2>
+        <h2>Main class profiles</h2>
 
-          <section id="Agent">
-            <h4>Agent</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Agent">dcat-dap:Agent</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Agent</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>An agent (eg. person, group, software or physical artifact).</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://xmlns.com/foaf/0.1/Agent">Agent</a> (<a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>)
-                  <br />Definition: <i>An agent (eg. person, group, software or physical artifact).</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_creator"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_publisher"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="Attribution">
-            <h4>Attribution</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Attribution">dcat-dap:Attribution</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Attribution</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://www.w3.org/ns/prov#Attribution">Attribution</a> (<a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>)
-                  <br />Definition: <i>An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializes
-                class
-                
-                <a href="http://www.w3.org/ns/prov#AgentInfluence">AgentInfluence</a> (<a href="http://www.w3.org/ns/prov#AgentInfluence">prov:AgentInfluence</a>)
-                  <br />Definition: <i>It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializes
-                class
-                
-                <a href="http://www.w3.org/ns/prov#Influence">Influence</a> (<a href="http://www.w3.org/ns/prov#Influence">prov:Influence</a>)
-                  <br />Definition: <i>Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_qualified_attribution"></a></li>
-              </ul>
-          
-              <section id="Property:relationship_hadRole">
-                <h4>had role</h4>
-              
-                <table class="def">
-                  <tr>
-                    <td>Profiled relationship IRI(s)</td>
-                    <td>
-                        
-                        <a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>IRI</td>
-                    <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Attribution.hadRole">dcat-dap:Attribution.hadRole</a></td>
-                  </tr>
-                  <tr>
-                    <td>Label</td>
-                    <td>had role</td>
-                  </tr>
-                  <tr>
-                    <td>Definition</td>
-                    <td>The function of an entity or agent with respect to another entity or resource.</td>
-                  </tr>
-                  <tr>
-                    <td>Domain</td>
-                    <td>
-                      <a href="#Attribution">Attribution</a>
-              
-                      
-                    </td>
-                  </tr>
-                  <tr>
-                    <td>Range</td>
-                    <td>
-                      <a href="#Class:Role">Role</a>
-              
-                          [0..*]
-              
-                  </td>
-                  </tr>
-              
-              
-              
-                    <tr>
-                      <td>Hierarchy</td>
-                      <td>
-                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                              <li>
-                                        profiles
-                    property
-                    
-                    <a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a> (<a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>)
-                      <br />Definition: <i>The function of an entity or agent with respect to another entity or resource.</i>
-                      <ul style="list-style-type: disclosure-closed;">
-                      </ul>
-              
-                              </li>
-                        </ul>
-                      </td>
-                    </tr>
-              
-                  <tr>
-                    <td>Usage note</td>
-                    <td>May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [[ISO-19115]] CI_RoleCode.
-              May be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles.</td>
-                  </tr>
-                </table>
-              </section>
-          </section>          <section id="Class:Catalog">
+          <section id="Class:Catalog">
             <h4>Catalog</h4>
           
             <table class="def">
@@ -4379,115 +4189,6 @@
               
                 </table>
               </section>
-          </section>          <section id="ChecksumAlgorithm">
-            <h4>Checksum Algorithm</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#ChecksumAlgorithm">dcat-dap:ChecksumAlgorithm</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Checksum Algorithm</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>Algorighm for Checksums.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://spdx.org/rdf/terms#ChecksumAlgorithm"><i>without assigned name</i></a> (<a href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a>)
-                  <br />Definition: <i>Algorighm for Checksums.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Checksum"></a> → <a href="#Property:checksum_algorithm"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="Class">
-            <h4>Class</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Class">dcat-dap:Class</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Class</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>The class of classes.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializes
-                class
-                
-                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
-                  <br />Definition: <i>The class resource, everything.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_type"></a></li>
-              </ul>
-          
-          
           </section>          <section id="Class:Concept">
             <h4>Concept</h4>
           
@@ -7101,363 +6802,6 @@
               
                 </table>
               </section>
-          </section>          <section id="Document">
-            <h4>Document</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://xmlns.com/foaf/0.1/Document">foaf:Document</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Document">dcat-dap:Document</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Document</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A document.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://xmlns.com/foaf/0.1/Document">Document</a> (<a href="http://xmlns.com/foaf/0.1/Document">foaf:Document</a>)
-                  <br />Definition: <i>A document.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_homepage"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_landing_page"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="Entity">
-            <h4>Entity</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Entity">dcat-dap:Entity</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Entity</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://www.w3.org/ns/prov#Entity">Entity</a> (<a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>)
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_was_generated_by"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="Frequency">
-            <h4>Frequency</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://purl.org/dc/terms/Frequency">dcterms:Frequency</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Frequency">dcat-dap:Frequency</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Frequency</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A rate at which something recurs.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://purl.org/dc/terms/Frequency">Frequency</a> (<a href="http://purl.org/dc/terms/Frequency">dcterms:Frequency</a>)
-                  <br />Definition: <i>A rate at which something recurs.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_frequency"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="Geometry">
-            <h4>Geometry</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Geometry">dcat-dap:Geometry</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Geometry</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://www.w3.org/ns/locn#Geometry">Geometry</a> (<a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>)
-                  <br />Definition: <i>The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Location"></a> → <a href="#Property:location_geometry"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="Kind">
-            <h4>Kind</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Kind">dcat-dap:Kind</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Kind</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>The parent class for all objects</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://www.w3.org/2006/vcard/ns#Kind">Kind</a> (<a href="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</a>)
-                  <br />Definition: <i>The parent class for all objects</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_contact_point"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="LicenseDocument">
-            <h4>License Document</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument">dcat-dap:LicenseDocument</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>License Document</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A legal document giving official permission to do something with a resource.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://purl.org/dc/terms/LicenseDocument">License Document</a> (<a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>)
-                  <br />Definition: <i>A legal document giving official permission to do something with a resource.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializes
-                class
-                
-                <a href="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> (<a href="http://purl.org/dc/terms/RightsStatement">dcterms:RightsStatement</a>)
-                  <br />Definition: <i>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_license"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_license"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="LinguisticSystem">
-            <h4>Linguistic System</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://purl.org/dc/terms/LinguisticSystem">dcterms:LinguisticSystem</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#LinguisticSystem">dcat-dap:LinguisticSystem</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Linguistic System</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A system of signs, symbols, sounds, gestures, or rules used in communication.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://purl.org/dc/terms/LinguisticSystem">Linguistic System</a> (<a href="http://purl.org/dc/terms/LinguisticSystem">dcterms:LinguisticSystem</a>)
-                  <br />Definition: <i>A system of signs, symbols, sounds, gestures, or rules used in communication.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_language"></a></li>
-              </ul>
-          
-          
           </section>          <section id="Class:Location">
             <h4>Location</h4>
           
@@ -7722,118 +7066,6 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="MediaType">
-            <h4>Media Type</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://purl.org/dc/terms/MediaType">dcterms:MediaType</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#MediaType">dcat-dap:MediaType</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Media Type</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A file format or physical medium.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://purl.org/dc/terms/MediaType">Media Type</a> (<a href="http://purl.org/dc/terms/MediaType">dcterms:MediaType</a>)
-                  <br />Definition: <i>A file format or physical medium.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializes
-                class
-                
-                <a href="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</a> (<a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>)
-                  <br />Definition: <i>A media type or extent.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_compression_format"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_media_type"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_packaging_format"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="MediaTypeOrExtent">
-            <h4>Media Type or Extent</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#MediaTypeOrExtent">dcat-dap:MediaTypeOrExtent</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Media Type or Extent</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A media type or extent.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</a> (<a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>)
-                  <br />Definition: <i>A media type or extent.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_format"></a></li>
-              </ul>
-          
-          
           </section>          <section id="Class:Organization_Person">
             <h4>Organization</h4>
           
@@ -8311,57 +7543,6 @@
           
           
           
-          </section>          <section id="Policy">
-            <h4>Policy</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/ns/odrl/2/Policy">odrl:Policy</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Policy">dcat-dap:Policy</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Policy</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A non-empty group of Permissions and/or Prohibitions.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://www.w3.org/ns/odrl/2/Policy">Policy</a> (<a href="http://www.w3.org/ns/odrl/2/Policy">odrl:Policy</a>)
-                  <br />Definition: <i>A non-empty group of Permissions and/or Prohibitions.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_has_policy"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_has_policy"></a></li>
-              </ul>
-          
-          
           </section>          <section id="Class:Organization_Person">
             <h4>Relationship</h4>
           
@@ -8549,6 +7730,894 @@
                   </tr>
                 </table>
               </section>
+          </section>          <section id="Class:Role">
+            <h4>Role</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Role">dcat-dap:Role</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Role</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Role">Role</a> (<a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>)
+                  <br />Definition: <i>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+                  <br />Definition: <i>An idea or notion; a unit of thought.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+              <tr>
+                <td>Usage note</td>
+                <td>Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [[ISO-19115-1]] CI_RoleCode.
+          Used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as [[ISO-19115-1]] DS_AssociationTypeCode, IANA Registry of Link Relations [[IANA-RELATIONS]], DataCite metadata schema [[DataCite]], MARC relators.</td>
+              </tr>
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Organization_Person"></a> → <a href="#Property:relationship_hadRole"></a></li>
+                  <li>from domain <a href="#Attribution"></a> → <a href="#Property:relationship_hadRole"></a></li>
+              </ul>
+          
+          
+          </section>      </section>
+
+      <section>
+        <h2>Supportive class profiles</h2>
+
+          <section id="Agent">
+            <h4>Agent</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Agent">dcat-dap:Agent</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Agent</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>An agent (eg. person, group, software or physical artifact).</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://xmlns.com/foaf/0.1/Agent">Agent</a> (<a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>)
+                  <br />Definition: <i>An agent (eg. person, group, software or physical artifact).</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_creator"></a></li>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_publisher"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Attribution">
+            <h4>Attribution</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Attribution">dcat-dap:Attribution</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Attribution</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/ns/prov#Attribution">Attribution</a> (<a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>)
+                  <br />Definition: <i>An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/prov#AgentInfluence">AgentInfluence</a> (<a href="http://www.w3.org/ns/prov#AgentInfluence">prov:AgentInfluence</a>)
+                  <br />Definition: <i>It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/prov#Influence">Influence</a> (<a href="http://www.w3.org/ns/prov#Influence">prov:Influence</a>)
+                  <br />Definition: <i>Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_qualified_attribution"></a></li>
+              </ul>
+          
+              <section id="Property:relationship_hadRole">
+                <h4>had role</h4>
+              
+                <table class="def">
+                  <tr>
+                    <td>Profiled relationship IRI(s)</td>
+                    <td>
+                        
+                        <a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>IRI</td>
+                    <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Attribution.hadRole">dcat-dap:Attribution.hadRole</a></td>
+                  </tr>
+                  <tr>
+                    <td>Label</td>
+                    <td>had role</td>
+                  </tr>
+                  <tr>
+                    <td>Definition</td>
+                    <td>The function of an entity or agent with respect to another entity or resource.</td>
+                  </tr>
+                  <tr>
+                    <td>Domain</td>
+                    <td>
+                      <a href="#Attribution">Attribution</a>
+              
+                      
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>Range</td>
+                    <td>
+                      <a href="#Class:Role">Role</a>
+              
+                          [0..*]
+              
+                  </td>
+                  </tr>
+              
+              
+              
+                    <tr>
+                      <td>Hierarchy</td>
+                      <td>
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                              <li>
+                                        profiles
+                    property
+                    
+                    <a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a> (<a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>)
+                      <br />Definition: <i>The function of an entity or agent with respect to another entity or resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                              </li>
+                        </ul>
+                      </td>
+                    </tr>
+              
+                  <tr>
+                    <td>Usage note</td>
+                    <td>May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [[ISO-19115]] CI_RoleCode.
+              May be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles.</td>
+                  </tr>
+                </table>
+              </section>
+          </section>          <section id="ChecksumAlgorithm">
+            <h4>Checksum Algorithm</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#ChecksumAlgorithm">dcat-dap:ChecksumAlgorithm</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Checksum Algorithm</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>Algorighm for Checksums.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://spdx.org/rdf/terms#ChecksumAlgorithm"><i>without assigned name</i></a> (<a href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a>)
+                  <br />Definition: <i>Algorighm for Checksums.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Checksum"></a> → <a href="#Property:checksum_algorithm"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Class">
+            <h4>Class</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Class">dcat-dap:Class</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Class</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>The class of classes.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definition: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_type"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Document">
+            <h4>Document</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://xmlns.com/foaf/0.1/Document">foaf:Document</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Document">dcat-dap:Document</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Document</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A document.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://xmlns.com/foaf/0.1/Document">Document</a> (<a href="http://xmlns.com/foaf/0.1/Document">foaf:Document</a>)
+                  <br />Definition: <i>A document.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_homepage"></a></li>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_landing_page"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Entity">
+            <h4>Entity</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Entity">dcat-dap:Entity</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Entity</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/ns/prov#Entity">Entity</a> (<a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_was_generated_by"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Frequency">
+            <h4>Frequency</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://purl.org/dc/terms/Frequency">dcterms:Frequency</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Frequency">dcat-dap:Frequency</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Frequency</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A rate at which something recurs.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://purl.org/dc/terms/Frequency">Frequency</a> (<a href="http://purl.org/dc/terms/Frequency">dcterms:Frequency</a>)
+                  <br />Definition: <i>A rate at which something recurs.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_frequency"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Geometry">
+            <h4>Geometry</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Geometry">dcat-dap:Geometry</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Geometry</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/ns/locn#Geometry">Geometry</a> (<a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>)
+                  <br />Definition: <i>The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Location"></a> → <a href="#Property:location_geometry"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Kind">
+            <h4>Kind</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Kind">dcat-dap:Kind</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Kind</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>The parent class for all objects</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/2006/vcard/ns#Kind">Kind</a> (<a href="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</a>)
+                  <br />Definition: <i>The parent class for all objects</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_contact_point"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="LicenseDocument">
+            <h4>License Document</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument">dcat-dap:LicenseDocument</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>License Document</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A legal document giving official permission to do something with a resource.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://purl.org/dc/terms/LicenseDocument">License Document</a> (<a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>)
+                  <br />Definition: <i>A legal document giving official permission to do something with a resource.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> (<a href="http://purl.org/dc/terms/RightsStatement">dcterms:RightsStatement</a>)
+                  <br />Definition: <i>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_license"></a></li>
+                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_license"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="LinguisticSystem">
+            <h4>Linguistic System</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://purl.org/dc/terms/LinguisticSystem">dcterms:LinguisticSystem</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#LinguisticSystem">dcat-dap:LinguisticSystem</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Linguistic System</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A system of signs, symbols, sounds, gestures, or rules used in communication.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://purl.org/dc/terms/LinguisticSystem">Linguistic System</a> (<a href="http://purl.org/dc/terms/LinguisticSystem">dcterms:LinguisticSystem</a>)
+                  <br />Definition: <i>A system of signs, symbols, sounds, gestures, or rules used in communication.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_language"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="MediaType">
+            <h4>Media Type</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://purl.org/dc/terms/MediaType">dcterms:MediaType</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#MediaType">dcat-dap:MediaType</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Media Type</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A file format or physical medium.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://purl.org/dc/terms/MediaType">Media Type</a> (<a href="http://purl.org/dc/terms/MediaType">dcterms:MediaType</a>)
+                  <br />Definition: <i>A file format or physical medium.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</a> (<a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>)
+                  <br />Definition: <i>A media type or extent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_compression_format"></a></li>
+                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_media_type"></a></li>
+                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_packaging_format"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="MediaTypeOrExtent">
+            <h4>Media Type or Extent</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#MediaTypeOrExtent">dcat-dap:MediaTypeOrExtent</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Media Type or Extent</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A media type or extent.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</a> (<a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>)
+                  <br />Definition: <i>A media type or extent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_format"></a></li>
+              </ul>
+          
+          
+          </section>          <section id="Policy">
+            <h4>Policy</h4>
+          
+            <table class="def">
+              <tr>
+                <td>Profiled class IRI(s)</td>
+                <td>
+                    
+                    <a href="http://www.w3.org/ns/odrl/2/Policy">odrl:Policy</a>
+                </td>
+              </tr>
+              <tr>
+                <td>IRI</td>
+                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Policy">dcat-dap:Policy</a></td>
+              </tr>
+              <tr>
+                <td>Label</td>
+                <td>Policy</td>
+              </tr>
+              <tr>
+                <td>Definition</td>
+                <td>A non-empty group of Permissions and/or Prohibitions.</td>
+              </tr>
+          
+                <tr>
+                  <td>Hierarchy</td>
+                  <td>
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
+                          <li>
+                                    profiles
+                class
+                
+                <a href="http://www.w3.org/ns/odrl/2/Policy">Policy</a> (<a href="http://www.w3.org/ns/odrl/2/Policy">odrl:Policy</a>)
+                  <br />Definition: <i>A non-empty group of Permissions and/or Prohibitions.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                          </li>
+                    </ul>
+                  </td>
+                </tr>
+          
+            </table>
+          
+              <p>Backwards associations</p>
+              <ul>
+                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_has_policy"></a></li>
+                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_has_policy"></a></li>
+              </ul>
+          
+          
           </section>          <section id="rdfs-Resource">
             <h4>Resource</h4>
           
@@ -8664,72 +8733,6 @@
                   <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_access_rights"></a></li>
                   <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_rights"></a></li>
                   <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_rights"></a></li>
-              </ul>
-          
-          
-          </section>          <section id="Class:Role">
-            <h4>Role</h4>
-          
-            <table class="def">
-              <tr>
-                <td>Profiled class IRI(s)</td>
-                <td>
-                    
-                    <a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>
-                </td>
-              </tr>
-              <tr>
-                <td>IRI</td>
-                <td><a href="https://mff-uk.github.io/specifications/dcat-dap#Role">dcat-dap:Role</a></td>
-              </tr>
-              <tr>
-                <td>Label</td>
-                <td>Role</td>
-              </tr>
-              <tr>
-                <td>Definition</td>
-                <td>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</td>
-              </tr>
-          
-                <tr>
-                  <td>Hierarchy</td>
-                  <td>
-                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
-                          <li>
-                                    profiles
-                class
-                
-                <a href="http://www.w3.org/ns/dcat#Role">Role</a> (<a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>)
-                  <br />Definition: <i>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                      <li>
-                                  specializes
-                class
-                
-                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
-                  <br />Definition: <i>An idea or notion; a unit of thought.</i>
-                  <ul style="list-style-type: disclosure-closed;">
-                  </ul>
-          
-                      </li>
-                  </ul>
-          
-                          </li>
-                    </ul>
-                  </td>
-                </tr>
-          
-              <tr>
-                <td>Usage note</td>
-                <td>Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [[ISO-19115-1]] CI_RoleCode.
-          Used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as [[ISO-19115-1]] DS_AssociationTypeCode, IANA Registry of Link Relations [[IANA-RELATIONS]], DataCite metadata schema [[DataCite]], MARC relators.</td>
-              </tr>
-            </table>
-          
-              <p>Backwards associations</p>
-              <ul>
-                  <li>from domain <a href="#Class:Organization_Person"></a> → <a href="#Property:relationship_hadRole"></a></li>
-                  <li>from domain <a href="#Attribution"></a> → <a href="#Property:relationship_hadRole"></a></li>
               </ul>
           
           
@@ -8851,25 +8854,26 @@
 
 
 
+
     <section>
       <h2>Used prefixes</h2>
       <table id="table-namespaces" class="simple">
         <thead><tr><th>Prefix</th><th>Namespace IRI</th></tr></thead>
         <tbody>
-            <tr><td><code>foaf</code></td><td><a href="http://xmlns.com/foaf/0.1/"><code>http://xmlns.com/foaf/0.1/</code></a></td></tr>
-            <tr><td><code>dcat-dap</code></td><td><a href="https://mff-uk.github.io/specifications/dcat-dap#"><code>https://mff-uk.github.io/specifications/dcat-dap#</code></a></td></tr>
-            <tr><td><code>prov</code></td><td><a href="http://www.w3.org/ns/prov#"><code>http://www.w3.org/ns/prov#</code></a></td></tr>
             <tr><td><code>dcat</code></td><td><a href="http://www.w3.org/ns/dcat#"><code>http://www.w3.org/ns/dcat#</code></a></td></tr>
+            <tr><td><code>dcat-dap</code></td><td><a href="https://mff-uk.github.io/specifications/dcat-dap#"><code>https://mff-uk.github.io/specifications/dcat-dap#</code></a></td></tr>
             <tr><td><code>dcterms</code></td><td><a href="http://purl.org/dc/terms/"><code>http://purl.org/dc/terms/</code></a></td></tr>
+            <tr><td><code>foaf</code></td><td><a href="http://xmlns.com/foaf/0.1/"><code>http://xmlns.com/foaf/0.1/</code></a></td></tr>
             <tr><td><code>odrl</code></td><td><a href="http://www.w3.org/ns/odrl/2/"><code>http://www.w3.org/ns/odrl/2/</code></a></td></tr>
+            <tr><td><code>prov</code></td><td><a href="http://www.w3.org/ns/prov#"><code>http://www.w3.org/ns/prov#</code></a></td></tr>
             <tr><td><code>adms</code></td><td><a href="http://www.w3.org/ns/adms#"><code>http://www.w3.org/ns/adms#</code></a></td></tr>
             <tr><td><code>spdx</code></td><td><a href="http://spdx.org/rdf/terms#"><code>http://spdx.org/rdf/terms#</code></a></td></tr>
             <tr><td><code>xsd</code></td><td><a href="http://www.w3.org/2001/XMLSchema#"><code>http://www.w3.org/2001/XMLSchema#</code></a></td></tr>
-            <tr><td><code>rdfs</code></td><td><a href="http://www.w3.org/2000/01/rdf-schema#"><code>http://www.w3.org/2000/01/rdf-schema#</code></a></td></tr>
             <tr><td><code>skos</code></td><td><a href="http://www.w3.org/2004/02/skos/core#"><code>http://www.w3.org/2004/02/skos/core#</code></a></td></tr>
             <tr><td><code>locn</code></td><td><a href="http://www.w3.org/ns/locn#"><code>http://www.w3.org/ns/locn#</code></a></td></tr>
-            <tr><td><code>vcard</code></td><td><a href="http://www.w3.org/2006/vcard/ns#"><code>http://www.w3.org/2006/vcard/ns#</code></a></td></tr>
             <tr><td><code>time</code></td><td><a href="http://www.w3.org/2006/time#"><code>http://www.w3.org/2006/time#</code></a></td></tr>
+            <tr><td><code>rdfs</code></td><td><a href="http://www.w3.org/2000/01/rdf-schema#"><code>http://www.w3.org/2000/01/rdf-schema#</code></a></td></tr>
+            <tr><td><code>vcard</code></td><td><a href="http://www.w3.org/2006/vcard/ns#"><code>http://www.w3.org/2006/vcard/ns#</code></a></td></tr>
         </tbody>
       </table>
     </section>

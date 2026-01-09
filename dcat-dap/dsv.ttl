@@ -14,7 +14,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Catalog>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Catalog>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :CatalogRecord <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#definition> "1つのデータセットを記述したデータ・カタログ内のレコード。"@ja, "A record in a catalog, describing the registration of a single dcat:Resource."@en, "Un record in un catalogo di dati che descrive un singolo dataset o servizio di dati."@it, "Un registre du catalogue ou une entrée du catalogue, décrivant un seul jeu de données."@fr, "Un registro en un catálogo de datos que describe un solo conjunto de datos o un servicio de datos."@es, "Záznam v datovém katalogu popisující jednu datovou sadu či datovou službu."@cs, "Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων."@el, "En post i et datakatalog der beskriver registreringen af et enkelt datasæt eller en datatjeneste."@da;
@@ -26,7 +27,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Catalog_Record>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#CatalogRecord>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#CatalogRecord>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Dataset <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#specializes> :CatalogedResource;
@@ -41,7 +43,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Dataset>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Dataset>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :CatalogedResource <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Cataloged Resource"@en, "Katalogizovaný zdroj"@cs, "Recurso catalogado"@es, "Risorsa catalogata"@it, "Katalogiseret ressource"@da;
@@ -53,7 +56,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Resource>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Resource>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Resource>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Document <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -66,7 +70,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://xmlns.com/foaf/0.1/Document>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Document>.
+    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Document>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :rdfs-Resource <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -79,7 +84,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/2000/01/rdf-schema#Resource>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/2000/01/rdf-schema#Resource>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/2000/01/rdf-schema#Resource>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :DataService <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Data Service"@en, "Servizio di dati"@it, "Servicio de datos"@es, "Datatjeneste"@da;
@@ -88,7 +94,8 @@
     <https://w3id.org/dsv#specializes> :CatalogedResource;
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Data_Service>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#DataService>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#DataService>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :RightsStatement <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -101,7 +108,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://purl.org/dc/terms/RightsStatement>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/RightsStatement>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/RightsStatement>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Standard <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -114,7 +122,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://purl.org/dc/terms/Standard>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/Standard>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/Standard>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Kind <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -127,7 +136,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/2006/vcard/ns#Kind>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/2006/vcard/ns#Kind>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/2006/vcard/ns#Kind>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Agent <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -140,7 +150,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://xmlns.com/foaf/0.1/Agent>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Agent>.
+    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Agent>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :LinguisticSystem <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -153,7 +164,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://purl.org/dc/terms/LinguisticSystem>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/LinguisticSystem>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/LinguisticSystem>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Class <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -166,7 +178,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/2000/01/rdf-schema#Class>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/2000/01/rdf-schema#Class>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/2000/01/rdf-schema#Class>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Relationship <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#scopeNote> "Use to characterize a relationship between datasets, and potentially other resources, where the nature of the relationship is known but is not adequately characterized by the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf)"@en;
@@ -181,7 +194,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Relationship>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Relationship>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Attribution <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -194,7 +208,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/ns/prov#Attribution>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/prov#Attribution>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/prov#Attribution>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :LicenseDocument <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -207,7 +222,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://purl.org/dc/terms/LicenseDocument>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/LicenseDocument>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/LicenseDocument>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Policy <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -220,7 +236,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/ns/odrl/2/Policy>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/odrl/2/Policy>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/odrl/2/Policy>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Distribution <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#scopeNote> "This represents a general availability of a dataset. It implies no information about the actual access method of the data, i.e., whether by direct download, API, or through a Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."@en;
@@ -235,7 +252,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Distribution>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Distribution>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :DatasetSeries <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Dataset Series"@en, "Serie de conjuntos de datos"@es, "Serie di dataset"@it;
@@ -248,7 +266,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Dataset_Series>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#DatasetSeries>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#DatasetSeries>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Frequency <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -261,7 +280,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://purl.org/dc/terms/Frequency>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/Frequency>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/Frequency>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Location <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#scopeNote> "For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [[LOCN]] SHOULD be used.\nFor a geographic bounding box delimiting a spatial area the property dcat:bbox SHOULD be used.\nFor the geographic center of a spatial area, or another characteristic point, the property dcat:centroid SHOULD be used."@en;
@@ -276,7 +296,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Location>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/Location>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/Location>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :PeriodOfTime <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#definition> "An interval of time that is named or defined by its start and end."@en;
@@ -288,7 +309,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Period_of_Time>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/PeriodOfTime>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/PeriodOfTime>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Entity <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -301,7 +323,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/ns/prov#Entity>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/prov#Entity>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/prov#Entity>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :MediaType <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -314,7 +337,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://purl.org/dc/terms/MediaType>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/MediaType>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/MediaType>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :MediaTypeOrExtent <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -327,7 +351,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://purl.org/dc/terms/MediaTypeOrExtent>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/MediaTypeOrExtent>.
+    <https://w3id.org/dsv#class> <http://purl.org/dc/terms/MediaTypeOrExtent>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Concept <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#definition> "A category or a theme used to describe datasets in the catalog."@en;
@@ -339,7 +364,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Concept>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/2004/02/skos/core#Concept>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/2004/02/skos/core#Concept>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :ConceptScheme <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#definition> "A knowledge organization system (KOS) used to represent themes/categories of datasets in the catalog."@en;
@@ -350,7 +376,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Concept_Scheme>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/2004/02/skos/core#ConceptScheme>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Person <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#scopeNote> "[[FOAF]] provides several properties to describe these entities."@en;
@@ -365,7 +392,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Person>.
+    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Person>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Organization <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#scopeNote> "[[FOAF]] provides several properties to describe these entities."@en;
@@ -380,7 +408,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Organization_Person>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Organization>.
+    <https://w3id.org/dsv#class> <http://xmlns.com/foaf/0.1/Organization>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Role <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#scopeNote> "Used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the values be managed as a controlled vocabulary of agent roles, such as [[ISO-19115-1]] CI_RoleCode.\nUsed in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the values be managed as a controlled vocabulary of entity roles such as [[ISO-19115-1]] DS_AssociationTypeCode, IANA Registry of Link Relations [[IANA-RELATIONS]], DataCite metadata schema [[DataCite]], MARC relators."@en;
@@ -395,7 +424,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Role>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Role>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/dcat#Role>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :Instant <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -408,7 +438,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/2006/time#Instant>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/2006/time#Instant>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/2006/time#Instant>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Geometry <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <https://w3id.org/dsv#reusesPropertyValue> [
@@ -421,7 +452,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://www.w3.org/ns/locn#Geometry>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://www.w3.org/ns/locn#Geometry>.
+    <https://w3id.org/dsv#class> <http://www.w3.org/ns/locn#Geometry>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 :Checksum <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Checksum"@en;
@@ -433,7 +465,8 @@
 ];
     <https://w3id.org/dsv#externalDocumentation> <https://www.w3.org/TR/vocab-dcat-3/#Class:Checksum>;
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://spdx.org/rdf/terms#Checksum>.
+    <https://w3id.org/dsv#class> <http://spdx.org/rdf/terms#Checksum>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
 :ChecksumAlgorithm <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
     <http://www.w3.org/2004/02/skos/core#prefLabel> "Checksum Algorithm"@en;
@@ -443,7 +476,8 @@
   <https://w3id.org/dsv#reusedFromResource> <http://spdx.org/rdf/terms#ChecksumAlgorithm>
 ];
     a <https://w3id.org/dsv#ClassProfile>;
-    <https://w3id.org/dsv#class> <http://spdx.org/rdf/terms#ChecksumAlgorithm>.
+    <https://w3id.org/dsv#class> <http://spdx.org/rdf/terms#ChecksumAlgorithm>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
 
 <https://mff-uk.github.io/specifications/dcat-dap#Catalog.homepage> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-dap#>;
     a <https://w3id.org/dsv#TermProfile>;
