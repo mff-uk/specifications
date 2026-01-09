@@ -1,0 +1,861 @@
+@prefix : <https://mff-uk.github.io/specifications/dcat-ap-hvd#>.
+
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#> a <http://www.w3.org/ns/dx/prof/Profile>, <https://w3id.org/dsv#ApplicationProfile>.
+:Dataset <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#specializes> :CataloguedResource;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Dataset>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:Catalogue <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:CatalogueRecord <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#CatalogueRecord>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:CataloguedResource <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#CataloguedResource>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:DataService <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#specializes> :CataloguedResource;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:DatasetSeries <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#specializes> :CataloguedResource;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DatasetSeries>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:Distribution <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:Kind <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Kind>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Kind>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Kind>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Kind>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Kind>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:LicenseDocument <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#LicenceDocument>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#main>.
+:Concept <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Concept>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Concept>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Concept>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
+:Document <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Document>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Document>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Document>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Document>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Document>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
+:LegalResource <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#LegalResource>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
+:rdfs-Resource <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Resource>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
+:RightsStatement <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Rightsstatement>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
+:Standard <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Standard>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Standard>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Standard>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Standard>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Standard>;
+    a <https://w3id.org/dsv#ClassProfile>;
+    <https://w3id.org/dsv#classRole> <https://w3id.org/dsv/class-role#supportive>.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Catalogue.dataset> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue.dataset>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Catalogue;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Dataset.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Catalogue.service> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue.service>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Catalogue;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :DataService.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Catalogue.record> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue.record>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Catalogue;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :CatalogueRecord.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#CatalogueRecord.primaryTopic> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#CatalogueRecord.primarytopic>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#11>;
+    <https://w3id.org/dsv#domain> :CatalogueRecord;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :CataloguedResource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.applicableLegislation> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "For HVD the value MUST include the ELI http://data.europa.eu/eli/reg_impl/2023/138/oj.\nAs multiple legislations may apply to the resource the maximum cardinality is not limited."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.applicablelegislation>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :LegalResource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.contactPoint> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 3.4 requires the designation of a point of contact for an API."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.contactpoint>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Kind.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.documentation> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#definition> "A page that provides additional information about the Data Service."@en;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "Quality of service covers a broad spectrum of aspects. The HVD regulation does not list any mandatory topic. Therefore quality of service information is considered part of the generic documentation of a Data Service."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService.documentation>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.documentation>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.documentation>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Document.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.endpointDescription> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "The property gives specific details of the actual endpoint instances, while dct:conformsTo is used to indicate the general standard or specification that the endpoints implement.\nArticle 3.3 requires to provide API documentation in a Union or internationally recognised open, human-readable and machine-readable format."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.endpointdescription>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :rdfs-Resource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.endpointUrl> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "The endpoint URL SHOULD be persistent. This means that publishers should do everything in their power to maintain the value stable and existing."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.endpointURL>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :rdfs-Resource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.hvdCategory> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#definition> "The HVD category to which this Data Service belongs."@en;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <http://data.europa.eu/r5r/hvdCategory>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.HVDcategory>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#property> <http://data.europa.eu/r5r/hvdCategory>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Concept.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.licence> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 3.3 specifies that the terms of use should be provided. According to the guidelines for legal Information in DCAT-AP HVD this is fulfilled by providing by preference a licence. As alternative rights can be used."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.licence>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#01>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :LicenseDocument.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.rights> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.rights>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :RightsStatement.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DataService.servesDataset> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "An API in the context of HVD is not a standalone resource. It is used to open up HVD datasets. Therefore each Data Service is at least tightly connected with a Dataset.\nA Dataset MUST have an associated Data Service, besides the exceptions listed in the HVD IR. This can be either specified directly, using this property, or indirectly. More information on this obligation see 10.8 Connecting Data Services with Datasets."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>
+];
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :DataService;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Dataset.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Dataset.applicableLegislation> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "For HVD the value must include the ELI http://data.europa.eu/eli/reg_impl/2023/138/oj.\nAs multiple legislations may apply to the resource the maximum cardinality is not limited."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.applicablelegislation>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :Dataset;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :LegalResource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Dataset.conformsTo> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "The provided information should enable to the verification whether the detailed information requirements by the HVD is satisfied. For more usage suggestions see section on specific data requirements."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.conformsto>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Dataset;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Standard.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Dataset.contactPoint> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.contactpoint>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Dataset;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Kind.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Dataset.datasetDistribution> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "The HVD IR is a quality improvement of existing datasets. The intention is that HVD datasets are publicly and open accessible. Therefore a Distribution is expected to be present. (Article 3.1) This section provides more information how this strong recommendation is implemented."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.datasetdistribution>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :Dataset;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Distribution.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Dataset.hvdCategory> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#definition> "The HVD category to which this Dataset belongs."@en;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <http://data.europa.eu/r5r/hvdCategory>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.HVDCategory>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#property> <http://data.europa.eu/r5r/hvdCategory>;
+    <https://w3id.org/dsv#domain> :Dataset;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Concept.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Dataset.inSeries> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#scopeNote>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.inseries>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Dataset;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :DatasetSeries.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DatasetSeries.applicableLegislation> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "For HVD the value must include the ELI http://data.europa.eu/eli/reg_impl/2023/138/oj.\nAs multiple legislations may apply to the resource the maximum cardinality is not limited."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DatasetSeries.applicablelegislation>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :DatasetSeries;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :LegalResource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#DatasetSeries.hvdCategory> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#definition> "The HVD category to which this Dataset Series belongs."@en;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <http://data.europa.eu/r5r/hvdCategory>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DatasetSeries.HVDCategory>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#property> <http://data.europa.eu/r5r/hvdCategory>;
+    <https://w3id.org/dsv#domain> :DatasetSeries;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Concept.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Distribution.accessService> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "An API in the context of HVD is not a standalone resource. It is used to open up HVD datasets. Therefore each Data Service is at least tightly connected with a Dataset.\nA Dataset MUST have an associated Data Service, besides the exceptions listed in the HVD IR. This can be either specified directly or indirectly using this property. More information on this obligation see 10.8 Connecting Data Services with Datasets."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.accessservice>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Distribution;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :DataService.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Distribution.accessUrl> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "The resource at the access URL contains information about how to get the Dataset. In accordance to the DCAT guidelines it is preferred to also set the downloadURL property if the URL is a reference to a downloadable resource."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.accessURL>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :Distribution;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :rdfs-Resource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Distribution.applicableLegislation> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "For HVD the value must include the ELI http://data.europa.eu/eli/reg_impl/2023/138/oj.\nAs multiple legislations may apply to the resource the maximum cardinality is not limited."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.applicablelegislation>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#1n>;
+    <https://w3id.org/dsv#domain> :Distribution;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#mandatory>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :LegalResource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Distribution.licence> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 4.3 specifies that High-value datasets should be made available for reuse. According to the guidelines for legal Information in DCAT-AP HVD this is fulfilled by providing by preference a licence. As alternative rights can be used."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.licence>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#01>;
+    <https://w3id.org/dsv#domain> :Distribution;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#recommended>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :LicenseDocument.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Distribution.linkedSchemas> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "The provided information should enable to the verification whether the detailed information requirements by the HVD is satisfied. For more usage suggestions see section on specific data requirements."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.linkedschemas>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Distribution;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :Standard.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Distribution.rights> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#scopeNote> "Article 4.3 specifies that High-value datasets should be made available for reuse. According to the guidelines for legal Information in DCAT-AP HVD this is fulfilled by providing by preference a licence. As alternative rights can be used."@en;
+    <https://w3id.org/dsv#profileOf> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>;
+    <https://w3id.org/dsv#reusesPropertyValue> [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#prefLabel>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+], [
+  a <https://w3id.org/dsv#PropertyValueReuse>;
+  <https://w3id.org/dsv#reusedProperty> <http://www.w3.org/2004/02/skos/core#definition>;
+  <https://w3id.org/dsv#reusedFromResource> <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
+];
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.rights>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#0n>;
+    <https://w3id.org/dsv#domain> :Distribution;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :RightsStatement.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Kind.contactPage> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "contact page"@en;
+    <http://www.w3.org/2004/02/skos/core#definition> "A webpage that either allows to make contact (i.e. a webform) or the information contains how to get into contact. "@en;
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Kind.contactpage>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#01>;
+    <https://w3id.org/dsv#property> <http://www.w3.org/2006/vcard/ns#hasURL>;
+    <https://w3id.org/dsv#domain> :Kind;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :rdfs-Resource.
+
+<https://mff-uk.github.io/specifications/dcat-ap-hvd#Kind.email> <http://purl.org/dc/terms/isPartOf> <https://mff-uk.github.io/specifications/dcat-ap-hvd#>;
+    a <https://w3id.org/dsv#TermProfile>;
+    <http://www.w3.org/2004/02/skos/core#prefLabel> "email"@en;
+    <http://www.w3.org/2004/02/skos/core#definition> "A email address via which contact can be made."@en;
+    <https://w3id.org/dsv#externalDocumentation> <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Kind.email>;
+    <https://w3id.org/dsv#cardinality> <https://w3id.org/dsv/cardinality#01>;
+    <https://w3id.org/dsv#property> <http://www.w3.org/2006/vcard/ns#hasEmail>;
+    <https://w3id.org/dsv#domain> :Kind;
+    <https://w3id.org/dsv#requirementLevel> <https://w3id.org/dsv/requirement-level#optional>;
+    a <https://w3id.org/dsv#ObjectPropertyProfile>;
+    <https://w3id.org/dsv#objectPropertyRange> :rdfs-Resource.
