@@ -1,0 +1,924 @@
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>.
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#>.
+@prefix sh: <http://www.w3.org/ns/shacl#>.
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#> rdfs:member <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape>, <https://mff-uk.github.io/specifications/dcat-dap#foaf:DocumentShape>, <https://mff-uk.github.io/specifications/dcat-dap#rdfs:ResourceShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:RightsStatementShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:StandardShape>, <https://mff-uk.github.io/specifications/dcat-dap#vcard:KindShape>, <https://mff-uk.github.io/specifications/dcat-dap#foaf:AgentShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:LinguisticSystemShape>, <https://mff-uk.github.io/specifications/dcat-dap#rdfs:ClassShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape>, <https://mff-uk.github.io/specifications/dcat-dap#prov:AttributionShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:LicenseDocumentShape>, <https://mff-uk.github.io/specifications/dcat-dap#http://www.w3.org/ns/odrl/2/PolicyShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetSeriesShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:FrequencyShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape>, <https://mff-uk.github.io/specifications/dcat-dap#prov:EntityShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:MediaTypeShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcterms:MediaTypeOrExtentShape>, <https://mff-uk.github.io/specifications/dcat-dap#skos:ConceptShape>, <https://mff-uk.github.io/specifications/dcat-dap#skos:ConceptSchemeShape>, <https://mff-uk.github.io/specifications/dcat-dap#foaf:PersonShape>, <https://mff-uk.github.io/specifications/dcat-dap#foaf:OrganizationShape>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:RoleShape>, <https://mff-uk.github.io/specifications/dcat-dap#time:InstantShape>, <https://mff-uk.github.io/specifications/dcat-dap#locn:GeometryShape>, <https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape>, <https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumAlgorithmShape>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Catalog>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Catalog>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/-3e0e28ad> a sh:PropertyShape;
+    sh:name "homepage"@en;
+    sh:description "foaf:homepage is an inverse functional property (IFP) which means that it MUST be unique and precisely identify the Web-page for the resource. This property indicates the canonical Web-page, which might be helpful in cases where there is more than one Web-page about the resource."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://xmlns.com/foaf/0.1/homepage>;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/-3e0e28ad>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/122c1f76> a sh:PropertyShape;
+    sh:name "tassonomia dei temi"@it, "taxonomie de thèmes"@fr, "taxonomie témat"@cs, "taxonomía de temas"@es, "theme taxonomy"@en, "Ταξινομία θεματικών κατηγοριών."@el, "قائمة التصنيفات"@ar, "テーマ"@ja, "emnetaksonomi"@da;
+    sh:description "It is recommended that the taxonomy is organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, which allows each member to be denoted by an IRI and published as Linked Data."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#themeTaxonomy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/122c1f76>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/49745426> a sh:PropertyShape;
+    sh:name "resource"@en, "risorsa"@it;
+    sh:description "This is the most general predicate for membership of a catalog. Use of a more specific sub-property is recommended when available."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#resource>;
+    sh:class <http://www.w3.org/ns/dcat#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/49745426>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/3c8120c> a sh:PropertyShape;
+    sh:name "conjunto de datos"@es, "dataset"@en, "dataset"@it, "datová sada"@cs, "jeu de données"@fr, "σύνολο δεδομένων"@el, "قائمة بيانات"@ar, "データセット"@ja, "datasæt"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#dataset>;
+    sh:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/3c8120c>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/39c74bbc> a sh:PropertyShape;
+    sh:name "service"@en, "servicio"@es, "servizio"@it, "služba"@cs, "datatjeneste"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#service>;
+    sh:class <http://www.w3.org/ns/dcat#DataService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/39c74bbc>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/a21410e> a sh:PropertyShape;
+    sh:name "catalog"@en, "catalogo"@it, "catálogo"@es, "katalog"@cs, "katalog"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#catalog>;
+    sh:class <http://www.w3.org/ns/dcat#Catalog>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/a21410e>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/7c8ff9b5> a sh:PropertyShape;
+    sh:name "record"@en, "record"@it, "registre"@fr, "registro"@es, "záznam"@cs, "καταγραφή"@el, "سجل"@ar, "カタログ・レコード"@ja, "post"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#record>;
+    sh:class <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape/7c8ff9b5>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/13de4675> a sh:PropertyShape;
+    sh:name "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
+    sh:description "If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#spatialResolutionInMeters>;
+    sh:datatype xsd:decimal.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/13de4675>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-73115381> a sh:PropertyShape;
+    sh:name "resolución temporal"@es, "risoluzione temporale"@it, "temporal resolution"@en, "časové rozlišení"@cs, "tidslig opløsning"@da;
+    sh:description "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#temporalResolution>;
+    sh:datatype xsd:duration.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-73115381>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/27045905> a sh:PropertyShape;
+    sh:name "distribuce"@cs, "distribución"@es, "distribution"@en, "distribution"@fr, "distribuzione"@it, "distribution"@da, "διανομή"@el, "توزيع"@ar, "データセット配信"@ja;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#distribution>;
+    sh:class <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/27045905>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/185d04a7> a sh:PropertyShape;
+    sh:name "frequency"@en;
+    sh:description "The value of dcterms:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/accrualPeriodicity>;
+    sh:class <http://purl.org/dc/terms/Frequency>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/185d04a7>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-6674dbda> a sh:PropertyShape;
+    sh:name "in series"@en, "en serie"@es, "in serie"@it;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#inSeries>;
+    sh:class <http://www.w3.org/ns/dcat#DatasetSeries>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-6674dbda>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/1aecccb4> a sh:PropertyShape;
+    sh:name "spatial/geographical coverage"@en;
+    sh:description "The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/spatial>;
+    sh:class <http://purl.org/dc/terms/Location>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/1aecccb4>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-61481968> a sh:PropertyShape;
+    sh:name "temporal coverage"@en;
+    sh:description "The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/temporal>;
+    sh:class <http://purl.org/dc/terms/PeriodOfTime>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-61481968>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-37c4b5> a sh:PropertyShape;
+    sh:name "was generated by"@en;
+    sh:description "The activity associated with generation of a dataset will typically be an initiative, project, mission, survey, on-going activity (\"business as usual\") etc. Multiple prov:wasGeneratedBy properties can be used to indicate the dataset production context at various levels of granularity.\n\nUse prov:qualifiedGeneration to attach additional details about the relationship between the dataset and the activity, e.g., the exact time that the dataset was produced during the lifetime of a project"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/prov#wasGeneratedBy>;
+    sh:class <http://www.w3.org/ns/prov#Entity>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-37c4b5>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-3ee2724e> a sh:PropertyShape;
+    sh:name "title"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-3ee2724e>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-20ef3e33> a sh:PropertyShape;
+    sh:name "release date"@en;
+    sh:description "This property SHOULD be set using the first known date of issuance."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-20ef3e33>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/365cbaaf> a sh:PropertyShape;
+    sh:name "update/modification date"@en;
+    sh:description "The value of this property indicates a change to the actual resource, not a change to the catalog record. An absent value MAY indicate that the resource has never changed after its initial publication, or that the date of last modification is not known, or that the resource is continuously updated."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/365cbaaf>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4e742cf1> a sh:PropertyShape;
+    sh:name "identifier"@en;
+    sh:description "The identifier might be used as part of the IRI of the resource, but still having it represented explicitly is useful.\nThe identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/identifier>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4e742cf1>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/34fd6f7a> a sh:PropertyShape;
+    sh:name "keyword/tag"@en, "klíčové slovo"@cs, "mot-clés "@fr, "palabra clave"@es, "parola chiave"@it, "λέξη-κλειδί"@el, "كلمة  مفتاحية "@ar, "キーワード/タグ"@ja, "nøgleord"@da;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#keyword>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/34fd6f7a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-725d9215> a sh:PropertyShape;
+    sh:name "version"@en, "versión"@es, "versione"@it;
+    sh:description "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [[DWBP]]'s Best Practice 7: Provide a version indicator."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#version>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-725d9215>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-610483d3> a sh:PropertyShape;
+    sh:name "version notes"@en;
+    sh:description "In case of backward compatibility issues with the previous version of the resource, a textual description of them SHOULD be specified by using this property."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/adms#versionNotes>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-610483d3>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-42758832> a sh:PropertyShape;
+    sh:name "description"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-42758832>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/625a04fe> a sh:PropertyShape;
+    sh:name "access rights"@en;
+    sh:description "Information about licenses and rights MAY be provided for the Resource."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/accessRights>;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/625a04fe>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-13c3843c> a sh:PropertyShape;
+    sh:name "conforms to"@en;
+    sh:description "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the cataloged resource content conforms to."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/conformsTo>;
+    sh:class <http://purl.org/dc/terms/Standard>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-13c3843c>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/30107d7a> a sh:PropertyShape;
+    sh:name "Punto de contacto"@es, "contact point"@en, "kontaktní bod"@cs, "point de contact"@fr, "punto di contatto"@it, "σημείο επικοινωνίας"@el, "عنوان اتصال"@ar, "窓口"@ja, "kontaktpunkt"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#contactPoint>;
+    sh:class <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/30107d7a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/48268823> a sh:PropertyShape;
+    sh:name "creator"@en;
+    sh:description "Resources of type foaf:Agent are recommended as values for this property."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/creator>;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/48268823>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-d59b9d5> a sh:PropertyShape;
+    sh:name "language"@en;
+    sh:description "Repeat this property if the resource is available in multiple languages.\nThe value(s) provided for members of a catalog (i.e., dataset or service) override the value(s) provided for the catalog if they conflict.\nIf representations of a dataset are available for each language separately, define an instance of dcat:Distribution for each language and describe the specific language of each distribution using dcterms:language (i.e., the dataset will have multiple dcterms:language values and each distribution will have just one as the value of its dcterms:language property). In case of multilingual distributions, the distributions will have multiple dcterms:language values."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/language>;
+    sh:class <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-d59b9d5>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dfb033> a sh:PropertyShape;
+    sh:name "publisher"@en;
+    sh:description "Resources of type foaf:Agent are recommended as values for this property."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/publisher>;
+    sh:class <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dfb033>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-5223e6> a sh:PropertyShape;
+    sh:name "tema"@es, "tema"@it, "theme/category"@en, "thème"@fr, "téma"@cs, "Θέμα"@el, "التصنيف"@ar, "テーマ/カテゴリー"@ja, "emne"@da;
+    sh:description "The set of themes used to categorize the resources are organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, describing all the categories and their relations in the catalog."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#theme>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-5223e6>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-16302709> a sh:PropertyShape;
+    sh:name "type/genre"@en;
+    sh:description "The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:\nDCMI Type vocabulary [[DCTERMS]]\n[[ISO-19115-1]] scope codes\nDatacite resource types [[DataCite]]\nPARSE.Insight content-types used by re3data.org [[RE3DATA-SCHEMA]] (see item 15 contentType)\nMARC intellectual resource types\nSome members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [[ISO-19115-1]] CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.\n\nTo describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/type>;
+    sh:class rdfs:Class.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-16302709>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2b5db4a4> a sh:PropertyShape;
+    sh:name "relation"@en;
+    sh:description "dcterms:relation SHOULD be used where the nature of the relationship between a cataloged resource and related resources is not known. A more specific sub-property SHOULD be used if the nature of the relationship of the link is known. The property dcat:distribution SHOULD be used to link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/relation>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2b5db4a4>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/76ad04b7> a sh:PropertyShape;
+    sh:name "kvalifikovaný vztah"@cs, "qualified relation"@en, "relación calificada"@es, "relazione qualificata"@it, "Kvalificeret relation"@da;
+    sh:description "Used to link to another resource where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf).\n"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#qualifiedRelation>;
+    sh:class <http://www.w3.org/ns/dcat#Relationship>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/76ad04b7>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/430a6a1c> a sh:PropertyShape;
+    sh:name "landing page"@en, "page d'atterrissage"@fr, "pagina di destinazione"@it, "página de destino"@es, "vstupní stránka"@cs, "ιστοσελίδα αρχικής πρόσβασης"@el, "صفحة وصول"@ar, "ランディング・ページ"@ja, "destinationsside"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#landingPage>;
+    sh:class <http://xmlns.com/foaf/0.1/Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/430a6a1c>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-79f8efb1> a sh:PropertyShape;
+    sh:name "qualified attribution"@en;
+    sh:description "Used to link to an Agent where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:creator, dcterms:publisher). Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. See 15.1 Relationships between datasets and agents for usage examples."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/prov#qualifiedAttribution>;
+    sh:class <http://www.w3.org/ns/prov#Attribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-79f8efb1>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6294586e> a sh:PropertyShape;
+    sh:name "license"@en;
+    sh:description "Information about licenses and rights MAY be provided for the Resource."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/license>;
+    sh:class <http://purl.org/dc/terms/LicenseDocument>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6294586e>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/3f088442> a sh:PropertyShape;
+    sh:name "rights"@en;
+    sh:description "Information about licenses and rights MAY be provided for the Resource."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/rights>;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/3f088442>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4576fec3> a sh:PropertyShape;
+    sh:name "has part"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/hasPart>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4576fec3>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5271c815> a sh:PropertyShape;
+    sh:name "has policy"@en;
+    sh:description "Information about rights expressed as an ODRL policy [[ODRL-MODEL]] using the ODRL vocabulary [[ODRL-VOCAB]] MAY be provided for the resource. See also guidance at 9. License and rights statements."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/odrl/2/hasPolicy>;
+    sh:class <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5271c815>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/18285bde> a sh:PropertyShape;
+    sh:name "is referenced by"@en;
+    sh:description "In relation to the use case of data citation, when the cataloged resource is a dataset, the dcterms:isReferencedBy property allows to relate the dataset to the resources (such as scholarly publications) that cite or point to the dataset. Multiple dcterms:isReferencedBy properties can be used to indicate the dataset has been referenced by multiple publications, or other resources.\nThis property is used to associate a resource with the resource (of type dcat:Resource) in question. For other relations to resources not covered with this property, the more generic property dcat:qualifiedRelation can be used. See also 15. Qualified relations."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/isReferencedBy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/18285bde>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5753a082> a sh:PropertyShape;
+    sh:name "previous version"@en, "versión anterior"@es, "versione precedente"@it;
+    sh:description "This property is meant to be used to specify a version chain, consisting of snapshots of a resource.\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. One of the typical cases here is representing the history of the versions of a dataset that have been released over time."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#previousVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5753a082>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6e2ef061> a sh:PropertyShape;
+    sh:name "has version"@en, "tiene versión"@es, "ha versione"@it;
+    sh:description "This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g., snapshots [[PAV]].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#hasVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6e2ef061>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dd3a28a> a sh:PropertyShape;
+    sh:name "has current version"@en, "tiene versión actual"@es, "ha versione attuale"@it;
+    sh:description "This property is intended for relating a non-versioned or abstract resource to a single snapshot that can be used as a permalink to indicate the current version of the content [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#hasCurrentVersion>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dd3a28a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/2e8b92f9> a sh:PropertyShape;
+    sh:name "replaces"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/replaces>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/2e8b92f9>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2aa4886d> a sh:PropertyShape;
+    sh:name "first"@en, "primero"@es, "primo"@it;
+    sh:description "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#first>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2aa4886d>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/43683829> a sh:PropertyShape;
+    sh:name "last"@en, "último"@es, "ultimo"@it;
+    sh:description "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#last>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/43683829>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-66bf9d54> a sh:PropertyShape;
+    sh:name "previous"@en, "previo"@es, "precedente"@it;
+    sh:description "In DCAT this property is used for resources belonging to a dcat:DatasetSeries.\n\nIt is important to note that this property is different from dcat:previousVersion, as it does not denote a previous version of the same resource, but a distinct resource immediately preceding the current one in an ordered collection of resources."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#prev>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-66bf9d54>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-64f3cd7a> a sh:PropertyShape;
+    sh:name "status"@en;
+    sh:description "DCAT does not prescribe the use of any specific set of life-cycle statuses, but refers to existing standards and community practices fit for the relevant application scenario."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/adms#status>;
+    sh:class <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-64f3cd7a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#CatalogRecord>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#CatalogRecord>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/458ea156> a sh:PropertyShape;
+    sh:name "title"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/458ea156>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/-173ddd57> a sh:PropertyShape;
+    sh:name "listing date"@en;
+    sh:description "This indicates the date of listing the dataset in the catalog and not the publication date of the dataset itself."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/-173ddd57>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/-66c6ab75> a sh:PropertyShape;
+    sh:name "update/modification date"@en;
+    sh:description "This indicates the date of last change of a catalog entry, i.e., the catalog metadata description of the dataset, and not the date of the dataset itself."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/-66c6ab75>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/631f4072> a sh:PropertyShape;
+    sh:name "description"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/631f4072>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/-2357df18> a sh:PropertyShape;
+    sh:name "primary topic"@en;
+    sh:description "foaf:primaryTopic property is functional: each catalog record can have at most one primary topic, i.e., describes one cataloged resource."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://xmlns.com/foaf/0.1/primaryTopic>;
+    sh:maxCount 1;
+    sh:class <http://www.w3.org/ns/dcat#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/-2357df18>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/d83a668> a sh:PropertyShape;
+    sh:name "conforms to"@en;
+    sh:description "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalog record metadata conforms to."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/conformsTo>;
+    sh:class <http://purl.org/dc/terms/Standard>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:CatalogRecordShape/d83a668>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Dataset>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Dataset>;
+    sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/13de4675>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-73115381>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/27045905>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/185d04a7>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-6674dbda>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/1aecccb4>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-61481968>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-37c4b5>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-3ee2724e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-20ef3e33>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/365cbaaf>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4e742cf1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/34fd6f7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-725d9215>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-610483d3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-42758832>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/625a04fe>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-13c3843c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/30107d7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/48268823>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-d59b9d5>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dfb033>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-5223e6>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-16302709>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2b5db4a4>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/76ad04b7>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/430a6a1c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-79f8efb1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6294586e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/3f088442>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4576fec3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5271c815>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/18285bde>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5753a082>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6e2ef061>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dd3a28a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/2e8b92f9>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2aa4886d>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/43683829>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-66bf9d54>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-64f3cd7a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Resource>;
+    sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-3ee2724e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-20ef3e33>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/365cbaaf>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4e742cf1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/34fd6f7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-725d9215>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-610483d3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-42758832>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/625a04fe>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-13c3843c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/30107d7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/48268823>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-d59b9d5>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dfb033>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-5223e6>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-16302709>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2b5db4a4>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/76ad04b7>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/430a6a1c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-79f8efb1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6294586e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/3f088442>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4576fec3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5271c815>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/18285bde>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5753a082>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6e2ef061>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dd3a28a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/2e8b92f9>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2aa4886d>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/43683829>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-66bf9d54>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-64f3cd7a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#foaf:DocumentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Document>;
+    sh:closed false;
+    sh:targetClass <http://xmlns.com/foaf/0.1/Document>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#rdfs:ResourceShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#rdfs-Resource>;
+    sh:closed false;
+    sh:targetClass rdfs:Resource.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#DataService>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#DataService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape/-681cbc7c> a sh:PropertyShape;
+    sh:name "end-point del servicio"@es, "end-point del servizio"@it, "přístupový bod služby"@cs, "endpoint URL"@en, "tjenesteendpoint"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#endpointURL>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape/-681cbc7c>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape/-70c6e0e9> a sh:PropertyShape;
+    sh:name "descripción del end-point del servicio"@es, "endpoint description"@en, "descrizione dell'endpoint del servizio"@it, "popis přístupového bodu služby"@cs, "endpointbeskrivelse"@da;
+    sh:description "The endpoint description gives specific details of the actual endpoint instances, while dcterms:conformsTo is used to indicate the general standard or specification that the endpoints implement.\nAn endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description [OpenAPI], an OGC GetCapabilities response [WFS], [ISO-19142], [WMS], [ISO-19128], a SPARQL Service Description [SPARQL11-SERVICE-DESCRIPTION], an [OpenSearch] or [WSDL20] document, a Hydra API description [HYDRA], else in text or some other informal mode if a formal representation is not possible."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#endpointDescription>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape/-70c6e0e9>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape/-12140b06> a sh:PropertyShape;
+    sh:name "poskytuje datovou sadu"@cs, "provee conjunto de datos"@es, "serve set di dati"@it, "serves dataset"@en, "datatjeneste for datasæt"@da;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#servesDataset>;
+    sh:class <http://www.w3.org/ns/dcat#Dataset>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DataServiceShape/-12140b06>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-3ee2724e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-20ef3e33>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/365cbaaf>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4e742cf1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/34fd6f7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-725d9215>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-610483d3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-42758832>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/625a04fe>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-13c3843c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/30107d7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/48268823>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-d59b9d5>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dfb033>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-5223e6>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-16302709>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2b5db4a4>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/76ad04b7>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/430a6a1c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-79f8efb1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6294586e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/3f088442>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4576fec3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5271c815>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/18285bde>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5753a082>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6e2ef061>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dd3a28a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/2e8b92f9>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2aa4886d>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/43683829>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-66bf9d54>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-64f3cd7a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:RightsStatementShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#RightsStatement>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:StandardShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Standard>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/Standard>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#vcard:KindShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Kind>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2006/vcard/ns#Kind>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#foaf:AgentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Agent>;
+    sh:closed false;
+    sh:targetClass <http://xmlns.com/foaf/0.1/Agent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LinguisticSystemShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#LinguisticSystem>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/LinguisticSystem>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#rdfs:ClassShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Class>;
+    sh:closed false;
+    sh:targetClass rdfs:Class.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Relationship>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Relationship>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape/1b1addc6> a sh:PropertyShape;
+    sh:name "relation"@en;
+    sh:description "In the context of a dcat:Relationship this is expected to point to another dcat:Dataset or other cataloged resource."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/relation>;
+    sh:class <http://www.w3.org/ns/dcat#Resource>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape/1b1addc6>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape/3563ae14> a sh:PropertyShape;
+    sh:name "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
+    sh:description "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [[ISO-19115]] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#hadRole>;
+    sh:class <http://www.w3.org/ns/dcat#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:RelationshipShape/3563ae14>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#prov:AttributionShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Attribution>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/prov#Attribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#prov:AttributionShape/-47dc240d> a sh:PropertyShape;
+    sh:name "tiene rol"@it, "had role"@en, "sehraná role"@cs, "havde rolle"@da;
+    sh:description "May be used in a qualified-attribution to specify the role of an Agent with respect to an Entity. It is recommended that the value be taken from a controlled vocabulary of agent roles, such as [[ISO-19115]] CI_RoleCode.\nMay be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#hadRole>;
+    sh:class <http://www.w3.org/ns/dcat#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#prov:AttributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#prov:AttributionShape/-47dc240d>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LicenseDocumentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/LicenseDocument>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#http://www.w3.org/ns/odrl/2/PolicyShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Policy>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Distribution>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Distribution>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/30a4e556> a sh:PropertyShape;
+    sh:name "title"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/title>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/30a4e556>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/60745ea9> a sh:PropertyShape;
+    sh:name "release date"@en;
+    sh:description "This property SHOULD be set using the first known date of issuance."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/issued>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/60745ea9>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-12b36f75> a sh:PropertyShape;
+    sh:name "update/modification date"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/modified>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-12b36f75>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/1910ca50> a sh:PropertyShape;
+    sh:name "byte size"@en, "dimensione in byte"@it, "taille en octects"@fr, "tamaño en bytes"@es, "velikost v bajtech"@cs, "μέγεθος σε bytes"@el, "الحجم بالبايت"@ar, "バイト・サイズ"@ja, "bytestørrelse"@da;
+    sh:description "The size in bytes can be approximated (as a non-negative integer) when the precise size is not known.\nWhile it is recommended that the size be given as an integer, alternative literals such as '1.5 MB' are sometimes used."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#byteSize>;
+    sh:datatype xsd:nonNegativeInteger.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/1910ca50>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/850b500> a sh:PropertyShape;
+    sh:name "prostorové rozlišení (metry)"@cs, "resolución espacial (metros)"@es, "risoluzione spaziale (metri)"@it, "spatial resolution (meters)"@en-us, "spatial resolution (metres)"@en-gb, "geografisk opløsning (meter)"@da, "spatial resolution"@en;
+    sh:description "If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset.\nAlternative spatial resolutions might be provided as different dataset distributions"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#spatialResolutionInMeters>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/850b500>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-1dc34b53> a sh:PropertyShape;
+    sh:name "resolución temporal"@es, "risoluzione temporale"@it, "temporal resolution"@en, "časové rozlišení"@cs, "tidslig opløsning"@da;
+    sh:description "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.\nAlternative temporal resolutions might be provided in different dataset distributions"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#temporalResolution>;
+    sh:datatype xsd:duration.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-1dc34b53>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/4d728472> a sh:PropertyShape;
+    sh:name "description"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://purl.org/dc/terms/description>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/4d728472>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/d80d512> a sh:PropertyShape;
+    sh:name "license"@en;
+    sh:description "Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/license>;
+    sh:class <http://purl.org/dc/terms/LicenseDocument>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/d80d512>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/5bb5ceda> a sh:PropertyShape;
+    sh:name "access rights"@en;
+    sh:description "Information about licenses and rights MAY be provided for the Distribution. See also guidance at 9. License and rights statements."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/accessRights>;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/5bb5ceda>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/3407e31e> a sh:PropertyShape;
+    sh:name "rights"@en;
+    sh:description "dcterms:license, which is a sub-property of dcterms:rights, can be used to link a distribution to a license document. However, dcterms:rights allows linking to a rights statement that can include licensing information as well as other information that supplements the license such as attribution.\n\nInformation about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/rights>;
+    sh:class <http://purl.org/dc/terms/RightsStatement>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/3407e31e>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/477126f1> a sh:PropertyShape;
+    sh:name "has policy"@en;
+    sh:description "Information about rights expressed as an ODRL policy [[ODRL-MODEL]] using the ODRL vocabulary [[ODRL-VOCAB]] MAY be provided for the distribution. See also guidance at 9. License and rights statements."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/odrl/2/hasPolicy>;
+    sh:class <http://www.w3.org/ns/odrl/2/Policy>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/477126f1>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-23cc646c> a sh:PropertyShape;
+    sh:name "URL d'accès"@fr, "URL de acceso"@es, "URL πρόσβασης"@el, "access URL"@en, "indirizzo di accesso"@it, "přístupová adresa"@cs, "رابط وصول"@ar, "アクセスURL"@ja, "adgangsadresse"@da;
+    sh:description "dcat:accessURL SHOULD be used for the URL of a service or location that can provide access to this distribution, typically through a Web form, query or API call.\n\ndcat:downloadURL is preferred for direct links to downloadable resources.\n\nIf the distribution(s) are accessible only through a landing page (i.e., direct download URLs are not known), then the landing page URL associated with the dcat:Dataset SHOULD be duplicated as access URL on a distribution (see 5.7 Dataset available only behind some Web page)."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#accessURL>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-23cc646c>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-67c709d7> a sh:PropertyShape;
+    sh:name "access service"@en, "servicio de acceso de datos"@es, "servizio di accesso ai dati"@it, "služba pro přístup k datům"@cs, "dataadgangstjeneste"@da;
+    sh:description "dcat:accessService SHOULD be used to link to a description of a dcat:DataService that can provide access to this distribution."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#accessService>;
+    sh:class <http://www.w3.org/ns/dcat#DataService>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-67c709d7>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/36b86b38> a sh:PropertyShape;
+    sh:name "URL de descarga"@es, "URL de téléchargement"@fr, "URL di scarico"@it, "URL souboru ke stažení"@cs, "URL μεταφόρτωσης"@el, "download URL"@en, "رابط تحميل"@ar, "ダウンロードURL"@ja, "downloadURL"@da;
+    sh:description "dcat:downloadURL SHOULD be used for the URL at which this distribution is available directly, typically through a HTTP Get request."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#downloadURL>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/36b86b38>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/4608ea68> a sh:PropertyShape;
+    sh:name "conforms to"@en;
+    sh:description "This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/conformsTo>;
+    sh:class <http://purl.org/dc/terms/Standard>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/4608ea68>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/28331528> a sh:PropertyShape;
+    sh:name "media type"@en, "tipo de media"@es, "tipo di media"@it, "typ média"@cs, "type de média"@fr, "τύπος μέσου"@el, "نوع الميديا"@ar, "メディア・タイプ"@ja, "medietype"@da;
+    sh:description "This property SHOULD be used when the media type of the distribution is defined in IANA [[IANA-MEDIA-TYPES]], otherwise dcterms:format MAY be used with different values."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#mediaType>;
+    sh:class <http://purl.org/dc/terms/MediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/28331528>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-3e3dbf8f> a sh:PropertyShape;
+    sh:name "format"@en;
+    sh:description "dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [[IANA-MEDIA-TYPES]]."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://purl.org/dc/terms/format>;
+    sh:class <http://purl.org/dc/terms/MediaTypeOrExtent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/-3e3dbf8f>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/7f802f91> a sh:PropertyShape;
+    sh:name "compression format"@en, "formato de compresión"@es, "formato di compressione"@it, "formát komprese"@cs, "kompressionsformat"@da;
+    sh:description "This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#compressFormat>;
+    sh:class <http://purl.org/dc/terms/MediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/7f802f91>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/2bb0cf29> a sh:PropertyShape;
+    sh:name "formato de empaquetado"@es, "formato di impacchettamento"@it, "formát balíčku"@cs, "packaging format"@en, "pakkeformat"@da;
+    sh:description "This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/dcat#packageFormat>;
+    sh:class <http://purl.org/dc/terms/MediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/2bb0cf29>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/734279f7> a sh:PropertyShape;
+    sh:name "checksum"@en;
+    sh:description "The checksum is related to the download URL."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://spdx.org/rdf/terms#checksum>;
+    sh:class <http://spdx.org/rdf/terms#Checksum>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DistributionShape/734279f7>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetSeriesShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#DatasetSeries>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#DatasetSeries>;
+    sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/13de4675>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-73115381>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/27045905>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/185d04a7>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-6674dbda>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/1aecccb4>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-61481968>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:DatasetShape/-37c4b5>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-3ee2724e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-20ef3e33>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/365cbaaf>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4e742cf1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/34fd6f7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-725d9215>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-610483d3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-42758832>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/625a04fe>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-13c3843c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/30107d7a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/48268823>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-d59b9d5>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dfb033>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-5223e6>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-16302709>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2b5db4a4>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/76ad04b7>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/430a6a1c>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-79f8efb1>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6294586e>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/3f088442>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-4576fec3>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5271c815>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/18285bde>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/5753a082>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/6e2ef061>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/dd3a28a>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/2e8b92f9>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-2aa4886d>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/43683829>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-66bf9d54>, <https://mff-uk.github.io/specifications/dcat-dap#dcat:ResourceShape/-64f3cd7a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:FrequencyShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Frequency>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/Frequency>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Location>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/Location>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape/-26ee35b5> a sh:PropertyShape;
+    sh:name "bounding box"@en, "quadro di delimitazione"@it, "cuadro delimitador"@es, "ohraničení oblasti"@cs, "bounding box"@da;
+    sh:description "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]])."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#bbox>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape/-26ee35b5>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape/-959bc6c> a sh:PropertyShape;
+    sh:name "centroid"@cs, "centroid"@en, "centroide"@it, "centroide"@es, "geometrisk tyngdepunkt"@da;
+    sh:description "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]])."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#centroid>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape/-959bc6c>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape/6b9c8c48> a sh:PropertyShape;
+    sh:name "geometry"@en;
+    sh:description "The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [[GeoSPARQL]]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [[GeoSPARQL]]."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/ns/locn#geometry>;
+    sh:class <http://www.w3.org/ns/locn#Geometry>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcterms:LocationShape/6b9c8c48>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#PeriodOfTime>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/PeriodOfTime>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/af7b22e> a sh:PropertyShape;
+    sh:name "datum začátku"@cs, "start date"@en, "data di inizio"@it, "startdato"@da;
+    sh:description "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#startDate>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/af7b22e>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/54ede915> a sh:PropertyShape;
+    sh:name "datum konce"@cs, "end date"@en, "data di fine"@it, "fecha final"@es, "slutdato"@da;
+    sh:description "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]]"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://www.w3.org/ns/dcat#endDate>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/54ede915>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/-5bc770b4> a sh:PropertyShape;
+    sh:name "beginning"@en, "tiene principio"@es;
+    sh:description "Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/2006/time#hasBeginning>;
+    sh:class <http://www.w3.org/2006/time#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/-5bc770b4>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/556ea58a> a sh:PropertyShape;
+    sh:name "end"@en, "tiene fin"@es;
+    sh:description "Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval"@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://www.w3.org/2006/time#hasEnd>;
+    sh:class <http://www.w3.org/2006/time#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#dcterms:PeriodOfTimeShape/556ea58a>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#prov:EntityShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Entity>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/prov#Entity>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:MediaTypeShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#MediaType>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/MediaType>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcterms:MediaTypeOrExtentShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#MediaTypeOrExtent>;
+    sh:closed false;
+    sh:targetClass <http://purl.org/dc/terms/MediaTypeOrExtent>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#skos:ConceptShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Concept>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2004/02/skos/core#Concept>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#skos:ConceptSchemeShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#ConceptScheme>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2004/02/skos/core#ConceptScheme>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#foaf:PersonShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Person>;
+    sh:closed false;
+    sh:targetClass <http://xmlns.com/foaf/0.1/Person>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#foaf:OrganizationShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Organization>;
+    sh:closed false;
+    sh:targetClass <http://xmlns.com/foaf/0.1/Organization>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#dcat:RoleShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Role>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/dcat#Role>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#time:InstantShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Instant>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/2006/time#Instant>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#locn:GeometryShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Geometry>;
+    sh:closed false;
+    sh:targetClass <http://www.w3.org/ns/locn#Geometry>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#Checksum>;
+    sh:closed false;
+    sh:targetClass <http://spdx.org/rdf/terms#Checksum>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape/241a7d12> a sh:PropertyShape;
+    sh:name "checksum value"@en;
+    sh:nodeKind sh:Literal;
+    sh:path <http://spdx.org/rdf/terms#checksumValue>;
+    sh:datatype xsd:hexBinary.
+
+<https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape/241a7d12>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape/767a6183> a sh:PropertyShape;
+    sh:name "algorithm"@en;
+    sh:description "Version 2.2 of [[SPDX]] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512."@en;
+    sh:nodeKind sh:BlankNodeOrIRI;
+    sh:path <http://spdx.org/rdf/terms#algorithm>;
+    sh:class <http://spdx.org/rdf/terms#ChecksumAlgorithm>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape> sh:property <https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumShape/767a6183>.
+
+<https://mff-uk.github.io/specifications/dcat-dap#spdx:ChecksumAlgorithmShape> a sh:NodeShape;
+    rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-dap#ChecksumAlgorithm>;
+    sh:closed false;
+    sh:targetClass <http://spdx.org/rdf/terms#ChecksumAlgorithm>.
+

@@ -15,7 +15,7 @@
         "prof:ResourceDescriptor"
       ],
       "hasArtifact": ".",
-      "hasRole": "role:Guidance",
+      "hasRole": "role:specification",
       "format": "filetype:HTML",
       "inSpecificationOf": [
         {
@@ -30,69 +30,108 @@
           },
           "isProfileOf": [
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/time.ttl"
-              ]
+              "title": {
+                "en": "time"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/time.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/legacy_adms"
-              ]
+              "title": {
+                "en": "adms"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/legacy_adms"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
-              ]
+              "title": {
+                "en": "DCMI Metadata Terms"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/dublin_core_terms.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/skos.rdf"
-              ]
+              "title": {
+                "en": "SKOS Simple Knowledge Organization System"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/skos.rdf"
+              }
             },
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/spdx-ontology.2.3.1.ttl"
-              ]
+              "title": {
+                "en": "spdx"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/spdx-ontology.2.3.1.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/foaf.ttl"
-              ]
+              "title": {
+                "en": "FOAF (Friend of a Friend) Vocabulary"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/foaf.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/legacy_locn.ttl"
-              ]
+              "title": {
+                "en": "legacy_locn"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/legacy_locn.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/2006/vcard/ns"
-              ]
+              "title": {
+                "en": "vcard"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/2006/vcard/ns"
+              }
             },
             {
-              "hasArtifact": [
-                "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
-              ]
+              "title": {
+                "en": "RDFS - RDF Schema"
+              },
+              "hasResource": {
+                "hasArtifact": "https://datagov-cz.github.io/cache-slovniku/rdfs.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/odrl/2/ODRL22.ttl"
-              ]
+              "title": {
+                "en": "odrl"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/odrl/2/ODRL22.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/voc/core-location-ap.ttl"
-              ]
+              "title": {
+                "en": "locn"
+              },
+              "hasResource": {
+                "hasArtifact": "https://semiceu.github.io/Core-Location-Vocabulary/releases/2.00/voc/core-location-ap.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/dcat3.ttl"
-              ]
+              "title": {
+                "en": "DCAT - Data Catalog Vocabulary"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/dcat3.ttl"
+              }
             },
             {
-              "hasArtifact": [
-                "https://www.w3.org/ns/prov-o"
-              ]
+              "title": {
+                "en": "prov-o"
+              },
+              "hasResource": {
+                "hasArtifact": "https://www.w3.org/ns/prov-o"
+              }
             }
           ],
           "hasResource": [
@@ -103,12 +142,23 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "./dsv.ttl",
-              "hasRole": "role:Specification",
+              "hasRole": "role:constraints",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": [
-                "dsv:ApplicationProfileSpecificationDocument",
-                "prof:Profile"
+                "prof:Profile",
+                "dsv:ApplicationProfile"
               ]
+            },
+            {
+              "@id": "https://mff-uk.github.io/specifications/dcat-dap/#shacl",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "./shacl.ttl",
+              "hasRole": "role:constraints",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "https://www.w3.org/TR/shacl/"
             },
             {
               "@id": "https://mff-uk.github.io/specifications/dcat-dap/#1jcyy",
@@ -117,7 +167,7 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "./1jcyy.svg",
-              "hasRole": "role:Guidance",
+              "hasRole": "role:guidance",
               "format": "filetype:SVG",
               "conformsTo": "https://www.w3.org/TR/SVG/"
             },
@@ -128,7 +178,7 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": "./9z0nki.svg",
-              "hasRole": "role:Guidance",
+              "hasRole": "role:guidance",
               "format": "filetype:SVG",
               "conformsTo": "https://www.w3.org/TR/SVG/"
             },
@@ -140,7 +190,7 @@
                 "prof:ResourceDescriptor"
               ],
               "hasArtifact": ".",
-              "hasRole": "role:Guidance",
+              "hasRole": "role:specification",
               "format": "filetype:HTML"
             }
           ]
@@ -205,8 +255,13 @@
                 },
                 "hasResource": {
                   "@id": "prof:hasResource",
-                  "@type": "@id",
-                  "@container": "@set"
+                  "@container": "@set",
+                  "@context": {
+                    "hasArtifact": {
+                      "@id": "prof:hasArtifact",
+                      "@type": "@id"
+                    }
+                  }
                 }
               }
             },
@@ -258,7 +313,7 @@
           companyURL: "https://www.mff.cuni.cz"
         }],
         inlineCSS: "true",
-        maxTocLevel: 2,
+        maxTocLevel: 3,
         github: "https://github.com/mff-uk/specifications/",
         localBiblio: {
           "DCAT-AP-IT": {
@@ -332,10 +387,14 @@
     <p class="copyright"></p>
     <section id="abstract">
       <p>
-        This file documents
-        <strong>DCAT 3 Default Application Profile</strong>.</p>
+      This file documents
+      <strong>DCAT 3 Default Application Profile</strong>.</p>
     </section>
-
+    <section>
+      
+      <h2>Introduction</h2>
+      <p>This is introduction</p>
+    </section>
     <section>
       <h2>Overview</h2>
 
@@ -383,14 +442,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://xmlns.com/foaf/0.1/Agent">Agent</a> (<a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>)
                   <br />Definition: <i>An agent (eg. person, group, software or physical artifact).</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -431,14 +493,37 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/prov#Attribution">Attribution</a> (<a href="http://www.w3.org/ns/prov#Attribution">prov:Attribution</a>)
                   <br />Definition: <i>An instance of prov:Attribution provides additional descriptions about the binary prov:wasAttributedTo relation from an prov:Entity to some prov:Agent that had some responsible for it. For example, :cake prov:wasAttributedTo :baker; prov:qualifiedAttribution [ a prov:Attribution; prov:entity :baker; :foo :bar ].</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/prov#AgentInfluence">AgentInfluence</a> (<a href="http://www.w3.org/ns/prov#AgentInfluence">prov:AgentInfluence</a>)
+                  <br />Definition: <i>It is not recommended that the type AgentInfluence be asserted without also asserting one of its more specific subclasses.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/prov#Influence">Influence</a> (<a href="http://www.w3.org/ns/prov#Influence">prov:Influence</a>)
+                  <br />Definition: <i>Because prov:Influence is a broad relation, its most specific subclasses (e.g. prov:Communication, prov:Delegation, prov:End, prov:Revision, etc.) should be used when applicable.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -496,14 +581,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a> (<a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>)
                       <br />Definition: <i>The function of an entity or agent with respect to another entity or resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -542,16 +630,87 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#Catalog">Catalog</a> (<a href="http://www.w3.org/ns/dcat#Catalog">dcat:Catalog</a>)
                   <br />Definition: <i>A curated collection of metadata about resources (e.g., datasets and data services in the context of a data catalog).</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+                  <br />Definition: <i>A collection of data, published or curated by a single source, and available for access or download in one or more representations.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
+                        <li>
+                                  specializes
+                
+                class profile
+                <a href="#Class:Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+                  <br />Definition: <i>A collection of data, published or curated by a single source, and available for access or download in one or more representations.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializes
+                
+                class profile
+                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
                     </ul>
                   </td>
                 </tr>
@@ -612,14 +771,47 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#catalog">catalog</a> (<a href="http://www.w3.org/ns/dcat#catalog">dcat:catalog</a>)
                       <br />Definition: <i>A catalog that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/dcat#resource">resource</a> (<a href="http://www.w3.org/ns/dcat#resource">dcat:resource</a>)
+                      <br />Definition: <i>A resource that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/hasPart">Has Part</a> (<a href="http://purl.org/dc/terms/hasPart">dcterms:hasPart</a>)
+                      <br />Definition: <i>A related resource that is included either physically or logically in the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -671,14 +863,47 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#dataset">dataset</a> (<a href="http://www.w3.org/ns/dcat#dataset">dcat:dataset</a>)
                       <br />Definition: <i>A dataset that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/dcat#resource">resource</a> (<a href="http://www.w3.org/ns/dcat#resource">dcat:resource</a>)
+                      <br />Definition: <i>A resource that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/hasPart">Has Part</a> (<a href="http://purl.org/dc/terms/hasPart">dcterms:hasPart</a>)
+                      <br />Definition: <i>A related resource that is included either physically or logically in the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -730,14 +955,47 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://xmlns.com/foaf/0.1/homepage">homepage</a> (<a href="http://xmlns.com/foaf/0.1/homepage">foaf:homepage</a>)
                       <br />Definition: <i>A homepage for some thing.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">is primary topic of</a> (<a href="http://xmlns.com/foaf/0.1/isPrimaryTopicOf">foaf:isPrimaryTopicOf</a>)
+                      <br />Definition: <i>A document that this thing is the primary topic of.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://xmlns.com/foaf/0.1/page">page</a> (<a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>)
+                      <br />Definition: <i>A page or document about this thing.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://xmlns.com/foaf/0.1/page">page</a> (<a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>)
+                      <br />Definition: <i>A page or document about this thing.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -793,14 +1051,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#record">record</a> (<a href="http://www.w3.org/ns/dcat#record">dcat:record</a>)
                       <br />Definition: <i>A record describing the registration of a single dataset or data service that is part of the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -852,14 +1113,37 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#resource">resource</a> (<a href="http://www.w3.org/ns/dcat#resource">dcat:resource</a>)
                       <br />Definition: <i>A resource that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/hasPart">Has Part</a> (<a href="http://purl.org/dc/terms/hasPart">dcterms:hasPart</a>)
+                      <br />Definition: <i>A related resource that is included either physically or logically in the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -905,7 +1189,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Data_Service">Data service</a>
+                      <a href="#Class:Data_Service">Data Service</a>
               
                           [0..*]
               
@@ -915,14 +1199,47 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#service">service</a> (<a href="http://www.w3.org/ns/dcat#service">dcat:service</a>)
                       <br />Definition: <i>A service that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/dcat#resource">resource</a> (<a href="http://www.w3.org/ns/dcat#resource">dcat:resource</a>)
+                      <br />Definition: <i>A resource that is listed in the catalog.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/hasPart">Has Part</a> (<a href="http://purl.org/dc/terms/hasPart">dcterms:hasPart</a>)
+                      <br />Definition: <i>A related resource that is included either physically or logically in the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -974,14 +1291,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#themeTaxonomy">theme taxonomy</a> (<a href="http://www.w3.org/ns/dcat#themeTaxonomy">dcat:themeTaxonomy</a>)
                       <br />Definition: <i>The knowledge organization system (KOS) used to classify catalog&#x27;s datasets.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1019,14 +1339,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#CatalogRecord">Catalog Record</a> (<a href="http://www.w3.org/ns/dcat#CatalogRecord">dcat:CatalogRecord</a>)
                   <br />Definition: <i>A record in a data catalog, describing the registration of a single dataset or data service.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -1088,14 +1411,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/conformsTo">Conforms To</a> (<a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>)
                       <br />Definition: <i>An established standard to which the described resource conforms.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -1152,14 +1488,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/description">Description</a> (<a href="http://purl.org/dc/terms/description">dcterms:description</a>)
                       <br />Definition: <i>An account of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1211,14 +1550,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/issued">Date Issued</a> (<a href="http://purl.org/dc/terms/issued">dcterms:issued</a>)
                       <br />Definition: <i>Date of formal issuance of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/date">Date</a> (<a href="http://purl.org/dc/terms/date">dcterms:date</a>)
+                      <br />Definition: <i>A point or period of time associated with an event in the lifecycle of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -1274,14 +1626,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://xmlns.com/foaf/0.1/primaryTopic">primary topic</a> (<a href="http://xmlns.com/foaf/0.1/primaryTopic">foaf:primaryTopic</a>)
                       <br />Definition: <i>The primary topic of some page or document.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1337,14 +1692,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/title">Title</a> (<a href="http://purl.org/dc/terms/title">dcterms:title</a>)
                       <br />Definition: <i>A name given to the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1396,14 +1754,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/modified">Date Modified</a> (<a href="http://purl.org/dc/terms/modified">dcterms:modified</a>)
                       <br />Definition: <i>Date on which the resource was changed.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/date">Date</a> (<a href="http://purl.org/dc/terms/date">dcterms:date</a>)
+                      <br />Definition: <i>A point or period of time associated with an event in the lifecycle of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -1441,14 +1812,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
                   <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -1520,14 +1894,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/accessRights">Access Rights</a> (<a href="http://purl.org/dc/terms/accessRights">dcterms:accessRights</a>)
                       <br />Definition: <i>Information about who access the resource or an indication of its security status.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/rights">Rights</a> (<a href="http://purl.org/dc/terms/rights">dcterms:rights</a>)
+                      <br />Definition: <i>Information about rights held in and over the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -1583,14 +1970,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/conformsTo">Conforms To</a> (<a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>)
                       <br />Definition: <i>An established standard to which the described resource conforms.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -1646,14 +2046,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#contactPoint">contact point</a> (<a href="http://www.w3.org/ns/dcat#contactPoint">dcat:contactPoint</a>)
                       <br />Definition: <i>Relevant contact information for the catalogued resource. Use of vCard is recommended.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1705,14 +2108,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/creator">Creator</a> (<a href="http://purl.org/dc/terms/creator">dcterms:creator</a>)
                       <br />Definition: <i>An entity responsible for making the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/contributor">Contributor</a> (<a href="http://purl.org/dc/terms/contributor">dcterms:contributor</a>)
+                      <br />Definition: <i>An entity responsible for making contributions to the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -1769,14 +2185,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/description">Description</a> (<a href="http://purl.org/dc/terms/description">dcterms:description</a>)
                       <br />Definition: <i>An account of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1828,14 +2247,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#first">first</a> (<a href="http://www.w3.org/ns/dcat#first">dcat:first</a>)
                       <br />Definition: <i>The first resource in an ordered collection or series of resources, to which the current resource belongs.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1891,14 +2313,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#hasCurrentVersion">has current version</a> (<a href="http://www.w3.org/ns/dcat#hasCurrentVersion">dcat:hasCurrentVersion</a>)
                       <br />Definition: <i>This resource has a more specific, versioned resource with equivalent content [PAV].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -1956,14 +2381,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/hasPart">Has Part</a> (<a href="http://purl.org/dc/terms/hasPart">dcterms:hasPart</a>)
                       <br />Definition: <i>A related resource that is included either physically or logically in the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -2015,14 +2453,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/odrl/2/hasPolicy">Target Policy</a> (<a href="http://www.w3.org/ns/odrl/2/hasPolicy">odrl:hasPolicy</a>)
                       <br />Definition: <i>Identifies an ODRL Policy for which the identified Asset is the target Asset to all the Rules.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2078,14 +2519,37 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#hasVersion">has version</a> (<a href="http://www.w3.org/ns/dcat#hasVersion">dcat:hasVersion</a>)
                       <br />Definition: <i>This resource has a more specific, versioned resource [PAV].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/hasVersion">Has Version</a> (<a href="http://purl.org/dc/terms/hasVersion">dcterms:hasVersion</a>)
+                      <br />Definition: <i>A related resource that is a version, edition, or adaptation of the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -2143,14 +2607,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/identifier">Identifier</a> (<a href="http://purl.org/dc/terms/identifier">dcterms:identifier</a>)
                       <br />Definition: <i>An unambiguous reference to the resource within a given context.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2207,14 +2674,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/isReferencedBy">Is Referenced By</a> (<a href="http://purl.org/dc/terms/isReferencedBy">dcterms:isReferencedBy</a>)
                       <br />Definition: <i>A related resource that references, cites, or otherwise points to the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -2271,14 +2751,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#keyword">keyword</a> (<a href="http://www.w3.org/ns/dcat#keyword">dcat:keyword</a>)
                       <br />Definition: <i>A keyword or tag describing a resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2331,14 +2814,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#landingPage">landing page</a> (<a href="http://www.w3.org/ns/dcat#landingPage">dcat:landingPage</a>)
                       <br />Definition: <i>A Web page that can be navigated to in a Web browser to gain access to the catalog, a dataset, its distributions and/or additional information.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://xmlns.com/foaf/0.1/page">page</a> (<a href="http://xmlns.com/foaf/0.1/page">foaf:page</a>)
+                      <br />Definition: <i>A page or document about this thing.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -2390,14 +2886,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/language">Language</a> (<a href="http://purl.org/dc/terms/language">dcterms:language</a>)
                       <br />Definition: <i>A language of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2455,14 +2954,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#last">last</a> (<a href="http://www.w3.org/ns/dcat#last">dcat:last</a>)
                       <br />Definition: <i>The last resource in an ordered collection or series of resources, to which the current resource belongs.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2518,14 +3020,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/license">License</a> (<a href="http://purl.org/dc/terms/license">dcterms:license</a>)
                       <br />Definition: <i>A legal document giving official permission to do something with the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/rights">Rights</a> (<a href="http://purl.org/dc/terms/rights">dcterms:rights</a>)
+                      <br />Definition: <i>Information about rights held in and over the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -2581,14 +3096,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#prev">previous</a> (<a href="http://www.w3.org/ns/dcat#prev">dcat:prev</a>)
                       <br />Definition: <i>The previous resource (before the current one) in an ordered collection or series of resources.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2646,14 +3164,47 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#previousVersion">previous version</a> (<a href="http://www.w3.org/ns/dcat#previousVersion">dcat:previousVersion</a>)
                       <br />Definition: <i>The previous version of a resource in a lineage [PAV].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/prov#wasRevisionOf">wasRevisionOf</a> (<a href="http://www.w3.org/ns/prov#wasRevisionOf">prov:wasRevisionOf</a>)
+                      <br />Definition: <i>A revision is a derivation that revises an entity into a revised version.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/prov#wasDerivedFrom">wasDerivedFrom</a> (<a href="http://www.w3.org/ns/prov#wasDerivedFrom">prov:wasDerivedFrom</a>)
+                      <br />Definition: <i>The more specific subproperties of prov:wasDerivedFrom (i.e., prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource) should be used when applicable.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/prov#wasInfluencedBy">wasInfluencedBy</a> (<a href="http://www.w3.org/ns/prov#wasInfluencedBy">prov:wasInfluencedBy</a>)
+                      <br />Definition: <i>This property has multiple RDFS domains to suit multiple OWL Profiles. See &lt;a href&#x3D;&quot;#owl-profile&quot;&gt;PROV-O OWL Profile&lt;/a&gt;.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -2711,14 +3262,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/publisher">Publisher</a> (<a href="http://purl.org/dc/terms/publisher">dcterms:publisher</a>)
                       <br />Definition: <i>An entity responsible for making the resource available.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2774,14 +3328,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/prov#qualifiedAttribution">qualifiedAttribution</a> (<a href="http://www.w3.org/ns/prov#qualifiedAttribution">prov:qualifiedAttribution</a>)
                       <br />Definition: <i>If this Entity prov:wasAttributedTo Agent :ag, then it can qualify how it was influenced using prov:qualifiedAttribution [ a prov:Attribution;  prov:agent :ag; :foo :bar ].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/prov#qualifiedInfluence">qualifiedInfluence</a> (<a href="http://www.w3.org/ns/prov#qualifiedInfluence">prov:qualifiedInfluence</a>)
+                      <br />Definition: <i>Because prov:qualifiedInfluence is a broad relation, the more specific relations (qualifiedCommunication, qualifiedDelegation, qualifiedEnd, etc.) should be used when applicable.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -2837,14 +3404,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#qualifiedRelation">qualified relation</a> (<a href="http://www.w3.org/ns/dcat#qualifiedRelation">dcat:qualifiedRelation</a>)
                       <br />Definition: <i>Link to a description of a relationship with another resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2901,14 +3471,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
                       <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -2964,14 +3537,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/issued">Date Issued</a> (<a href="http://purl.org/dc/terms/issued">dcterms:issued</a>)
                       <br />Definition: <i>Date of formal issuance of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/date">Date</a> (<a href="http://purl.org/dc/terms/date">dcterms:date</a>)
+                      <br />Definition: <i>A point or period of time associated with an event in the lifecycle of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -3028,14 +3614,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/replaces">Replaces</a> (<a href="http://purl.org/dc/terms/replaces">dcterms:replaces</a>)
                       <br />Definition: <i>A related resource that is supplanted, displaced, or superseded by the described resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -3087,14 +3686,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/rights">Rights</a> (<a href="http://purl.org/dc/terms/rights">dcterms:rights</a>)
                       <br />Definition: <i>Information about rights held in and over the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3150,14 +3752,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/adms#status">status</a> (<a href="http://www.w3.org/ns/adms#status">adms:status</a>)
                       <br />Definition: <i>Links to the status of the Asset or Asset Distribution in the context of a particular workflow process. Since Status is defined using a skos:Concept, that is the defined range for this property.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3214,14 +3819,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#theme">theme</a> (<a href="http://www.w3.org/ns/dcat#theme">dcat:theme</a>)
                       <br />Definition: <i>A main category of the resource. A resource can have multiple themes.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/subject">Subject</a> (<a href="http://purl.org/dc/terms/subject">dcterms:subject</a>)
+                      <br />Definition: <i>A topic of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -3277,14 +3895,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/title">Title</a> (<a href="http://purl.org/dc/terms/title">dcterms:title</a>)
                       <br />Definition: <i>A name given to the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3336,14 +3957,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/type">Type</a> (<a href="http://purl.org/dc/terms/type">dcterms:type</a>)
                       <br />Definition: <i>The nature or genre of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3407,14 +4031,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/modified">Date Modified</a> (<a href="http://purl.org/dc/terms/modified">dcterms:modified</a>)
                       <br />Definition: <i>Date on which the resource was changed.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/date">Date</a> (<a href="http://purl.org/dc/terms/date">dcterms:date</a>)
+                      <br />Definition: <i>A point or period of time associated with an event in the lifecycle of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -3470,14 +4107,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#version">version</a> (<a href="http://www.w3.org/ns/dcat#version">dcat:version</a>)
                       <br />Definition: <i>The version indicator (name or identifier) of a resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3533,14 +4173,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/adms#versionNotes">version info</a> (<a href="http://www.w3.org/ns/adms#versionNotes">adms:versionNotes</a>)
                       <br />Definition: <i>A description of changes between this version and the previous version of the Asset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3578,14 +4221,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://spdx.org/rdf/terms#Checksum"><i>without assigned name</i></a> (<a href="http://spdx.org/rdf/terms#Checksum">spdx:Checksum</a>)
                   <br />Definition: <i>A Checksum is value that allows the contents of a file to be authenticated. Even small changes to the content of the file will change its checksum. This class allows the results of a variety of checksum and cryptographic message digest algorithms to be represented.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -3647,14 +4293,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://spdx.org/rdf/terms#algorithm"><i>without assigned name</i></a> (<a href="http://spdx.org/rdf/terms#algorithm">spdx:algorithm</a>)
                       <br />Definition: <i>Identifies the algorithm used to produce the subject Checksum. Currently, SHA-1 is the only supported algorithm. It is anticipated that other algorithms will be supported at a later time.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3711,14 +4360,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://spdx.org/rdf/terms#checksumValue"><i>without assigned name</i></a> (<a href="http://spdx.org/rdf/terms#checksumValue">spdx:checksumValue</a>)
                       <br />Definition: <i>The checksumValue property provides a lower case hexidecimal encoded digest value produced using a specific algorithm.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -3752,14 +4404,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://spdx.org/rdf/terms#ChecksumAlgorithm"><i>without assigned name</i></a> (<a href="http://spdx.org/rdf/terms#ChecksumAlgorithm">spdx:ChecksumAlgorithm</a>)
                   <br />Definition: <i>Algorighm for Checksums.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -3799,13 +4454,26 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/2000/01/rdf-schema#Class">Class</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Class">rdfs:Class</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
+                  <br />Definition: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -3845,14 +4513,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
                   <br />Definition: <i>An idea or notion; a unit of thought.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -3896,14 +4567,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">Concept Scheme</a> (<a href="http://www.w3.org/2004/02/skos/core#ConceptScheme">skos:ConceptScheme</a>)
                   <br />Definition: <i>A set of concepts, optionally including statements about semantic relationships between those concepts.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -3915,7 +4589,7 @@
           
           
           </section>          <section id="Class:Data_Service">
-            <h4>Data service</h4>
+            <h4>Data Service</h4>
           
             <table class="def">
               <tr>
@@ -3931,7 +4605,7 @@
               </tr>
               <tr>
                 <td>Label</td>
-                <td>Data service</td>
+                <td>Data Service</td>
               </tr>
               <tr>
                 <td>Definition</td>
@@ -3939,16 +4613,48 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#DataService">Data service</a> (<a href="http://www.w3.org/ns/dcat#DataService">dcat:DataService</a>)
                   <br />Definition: <i>A site or end-point providing operations related to the discovery of, access to, or processing functions on, data or related resources.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
+                        <li>
+                                  specializes
+                
+                class profile
+                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
                     </ul>
                   </td>
                 </tr>
@@ -3992,7 +4698,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Data_Service">Data service</a>
+                      <a href="#Class:Data_Service">Data Service</a>
               
                       
                     </td>
@@ -4010,14 +4716,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#endpointDescription">description of service end-point</a> (<a href="http://www.w3.org/ns/dcat#endpointDescription">dcat:endpointDescription</a>)
                       <br />Definition: <i>A description of the service end-point, including its operations, parameters etc.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -4056,7 +4765,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Data_Service">Data service</a>
+                      <a href="#Class:Data_Service">Data Service</a>
               
                       
                     </td>
@@ -4074,14 +4783,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#endpointURL">service end-point</a> (<a href="http://www.w3.org/ns/dcat#endpointURL">dcat:endpointURL</a>)
                       <br />Definition: <i>The root location or primary endpoint of the service (a web-resolvable IRI).</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -4115,7 +4827,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Data_Service">Data service</a>
+                      <a href="#Class:Data_Service">Data Service</a>
               
                       
                     </td>
@@ -4133,14 +4845,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#servesDataset">serves dataset</a> (<a href="http://www.w3.org/ns/dcat#servesDataset">dcat:servesDataset</a>)
                       <br />Definition: <i>A collection of data that this DataService can distribute.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -4174,16 +4889,48 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
                   <br />Definition: <i>A collection of data, published or curated by a single source, and available for access or download in one or more representations.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
+                        <li>
+                                  specializes
+                
+                class profile
+                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
                     </ul>
                   </td>
                 </tr>
@@ -4240,14 +4987,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#distribution">distribution</a> (<a href="http://www.w3.org/ns/dcat#distribution">dcat:distribution</a>)
                       <br />Definition: <i>An available distribution of the dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -4299,14 +5059,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/accrualPeriodicity">Accrual Periodicity</a> (<a href="http://purl.org/dc/terms/accrualPeriodicity">dcterms:accrualPeriodicity</a>)
                       <br />Definition: <i>The frequency with which items are added to a collection.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -4352,7 +5115,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Dataset series</a>
+                      <a href="#Class:Dataset_Series">Dataset Series</a>
               
                           [0..*]
               
@@ -4362,14 +5125,37 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#inSeries">in series</a> (<a href="http://www.w3.org/ns/dcat#inSeries">dcat:inSeries</a>)
                       <br />Definition: <i>A dataset series of which the dataset is part.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/isPartOf">Is Part Of</a> (<a href="http://purl.org/dc/terms/isPartOf">dcterms:isPartOf</a>)
+                      <br />Definition: <i>A related resource in which the described resource is physically or logically included.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -4421,14 +5207,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">prostorové rozlišení (metry) (@cs)</a> (<a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:spatialResolutionInMeters</a>)
                       <br />Definition: <i>minimum spatial separation resolvable in a dataset, measured in meters.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -4484,14 +5273,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/spatial">Spatial Coverage</a> (<a href="http://purl.org/dc/terms/spatial">dcterms:spatial</a>)
                       <br />Definition: <i>Spatial characteristics of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/coverage">Coverage</a> (<a href="http://purl.org/dc/terms/coverage">dcterms:coverage</a>)
+                      <br />Definition: <i>The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -4547,14 +5349,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/temporal">Temporal Coverage</a> (<a href="http://purl.org/dc/terms/temporal">dcterms:temporal</a>)
                       <br />Definition: <i>Temporal characteristics of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/coverage">Coverage</a> (<a href="http://purl.org/dc/terms/coverage">dcterms:coverage</a>)
+                      <br />Definition: <i>The spatial or temporal topic of the resource, spatial applicability of the resource, or jurisdiction under which the resource is relevant.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -4610,14 +5425,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> (<a href="http://www.w3.org/ns/dcat#temporalResolution">dcat:temporalResolution</a>)
                       <br />Definition: <i>minimum time period resolvable in a dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -4674,13 +5492,26 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/prov#wasGeneratedBy">wasGeneratedBy</a> (<a href="http://www.w3.org/ns/prov#wasGeneratedBy">prov:wasGeneratedBy</a>)
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/ns/prov#wasInfluencedBy">wasInfluencedBy</a> (<a href="http://www.w3.org/ns/prov#wasInfluencedBy">prov:wasInfluencedBy</a>)
+                      <br />Definition: <i>This property has multiple RDFS domains to suit multiple OWL Profiles. See &lt;a href&#x3D;&quot;#owl-profile&quot;&gt;PROV-O OWL Profile&lt;/a&gt;.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -4696,7 +5527,7 @@
                 </table>
               </section>
           </section>          <section id="Class:Dataset_Series">
-            <h4>Dataset series</h4>
+            <h4>Dataset Series</h4>
           
             <table class="def">
               <tr>
@@ -4712,7 +5543,7 @@
               </tr>
               <tr>
                 <td>Label</td>
-                <td>Dataset series</td>
+                <td>Dataset Series</td>
               </tr>
               <tr>
                 <td>Definition</td>
@@ -4720,16 +5551,87 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#DatasetSeries">Dataset series</a> (<a href="http://www.w3.org/ns/dcat#DatasetSeries">dcat:DatasetSeries</a>)
                   <br />Definition: <i>A collection of datasets that are published separately, but share some characteristics that group them.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+                  <br />Definition: <i>A collection of data, published or curated by a single source, and available for access or download in one or more representations.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
+                        <li>
+                                  specializes
+                
+                class profile
+                <a href="#Class:Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Dataset">Dataset</a> (<a href="http://www.w3.org/ns/dcat#Dataset">dcat:Dataset</a>)
+                  <br />Definition: <i>A collection of data, published or curated by a single source, and available for access or download in one or more representations.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializes
+                
+                class profile
+                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  profiles
+                class
+                
+                <a href="http://www.w3.org/ns/dcat#Resource">Catalogued resource</a> (<a href="http://www.w3.org/ns/dcat#Resource">dcat:Resource</a>)
+                  <br />Definition: <i>Resource published or curated by a single agent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                      </li>
+                  </ul>
+          
+                        </li>
                     </ul>
                   </td>
                 </tr>
@@ -4772,14 +5674,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#Distribution">Distribution</a> (<a href="http://www.w3.org/ns/dcat#Distribution">dcat:Distribution</a>)
                   <br />Definition: <i>A specific representation of a dataset. A dataset might be available in multiple serializations that may differ in various ways, including natural language, media-type or format, schematic organization, temporal and spatial resolution, level of detail or profiles (which might specify any or all of the above).</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -4841,14 +5746,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/accessRights">Access Rights</a> (<a href="http://purl.org/dc/terms/accessRights">dcterms:accessRights</a>)
                       <br />Definition: <i>Information about who access the resource or an indication of its security status.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/rights">Rights</a> (<a href="http://purl.org/dc/terms/rights">dcterms:rights</a>)
+                      <br />Definition: <i>Information about rights held in and over the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -4894,7 +5812,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Data_Service">Data service</a>
+                      <a href="#Class:Data_Service">Data Service</a>
               
                           [0..*]
               
@@ -4904,14 +5822,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#accessService">data access service</a> (<a href="http://www.w3.org/ns/dcat#accessService">dcat:accessService</a>)
                       <br />Definition: <i>A site or end-point that gives access to the distribution of the dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -4967,14 +5888,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#accessURL">access address</a> (<a href="http://www.w3.org/ns/dcat#accessURL">dcat:accessURL</a>)
                       <br />Definition: <i>A URL of a resource that gives access to a distribution of the dataset. E.g. landing page, feed, SPARQL endpoint. Use for all cases except a simple download link, in which case downloadURL is preferred.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5034,14 +5958,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#byteSize">byte size</a> (<a href="http://www.w3.org/ns/dcat#byteSize">dcat:byteSize</a>)
                       <br />Definition: <i>The size of a distribution in bytes.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5098,14 +6025,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://spdx.org/rdf/terms#checksum"><i>without assigned name</i></a> (<a href="http://spdx.org/rdf/terms#checksum">spdx:checksum</a>)
                       <br />Definition: <i>The checksum property provides a mechanism that can be used to verify that the contents of a File or Package have not changed.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5161,14 +6091,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#compressFormat">compression format</a> (<a href="http://www.w3.org/ns/dcat#compressFormat">dcat:compressFormat</a>)
                       <br />Definition: <i>The compression format of the distribution in which the data is contained in a compressed form, e.g. to reduce the size of the downloadable file.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/format">Format</a> (<a href="http://purl.org/dc/terms/format">dcterms:format</a>)
+                      <br />Definition: <i>The file format, physical medium, or dimensions of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -5224,14 +6167,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/conformsTo">Conforms To</a> (<a href="http://purl.org/dc/terms/conformsTo">dcterms:conformsTo</a>)
                       <br />Definition: <i>An established standard to which the described resource conforms.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
+                      <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -5288,14 +6244,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/description">Description</a> (<a href="http://purl.org/dc/terms/description">dcterms:description</a>)
                       <br />Definition: <i>An account of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5347,14 +6306,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#downloadURL">download URL</a> (<a href="http://www.w3.org/ns/dcat#downloadURL">dcat:downloadURL</a>)
                       <br />Definition: <i>The URL of the downloadable file in a given format. E.g. CSV file or RDF file. The format is indicated by the distribution&#x27;s dcterms:format and/or dcat:mediaType.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5410,14 +6372,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/format">Format</a> (<a href="http://purl.org/dc/terms/format">dcterms:format</a>)
                       <br />Definition: <i>The file format, physical medium, or dimensions of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5473,14 +6438,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/odrl/2/hasPolicy">Target Policy</a> (<a href="http://www.w3.org/ns/odrl/2/hasPolicy">odrl:hasPolicy</a>)
                       <br />Definition: <i>Identifies an ODRL Policy for which the identified Asset is the target Asset to all the Rules.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5536,14 +6504,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/license">License</a> (<a href="http://purl.org/dc/terms/license">dcterms:license</a>)
                       <br />Definition: <i>A legal document giving official permission to do something with the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/rights">Rights</a> (<a href="http://purl.org/dc/terms/rights">dcterms:rights</a>)
+                      <br />Definition: <i>Information about rights held in and over the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -5599,14 +6580,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#mediaType">media type</a> (<a href="http://www.w3.org/ns/dcat#mediaType">dcat:mediaType</a>)
                       <br />Definition: <i>The media type of the distribution as defined by IANA</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/format">Format</a> (<a href="http://purl.org/dc/terms/format">dcterms:format</a>)
+                      <br />Definition: <i>The file format, physical medium, or dimensions of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -5662,14 +6656,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#packageFormat">packaging format</a> (<a href="http://www.w3.org/ns/dcat#packageFormat">dcat:packageFormat</a>)
                       <br />Definition: <i>The package format of the distribution in which one or more data files are grouped together, e.g. to enable a set of related files to be downloaded together.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/format">Format</a> (<a href="http://purl.org/dc/terms/format">dcterms:format</a>)
+                      <br />Definition: <i>The file format, physical medium, or dimensions of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -5725,14 +6732,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/issued">Date Issued</a> (<a href="http://purl.org/dc/terms/issued">dcterms:issued</a>)
                       <br />Definition: <i>Date of formal issuance of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/date">Date</a> (<a href="http://purl.org/dc/terms/date">dcterms:date</a>)
+                      <br />Definition: <i>A point or period of time associated with an event in the lifecycle of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -5788,14 +6808,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/rights">Rights</a> (<a href="http://purl.org/dc/terms/rights">dcterms:rights</a>)
                       <br />Definition: <i>Information about rights held in and over the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5853,14 +6876,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">prostorové rozlišení (metry) (@cs)</a> (<a href="http://www.w3.org/ns/dcat#spatialResolutionInMeters">dcat:spatialResolutionInMeters</a>)
                       <br />Definition: <i>minimum spatial separation resolvable in a dataset, measured in meters.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5917,14 +6943,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#temporalResolution">temporal resolution</a> (<a href="http://www.w3.org/ns/dcat#temporalResolution">dcat:temporalResolution</a>)
                       <br />Definition: <i>minimum time period resolvable in a dataset.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -5981,14 +7010,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/title">Title</a> (<a href="http://purl.org/dc/terms/title">dcterms:title</a>)
                       <br />Definition: <i>A name given to the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -6040,14 +7072,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/modified">Date Modified</a> (<a href="http://purl.org/dc/terms/modified">dcterms:modified</a>)
                       <br />Definition: <i>Date on which the resource was changed.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://purl.org/dc/terms/date">Date</a> (<a href="http://purl.org/dc/terms/date">dcterms:date</a>)
+                      <br />Definition: <i>A point or period of time associated with an event in the lifecycle of the resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -6081,14 +7126,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://xmlns.com/foaf/0.1/Document">Document</a> (<a href="http://xmlns.com/foaf/0.1/Document">foaf:Document</a>)
                   <br />Definition: <i>A document.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -6125,13 +7173,16 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/prov#Entity">Entity</a> (<a href="http://www.w3.org/ns/prov#Entity">prov:Entity</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -6171,14 +7222,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/Frequency">Frequency</a> (<a href="http://purl.org/dc/terms/Frequency">dcterms:Frequency</a>)
                   <br />Definition: <i>A rate at which something recurs.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -6218,14 +7272,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/locn#Geometry">Geometry</a> (<a href="http://www.w3.org/ns/locn#Geometry">locn:Geometry</a>)
                   <br />Definition: <i>The locn:Geometry class provides the means to identify a location as a point, line, polygon, etc. expressed using coordinates in some coordinate reference system.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -6265,14 +7322,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/2006/vcard/ns#Kind">Kind</a> (<a href="http://www.w3.org/2006/vcard/ns#Kind">vcard:Kind</a>)
                   <br />Definition: <i>The parent class for all objects</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -6312,14 +7372,27 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/LicenseDocument">License Document</a> (<a href="http://purl.org/dc/terms/LicenseDocument">dcterms:LicenseDocument</a>)
                   <br />Definition: <i>A legal document giving official permission to do something with a resource.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> (<a href="http://purl.org/dc/terms/RightsStatement">dcterms:RightsStatement</a>)
+                  <br />Definition: <i>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -6360,14 +7433,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/LinguisticSystem">Linguistic System</a> (<a href="http://purl.org/dc/terms/LinguisticSystem">dcterms:LinguisticSystem</a>)
                   <br />Definition: <i>A system of signs, symbols, sounds, gestures, or rules used in communication.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -6407,14 +7483,27 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/Location">Location</a> (<a href="http://purl.org/dc/terms/Location">dcterms:Location</a>)
                   <br />Definition: <i>A spatial region or named place.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">Location, Period, or Jurisdiction</a> (<a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">dcterms:LocationPeriodOrJurisdiction</a>)
+                  <br />Definition: <i>A location, period of time, or jurisdiction.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -6478,14 +7567,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#bbox">bounding box</a> (<a href="http://www.w3.org/ns/dcat#bbox">dcat:bbox</a>)
                       <br />Definition: <i>The geographic bounding box of a spatial thing [SDW-BP].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -6541,14 +7633,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#centroid">centroid</a> (<a href="http://www.w3.org/ns/dcat#centroid">dcat:centroid</a>)
                       <br />Definition: <i>The geographic center (centroid) of a spatial thing [SDW-BP].</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -6604,14 +7699,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/locn#geometry">geometry</a> (<a href="http://www.w3.org/ns/locn#geometry">locn:geometry</a>)
                       <br />Definition: <i>Associates any resource with the corresponding geometry.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -6649,14 +7747,27 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/MediaType">Media Type</a> (<a href="http://purl.org/dc/terms/MediaType">dcterms:MediaType</a>)
                   <br />Definition: <i>A file format or physical medium.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</a> (<a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>)
+                  <br />Definition: <i>A media type or extent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -6698,14 +7809,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/MediaTypeOrExtent">Media Type or Extent</a> (<a href="http://purl.org/dc/terms/MediaTypeOrExtent">dcterms:MediaTypeOrExtent</a>)
                   <br />Definition: <i>A media type or extent.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -6745,14 +7859,27 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://xmlns.com/foaf/0.1/Organization">Organization</a> (<a href="http://xmlns.com/foaf/0.1/Organization">foaf:Organization</a>)
                   <br />Definition: <i>An organization.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://xmlns.com/foaf/0.1/Agent">Agent</a> (<a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>)
+                  <br />Definition: <i>An agent (eg. person, group, software or physical artifact).</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -6792,14 +7919,27 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/PeriodOfTime">Period of Time</a> (<a href="http://purl.org/dc/terms/PeriodOfTime">dcterms:PeriodOfTime</a>)
                   <br />Definition: <i>An interval of time that is named or defined by its start and end dates.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">Location, Period, or Jurisdiction</a> (<a href="http://purl.org/dc/terms/LocationPeriodOrJurisdiction">dcterms:LocationPeriodOrJurisdiction</a>)
+                  <br />Definition: <i>A location, period of time, or jurisdiction.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -6861,14 +8001,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/2006/time#hasBeginning">has beginning</a> (<a href="http://www.w3.org/2006/time#hasBeginning">time:hasBeginning</a>)
                       <br />Definition: <i>Beginning of a temporal entity</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/2006/time#hasTime">has time</a> (<a href="http://www.w3.org/2006/time#hasTime">time:hasTime</a>)
+                      <br />Definition: <i>Supports the association of a temporal entity (instant or interval) to any thing</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -6924,14 +8077,27 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/2006/time#hasEnd">has end</a> (<a href="http://www.w3.org/2006/time#hasEnd">time:hasEnd</a>)
                       <br />Definition: <i>End of a temporal entity.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                          <li>
+                                      specializes
+                    property
+                    
+                    <a href="http://www.w3.org/2006/time#hasTime">has time</a> (<a href="http://www.w3.org/2006/time#hasTime">time:hasTime</a>)
+                      <br />Definition: <i>Supports the association of a temporal entity (instant or interval) to any thing</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
+              
+                          </li>
+                      </ul>
               
                               </li>
                         </ul>
@@ -6987,14 +8153,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#endDate">end date</a> (<a href="http://www.w3.org/ns/dcat#endDate">dcat:endDate</a>)
                       <br />Definition: <i>The end of the period.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -7050,14 +8219,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#startDate">start date</a> (<a href="http://www.w3.org/ns/dcat#startDate">dcat:startDate</a>)
                       <br />Definition: <i>The start of the period</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -7095,14 +8267,36 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://xmlns.com/foaf/0.1/Person">Person</a> (<a href="http://xmlns.com/foaf/0.1/Person">foaf:Person</a>)
                   <br />Definition: <i>A person.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">Spatial Thing</a> (<a href="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing">http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing</a>)
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://xmlns.com/foaf/0.1/Agent">Agent</a> (<a href="http://xmlns.com/foaf/0.1/Agent">foaf:Agent</a>)
+                  <br />Definition: <i>An agent (eg. person, group, software or physical artifact).</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -7142,14 +8336,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/odrl/2/Policy">Policy</a> (<a href="http://www.w3.org/ns/odrl/2/Policy">odrl:Policy</a>)
                   <br />Definition: <i>A non-empty group of Permissions and/or Prohibitions.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -7190,14 +8387,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#Relationship">Relationship</a> (<a href="http://www.w3.org/ns/dcat#Relationship">dcat:Relationship</a>)
                   <br />Definition: <i>An association class for attaching additional information to a relationship between DCAT Resources.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -7259,14 +8459,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://www.w3.org/ns/dcat#hadRole">hadRole</a> (<a href="http://www.w3.org/ns/dcat#hadRole">dcat:hadRole</a>)
                       <br />Definition: <i>The function of an entity or agent with respect to another entity or resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -7323,14 +8526,17 @@
               
               
                     <tr>
-                      <td>Profiles</td>
+                      <td>Hierarchy</td>
                       <td>
-                        <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                        <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                               <li>
-                                      property
+                                        profiles
+                    property
                     
                     <a href="http://purl.org/dc/terms/relation">Relation</a> (<a href="http://purl.org/dc/terms/relation">dcterms:relation</a>)
                       <br />Definition: <i>A related resource.</i>
+                      <ul style="list-style-type: disclosure-closed;">
+                      </ul>
               
                               </li>
                         </ul>
@@ -7368,14 +8574,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/2000/01/rdf-schema#Resource">Resource</a> (<a href="http://www.w3.org/2000/01/rdf-schema#Resource">rdfs:Resource</a>)
                   <br />Definition: <i>The class resource, everything.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -7430,14 +8639,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/RightsStatement">Rights Statement</a> (<a href="http://purl.org/dc/terms/RightsStatement">dcterms:RightsStatement</a>)
                   <br />Definition: <i>A statement about the intellectual property rights (IPR) held in or over a resource, a legal document giving official permission to do something with a resource, or a statement about access rights.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -7480,14 +8692,27 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/ns/dcat#Role">Role</a> (<a href="http://www.w3.org/ns/dcat#Role">dcat:Role</a>)
                   <br />Definition: <i>A role is the function of a resource or agent with respect to another resource, in the context of resource attribution or resource relationships.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/2004/02/skos/core#Concept">Concept</a> (<a href="http://www.w3.org/2004/02/skos/core#Concept">skos:Concept</a>)
+                  <br />Definition: <i>An idea or notion; a unit of thought.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -7533,14 +8758,17 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://purl.org/dc/terms/Standard">Standard</a> (<a href="http://purl.org/dc/terms/Standard">dcterms:Standard</a>)
                   <br />Definition: <i>A reference point against which other things can be evaluated or compared.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
           
                           </li>
                     </ul>
@@ -7582,14 +8810,27 @@
               </tr>
           
                 <tr>
-                  <td>Profiles</td>
+                  <td>Hierarchy</td>
                   <td>
-                    <ul style="list-style-type: none; padding-left: 0; margin: 0;">
+                    <ul style="list-style-type: disclosure-closed; padding-left: 0; margin: 0;">
                           <li>
-                                  class
+                                    profiles
+                class
                 
                 <a href="http://www.w3.org/2006/time#Instant">Time instant</a> (<a href="http://www.w3.org/2006/time#Instant">time:Instant</a>)
                   <br />Definition: <i>A temporal entity with zero extent or duration</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                      <li>
+                                  specializes
+                class
+                
+                <a href="http://www.w3.org/2006/time#TemporalEntity">Temporal entity</a> (<a href="http://www.w3.org/2006/time#TemporalEntity">time:TemporalEntity</a>)
+                  <br />Definition: <i>A temporal interval or instant.</i>
+                  <ul style="list-style-type: disclosure-closed;">
+                  </ul>
+          
+                      </li>
+                  </ul>
           
                           </li>
                     </ul>
@@ -7648,6 +8889,13 @@
               <td>Application profile</td>
               <td><a href="./dsv.ttl">./dsv.ttl</a></td>
             </tr>
+            <tr>
+              <td>SHACL validation rules</td>
+              <td><a href="./shacl.ttl">./shacl.ttl</a></td>
+            </tr>
+            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
+            <tr><td>Conceptual diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
+            <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
     </section>  </body>
