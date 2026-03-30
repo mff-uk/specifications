@@ -20,7 +20,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/-3e0e28ad>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/122c1f76> a sh:PropertyShape;
-    sh:name "tassonomia dei temi"@it, "taxonomie de thèmes"@fr, "taxonomie témat"@cs, "taxonomía de temas"@es, "theme taxonomy"@en, "Ταξινομία θεματικών κατηγοριών."@el, "قائمة التصنيفات"@ar, "テーマ"@ja, "emnetaksonomi"@da;
     sh:description "It is recommended that the taxonomy is organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, which allows each member to be denoted by an IRI and published as Linked Data."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#themeTaxonomy>.
@@ -28,7 +27,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/122c1f76>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/49745426> a sh:PropertyShape;
-    sh:name "resource"@en, "risorsa"@it;
     sh:description "This is the most general predicate for membership of a catalog. Use of a more specific sub-property is recommended when available."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#resource>;
@@ -37,7 +35,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/49745426>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/3c8120c> a sh:PropertyShape;
-    sh:name "conjunto de datos"@es, "dataset"@en, "dataset"@it, "datová sada"@cs, "jeu de données"@fr, "σύνολο δεδομένων"@el, "قائمة بيانات"@ar, "データセット"@ja, "datasæt"@da;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#dataset>;
     sh:class <http://www.w3.org/ns/dcat#Dataset>.
@@ -45,7 +42,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/3c8120c>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/39c74bbc> a sh:PropertyShape;
-    sh:name "service"@en, "servicio"@es, "servizio"@it, "služba"@cs, "datatjeneste"@da;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#service>;
     sh:class <http://www.w3.org/ns/dcat#DataService>.
@@ -53,7 +49,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/39c74bbc>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/a21410e> a sh:PropertyShape;
-    sh:name "catalog"@en, "catalogo"@it, "catálogo"@es, "katalog"@cs, "katalog"@da;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#catalog>;
     sh:class <http://www.w3.org/ns/dcat#Catalog>.
@@ -61,7 +56,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/a21410e>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/7c8ff9b5> a sh:PropertyShape;
-    sh:name "record"@en, "record"@it, "registre"@fr, "registro"@es, "záznam"@cs, "καταγραφή"@el, "سجل"@ar, "カタログ・レコード"@ja, "post"@da;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#record>;
     sh:class <http://www.w3.org/ns/dcat#CatalogRecord>.
@@ -78,7 +72,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/13de4675>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/-73115381> a sh:PropertyShape;
-    sh:name "resolución temporal"@es, "risoluzione temporale"@it, "temporal resolution"@en, "časové rozlišení"@cs, "tidslig opløsning"@da;
     sh:description "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#temporalResolution>;
@@ -87,7 +80,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/-73115381>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/27045905> a sh:PropertyShape;
-    sh:name "distribuce"@cs, "distribución"@es, "distribution"@en, "distribution"@fr, "distribuzione"@it, "distribution"@da, "διανομή"@el, "توزيع"@ar, "データセット配信"@ja;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#distribution>;
     sh:class <http://www.w3.org/ns/dcat#Distribution>.
@@ -104,7 +96,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/185d04a7>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/-6674dbda> a sh:PropertyShape;
-    sh:name "in series"@en, "en serie"@es, "in serie"@it;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#inSeries>;
     sh:class <http://www.w3.org/ns/dcat#DatasetSeries>.
@@ -177,7 +168,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/34fd6f7a>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-725d9215> a sh:PropertyShape;
-    sh:name "version"@en, "versión"@es, "versione"@it;
     sh:description "DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [[DWBP]]'s Best Practice 7: Provide a version indicator."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#version>.
@@ -218,7 +208,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-13c3843c>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/30107d7a> a sh:PropertyShape;
-    sh:name "Punto de contacto"@es, "contact point"@en, "kontaktní bod"@cs, "point de contact"@fr, "punto di contatto"@it, "σημείο επικοινωνίας"@el, "عنوان اتصال"@ar, "窓口"@ja, "kontaktpunkt"@da;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#contactPoint>;
     sh:class <http://www.w3.org/2006/vcard/ns#Kind>.
@@ -278,7 +267,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-2b5db4a4>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/76ad04b7> a sh:PropertyShape;
-    sh:name "kvalifikovaný vztah"@cs, "qualified relation"@en, "relación calificada"@es, "relazione qualificata"@it, "Kvalificeret relation"@da;
     sh:description "Used to link to another resource where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:hasPart, dcterms:isPartOf, dcterms:conformsTo, dcterms:isFormatOf, dcterms:hasFormat, dcterms:isVersionOf, dcterms:hasVersion, dcterms:replaces, dcterms:isReplacedBy, dcterms:references, dcterms:isReferencedBy, dcterms:requires, dcterms:isRequiredBy) or [[PROV-O]] properties (prov:wasDerivedFrom, prov:wasInfluencedBy, prov:wasQuotedFrom, prov:wasRevisionOf, prov:hadPrimarySource, prov:alternateOf, prov:specializationOf).\n"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#qualifiedRelation>;
@@ -287,7 +275,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/76ad04b7>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/430a6a1c> a sh:PropertyShape;
-    sh:name "landing page"@en, "page d'atterrissage"@fr, "pagina di destinazione"@it, "página de destino"@es, "vstupní stránka"@cs, "ιστοσελίδα αρχικής πρόσβασης"@el, "صفحة وصول"@ar, "ランディング・ページ"@ja, "destinationsside"@da;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#landingPage>;
     sh:class <http://xmlns.com/foaf/0.1/Document>.
@@ -346,7 +333,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/18285bde>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/5753a082> a sh:PropertyShape;
-    sh:name "previous version"@en, "versión anterior"@es, "versione precedente"@it;
     sh:description "This property is meant to be used to specify a version chain, consisting of snapshots of a resource.\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. One of the typical cases here is representing the history of the versions of a dataset that have been released over time."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#previousVersion>.
@@ -354,7 +340,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/5753a082>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/6e2ef061> a sh:PropertyShape;
-    sh:name "has version"@en, "tiene versión"@es, "ha versione"@it;
     sh:description "This property is intended for relating a non-versioned or abstract resource to several versioned resources, e.g., snapshots [[PAV]].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#hasVersion>.
@@ -362,7 +347,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/6e2ef061>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/dd3a28a> a sh:PropertyShape;
-    sh:name "has current version"@en, "tiene versión actual"@es, "ha versione attuale"@it;
     sh:description "This property is intended for relating a non-versioned or abstract resource to a single snapshot that can be used as a permalink to indicate the current version of the content [PAV].\n\nThe notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#hasCurrentVersion>.
@@ -377,7 +361,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/2e8b92f9>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-2aa4886d> a sh:PropertyShape;
-    sh:name "first"@en, "primero"@es, "primo"@it;
     sh:description "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#first>.
@@ -385,7 +368,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-2aa4886d>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/43683829> a sh:PropertyShape;
-    sh:name "last"@en, "último"@es, "ultimo"@it;
     sh:description "In DCAT this property is used for resources belonging to a dcat:DatasetSeries."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#last>.
@@ -393,7 +375,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/43683829>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-66bf9d54> a sh:PropertyShape;
-    sh:name "previous"@en, "previo"@es, "precedente"@it;
     sh:description "In DCAT this property is used for resources belonging to a dcat:DatasetSeries.\n\nIt is important to note that this property is different from dcat:previousVersion, as it does not denote a previous version of the same resource, but a distinct resource immediately preceding the current one in an ordered collection of resources."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#prev>.
@@ -401,7 +382,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-66bf9d54>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:ResourceShape/-64f3cd7a> a sh:PropertyShape;
-    sh:name "status"@en;
     sh:description "DCAT does not prescribe the use of any specific set of life-cycle statuses, but refers to existing standards and community practices fit for the relevant application scenario."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/adms#status>;
@@ -506,7 +486,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DataServiceShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DataServiceShape/-70c6e0e9>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DataServiceShape/-12140b06> a sh:PropertyShape;
-    sh:name "poskytuje datovou sadu"@cs, "provee conjunto de datos"@es, "serve set di dati"@it, "serves dataset"@en, "datatjeneste for datasæt"@da;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#servesDataset>;
     sh:class <http://www.w3.org/ns/dcat#Dataset>.
@@ -618,7 +597,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-12b36f75>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/1910ca50> a sh:PropertyShape;
-    sh:name "byte size"@en, "dimensione in byte"@it, "taille en octects"@fr, "tamaño en bytes"@es, "velikost v bajtech"@cs, "μέγεθος σε bytes"@el, "الحجم بالبايت"@ar, "バイト・サイズ"@ja, "bytestørrelse"@da;
     sh:description "The size in bytes can be approximated (as a non-negative integer) when the precise size is not known.\nWhile it is recommended that the size be given as an integer, alternative literals such as '1.5 MB' are sometimes used."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#byteSize>;
@@ -635,7 +613,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/850b500>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-1dc34b53> a sh:PropertyShape;
-    sh:name "resolución temporal"@es, "risoluzione temporale"@it, "temporal resolution"@en, "časové rozlišení"@cs, "tidslig opløsning"@da;
     sh:description "If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.\nAlternative temporal resolutions might be provided in different dataset distributions"@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#temporalResolution>;
@@ -704,7 +681,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-67c709d7>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/36b86b38> a sh:PropertyShape;
-    sh:name "URL de descarga"@es, "URL de téléchargement"@fr, "URL di scarico"@it, "URL souboru ke stažení"@cs, "URL μεταφόρτωσης"@el, "download URL"@en, "رابط تحميل"@ar, "ダウンロードURL"@ja, "downloadURL"@da;
     sh:description "dcat:downloadURL SHOULD be used for the URL at which this distribution is available directly, typically through a HTTP Get request."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#downloadURL>.
@@ -721,7 +697,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/4608ea68>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/28331528> a sh:PropertyShape;
-    sh:name "media type"@en, "tipo de media"@es, "tipo di media"@it, "typ média"@cs, "type de média"@fr, "τύπος μέσου"@el, "نوع الميديا"@ar, "メディア・タイプ"@ja, "medietype"@da;
     sh:description "This property SHOULD be used when the media type of the distribution is defined in IANA [[IANA-MEDIA-TYPES]], otherwise dcterms:format MAY be used with different values."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#mediaType>;
@@ -739,7 +714,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-3e3dbf8f>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/7f802f91> a sh:PropertyShape;
-    sh:name "compression format"@en, "formato de compresión"@es, "formato di compressione"@it, "formát komprese"@cs, "kompressionsformat"@da;
     sh:description "This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#compressFormat>;
@@ -748,7 +722,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/7f802f91>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/2bb0cf29> a sh:PropertyShape;
-    sh:name "formato de empaquetado"@es, "formato di impacchettamento"@it, "formát balíčku"@cs, "packaging format"@en, "pakkeformat"@da;
     sh:description "This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/dcat#packageFormat>;
@@ -782,7 +755,6 @@
     sh:targetClass <http://purl.org/dc/terms/Location>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:LocationShape/-26ee35b5> a sh:PropertyShape;
-    sh:name "bounding box"@en, "quadro di delimitazione"@it, "cuadro delimitador"@es, "ohraničení oblasti"@cs, "bounding box"@da;
     sh:description "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]])."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#bbox>.
@@ -790,7 +762,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:LocationShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcterms:LocationShape/-26ee35b5>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:LocationShape/-959bc6c> a sh:PropertyShape;
-    sh:name "centroid"@cs, "centroid"@en, "centroide"@it, "centroide"@es, "geometrisk tyngdepunkt"@da;
     sh:description "The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]])."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#centroid>.
@@ -798,7 +769,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:LocationShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcterms:LocationShape/-959bc6c>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:LocationShape/6b9c8c48> a sh:PropertyShape;
-    sh:name "geometry"@en;
     sh:description "The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [[GeoSPARQL]]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [[GeoSPARQL]]."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/locn#geometry>;
@@ -812,7 +782,6 @@
     sh:targetClass <http://purl.org/dc/terms/PeriodOfTime>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:PeriodOfTimeShape/af7b22e> a sh:PropertyShape;
-    sh:name "datum začátku"@cs, "start date"@en, "data di inizio"@it, "startdato"@da;
     sh:description "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]] (xsd:gYear, xsd:gYearMonth, xsd:date, or xsd:dateTime)."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#startDate>.
@@ -820,7 +789,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:PeriodOfTimeShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcterms:PeriodOfTimeShape/af7b22e>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcterms:PeriodOfTimeShape/54ede915> a sh:PropertyShape;
-    sh:name "datum konce"@cs, "end date"@en, "data di fine"@it, "fecha final"@es, "slutdato"@da;
     sh:description "rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]]"@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/ns/dcat#endDate>.
@@ -962,7 +930,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/3aaf37b3>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:CatalogShape/-7b1ce784> a sh:PropertyShape;
-    sh:name "applicable legislation"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://data.europa.eu/r5r/applicableLegislation>;
     sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
@@ -1210,7 +1177,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DataServiceShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DataServiceShape/-142f93e9>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DataServiceShape/-547c36c6> a sh:PropertyShape;
-    sh:name "applicable legislation"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://data.europa.eu/r5r/applicableLegislation>;
     sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
@@ -1402,7 +1368,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/-2eb6a7d6>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/78bef68d> a sh:PropertyShape;
-    sh:name "applicable legislation"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://data.europa.eu/r5r/applicableLegislation>;
     sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
@@ -1514,7 +1479,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/79e53a88>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetShape/-5bb8e6c8> a sh:PropertyShape;
-    sh:name "sample"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/adms#sample>;
     sh:class <http://www.w3.org/ns/dcat#Distribution>.
@@ -1649,7 +1613,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetSeriesShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetSeriesShape/-48f33ed7>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DatasetSeriesShape/-5ed193ea> a sh:PropertyShape;
-    sh:name "applicable legislation"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://data.europa.eu/r5r/applicableLegislation>;
     sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
@@ -1786,7 +1749,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-75e563aa>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-a8d0c01> a sh:PropertyShape;
-    sh:name "applicable legislation"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://data.europa.eu/r5r/applicableLegislation>;
     sh:class <http://data.europa.eu/eli/ontology#LegalResource>.
@@ -1794,7 +1756,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-a8d0c01>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/5d8c5f0a> a sh:PropertyShape;
-    sh:name "availability"@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://data.europa.eu/r5r/availability>;
     sh:maxCount 1;
@@ -1911,7 +1872,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape> sh:property <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/-1c94a420>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#dcat:DistributionShape/1cde0b24> a sh:PropertyShape;
-    sh:name "status"@en;
     sh:description "It MUST take one of the values Completed, Deprecated, Under Development, Withdrawn."@en;
     sh:nodeKind sh:BlankNodeOrIRI;
     sh:path <http://www.w3.org/ns/adms#status>;
@@ -1946,7 +1906,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#foaf:AgentShape> rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-ap#Agent>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#foaf:AgentShape/2a4d2161> a sh:PropertyShape;
-    sh:name "name"@en;
     sh:description "This property can be repeated for different versions of the name (e.g. the name in different languages)."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://xmlns.com/foaf/0.1/name>;
@@ -1967,7 +1926,6 @@
 <https://mff-uk.github.io/specifications/dcat-ap#skos:ConceptShape> rdfs:seeAlso <https://mff-uk.github.io/specifications/dcat-ap#Concept>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#skos:ConceptShape/-1ecf34b2> a sh:PropertyShape;
-    sh:name "preferred label"@en;
     sh:description "This property can be repeated for parallel language versions of the label."@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/2004/02/skos/core#prefLabel>;
@@ -2086,7 +2044,6 @@
     sh:targetClass <http://www.w3.org/ns/adms#Identifier>.
 
 <https://mff-uk.github.io/specifications/dcat-ap#adms:IdentifierShape/-1f4f5b46> a sh:PropertyShape;
-    sh:name "notation"@en;
     sh:nodeKind sh:Literal;
     sh:path <http://www.w3.org/2004/02/skos/core#notation>;
     sh:maxCount 1;
