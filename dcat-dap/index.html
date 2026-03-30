@@ -14,7 +14,7 @@
         "adms:AssetDistribution",
         "prof:ResourceDescriptor"
       ],
-      "hasArtifact": ".",
+      "hasArtifact": "",
       "hasRole": "role:specification",
       "format": "filetype:HTML",
       "inSpecificationOf": [
@@ -118,9 +118,6 @@
               }
             },
             {
-              "title": {
-                "en": "DCAT - Data Catalog Vocabulary"
-              },
               "hasResource": {
                 "hasArtifact": "https://www.w3.org/ns/dcat3.ttl"
               }
@@ -136,7 +133,6 @@
           ],
           "hasResource": [
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-dap/#dsv",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
@@ -150,7 +146,6 @@
               ]
             },
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-dap/#shacl",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
@@ -161,7 +156,6 @@
               "conformsTo": "https://www.w3.org/TR/shacl/"
             },
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-dap/#1jcyy",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
@@ -172,7 +166,6 @@
               "conformsTo": "https://www.w3.org/TR/SVG/"
             },
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-dap/#9z0nki",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
@@ -189,7 +182,7 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": ".",
+              "hasArtifact": "",
               "hasRole": "role:specification",
               "format": "filetype:HTML"
             }
@@ -415,7 +408,7 @@
       <section>
         <h2>Main class profiles</h2>
 
-          <section id="Class:Catalog">
+          <section id="Catalog">
             <h4>Catalog</h4>
           
             <table class="def">
@@ -477,7 +470,7 @@
                                   specializes
                 
                 class profile
-                <a href="#Class:Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                <a href="#Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -503,7 +496,7 @@
                                   specializes
                 
                 class profile
-                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                <a href="#CatalogedResource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -534,10 +527,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_catalog"></a></li>
+                  <li>from domain <a href="#Catalog"></a> → <a href="#Catalog.catalog"></a></li>
               </ul>
           
-              <section id="Property:catalog_catalog">
+              <section id="Catalog.catalog">
                 <h4>catalog</h4>
               
                 <table class="def">
@@ -563,7 +556,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                       
                     </td>
@@ -571,7 +564,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                           [0..*]
               
@@ -629,7 +622,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:catalog_dataset">
+              </section>    <section id="Catalog.dataset">
                 <h4>dataset</h4>
               
                 <table class="def">
@@ -655,7 +648,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                       
                     </td>
@@ -663,7 +656,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                           [0..*]
               
@@ -721,7 +714,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:catalog_homepage">
+              </section>    <section id="Catalog.homepage">
                 <h4>homepage</h4>
               
                 <table class="def">
@@ -747,7 +740,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                       
                     </td>
@@ -817,7 +810,7 @@
                     <td>foaf:homepage is an inverse functional property (IFP) which means that it MUST be unique and precisely identify the Web-page for the resource. This property indicates the canonical Web-page, which might be helpful in cases where there is more than one Web-page about the resource.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:catalog_catalog_record">
+              </section>    <section id="Catalog.record">
                 <h4>record</h4>
               
                 <table class="def">
@@ -843,7 +836,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                       
                     </td>
@@ -851,7 +844,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Catalog_Record">Catalog Record</a>
+                      <a href="#CatalogRecord">Catalog Record</a>
               
                           [0..*]
               
@@ -879,7 +872,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:catalog_resource">
+              </section>    <section id="Catalog.resource">
                 <h4>resource</h4>
               
                 <table class="def">
@@ -905,7 +898,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                       
                     </td>
@@ -913,7 +906,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                           [0..*]
               
@@ -965,7 +958,7 @@
                     <td>This is the most general predicate for membership of a catalog. Use of a more specific sub-property is recommended when available.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:catalog_service">
+              </section>    <section id="Catalog.service">
                 <h4>service</h4>
               
                 <table class="def">
@@ -991,7 +984,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                       
                     </td>
@@ -999,7 +992,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Data_Service">Data Service</a>
+                      <a href="#DataService">Data Service</a>
               
                           [0..*]
               
@@ -1057,7 +1050,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:catalog_themes">
+              </section>    <section id="Catalog.themeTaxonomy">
                 <h4>theme taxonomy</h4>
               
                 <table class="def">
@@ -1083,7 +1076,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog">Catalog</a>
+                      <a href="#Catalog">Catalog</a>
               
                       
                     </td>
@@ -1124,7 +1117,7 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="Class:Catalog_Record">
+          </section>          <section id="CatalogRecord">
             <h4>Catalog Record</h4>
           
             <table class="def">
@@ -1174,10 +1167,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_catalog_record"></a></li>
+                  <li>from domain <a href="#Catalog"></a> → <a href="#Catalog.record"></a></li>
               </ul>
           
-              <section id="Property:record_conforms_to">
+              <section id="CatalogRecord.conformsTo">
                 <h4>conforms to</h4>
               
                 <table class="def">
@@ -1203,7 +1196,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog_Record">Catalog Record</a>
+                      <a href="#CatalogRecord">Catalog Record</a>
               
                       
                     </td>
@@ -1253,7 +1246,7 @@
                     <td>This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalog record metadata conforms to.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:record_description">
+              </section>    <section id="CatalogRecord.description">
                 <h4>description</h4>
               
                 <table class="def">
@@ -1279,7 +1272,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog_Record">Catalog Record</a>
+                      <a href="#CatalogRecord">Catalog Record</a>
               
                           [0..*]
               
@@ -1316,7 +1309,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:record_listing_date">
+              </section>    <section id="CatalogRecord.listingDate">
                 <h4>listing date</h4>
               
                 <table class="def">
@@ -1342,7 +1335,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog_Record">Catalog Record</a>
+                      <a href="#CatalogRecord">Catalog Record</a>
               
                       
                     </td>
@@ -1392,7 +1385,7 @@
                     <td>This indicates the date of listing the dataset in the catalog and not the publication date of the dataset itself.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:record_primary_topic">
+              </section>    <section id="CatalogRecord.primaryTopic">
                 <h4>primary topic</h4>
               
                 <table class="def">
@@ -1418,7 +1411,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog_Record">Catalog Record</a>
+                      <a href="#CatalogRecord">Catalog Record</a>
               
                       
                     </td>
@@ -1426,7 +1419,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                           [0..1]
               
@@ -1458,7 +1451,7 @@
                     <td>foaf:primaryTopic property is functional: each catalog record can have at most one primary topic, i.e., describes one cataloged resource.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:record_title">
+              </section>    <section id="CatalogRecord.title">
                 <h4>title</h4>
               
                 <table class="def">
@@ -1484,7 +1477,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog_Record">Catalog Record</a>
+                      <a href="#CatalogRecord">Catalog Record</a>
               
                       
                     </td>
@@ -1520,7 +1513,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:record_update_date">
+              </section>    <section id="CatalogRecord.update-modificationDate">
                 <h4>update/modification date</h4>
               
                 <table class="def">
@@ -1546,7 +1539,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Catalog_Record">Catalog Record</a>
+                      <a href="#CatalogRecord">Catalog Record</a>
               
                       
                     </td>
@@ -1597,7 +1590,7 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="Class:Resource">
+          </section>          <section id="CatalogedResource">
             <h4>Cataloged Resource</h4>
           
             <table class="def">
@@ -1655,12 +1648,12 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Catalog_Record"></a> → <a href="#Property:record_primary_topic"></a></li>
-                  <li>from domain <a href="#Class:Organization_Person"></a> → <a href="#Property:relationship_relation"></a></li>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_resource"></a></li>
+                  <li>from domain <a href="#CatalogRecord"></a> → <a href="#CatalogRecord.primaryTopic"></a></li>
+                  <li>from domain <a href="#Relationship"></a> → <a href="#Relationship.relation"></a></li>
+                  <li>from domain <a href="#Catalog"></a> → <a href="#Catalog.resource"></a></li>
               </ul>
           
-              <section id="Property:resource_access_rights">
+              <section id="CatalogedResource.accessRights">
                 <h4>access rights</h4>
               
                 <table class="def">
@@ -1686,7 +1679,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -1736,7 +1729,7 @@
                     <td>Information about licenses and rights MAY be provided for the Resource.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_conforms_to">
+              </section>    <section id="CatalogedResource.conformsTo">
                 <h4>conforms to</h4>
               
                 <table class="def">
@@ -1762,7 +1755,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -1812,7 +1805,7 @@
                     <td>This property SHOULD be used to indicate the model, schema, ontology, view or profile that the cataloged resource content conforms to.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_contact_point">
+              </section>    <section id="CatalogedResource.contactPoint">
                 <h4>contact point</h4>
               
                 <table class="def">
@@ -1838,7 +1831,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -1874,7 +1867,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:resource_creator">
+              </section>    <section id="CatalogedResource.creator">
                 <h4>creator</h4>
               
                 <table class="def">
@@ -1900,7 +1893,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -1950,7 +1943,7 @@
                     <td>Resources of type foaf:Agent are recommended as values for this property.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_description">
+              </section>    <section id="CatalogedResource.description">
                 <h4>description</h4>
               
                 <table class="def">
@@ -1976,7 +1969,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                           [0..*]
               
@@ -2013,7 +2006,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:resource_first">
+              </section>    <section id="CatalogedResource.first">
                 <h4>first</h4>
               
                 <table class="def">
@@ -2039,7 +2032,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2079,7 +2072,7 @@
                     <td>In DCAT this property is used for resources belonging to a dcat:DatasetSeries.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_has_current_version">
+              </section>    <section id="CatalogedResource.hasCurrentVersion">
                 <h4>has current version</h4>
               
                 <table class="def">
@@ -2105,7 +2098,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2147,7 +2140,7 @@
               The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_has_part">
+              </section>    <section id="CatalogedResource.hasPart">
                 <h4>has part</h4>
               
                 <table class="def">
@@ -2173,7 +2166,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2219,7 +2212,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:resource_has_policy">
+              </section>    <section id="CatalogedResource.hasPolicy">
                 <h4>has policy</h4>
               
                 <table class="def">
@@ -2245,7 +2238,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2285,7 +2278,7 @@
                     <td>Information about rights expressed as an ODRL policy [[ODRL-MODEL]] using the ODRL vocabulary [[ODRL-VOCAB]] MAY be provided for the resource. See also guidance at 9. License and rights statements.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_has_version">
+              </section>    <section id="CatalogedResource.hasVersion">
                 <h4>has version</h4>
               
                 <table class="def">
@@ -2311,7 +2304,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2373,7 +2366,7 @@
               The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. Therefore, its semantics is more specific than its super-property dcterms:hasVersion, which makes use of a broader notion of version, including editions and adaptations.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_identifier">
+              </section>    <section id="CatalogedResource.identifier">
                 <h4>identifier</h4>
               
                 <table class="def">
@@ -2399,7 +2392,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2440,7 +2433,7 @@
               The identifier is a text string which is assigned to the resource to provide an unambiguous reference within a particular context.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_has_policy">
+              </section>    <section id="CatalogedResource.isReferencedBy">
                 <h4>is referenced by</h4>
               
                 <table class="def">
@@ -2466,7 +2459,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2517,7 +2510,7 @@
               This property is used to associate a resource with the resource (of type dcat:Resource) in question. For other relations to resources not covered with this property, the more generic property dcat:qualifiedRelation can be used. See also 15. Qualified relations.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_keyword">
+              </section>    <section id="CatalogedResource.keyword">
                 <h4>keyword/tag</h4>
               
                 <table class="def">
@@ -2543,7 +2536,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2579,7 +2572,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:resource_landing_page">
+              </section>    <section id="CatalogedResource.landingPage">
                 <h4>landing page</h4>
               
                 <table class="def">
@@ -2605,7 +2598,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                           [0..*]
               
@@ -2652,7 +2645,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:resource_language">
+              </section>    <section id="CatalogedResource.language">
                 <h4>language</h4>
               
                 <table class="def">
@@ -2678,7 +2671,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2720,7 +2713,7 @@
               If representations of a dataset are available for each language separately, define an instance of dcat:Distribution for each language and describe the specific language of each distribution using dcterms:language (i.e., the dataset will have multiple dcterms:language values and each distribution will have just one as the value of its dcterms:language property). In case of multilingual distributions, the distributions will have multiple dcterms:language values.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_last">
+              </section>    <section id="CatalogedResource.last">
                 <h4>last</h4>
               
                 <table class="def">
@@ -2746,7 +2739,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2786,7 +2779,7 @@
                     <td>In DCAT this property is used for resources belonging to a dcat:DatasetSeries.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_license">
+              </section>    <section id="CatalogedResource.license">
                 <h4>license</h4>
               
                 <table class="def">
@@ -2812,7 +2805,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2862,7 +2855,7 @@
                     <td>Information about licenses and rights MAY be provided for the Resource.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_previous">
+              </section>    <section id="CatalogedResource.previous">
                 <h4>previous</h4>
               
                 <table class="def">
@@ -2888,7 +2881,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -2930,7 +2923,7 @@
               It is important to note that this property is different from dcat:previousVersion, as it does not denote a previous version of the same resource, but a distinct resource immediately preceding the current one in an ordered collection of resources.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_previous_version">
+              </section>    <section id="CatalogedResource.previousVersion">
                 <h4>previous version</h4>
               
                 <table class="def">
@@ -2956,7 +2949,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3028,7 +3021,7 @@
               The notion of version used by this property is limited to versions resulting from revisions occurring to a resource as part of its life-cycle. One of the typical cases here is representing the history of the versions of a dataset that have been released over time.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_publisher">
+              </section>    <section id="CatalogedResource.publisher">
                 <h4>publisher</h4>
               
                 <table class="def">
@@ -3054,7 +3047,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3094,7 +3087,7 @@
                     <td>Resources of type foaf:Agent are recommended as values for this property.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_qualified_attribution">
+              </section>    <section id="CatalogedResource.qualifiedAttribution">
                 <h4>qualified attribution</h4>
               
                 <table class="def">
@@ -3120,7 +3113,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3170,7 +3163,7 @@
                     <td>Used to link to an Agent where the nature of the relationship is known but does not match one of the standard [[DCTERMS]] properties (dcterms:creator, dcterms:publisher). Use dcat:hadRole on the prov:Attribution to capture the responsibility of the Agent with respect to the Resource. See 15.1 Relationships between datasets and agents for usage examples.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_qualified_relation">
+              </section>    <section id="CatalogedResource.qualifiedRelation">
                 <h4>qualified relation</h4>
               
                 <table class="def">
@@ -3196,7 +3189,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3204,7 +3197,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Organization_Person">Relationship</a>
+                      <a href="#Relationship">Relationship</a>
               
                           [0..*]
               
@@ -3237,7 +3230,7 @@
               </td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_relation">
+              </section>    <section id="CatalogedResource.relation">
                 <h4>relation</h4>
               
                 <table class="def">
@@ -3263,7 +3256,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3303,7 +3296,7 @@
                     <td>dcterms:relation SHOULD be used where the nature of the relationship between a cataloged resource and related resources is not known. A more specific sub-property SHOULD be used if the nature of the relationship of the link is known. The property dcat:distribution SHOULD be used to link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_release_date">
+              </section>    <section id="CatalogedResource.releaseDate">
                 <h4>release date</h4>
               
                 <table class="def">
@@ -3329,7 +3322,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3379,7 +3372,7 @@
                     <td>This property SHOULD be set using the first known date of issuance.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_replaces">
+              </section>    <section id="CatalogedResource.replaces">
                 <h4>replaces</h4>
               
                 <table class="def">
@@ -3405,7 +3398,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                           [0..*]
               
@@ -3452,7 +3445,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:resource_rights">
+              </section>    <section id="CatalogedResource.rights">
                 <h4>rights</h4>
               
                 <table class="def">
@@ -3478,7 +3471,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3544,7 +3537,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3552,7 +3545,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Concept">Concept</a>
+                      <a href="#Concept">Concept</a>
               
                           [0..*]
               
@@ -3584,7 +3577,7 @@
                     <td>DCAT does not prescribe the use of any specific set of life-cycle statuses, but refers to existing standards and community practices fit for the relevant application scenario.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_theme">
+              </section>    <section id="CatalogedResource.theme-category">
                 <h4>theme/category</h4>
               
                 <table class="def">
@@ -3610,7 +3603,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                           [0..*]
               
@@ -3661,7 +3654,7 @@
                     <td>The set of themes used to categorize the resources are organized in a skos:ConceptScheme, skos:Collection, owl:Ontology or similar, describing all the categories and their relations in the catalog.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_title">
+              </section>    <section id="CatalogedResource.title">
                 <h4>title</h4>
               
                 <table class="def">
@@ -3687,7 +3680,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3723,7 +3716,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:resource_type">
+              </section>    <section id="CatalogedResource.type-genre">
                 <h4>type/genre</h4>
               
                 <table class="def">
@@ -3749,7 +3742,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3797,7 +3790,7 @@
               To describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_update_date">
+              </section>    <section id="CatalogedResource.update-modificationDate">
                 <h4>update/modification date</h4>
               
                 <table class="def">
@@ -3823,7 +3816,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3873,7 +3866,7 @@
                     <td>The value of this property indicates a change to the actual resource, not a change to the catalog record. An absent value MAY indicate that the resource has never changed after its initial publication, or that the date of last modification is not known, or that the resource is continuously updated.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_version">
+              </section>    <section id="CatalogedResource.version">
                 <h4>version</h4>
               
                 <table class="def">
@@ -3899,7 +3892,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -3939,7 +3932,7 @@
                     <td>DCAT does not prescribe how a version name / identifier should be specified, and refers for guidance to [[DWBP]]&#x27;s Best Practice 7: Provide a version indicator.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:resource_version_notes">
+              </section>    <section id="CatalogedResource.versionInfo">
                 <h4>version notes</h4>
               
                 <table class="def">
@@ -3965,7 +3958,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                       
                     </td>
@@ -4006,7 +3999,7 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="Class:Checksum">
+          </section>          <section id="Checksum">
             <h4>Checksum</h4>
           
             <table class="def">
@@ -4056,10 +4049,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_checksum"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.checksum"></a></li>
               </ul>
           
-              <section id="Property:checksum_algorithm">
+              <section id="Checksum.algorithm">
                 <h4>algorithm</h4>
               
                 <table class="def">
@@ -4085,7 +4078,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Checksum">Checksum</a>
+                      <a href="#Checksum">Checksum</a>
               
                       
                     </td>
@@ -4125,7 +4118,7 @@
                     <td>Version 2.2 of [[SPDX]] defines individuals for the following algorithms: MD2, MD4, MD5, MD6, SHA-1, SHA-224, SHA-256, SHA-384, SHA-512.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:checksum_checksum_value">
+              </section>    <section id="Checksum.checksumValue">
                 <h4>checksum value</h4>
               
                 <table class="def">
@@ -4151,7 +4144,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Checksum">Checksum</a>
+                      <a href="#Checksum">Checksum</a>
               
                           [0..*]
               
@@ -4189,7 +4182,7 @@
               
                 </table>
               </section>
-          </section>          <section id="Class:Concept">
+          </section>          <section id="Concept">
             <h4>Concept</h4>
           
             <table class="def">
@@ -4239,11 +4232,11 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#CatalogedResource.status"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.status"></a></li>
               </ul>
           
           
-          </section>          <section id="Class:Concept_Scheme">
+          </section>          <section id="ConceptScheme">
             <h4>Concept Scheme</h4>
           
             <table class="def">
@@ -4289,7 +4282,7 @@
           
           
           
-          </section>          <section id="Class:Data_Service">
+          </section>          <section id="DataService">
             <h4>Data Service</h4>
           
             <table class="def">
@@ -4341,7 +4334,7 @@
                                   specializes
                 
                 class profile
-                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                <a href="#CatalogedResource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -4369,11 +4362,11 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_access_service"></a></li>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_service"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.accessService"></a></li>
+                  <li>from domain <a href="#Catalog"></a> → <a href="#Catalog.service"></a></li>
               </ul>
           
-              <section id="Property:data_service_endpoint_description">
+              <section id="DataService.endpointDescription">
                 <h4>endpoint description</h4>
               
                 <table class="def">
@@ -4399,7 +4392,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Data_Service">Data Service</a>
+                      <a href="#DataService">Data Service</a>
               
                       
                     </td>
@@ -4440,7 +4433,7 @@
               An endpoint description may be expressed in a machine-readable form, such as an OpenAPI (Swagger) description [OpenAPI], an OGC GetCapabilities response [WFS], [ISO-19142], [WMS], [ISO-19128], a SPARQL Service Description [SPARQL11-SERVICE-DESCRIPTION], an [OpenSearch] or [WSDL20] document, a Hydra API description [HYDRA], else in text or some other informal mode if a formal representation is not possible.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:data_service_endpoint_url">
+              </section>    <section id="DataService.endpointUrl">
                 <h4>endpoint URL</h4>
               
                 <table class="def">
@@ -4466,7 +4459,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Data_Service">Data Service</a>
+                      <a href="#DataService">Data Service</a>
               
                       
                     </td>
@@ -4502,7 +4495,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:data_service_serves_dataset">
+              </section>    <section id="DataService.servesDataset">
                 <h4>serves dataset</h4>
               
                 <table class="def">
@@ -4528,7 +4521,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Data_Service">Data Service</a>
+                      <a href="#DataService">Data Service</a>
               
                       
                     </td>
@@ -4536,7 +4529,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                           [0..*]
               
@@ -4565,7 +4558,7 @@
               
                 </table>
               </section>
-          </section>          <section id="Class:Dataset">
+          </section>          <section id="Dataset">
             <h4>Dataset</h4>
           
             <table class="def">
@@ -4617,7 +4610,7 @@
                                   specializes
                 
                 class profile
-                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                <a href="#CatalogedResource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -4640,11 +4633,11 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_dataset"></a></li>
-                  <li>from domain <a href="#Class:Data_Service"></a> → <a href="#Property:data_service_serves_dataset"></a></li>
+                  <li>from domain <a href="#Catalog"></a> → <a href="#Catalog.dataset"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.servesDataset"></a></li>
               </ul>
           
-              <section id="Property:dataset_distribution">
+              <section id="Dataset.distribution">
                 <h4>distribution</h4>
               
                 <table class="def">
@@ -4670,7 +4663,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -4678,7 +4671,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                           [0..*]
               
@@ -4716,7 +4709,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:dataset_frequency">
+              </section>    <section id="Dataset.frequency">
                 <h4>frequency</h4>
               
                 <table class="def">
@@ -4742,7 +4735,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -4782,7 +4775,7 @@
                     <td>The value of dcterms:accrualPeriodicity gives the rate at which the dataset-as-a-whole is updated. This may be complemented by dcat:temporalResolution to give the time between collected data points in a time series.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:dataset_in_series">
+              </section>    <section id="Dataset.inSeries">
                 <h4>in series</h4>
               
                 <table class="def">
@@ -4808,7 +4801,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -4816,7 +4809,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Dataset Series</a>
+                      <a href="#DatasetSeries">Dataset Series</a>
               
                           [0..*]
               
@@ -4864,7 +4857,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:dataset_spatial_resolution">
+              </section>    <section id="Dataset.spatialResolution">
                 <h4>spatial resolution</h4>
               
                 <table class="def">
@@ -4890,7 +4883,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -4930,7 +4923,7 @@
                     <td>If the dataset is an image or grid this should correspond to the spacing of items. For other kinds of spatial datasets, this property will usually indicate the smallest distance between items in the dataset.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:dataset_spatial">
+              </section>    <section id="Dataset.spatial-geographicalCoverage">
                 <h4>spatial/geographical coverage</h4>
               
                 <table class="def">
@@ -4956,7 +4949,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -4964,7 +4957,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Location">Location</a>
+                      <a href="#Location">Location</a>
               
                           [0..*]
               
@@ -5006,7 +4999,7 @@
                     <td>The spatial coverage of a dataset may be encoded as an instance of dcterms:Location, or may be indicated using an IRI reference (link) to a resource describing a location. It is recommended that links are to entries in a well maintained gazetteer such as Geonames.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:dataset_temporal">
+              </section>    <section id="Dataset.temporalCoverage">
                 <h4>temporal coverage</h4>
               
                 <table class="def">
@@ -5032,7 +5025,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -5040,7 +5033,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Period_of_Time">Period of Time</a>
+                      <a href="#PeriodOfTime">Period of Time</a>
               
                           [0..*]
               
@@ -5082,7 +5075,7 @@
                     <td>The temporal coverage of a dataset may be encoded as an instance of dcterms:PeriodOfTime, or may be indicated using an IRI reference (link) to a resource describing a time period or interval.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:dataset_temporal_resolution">
+              </section>    <section id="Dataset.temporalResolution">
                 <h4>temporal resolution</h4>
               
                 <table class="def">
@@ -5108,7 +5101,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -5148,7 +5141,7 @@
                     <td>If the dataset is a time-series this should correspond to the spacing of items in the series. For other kinds of dataset, this property will usually indicate the smallest time difference between items in the dataset.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:dataset_was_generated_by">
+              </section>    <section id="Dataset.wasGeneratedBy">
                 <h4>was generated by</h4>
               
                 <table class="def">
@@ -5175,7 +5168,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset">Dataset</a>
+                      <a href="#Dataset">Dataset</a>
               
                       
                     </td>
@@ -5227,7 +5220,7 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="Class:Dataset_Series">
+          </section>          <section id="DatasetSeries">
             <h4>Dataset Series</h4>
           
             <table class="def">
@@ -5289,7 +5282,7 @@
                                   specializes
                 
                 class profile
-                <a href="#Class:Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
+                <a href="#Dataset">Dataset</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#Dataset">dcat-dap:Dataset</a>)
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -5315,7 +5308,7 @@
                                   specializes
                 
                 class profile
-                <a href="#Class:Resource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
+                <a href="#CatalogedResource">Cataloged Resource</a> (<a href="https://mff-uk.github.io/specifications/dcat-dap#CatalogedResource">dcat-dap:CatalogedResource</a>)
                   <ul style="list-style-type: disclosure-closed;">
                       <li>
                                   profiles
@@ -5346,11 +5339,11 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_in_series"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.inSeries"></a></li>
               </ul>
           
           
-          </section>          <section id="Class:Dataset_Series">
+          </section>          <section id="Distribution">
             <h4>Distribution</h4>
           
             <table class="def">
@@ -5400,10 +5393,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_distribution"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.distribution"></a></li>
               </ul>
           
-              <section id="Property:distribution_access_rights">
+              <section id="Distribution.accessRights">
                 <h4>access rights</h4>
               
                 <table class="def">
@@ -5429,7 +5422,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -5479,7 +5472,7 @@
                     <td>Information about licenses and rights MAY be provided for the Distribution. See also guidance at 9. License and rights statements.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_access_service">
+              </section>    <section id="Distribution.accessService">
                 <h4>access service</h4>
               
                 <table class="def">
@@ -5505,7 +5498,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -5513,7 +5506,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Data_Service">Data Service</a>
+                      <a href="#DataService">Data Service</a>
               
                           [0..*]
               
@@ -5545,7 +5538,7 @@
                     <td>dcat:accessService SHOULD be used to link to a description of a dcat:DataService that can provide access to this distribution.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_access_url">
+              </section>    <section id="Distribution.accessUrl">
                 <h4>access URL</h4>
               
                 <table class="def">
@@ -5571,7 +5564,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -5615,7 +5608,7 @@
               If the distribution(s) are accessible only through a landing page (i.e., direct download URLs are not known), then the landing page URL associated with the dcat:Dataset SHOULD be duplicated as access URL on a distribution (see 5.7 Dataset available only behind some Web page).</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_size">
+              </section>    <section id="Distribution.byteSize">
                 <h4>byte size</h4>
               
                 <table class="def">
@@ -5641,7 +5634,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -5682,7 +5675,7 @@
               While it is recommended that the size be given as an integer, alternative literals such as &#x27;1.5 MB&#x27; are sometimes used.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_checksum">
+              </section>    <section id="Distribution.checksum">
                 <h4>checksum</h4>
               
                 <table class="def">
@@ -5708,7 +5701,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -5716,7 +5709,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Checksum">Checksum</a>
+                      <a href="#Checksum">Checksum</a>
               
                           [0..*]
               
@@ -5748,7 +5741,7 @@
                     <td>The checksum is related to the download URL.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_compression_format">
+              </section>    <section id="Distribution.compressionFormat">
                 <h4>compression format</h4>
               
                 <table class="def">
@@ -5774,7 +5767,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -5824,7 +5817,7 @@
                     <td>This property to be used when the files in the distribution are compressed, e.g., in a ZIP file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_conforms_to">
+              </section>    <section id="Distribution.conformsTo">
                 <h4>conforms to</h4>
               
                 <table class="def">
@@ -5850,7 +5843,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -5900,7 +5893,7 @@
                     <td>This property SHOULD be used to indicate the model, schema, ontology, view or profile that this representation of a dataset conforms to. This is (generally) a complementary concern to the media-type or format.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_description">
+              </section>    <section id="Distribution.description">
                 <h4>description</h4>
               
                 <table class="def">
@@ -5926,7 +5919,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                           [0..*]
               
@@ -5963,7 +5956,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:distribution_download_url">
+              </section>    <section id="Distribution.downloadUrl">
                 <h4>download URL</h4>
               
                 <table class="def">
@@ -5989,7 +5982,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6029,7 +6022,7 @@
                     <td>dcat:downloadURL SHOULD be used for the URL at which this distribution is available directly, typically through a HTTP Get request.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_format">
+              </section>    <section id="Distribution.format">
                 <h4>format</h4>
               
                 <table class="def">
@@ -6055,7 +6048,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6095,7 +6088,7 @@
                     <td>dcat:mediaType SHOULD be used if the type of the distribution is defined by IANA [[IANA-MEDIA-TYPES]].</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_has_policy">
+              </section>    <section id="Distribution.hasPolicy">
                 <h4>has policy</h4>
               
                 <table class="def">
@@ -6121,7 +6114,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6161,7 +6154,7 @@
                     <td>Information about rights expressed as an ODRL policy [[ODRL-MODEL]] using the ODRL vocabulary [[ODRL-VOCAB]] MAY be provided for the distribution. See also guidance at 9. License and rights statements.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_license">
+              </section>    <section id="Distribution.license">
                 <h4>license</h4>
               
                 <table class="def">
@@ -6187,7 +6180,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6237,7 +6230,7 @@
                     <td>Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_media_type">
+              </section>    <section id="Distribution.mediaType">
                 <h4>media type</h4>
               
                 <table class="def">
@@ -6263,7 +6256,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6313,7 +6306,7 @@
                     <td>This property SHOULD be used when the media type of the distribution is defined in IANA [[IANA-MEDIA-TYPES]], otherwise dcterms:format MAY be used with different values.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_packaging_format">
+              </section>    <section id="Distribution.packagingFormat">
                 <h4>packaging format</h4>
               
                 <table class="def">
@@ -6339,7 +6332,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6389,7 +6382,7 @@
                     <td>This property to be used when the files in the distribution are packaged, e.g., in a TAR file, a ZIP file, a Frictionless Data Package or a Bagit file. The format SHOULD be expressed using a media type as defined by IANA [[IANA-MEDIA-TYPES]], if available.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_release_date">
+              </section>    <section id="Distribution.releaseDate">
                 <h4>release date</h4>
               
                 <table class="def">
@@ -6415,7 +6408,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6465,7 +6458,7 @@
                     <td>This property SHOULD be set using the first known date of issuance.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_rights">
+              </section>    <section id="Distribution.rights">
                 <h4>rights</h4>
               
                 <table class="def">
@@ -6491,7 +6484,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6533,7 +6526,7 @@
               Information about licenses and rights SHOULD be provided on the level of Distribution. Information about licenses and rights MAY be provided for a Dataset in addition to but not instead of the information provided for the Distributions of that Dataset. Providing license or rights information for a Dataset that is different from information provided for a Distribution of that Dataset SHOULD be avoided as this can create legal conflicts. See also guidance at 9. License and rights statements.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_spatial_resolution">
+              </section>    <section id="Distribution.spatialResolution">
                 <h4>spatial resolution</h4>
               
                 <table class="def">
@@ -6559,7 +6552,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6600,7 +6593,7 @@
               Alternative spatial resolutions might be provided as different dataset distributions</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_temporal_resolution">
+              </section>    <section id="Distribution.temporalResolution">
                 <h4>temporal resolution</h4>
               
                 <table class="def">
@@ -6626,7 +6619,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6667,7 +6660,7 @@
               Alternative temporal resolutions might be provided in different dataset distributions</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:distribution_title">
+              </section>    <section id="Distribution.title">
                 <h4>title</h4>
               
                 <table class="def">
@@ -6693,7 +6686,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6729,7 +6722,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Property:distribution_update_date">
+              </section>    <section id="Distribution.update-modificationDate">
                 <h4>update/modification date</h4>
               
                 <table class="def">
@@ -6755,7 +6748,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Dataset_Series">Distribution</a>
+                      <a href="#Distribution">Distribution</a>
               
                       
                     </td>
@@ -6802,7 +6795,7 @@
               
                 </table>
               </section>
-          </section>          <section id="Class:Location">
+          </section>          <section id="Location">
             <h4>Location</h4>
           
             <table class="def">
@@ -6864,10 +6857,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_spatial"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.spatial-geographicalCoverage"></a></li>
               </ul>
           
-              <section id="Property:location_bbox">
+              <section id="Location.boundingBox">
                 <h4>bounding box</h4>
               
                 <table class="def">
@@ -6893,7 +6886,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Location">Location</a>
+                      <a href="#Location">Location</a>
               
                       
                     </td>
@@ -6933,7 +6926,7 @@
                     <td>The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]]).</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:location_centroid">
+              </section>    <section id="Location.centroid">
                 <h4>centroid</h4>
               
                 <table class="def">
@@ -6959,7 +6952,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Location">Location</a>
+                      <a href="#Location">Location</a>
               
                       
                     </td>
@@ -6999,7 +6992,7 @@
                     <td>The range of this property (rdfs:Literal) is intentionally generic, with the purpose of allowing different geometry literal encodings. E.g., the geometry could be encoded as a WKT literal (geosparql:wktLiteral [[GeoSPARQL]]).</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:location_geometry">
+              </section>    <section id="Location.geometry">
                 <h4>geometry</h4>
               
                 <table class="def">
@@ -7025,7 +7018,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Location">Location</a>
+                      <a href="#Location">Location</a>
               
                       
                     </td>
@@ -7066,7 +7059,7 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="Class:Organization_Person">
+          </section>          <section id="Organization">
             <h4>Organization</h4>
           
             <table class="def">
@@ -7126,7 +7119,7 @@
           
           
           
-          </section>          <section id="Class:Period_of_Time">
+          </section>          <section id="PeriodOfTime">
             <h4>Period of Time</h4>
           
             <table class="def">
@@ -7186,10 +7179,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_temporal"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.temporalCoverage"></a></li>
               </ul>
           
-              <section id="Property:period_has_beginning">
+              <section id="PeriodOfTime.beginning">
                 <h4>beginning</h4>
               
                 <table class="def">
@@ -7215,7 +7208,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Period_of_Time">Period of Time</a>
+                      <a href="#PeriodOfTime">Period of Time</a>
               
                       
                     </td>
@@ -7265,7 +7258,7 @@
                     <td>Use of the property time:hasBeginning entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:period_has_end">
+              </section>    <section id="PeriodOfTime.end">
                 <h4>end</h4>
               
                 <table class="def">
@@ -7291,7 +7284,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Period_of_Time">Period of Time</a>
+                      <a href="#PeriodOfTime">Period of Time</a>
               
                       
                     </td>
@@ -7341,7 +7334,7 @@
                     <td>Use of the property time:hasEnd entails that value of the dcterms:temporal property is a member of the time:TemporalEntity class from [[OWL-TIME]]. In this context this could be taken to imply that dcterms:PeriodOfTime is equivalent to the sub-class time:ProperInterval</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:period_end_date">
+              </section>    <section id="PeriodOfTime.endDate">
                 <h4>end date</h4>
               
                 <table class="def">
@@ -7367,7 +7360,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Period_of_Time">Period of Time</a>
+                      <a href="#PeriodOfTime">Period of Time</a>
               
                       
                     </td>
@@ -7407,7 +7400,7 @@
                     <td>rdfs:Literal encoded using the relevant ISO 8601 Date and Time compliant string [[DATETIME]] and typed using the appropriate XML Schema datatype [[XMLSCHEMA11-2]]</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:period_start_date">
+              </section>    <section id="PeriodOfTime.startDate">
                 <h4>start date</h4>
               
                 <table class="def">
@@ -7433,7 +7426,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Period_of_Time">Period of Time</a>
+                      <a href="#PeriodOfTime">Period of Time</a>
               
                       
                     </td>
@@ -7474,7 +7467,7 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="Class:Organization_Person">
+          </section>          <section id="Person">
             <h4>Person</h4>
           
             <table class="def">
@@ -7543,7 +7536,7 @@
           
           
           
-          </section>          <section id="Class:Organization_Person">
+          </section>          <section id="Relationship">
             <h4>Relationship</h4>
           
             <table class="def">
@@ -7593,10 +7586,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_qualified_relation"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.qualifiedRelation"></a></li>
               </ul>
           
-              <section id="Property:relationship_hadRole">
+              <section id="Relationship.hadRole">
                 <h4>had role</h4>
               
                 <table class="def">
@@ -7622,7 +7615,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Organization_Person">Relationship</a>
+                      <a href="#Relationship">Relationship</a>
               
                       
                     </td>
@@ -7630,7 +7623,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Role">Role</a>
+                      <a href="#Role">Role</a>
               
                           [0..*]
               
@@ -7663,7 +7656,7 @@
               May be used in a qualified-relation to specify the role of an Entity with respect to another Entity. It is recommended that the value be taken from a controlled vocabulary of entity roles.</td>
                   </tr>
                 </table>
-              </section>    <section id="Property:relationship_relation">
+              </section>    <section id="Relationship.relation">
                 <h4>relation</h4>
               
                 <table class="def">
@@ -7689,7 +7682,7 @@
                   <tr>
                     <td>Domain</td>
                     <td>
-                      <a href="#Class:Organization_Person">Relationship</a>
+                      <a href="#Relationship">Relationship</a>
               
                       
                     </td>
@@ -7697,7 +7690,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Resource">Cataloged Resource</a>
+                      <a href="#CatalogedResource">Cataloged Resource</a>
               
                           [0..*]
               
@@ -7730,7 +7723,7 @@
                   </tr>
                 </table>
               </section>
-          </section>          <section id="Class:Role">
+          </section>          <section id="Role">
             <h4>Role</h4>
           
             <table class="def">
@@ -7791,8 +7784,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Organization_Person"></a> → <a href="#Property:relationship_hadRole"></a></li>
-                  <li>from domain <a href="#Attribution"></a> → <a href="#Property:relationship_hadRole"></a></li>
+                  <li>from domain <a href="#Relationship"></a> → <a href="#Relationship.hadRole"></a></li>
+                  <li>from domain <a href="#Attribution"></a> → <a href="#Attribution.hadRole"></a></li>
               </ul>
           
           
@@ -7847,8 +7840,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_creator"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_publisher"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.creator"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.publisher"></a></li>
               </ul>
           
           
@@ -7918,10 +7911,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_qualified_attribution"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.qualifiedAttribution"></a></li>
               </ul>
           
-              <section id="Property:relationship_hadRole">
+              <section id="Attribution.hadRole">
                 <h4>had role</h4>
               
                 <table class="def">
@@ -7955,7 +7948,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Class:Role">Role</a>
+                      <a href="#Role">Role</a>
               
                           [0..*]
               
@@ -8035,7 +8028,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Checksum"></a> → <a href="#Property:checksum_algorithm"></a></li>
+                  <li>from domain <a href="#Checksum"></a> → <a href="#Checksum.algorithm"></a></li>
               </ul>
           
           
@@ -8094,7 +8087,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_type"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.type-genre"></a></li>
               </ul>
           
           
@@ -8144,8 +8137,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_homepage"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_landing_page"></a></li>
+                  <li>from domain <a href="#Catalog"></a> → <a href="#Catalog.homepage"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.landingPage"></a></li>
               </ul>
           
           
@@ -8190,7 +8183,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_was_generated_by"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.wasGeneratedBy"></a></li>
               </ul>
           
           
@@ -8240,7 +8233,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset"></a> → <a href="#Property:dataset_frequency"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.frequency"></a></li>
               </ul>
           
           
@@ -8290,7 +8283,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Location"></a> → <a href="#Property:location_geometry"></a></li>
+                  <li>from domain <a href="#Location"></a> → <a href="#Location.geometry"></a></li>
               </ul>
           
           
@@ -8340,7 +8333,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_contact_point"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.contactPoint"></a></li>
               </ul>
           
           
@@ -8400,8 +8393,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_license"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_license"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.license"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.license"></a></li>
               </ul>
           
           
@@ -8451,7 +8444,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_language"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.language"></a></li>
               </ul>
           
           
@@ -8511,9 +8504,9 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_compression_format"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_media_type"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_packaging_format"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.compressionFormat"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.mediaType"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.packagingFormat"></a></li>
               </ul>
           
           
@@ -8563,7 +8556,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_format"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.format"></a></li>
               </ul>
           
           
@@ -8613,8 +8606,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_has_policy"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_has_policy"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.hasPolicy"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.hasPolicy"></a></li>
               </ul>
           
           
@@ -8664,22 +8657,22 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_access_url"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_download_url"></a></li>
-                  <li>from domain <a href="#Class:Data_Service"></a> → <a href="#Property:data_service_endpoint_description"></a></li>
-                  <li>from domain <a href="#Class:Data_Service"></a> → <a href="#Property:data_service_endpoint_url"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_first"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_has_current_version"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_has_part"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_has_version"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_has_policy"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_last"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_previous"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_previous_version"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_relation"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_replaces"></a></li>
-                  <li>from domain <a href="#Class:Catalog"></a> → <a href="#Property:catalog_themes"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_theme"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.accessUrl"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.downloadUrl"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointDescription"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointUrl"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.first"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.hasCurrentVersion"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.hasPart"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.hasVersion"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.isReferencedBy"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.last"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.previous"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.previousVersion"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.relation"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.replaces"></a></li>
+                  <li>from domain <a href="#Catalog"></a> → <a href="#Catalog.themeTaxonomy"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.theme-category"></a></li>
               </ul>
           
           
@@ -8729,10 +8722,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_access_rights"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_access_rights"></a></li>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_rights"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_rights"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.accessRights"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.accessRights"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.rights"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.rights"></a></li>
               </ul>
           
           
@@ -8782,9 +8775,9 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Resource"></a> → <a href="#Property:resource_conforms_to"></a></li>
-                  <li>from domain <a href="#Class:Catalog_Record"></a> → <a href="#Property:record_conforms_to"></a></li>
-                  <li>from domain <a href="#Class:Dataset_Series"></a> → <a href="#Property:distribution_conforms_to"></a></li>
+                  <li>from domain <a href="#CatalogedResource"></a> → <a href="#CatalogedResource.conformsTo"></a></li>
+                  <li>from domain <a href="#CatalogRecord"></a> → <a href="#CatalogRecord.conformsTo"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.conformsTo"></a></li>
               </ul>
           
           
@@ -8844,8 +8837,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Class:Period_of_Time"></a> → <a href="#Property:period_has_beginning"></a></li>
-                  <li>from domain <a href="#Class:Period_of_Time"></a> → <a href="#Property:period_has_end"></a></li>
+                  <li>from domain <a href="#PeriodOfTime"></a> → <a href="#PeriodOfTime.beginning"></a></li>
+                  <li>from domain <a href="#PeriodOfTime"></a> → <a href="#PeriodOfTime.end"></a></li>
               </ul>
           
           
@@ -8877,7 +8870,7 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section id="attachments">
       <h2>Attachments</h2>
     
         <p>This specification includes the following attachments.</p>
@@ -8897,8 +8890,8 @@
               <td>SHACL validation rules</td>
               <td><a href="./shacl.ttl">./shacl.ttl</a></td>
             </tr>
-            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
-            <tr><td>Conceptual diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
+            <tr><td>PlantUML diagram</td><td><a href="./conceptual-model.plantuml">./conceptual-model.plantuml</a></td></tr>
+            <tr><td>Conceptual diagram</td><td><a href="./conceptual-model.svg">./conceptual-model.svg</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
