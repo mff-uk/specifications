@@ -78,12 +78,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Document>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Document>
 ];
@@ -94,12 +94,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource rdfs:Resource
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource rdfs:Resource
 ];
@@ -120,12 +120,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:RightsStatement
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:RightsStatement
 ];
@@ -136,12 +136,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:Standard
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:Standard
 ];
@@ -168,12 +168,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Agent>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Agent>
 ];
@@ -184,12 +184,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:LinguisticSystem
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:LinguisticSystem
 ];
@@ -200,12 +200,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource rdfs:Class
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource rdfs:Class
 ];
@@ -234,12 +234,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/prov#Attribution>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://www.w3.org/ns/prov#Attribution>
 ];
@@ -250,12 +250,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:LicenseDocument
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:LicenseDocument
 ];
@@ -266,7 +266,7 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/odrl/2/Policy>
 ], [
@@ -315,12 +315,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:Frequency
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:Frequency
 ];
@@ -332,12 +332,12 @@
     skos:scopeNote "For an extensive geometry (i.e., a set of coordinates denoting the vertices of the relevant geographic area), the property locn:geometry [[LOCN]] SHOULD be used.\nFor a geographic bounding box delimiting a spatial area the property dcat:bbox SHOULD be used.\nFor the geographic center of a spatial area, or another characteristic point, the property dcat:centroid SHOULD be used."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:Location
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:Location
 ];
@@ -351,7 +351,7 @@
     skos:scopeNote "The start and end of the interval SHOULD be given by using properties dcat:startDate or time:hasBeginning, and dcat:endDate or time:hasEnd, respectively. The interval can also be open - i.e., it can have just a start or just an end."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:PeriodOfTime
 ];
@@ -363,7 +363,7 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/prov#Entity>
 ], [
@@ -379,12 +379,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:MediaType
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:MediaType
 ];
@@ -395,12 +395,12 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource dct:MediaTypeOrExtent
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:MediaTypeOrExtent
 ];
@@ -439,12 +439,12 @@
     skos:scopeNote "[[FOAF]] provides several properties to describe these entities."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Person>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Person>
 ];
@@ -457,12 +457,12 @@
     skos:scopeNote "[[FOAF]] provides several properties to describe these entities."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Organization>
 ], [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://xmlns.com/foaf/0.1/Organization>
 ];
@@ -508,7 +508,7 @@
     a dsv:TermProfile;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/locn#Geometry>
 ], [
@@ -526,7 +526,7 @@
     skos:scopeNote "The Checksum includes the algorithm (spdx:algorithm) and value (spdx:checksumValue) that allows the integrity of a file to be verified to ensure no errors occurred in transmission or storage."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://spdx.org/rdf/terms#Checksum>
 ];
@@ -539,7 +539,7 @@
     skos:prefLabel "Checksum Algorithm"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://spdx.org/rdf/terms#ChecksumAlgorithm>
 ];
@@ -684,7 +684,7 @@
     skos:scopeNote "Information about licenses and rights MAY be provided for the Resource."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:accessRights
 ];
@@ -701,7 +701,7 @@
     skos:scopeNote "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the cataloged resource content conforms to."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:conformsTo
 ];
@@ -738,7 +738,7 @@
     skos:scopeNote "Resources of type foaf:Agent are recommended as values for this property."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:creator
 ];
@@ -767,7 +767,7 @@
     skos:scopeNote "Resources of type foaf:Agent are recommended as values for this property."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:publisher
 ];
@@ -801,7 +801,7 @@
     skos:scopeNote "The value SHOULD be taken from a well governed and broadly recognised controlled vocabulary, such as:\nDCMI Type vocabulary [[DCTERMS]]\n[[ISO-19115-1]] scope codes\nDatacite resource types [[DataCite]]\nPARSE.Insight content-types used by re3data.org [[RE3DATA-SCHEMA]] (see item 15 contentType)\nMARC intellectual resource types\nSome members of these controlled vocabularies are not strictly suitable for datasets or data services (e.g., DCMI Type Event, PhysicalObject; [[ISO-19115-1]] CollectionHardware, CollectionSession, Initiative, Sample, Repository), but might be used in the context of other kinds of catalogs defined in DCAT profiles or applications.\n\nTo describe the file format, physical medium, or dimensions of the resource, use the dcterms:format element."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:type
 ];
@@ -818,7 +818,7 @@
     skos:scopeNote "dcterms:relation SHOULD be used where the nature of the relationship between a cataloged resource and related resources is not known. A more specific sub-property SHOULD be used if the nature of the relationship of the link is known. The property dcat:distribution SHOULD be used to link from a dcat:Dataset to a representation of the dataset, described as a dcat:Distribution"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:relation
 ];
@@ -911,7 +911,7 @@
     skos:prefLabel "has part"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:hasPart
 ];
@@ -1014,7 +1014,7 @@
     skos:prefLabel "replaces"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:replaces
 ];
@@ -1111,7 +1111,7 @@
     skos:scopeNote "This property SHOULD be used to indicate the model, schema, ontology, view or profile that the catalog record metadata conforms to."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:conformsTo
 ];
@@ -1401,7 +1401,7 @@
     skos:scopeNote "The checksum is related to the download URL."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://spdx.org/rdf/terms#checksum>
 ];
@@ -1541,7 +1541,7 @@
     skos:scopeNote "The range of this property (locn:Geometry) allows for any type of geometry specification. E.g., the geometry could be encoded by a literal, as WKT (geosparql:wktLiteral [[GeoSPARQL]]), or represented by a class, as geosparql:Geometry (or any of its subclasses) [[GeoSPARQL]]."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/locn#geometry>
 ];
@@ -1558,7 +1558,7 @@
     skos:scopeNote "DCAT does not prescribe the use of any specific set of life-cycle statuses, but refers to existing standards and community practices fit for the relevant application scenario."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
   dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://www.w3.org/ns/adms#status>
 ];
@@ -1585,7 +1585,7 @@
     skos:prefLabel "title"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:title
 ];
@@ -1762,7 +1762,7 @@
     skos:scopeNote "This property SHOULD be set using the first known date of issuance."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:issued
 ];
@@ -1778,7 +1778,7 @@
     skos:prefLabel "update/modification date"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource dct:modified
 ];
@@ -1924,7 +1924,7 @@
     skos:prefLabel "checksum value"@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:definition;
+  dsv:reusedProperty rdfs:comment;
   dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <http://spdx.org/rdf/terms#checksumValue>
 ];
