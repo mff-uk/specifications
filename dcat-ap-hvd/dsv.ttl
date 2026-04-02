@@ -20,14 +20,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset>;
@@ -39,14 +42,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue>;
@@ -58,14 +64,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#CatalogueRecord>;
@@ -77,14 +86,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CataloguedResource>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#CataloguedResource>;
@@ -97,14 +109,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService>;
@@ -117,14 +132,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DatasetSeries>;
@@ -136,14 +154,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution>;
@@ -155,14 +176,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Kind>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Kind>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Kind>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Kind>;
@@ -174,14 +198,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-dap#LicenseDocument>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#LicenceDocument>;
@@ -193,14 +220,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Concept>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Concept>;
@@ -212,14 +242,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Document>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Document>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Document>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Document>;
@@ -231,14 +264,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#LegalResource>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#LegalResource>;
@@ -250,14 +286,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#rdfs-Resource>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Resource>;
@@ -269,14 +308,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#RightsStatement>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Rightsstatement>;
@@ -288,14 +330,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Standard>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Standard>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Standard>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Standard>;
@@ -308,14 +353,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.dataset>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue.dataset>;
@@ -331,14 +379,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.service>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue.service>;
@@ -354,14 +405,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Catalogue.record>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Catalogue.record>;
@@ -377,14 +431,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#CatalogueRecord.primaryTopic>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#CatalogueRecord.primarytopic>;
@@ -401,10 +458,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.applicableLegislation>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.applicablelegislation>;
@@ -421,10 +480,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.contactPoint>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.contactpoint>;
@@ -442,6 +503,7 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.documentation>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.documentation>;
@@ -458,10 +520,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointDescription>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.endpointdescription>;
@@ -478,10 +542,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.endpointUrl>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.endpointURL>;
@@ -496,7 +562,8 @@
     skos:definition "The HVD category to which this Data Service belongs."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/hvdCategory>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.HVDcategory>;
@@ -514,10 +581,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.licence>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.licence>;
@@ -533,14 +602,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DataService.rights>;
@@ -557,10 +629,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DataService.servesDataset>
 ];
     dsv:cardinality cardinality:0n;
@@ -576,10 +650,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.applicableLegislation>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.applicablelegislation>;
@@ -596,10 +672,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.conformsTo>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.conformsto>;
@@ -615,14 +693,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.contactPoint>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.contactpoint>;
@@ -639,10 +720,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.datasetDistribution>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.datasetdistribution>;
@@ -657,7 +740,8 @@
     skos:definition "The HVD category to which this Dataset belongs."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/hvdCategory>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.HVDCategory>;
@@ -674,14 +758,17 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:scopeNote;
+  dsv:reusedAsProperty skos:scopeNote;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Dataset.inSeries>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Dataset.inseries>;
@@ -698,10 +785,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#DatasetSeries.applicableLegislation>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DatasetSeries.applicablelegislation>;
@@ -716,7 +805,8 @@
     skos:definition "The HVD category to which this Dataset Series belongs."@en;
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
-  dsv:reusedProperty skos:prefLabel;
+  dsv:reusedProperty rdfs:label;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <http://data.europa.eu/r5r/hvdCategory>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#DatasetSeries.HVDCategory>;
@@ -734,10 +824,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessService>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.accessservice>;
@@ -754,10 +846,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.accessUrl>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.accessURL>;
@@ -774,10 +868,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.applicableLegislation>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.applicablelegislation>;
@@ -794,10 +890,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.licence>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.licence>;
@@ -814,10 +912,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.linkedSchemas>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.1/#Distribution.linkedschemas>;
@@ -834,10 +934,12 @@
     dsv:reusesPropertyValue [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:prefLabel;
+  dsv:reusedAsProperty skos:prefLabel;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
 ], [
   a dsv:PropertyValueReuse;
   dsv:reusedProperty skos:definition;
+  dsv:reusedAsProperty skos:definition;
   dsv:reusedFromResource <https://mff-uk.github.io/specifications/dcat-ap#Distribution.rights>
 ];
     dsv:externalDocumentation <https://semiceu.github.io/DCAT-AP/releases/3.0.0-hvd/#Distribution.rights>;

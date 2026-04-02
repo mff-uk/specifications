@@ -14,7 +14,7 @@
         "adms:AssetDistribution",
         "prof:ResourceDescriptor"
       ],
-      "hasArtifact": ".",
+      "hasArtifact": "",
       "hasRole": "role:specification",
       "format": "filetype:HTML",
       "inSpecificationOf": [
@@ -46,7 +46,6 @@
           ],
           "hasResource": [
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-ap-hvd/#dsv",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
@@ -60,7 +59,6 @@
               ]
             },
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-ap-hvd/#shacl",
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
@@ -71,7 +69,16 @@
               "conformsTo": "https://www.w3.org/TR/shacl/"
             },
             {
-              "@id": "https://mff-uk.github.io/specifications/dcat-ap-hvd/#fa04f9de-1635-4a02-b921-686013209347",
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "./generator-configuration.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:StructureConfiguration"
+            },
+            {
               "@type": [
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
@@ -88,7 +95,7 @@
                 "adms:AssetDistribution",
                 "prof:ResourceDescriptor"
               ],
-              "hasArtifact": ".",
+              "hasArtifact": "",
               "hasRole": "role:specification",
               "format": "filetype:HTML"
             }
@@ -905,7 +912,7 @@
                   <li>from domain <a href="#Catalogue"></a> → <a href="#Catalogue.record"></a></li>
               </ul>
           
-              <section id="CatalogueRecord.primarytopic">
+              <section id="CatalogueRecord.primaryTopic">
                 <h4>primary topic</h4>
               
                 <table class="def">
@@ -1060,7 +1067,7 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#CatalogueRecord"></a> → <a href="#CatalogueRecord.primarytopic"></a></li>
+                  <li>from domain <a href="#CatalogueRecord"></a> → <a href="#CatalogueRecord.primaryTopic"></a></li>
               </ul>
           
           
@@ -1228,11 +1235,11 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.accessservice"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.accessService"></a></li>
                   <li>from domain <a href="#Catalogue"></a> → <a href="#Catalogue.service"></a></li>
               </ul>
           
-              <section id="DataService.applicablelegislation">
+              <section id="DataService.applicableLegislation">
                 <h4>applicable legislation</h4>
               
                 <table class="def">
@@ -1309,7 +1316,7 @@
               As multiple legislations may apply to the resource the maximum cardinality is not limited.</td>
                   </tr>
                 </table>
-              </section>    <section id="DataService.contactpoint">
+              </section>    <section id="DataService.contactPoint">
                 <h4>contact point</h4>
               
                 <table class="def">
@@ -1470,7 +1477,7 @@
                     <td>Quality of service covers a broad spectrum of aspects. The HVD regulation does not list any mandatory topic. Therefore quality of service information is considered part of the generic documentation of a Data Service.</td>
                   </tr>
                 </table>
-              </section>    <section id="DataService.endpointdescription">
+              </section>    <section id="DataService.endpointDescription">
                 <h4>endpoint description</h4>
               
                 <table class="def">
@@ -1504,7 +1511,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#rdfs-Resource">Resource</a>
               
                           [0..*]
               
@@ -1556,7 +1563,7 @@
               Article 3.3 requires to provide API documentation in a Union or internationally recognised open, human-readable and machine-readable format.</td>
                   </tr>
                 </table>
-              </section>    <section id="DataService.endpointURL">
+              </section>    <section id="DataService.endpointUrl">
                 <h4>endpoint URL</h4>
               
                 <table class="def">
@@ -1590,7 +1597,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#rdfs-Resource">Resource</a>
               
                           [1..*]
               
@@ -1641,7 +1648,7 @@
                     <td>The endpoint URL SHOULD be persistent. This means that publishers should do everything in their power to maintain the value stable and existing.</td>
                   </tr>
                 </table>
-              </section>    <section id="DataService.HVDcategory">
+              </section>    <section id="DataService.hvdCategory">
                 <h4>HVD category</h4>
               
                 <table class="def">
@@ -1737,7 +1744,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#LicenceDocument">License Document</a>
+                      <a href="#LicenseDocument">License Document</a>
               
                           [0..1]
               
@@ -1833,7 +1840,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Rightsstatement">Rights Statement</a>
+                      <a href="#RightsStatement">Rights Statement</a>
               
                           [0..*]
               
@@ -2135,7 +2142,7 @@
                   <li>from domain <a href="#DataService"></a> → <a href="#DataService.servesDataset"></a></li>
               </ul>
           
-              <section id="Dataset.applicablelegislation">
+              <section id="Dataset.applicableLegislation">
                 <h4>applicable legislation</h4>
               
                 <table class="def">
@@ -2212,7 +2219,7 @@
               As multiple legislations may apply to the resource the maximum cardinality is not limited.</td>
                   </tr>
                 </table>
-              </section>    <section id="Dataset.conformsto">
+              </section>    <section id="Dataset.conformsTo">
                 <h4>conforms to</h4>
               
                 <table class="def">
@@ -2307,7 +2314,7 @@
                     <td>The provided information should enable to the verification whether the detailed information requirements by the HVD is satisfied. For more usage suggestions see section on specific data requirements.</td>
                   </tr>
                 </table>
-              </section>    <section id="Dataset.contactpoint">
+              </section>    <section id="Dataset.contactPoint">
                 <h4>contact point</h4>
               
                 <table class="def">
@@ -2388,7 +2395,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Dataset.datasetdistribution">
+              </section>    <section id="Dataset.datasetDistribution">
                 <h4>dataset distribution</h4>
               
                 <table class="def">
@@ -2483,7 +2490,7 @@
                     <td>The HVD IR is a quality improvement of existing datasets. The intention is that HVD datasets are publicly and open accessible. Therefore a Distribution is expected to be present. (Article 3.1) This section provides more information how this strong recommendation is implemented.</td>
                   </tr>
                 </table>
-              </section>    <section id="Dataset.HVDCategory">
+              </section>    <section id="Dataset.hvdCategory">
                 <h4>HVD category</h4>
               
                 <table class="def">
@@ -2545,7 +2552,7 @@
                     </tr>
               
                 </table>
-              </section>    <section id="Dataset.inseries">
+              </section>    <section id="Dataset.inSeries">
                 <h4>in series</h4>
               
                 <table class="def">
@@ -2847,10 +2854,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.inseries"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.inSeries"></a></li>
               </ul>
           
-              <section id="DatasetSeries.applicablelegislation">
+              <section id="DatasetSeries.applicableLegislation">
                 <h4>applicable legislation</h4>
               
                 <table class="def">
@@ -2927,7 +2934,7 @@
               As multiple legislations may apply to the resource the maximum cardinality is not limited.</td>
                   </tr>
                 </table>
-              </section>    <section id="DatasetSeries.HVDCategory">
+              </section>    <section id="DatasetSeries.hvdCategory">
                 <h4>HVD category</h4>
               
                 <table class="def">
@@ -3058,10 +3065,10 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.datasetdistribution"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.datasetDistribution"></a></li>
               </ul>
           
-              <section id="Distribution.accessservice">
+              <section id="Distribution.accessService">
                 <h4>access service</h4>
               
                 <table class="def">
@@ -3147,7 +3154,7 @@
               A Dataset MUST have an associated Data Service, besides the exceptions listed in the HVD IR. This can be either specified directly or indirectly using this property. More information on this obligation see 10.8 Connecting Data Services with Datasets.</td>
                   </tr>
                 </table>
-              </section>    <section id="Distribution.accessURL">
+              </section>    <section id="Distribution.accessUrl">
                 <h4>access URL</h4>
               
                 <table class="def">
@@ -3181,7 +3188,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#rdfs-Resource">Resource</a>
               
                           [1..*]
               
@@ -3233,7 +3240,7 @@
                     <td>The resource at the access URL contains information about how to get the Dataset. In accordance to the DCAT guidelines it is preferred to also set the downloadURL property if the URL is a reference to a downloadable resource.</td>
                   </tr>
                 </table>
-              </section>    <section id="Distribution.applicablelegislation">
+              </section>    <section id="Distribution.applicableLegislation">
                 <h4>applicable legislation</h4>
               
                 <table class="def">
@@ -3344,7 +3351,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#LicenceDocument">License Document</a>
+                      <a href="#LicenseDocument">License Document</a>
               
                           [0..1]
               
@@ -3406,7 +3413,7 @@
                     <td>Article 4.3 specifies that High-value datasets should be made available for reuse. According to the guidelines for legal Information in DCAT-AP HVD this is fulfilled by providing by preference a licence. As alternative rights can be used.</td>
                   </tr>
                 </table>
-              </section>    <section id="Distribution.linkedschemas">
+              </section>    <section id="Distribution.linkedSchemas">
                 <h4>linked schemas</h4>
               
                 <table class="def">
@@ -3536,7 +3543,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Rightsstatement">Rights Statement</a>
+                      <a href="#RightsStatement">Rights Statement</a>
               
                           [0..*]
               
@@ -3658,11 +3665,11 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.contactpoint"></a></li>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.contactpoint"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.contactPoint"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.contactPoint"></a></li>
               </ul>
           
-              <section id="Kind.contactpage">
+              <section id="Kind.contactPage">
                 <h4>contact page</h4>
               
                 <table class="def">
@@ -3696,7 +3703,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#rdfs-Resource">Resource</a>
               
                           [0..1]
               
@@ -3758,7 +3765,7 @@
                   <tr>
                     <td>Range</td>
                     <td>
-                      <a href="#Resource">Resource</a>
+                      <a href="#rdfs-Resource">Resource</a>
               
                           [0..1]
               
@@ -3787,7 +3794,7 @@
               
                 </table>
               </section>
-          </section>          <section id="LicenceDocument">
+          </section>          <section id="LicenseDocument">
             <h4>License Document</h4>
           
             <table class="def">
@@ -3921,9 +3928,9 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.HVDcategory"></a></li>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.HVDCategory"></a></li>
-                  <li>from domain <a href="#DatasetSeries"></a> → <a href="#DatasetSeries.HVDCategory"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.hvdCategory"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.hvdCategory"></a></li>
+                  <li>from domain <a href="#DatasetSeries"></a> → <a href="#DatasetSeries.hvdCategory"></a></li>
               </ul>
           
           
@@ -4073,14 +4080,14 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.applicablelegislation"></a></li>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.applicablelegislation"></a></li>
-                  <li>from domain <a href="#DatasetSeries"></a> → <a href="#DatasetSeries.applicablelegislation"></a></li>
-                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.applicablelegislation"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.applicableLegislation"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.applicableLegislation"></a></li>
+                  <li>from domain <a href="#DatasetSeries"></a> → <a href="#DatasetSeries.applicableLegislation"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.applicableLegislation"></a></li>
               </ul>
           
           
-          </section>          <section id="Resource">
+          </section>          <section id="rdfs-Resource">
             <h4>Resource</h4>
           
             <table class="def">
@@ -4145,15 +4152,15 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.accessURL"></a></li>
-                  <li>from domain <a href="#Kind"></a> → <a href="#Kind.contactpage"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.accessUrl"></a></li>
+                  <li>from domain <a href="#Kind"></a> → <a href="#Kind.contactPage"></a></li>
                   <li>from domain <a href="#Kind"></a> → <a href="#Kind.email"></a></li>
-                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointdescription"></a></li>
-                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointURL"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointDescription"></a></li>
+                  <li>from domain <a href="#DataService"></a> → <a href="#DataService.endpointUrl"></a></li>
               </ul>
           
           
-          </section>          <section id="Rightsstatement">
+          </section>          <section id="RightsStatement">
             <h4>Rights Statement</h4>
           
             <table class="def">
@@ -4287,8 +4294,8 @@
           
               <p>Backwards associations</p>
               <ul>
-                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.conformsto"></a></li>
-                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.linkedschemas"></a></li>
+                  <li>from domain <a href="#Dataset"></a> → <a href="#Dataset.conformsTo"></a></li>
+                  <li>from domain <a href="#Distribution"></a> → <a href="#Distribution.linkedSchemas"></a></li>
               </ul>
           
           
@@ -4315,7 +4322,7 @@
         </tbody>
       </table>
     </section>
-    <section>
+    <section id="attachments">
       <h2>Attachments</h2>
     
         <p>This specification includes the following attachments.</p>
@@ -4335,8 +4342,6 @@
               <td>SHACL validation rules</td>
               <td><a href="./shacl.ttl">./shacl.ttl</a></td>
             </tr>
-            <tr><td>PlantUML diagram</td><td><a href="../conceptual-model.plantuml">../conceptual-model.plantuml</a></td></tr>
-            <tr><td>Conceptual diagram</td><td><a href="../conceptual-model.svg">../conceptual-model.svg</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
