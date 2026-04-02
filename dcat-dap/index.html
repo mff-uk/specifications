@@ -118,6 +118,9 @@
               }
             },
             {
+              "title": {
+                "en": "DCAT - Data Catalog Vocabulary"
+              },
               "hasResource": {
                 "hasArtifact": "https://www.w3.org/ns/dcat3.ttl"
               }
@@ -154,6 +157,16 @@
               "hasRole": "role:constraints",
               "format": "filetype:RDF_TURTLE",
               "conformsTo": "https://www.w3.org/TR/shacl/"
+            },
+            {
+              "@type": [
+                "adms:AssetDistribution",
+                "prof:ResourceDescriptor"
+              ],
+              "hasArtifact": "./generator-configuration.ttl",
+              "hasRole": "role:schema",
+              "format": "filetype:RDF_TURTLE",
+              "conformsTo": "dsv:StructureConfiguration"
             },
             {
               "@type": [
@@ -8890,8 +8903,6 @@
               <td>SHACL validation rules</td>
               <td><a href="./shacl.ttl">./shacl.ttl</a></td>
             </tr>
-            <tr><td>PlantUML diagram</td><td><a href="./conceptual-model.plantuml">./conceptual-model.plantuml</a></td></tr>
-            <tr><td>Conceptual diagram</td><td><a href="./conceptual-model.svg">./conceptual-model.svg</a></td></tr>
             <tr><td>Documentation</td><td><a href="">#</a></td></tr>
         </tbody>
       </table>
