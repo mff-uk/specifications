@@ -16,3 +16,6 @@ A repository for sample specifications from [Dataspecer](https://dataspecer.com)
 You can either:
 Import the spec to [Dataspecer](https://dataspecer.com) as is using import functionality and the spec URL, e.g. `https://mff-uk.github.io/specifications/dcat-ap/`, or create a new application profile of the spec.
 ![Dataspecer import](assets/images/ds-import.gif)
+
+## Additional specs
+- [DCAT 2 Default Application Profile](https://mff-uk.github.io/specifications/dcat2-dap/) - this is mainly for demonstration of change propagation in application profile hierarchy using Dataspecer. This was created by "downgrading" DCAT 3 DAP
