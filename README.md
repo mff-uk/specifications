@@ -19,3 +19,4 @@ Import the spec to [Dataspecer](https://dataspecer.com) as is using import funct
 
 ## Additional specs
 - [DCAT 2 Default Application Profile](https://mff-uk.github.io/specifications/dcat2-dap/) - this is mainly for demonstration of change propagation in application profile hierarchy using Dataspecer. This was created by "downgrading" DCAT 3 DAP
+- [DCAT-AP 2.1.1](https://mff-uk.github.io/specifications/dcat-ap2/) - this is mainly for demonstration of change propagation in application profile hierarchy using Dataspecer. This was created by "downgrading" DCAT-AP 3.0.1
