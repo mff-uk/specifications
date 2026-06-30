@@ -709,7 +709,7 @@
     skos:prefLabel "publisher"@en;
     skos:definition "The entity responsible for making the item available."@en;
     skos:scopeNote "Resources of type foaf:Agent are recommended as values for this property."@en;
-    dsv:externalDocumentation <The entity responsible for making the item available.>;
+    dsv:externalDocumentation <https://www.w3.org/TR/vocab-dcat-2/#Property:resource_publisher>;
     dsv:cardinality cardinality:0n;
     dsv:property dct:publisher;
     dsv:domain :CatalogedResource;
